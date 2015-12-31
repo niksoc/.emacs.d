@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("i3config"
+ (filename . "~/.config/i3/config")
+ (front-context-string . "\nset $base00 #10")
+ (rear-context-string . ")\nset $mod Mod4\n")
+ (position . 142))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "\n(when (>= emacs")
+ (rear-context-string . "lt-frame-alist)\n")
+ (position . 54))
+("testcpp"
+ (filename . "~/hello.cpp")
+ (front-context-string . "< i << endl;)\n  ")
+ (rear-context-string . "d);)\n      D(T <")
+ (position . 615))
+)
