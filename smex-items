@@ -1,0 +1,45 @@
+
+;; ----- smex-history -----
+(
+ impatient-mode
+ httpd-start
+ httpd-stop
+ package-install
+ magit-status
+ evil-magit-init
+ magit-commit
+)
+
+;; ----- smex-data -----
+(
+ (ftp . 1)
+ (eval-expression . 2)
+ (httpd-start . 7)
+ (httpd-stop . 7)
+ (run-skewer . 6)
+ (list-processes . 8)
+ (skewer-html-mode . 6)
+ (skewer-eval-last-expression . 1)
+ (skewer-html-eval-tag . 4)
+ (list-packages . 4)
+ (package-install . 6)
+ (evil-goto-definition . 1)
+ (customize . 1)
+ (save-buffer . 1)
+ (nxhtmlmaint-byte-recompile . 1)
+ (byte-recompile-directory . 1)
+ (nxhtml-customize . 1)
+ (kill-grep . 1)
+ (octave-mode . 12)
+ (compile . 1)
+ (httpd-serve-directory . 3)
+ (magit-stage . 1)
+ (magit-status . 9)
+ (web-beautify-html . 4)
+ (sgml-mode . 1)
+ (html-mode . 1)
+ (web-mode . 1)
+ (magit-commit . 2)
+ (evil-magit-init . 1)
+ (impatient-mode . 2)
+)

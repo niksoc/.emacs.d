@@ -1,0 +1,201 @@
+;;For Web Development
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+
+(require 'web-beautify) ;; Not necessary if using ELPA package
+(eval-after-load 'js2-mode
+  '(define-key js2-mode-map (kbd "C-c b") 'web-beautify-js))
+(eval-after-load 'json-mode
+  '(define-key json-mode-map (kbd "C-c b") 'web-beautify-js))
+(eval-after-load 'sgml-mode<!DOCTYPE html>
+<html lang="en">
+    <head> 
+	<meta charset="utf-8"> 
+	<title>
+	    mysite
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    </head>
+    <body>
+	<header>
+	    <h1>MyWebsite</h1> 
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Home</a></li>
+			<li><a href="products.html">roducts</a></li> 
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="contact_us.html">Contact Us</a></li>
+		</ul>
+	    </nav> 
+	</header> 
+	<div id="middle">	
+	    <div id="column1">
+		<ul id="side_navigation">
+		    <li><a href="#">link1</a></li>
+		    <li><a href="#">link2</a></li>
+		    <li><a href="#">link3</a></li>
+		    <li><a href="#">link4</a></li>
+		</ul>
+	    </div>
+	    <div id="column2">
+		<section> 
+		    <p>00:02.0 VGA compatible controller: Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b) (prog-if 00 [VGA controller]) 
+			Subsystem: Hewlett-Packard Company Device 2212
+			Flags: bus master, fast devsel, latency 0, IRQ 61
+			Memory at b5000000 (64-bit, non-prefetchable) [size=4M]
+			Memory at c0000000 (64-bit, prefetchable) [size=256M]
+			I/O ports at 7000 [size=64]
+			Expansion ROM at [disabled]
+			 driver in use: i915<p>
+
+			<p>00:03.0 Audio device: Intel Corporation Haswell-ULT HD Audio Controller (rev 0b) 
+			    Subsystem: Hewlett-Packard Company Device 2212
+			    Flags: bus master, fast devsel, latency 0, IRQ 62
+			    Memory at b5710000 (64-bit, non-prefetchable) [size=16K]
+			     driver in use: snd_hda_intel</p>
+
+			    <p>00:14.0 USB controller: Intel Corporation Lynx Point-LP USB xHCI HC (rev 04) (prog-if 30 [XHCI]) 
+				Subsystem: Hewlett-Packard Company Device 2212
+				Flags: bus master, medium devsel, latency 0, IRQ 56
+				Memory at b5700000 (64-bit, non-prefetchable) [size=64K]
+				 driver in use: xhci_hcd</p>
+
+				<p>00:16.0 Communication controller: Intel Corporation Lynx Point-LP HECI #0 (rev 04) 
+				    Subsystem: Hewlett-Packard Company Device 2212
+				    Flags: bus master, fast devsel, latency 0, IRQ 60
+				    Memory at b5718000 (64-bit, non-prefetchable) [size=32]
+				     driver in use: mei_me</p>
+
+				    <p>00:1b.0 Audio device: Intel Corporation Lynx Point-LP HD Audio Controller (rev 04) 
+					Subsystem: Hewlett-Packard Company Device 2212
+					Flags: bus master, fast devsel, latency 0, IRQ 63
+					Memory at b5714000 (64-bit, non-prefetchable) [size=16K]
+					 driver in use: snd_hda_intel</p>
+
+					00:1c.0 PCI bridge: Intel Corporation Lynx Point-LP PCI Express Root Port 1 (rev e4) (prog-if 00 [Normal decode])
+					Flags: bus master, fast devsel, latency 0
+					Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+					I/O behind bridge: 00002000-00002fff
+					Memory behind bridge: 9fb00000-9fcfffff
+					Prefetchable memory behind bridge: 000000009fd00000-000000009fefffff
+					 driver in use: pcieport</p>
+
+					00:1c.1 PCI bridge: Intel Corporation Lynx Point-LP PCI Express Root Port 2 (rev e4) (prog-if 00 [Normal decode])
+					Flags: bus master, fast devsel, latency 0
+					Bus: primary=00, secondary=02, subordinate=07, sec-latency=0
+					I/O behind bridge: 00006000-00006fff
+					Memory behind bridge: b4000000-b4ffffff
+					Prefetchable memory behind bridge: 00000000b2000000-00000000b2ffffff
+					 driver in use: pcieport</p>
+
+					00:1c.2 PCI bridge: Intel Corporation Lynx Point-LP PCI Express Root Port 3 (rev e4) (prog-if 00 [Normal decode])
+					Flags: bus master, fast devsel, latency 0
+					Bus: primary=00, secondary=08, subordinate=08, sec-latency=0
+					I/O behind bridge: 00005000-00005fff
+					Memory behind bridge: b5600000-b56fffff
+					Prefetchable memory behind bridge: 00000000b5400000-00000000b54fffff
+					 driver in use: pcieport</p>
+
+					00:1c.4 PCI bridge: Intel Corporation Lynx Point-LP PCI Express Root Port 5 (rev e4) (prog-if 00 [Normal decode])
+					Flags: bus master, fast devsel, latency 0
+					Bus: primary=00, secondary=09, subordinate=09, sec-latency=0
+					I/O behind bridge: 00004000-00004fff
+					Memory behind bridge: b3000000-b3ffffff
+					Prefetchable memory behind bridge: 00000000a0000000-00000000b1ffffff
+					 driver in use: pcieport</p>
+
+					00:1c.5 PCI bridge: Intel Corporation Lynx Point-LP PCI Express Root Port 6 (rev e4) (prog-if 00 [Normal decode])
+					Flags: bus master, fast devsel, latency 0
+					Bus: primary=00, secondary=0a, subordinate=0a, sec-latency=0
+					I/O behind bridge: 00003000-00003fff
+					Memory behind bridge: b5500000-b55fffff
+					 driver in use: pcieport</p>
+
+					<p>00:1d.0 USB controller: Intel Corporation Lynx Point-LP USB EHCI #1 (rev 04) (prog-if 20 [EHCI]) 
+					    Subsystem: Hewlett-Packard Company Device 2212
+					    Flags: bus master, medium devsel, latency 0, IRQ 23
+					    Memory at b571c000 (32-bit, non-prefetchable) [size=1K]
+					     driver in use: ehci-pci</p>
+
+					    <p>00:1f.0 ISA bridge: Intel Corporation Lynx Point-LP LPC Controller (rev 04) 
+						Subsystem: Hewlett-Packard Company Device 2212
+						Flags: bus master, medium devsel, latency 0
+						 driver in use: lpc_ich</p>
+
+						<p>00:1f.2 SATA controller: Intel Corporation Lynx Point-LP SATA Controller 1 [AHCI mode] (rev 04) (prog-if 01 [AHCI 1.0]) 
+						    Subsystem: Hewlett-Packard Company Device 2212
+						    Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 59
+						    I/O ports at 7088 [size=8]
+						    I/O ports at 7094 [size=4]
+						    I/O ports at 7080 [size=8]
+						    I/O ports at 7090 [size=4]
+						    I/O ports at 7060 [size=32]
+						    Memory at b571b000 (32-bit, non-prefetchable) [size=2K]
+						     driver in use: ahci</p>
+
+						    <p>00:1f.3 SMBus: Intel Corporation Lynx Point-LP SMBus Controller (rev 04) 
+							Subsystem: Hewlett-Packard Company Device 2212
+							Flags: medium devsel, IRQ 11
+							Memory at b5719000 (64-bit, non-prefetchable) [size=256]
+							I/O ports at 7040 [size=32]
+
+							<p>02:00.0  class [ff00]: Realtek Semiconductor Co., Ltd. RTS5229 PCI Express Card Reader (rev 01) 
+							    Subsystem: Hewlett-Packard Company Device 2212
+							    Flags: bus master, fast devsel, latency 0, IRQ 57
+							    Memory at b4000000 (32-bit, non-prefetchable) [size=4K]
+							     driver in use: rtsx_pci</p>
+
+							    <p>08:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8101E/RTL8102E PCI Express Fast Ethernet controller (rev 07) 
+								Subsystem: Hewlett-Packard Company Device 2212
+								Flags: bus master, fast devsel, latency 0, IRQ 58
+								I/O ports at 5000 [size=256]
+								Memory at b5600000 (64-bit, non-prefetchable) [size=4K]
+								Memory at b5400000 (64-bit, prefetchable) [size=16K]
+								 driver in use: r8169</p>
+
+								<p>09:00.0 3D controller: NVIDIA Corporation GF117M [GeForce 610M/710M/820M / GT 620M/625M/630M/720M] (rev a1) 
+								    Subsystem: Hewlett-Packard Company Device 2212
+								    Flags: bus master, fast devsel, latency 0, IRQ 64
+								    Memory at b3000000 (32-bit, non-prefetchable) [size=16M]
+								    Memory at a0000000 (64-bit, prefetchable) [size=256M]
+								    Memory at b0000000 (64-bit, prefetchable) [size=32M]
+								     driver in use: nouveau</p>
+
+								    <p>0a:00.0 Network controller: Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter
+									Subsystem: Hewlett-Packard Company Device 2231
+									Flags: bus master, fast devsel, latency 0, IRQ 16
+									I/O ports at 3000 [size=256]
+									Memory at b5500000 (64-bit, non-prefetchable) [size=16K]
+									 driver in use: rtl8723be </p>
+		</section>
+	    </div>
+	</div> 
+	<script src="js/home.js"></script>
+	<script src="http://127.0.0.1:8080/skewer/"></script>
+    </body>
+</html> 
+
+  '(define-key html-mode-map (kbd "C-c b") 'web-beautify-html))
+(eval-after-load 'css-mode
+  '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
+
+(add-hook 'js2-mode-hook 'skewer-mode)
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
+
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+`(setq ac-js2-evaluate-calls t)'
+(add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;(load "~/.emacs.d/elisp/nxhtml/elisp/autostart.el") 

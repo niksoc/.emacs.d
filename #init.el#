@@ -22,7 +22,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(menu-bar-mode nil)
- '(scroll-bar-mode nil)
+ '(scroll-bar-mode nil) 
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -69,10 +69,7 @@
 
 (require 'simple-httpd)
 
-(setq evil-magit-state 'motion)
-(require 'evil-magit)
-
-;;(require 'multiple-cursors)
+;;(require 'multiple-cursors) 
 ;;(require 'region-bindings-mode) 
 ;;(region-bindings-mode-enable) 
 ;;(define-key region-bindings-mode-map "n" 'mc/mark-previous-like-this)

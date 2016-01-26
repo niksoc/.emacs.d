@@ -1,0 +1,9 @@
+C-M-h mark defun
+C-x h mark buffer
+C-M-SPC mark sexp
+
+;;isearch
+C-w Add word at point to search string
+C-M-y Add character at point to search string
+M-s C-e Add rest of line at point to search string
+C-y Yank from clipboard to search string
