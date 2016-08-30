@@ -31,4 +31,9 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/folder-where-you-put-scss-mode-el"))
+(autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-2.2.1/bin") exec-path))
+
 ;(load "~/.emacs.d/elisp/nxhtml/elisp/autostart.el") 

@@ -1,0 +1,195 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Aug 29 23:09:14 2016
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22468 29506 871152 263000) (desktop . "206") "nikhil@N-PC" nil nil ((((font-backend xft x) (font . "-unknown-Anonymous Pro-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter . "Anonymous Pro") (border-width . 0) (internal-border-width . 1) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "#d3d3d3") (background-color . "#000000") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 9) (right-fringe . 9) (scroll-bar-foreground) (scroll-bar-background . "grey75") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#dcdccc") (environment) (frameset--id . "A1C0-71CB-B240-9701") (frameset--mini t . t) (height . 41) (width . 149) (modeline . t) (minibuffer . t) (unsplittable) (left . 0) (top . 20) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1364) (pixel-height . 728) (total-width . 151) (total-height . 40) (normal-height . 1.0) (normal-width . 1.0) (buffer "webpack.config.js" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 461) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("h" "app_" "app_te" "feed" "app_" "str" "desc" "cons" "this.int" "commentl" "comme" "comm" "pr" "print" "prin" "noti"))
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "/home/nikhil/venv/srmxchange/srmxchange/settings.py" "/home/nikhil/venv/srmxchange/app/api_urls.py" "/home/nikhil/venv/srmxchange/app/js/components/FormFrameModal.js" "/home/nikhil/venv/srmxchange/app/js/components/header/Header.js" "/home/nikhil/venv/srmxchange/app/js/webpack.config.js" "/home/nikhil/venv/srmxchange/app/js/Layout.js" "/home/nikhil/venv/srmxchange/app/js/features.js" "/home/nikhil/venv/srmxchange/app/api_urls.py" "/home/nikhil/venv/srmxchange/app/rest_retrieve_views.py" "/home/nikhil/venv/srmxchange/app/views.py" "/home/nikhil/venv/srmxchange/app/js/components/header/Header.js" "/home/nikhil/venv/srmxchange/app/js/components/ModelViews/DetailView.js" "/home/nikhil/venv/srmxchange/app/js/pages/SimpleDetailViewPage.js" "/home/nikhil/venv/srmxchange/.env" "/home/nikhil/venv/srmxchange/app/js/components/UserThumb.js" "/home/nikhil/venv/srmxchange/app/js/pages/ProfilePage.js" "/home/nikhil/venv/srmxchange/app/js/components/InfoPanel.js" "~/venv/" "/home/nikhil/venv/srmxchange/app/rest_form_views.py" "/home/nikhil/venv/srmxchange/app/models.py" "/home/nikhil/venv/srmxchange/srmxchange/settings.py" "/home/nikhil/venv/srmxchange/.env"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/webpack.config.js"
+  "webpack.config.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  461
+  '(462 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/srmxchange/settings.py"
+  "settings.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  1265
+  '(1265 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/components/header/Header.js"
+  "Header.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  2785
+  '(2785 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/api_urls.py"
+  "api_urls.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  2298
+  '(2298 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/models.py"
+  "models.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  15445
+  '(15445 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/rest_form_views.py"
+  "rest_form_views.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  2509
+  '(2509 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/components/FormFrameModal.js"
+  "FormFrameModal.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/Layout.js"
+  "Layout.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  1056
+  '(1056 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/features.js"
+  "features.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  374
+  '(374 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/rest_retrieve_views.py"
+  "rest_retrieve_views.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  2291
+  '(2291 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/views.py"
+  "views.py"
+  'python-mode
+  '(auto-complete-mode elpy-mode company-mode eldoc-mode highlight-indentation-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
+  4233
+  '(4233 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/components/ModelViews/DetailView.js"
+  "DetailView.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  1989
+  '(1989 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/pages/SimpleDetailViewPage.js"
+  "SimpleDetailViewPage.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  751
+  '(751 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/components/UserThumb.js"
+  "UserThumb.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  570
+  '(570 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/pages/ProfilePage.js"
+  "ProfilePage.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  1314
+  '(1314 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/nikhil/venv/srmxchange/app/js/components/InfoPanel.js"
+  "InfoPanel.js"
+  'js2-mode
+  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
+  850
+  '(850 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+

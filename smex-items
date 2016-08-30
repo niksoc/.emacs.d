@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- impatient-mode
- httpd-start
- httpd-stop
- package-install
- magit-status
- evil-magit-init
- magit-commit
+ revert-buffer
+ desktop-save
+ pyvenv-activate
+ desktop-read
+ delete-file
+ rename-file
+ undo-tree-redo
 )
 
 ;; ----- smex-data -----
@@ -15,14 +15,14 @@
  (ftp . 1)
  (eval-expression . 2)
  (httpd-start . 7)
- (httpd-stop . 7)
- (run-skewer . 6)
+ (httpd-stop . 6)
+ (run-skewer . 5)
  (list-processes . 8)
- (skewer-html-mode . 6)
+ (skewer-html-mode . 4)
  (skewer-eval-last-expression . 1)
  (skewer-html-eval-tag . 4)
- (list-packages . 4)
- (package-install . 6)
+ (list-packages . 7)
+ (package-install . 10)
  (evil-goto-definition . 1)
  (customize . 1)
  (save-buffer . 1)
@@ -32,14 +32,33 @@
  (kill-grep . 1)
  (octave-mode . 12)
  (compile . 1)
- (httpd-serve-directory . 3)
- (magit-stage . 1)
- (magit-status . 9)
- (web-beautify-html . 4)
- (sgml-mode . 1)
- (html-mode . 1)
- (web-mode . 1)
- (magit-commit . 2)
- (evil-magit-init . 1)
+ (httpd-serve-directory . 2)
+ (org-mode . 4)
+ (org-agenda-list . 1)
+ (sml/customize . 1)
+ (dired . 2)
  (impatient-mode . 2)
+ (revert-buffer . 10)
+ (auto-revert-mode . 1)
+ (prolog-mode . 1)
+ (run-prolog . 1)
+ (jade-mode . 1)
+ (web-mode . 5)
+ (desktop-save . 6)
+ (load-theme . 23)
+ (pyvenv-activate . 14)
+ (elpy-config . 5)
+ (desktop-read . 9)
+ (eval-buffer . 1)
+ (recover-this-file . 2)
+ (markdown-mode . 4)
+ (js2-mode . 4)
+ (shell-mode . 3)
+ (set-background-color . 7)
+ (make-directory . 1)
+ (rename-file . 7)
+ (ido-mode . 2)
+ (undo-tree-redo . 1)
+ (magit-mode . 2)
+ (delete-file . 1)
 )
