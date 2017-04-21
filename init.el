@@ -1,4 +1,4 @@
-(push '(font . "Anonymous Pro") default-frame-alist)
+(add-to-list 'default-frame-alist '(font . "Anonymous Pro" ))
 
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -25,6 +25,9 @@
  '(ido-mode (quote both) nil (ido))
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+    (ein zenburn-theme websocket web-mode web-beautify swiper speck smex smart-mode-line-powerline-theme scss-mode rtags request region-bindings-mode py-autopep8 php-mode molokai-theme material-theme markdown-mode linum-relative js3-mode js2-refactor jade-mode irony impatient-mode iedit hy-mode hc-zenburn-theme google-c-style flymake-google-cpplint flymake-cursor flycheck-google-cpplint expand-region evil-surround evil-paredit evil-org evil-mc evil-magit ensime elpy discover-my-major discover dired-subtree dired+ cyberpunk-theme color-theme-sanityinc-tomorrow cmake-ide centered-cursor-mode auto-complete-clang auto-complete-c-headers anaconda-mode ace-jump-mode ac-js2)))
  '(scroll-bar-mode nil)
  '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
  '(tool-bar-mode nil))
@@ -48,10 +51,20 @@
 
 (load "~/.emacs.d/mypyedit.el")
 
+(load "~/.emacs.d/coding.el") 
+
 (global-set-key (kbd "M-o") 'other-window)
 
 (setq sml/theme 'respectful) 
-(sml/setup) 
+(sml/setup)
+
+(elpy-use-ipython "/home/nikhil/programs/anaconda3/bin/ipython")
+
+;;org activation
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-iswitchb)
 
 (require 'hy-mode)
 

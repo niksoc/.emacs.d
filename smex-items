@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- revert-buffer
- desktop-save
- pyvenv-activate
  desktop-read
- delete-file
- rename-file
- undo-tree-redo
+ customize-face
+ eval-region
+ run-octave
+ octave-mode
+ revert-buffer
+ run-skewer
 )
 
 ;; ----- smex-data -----
@@ -16,7 +16,7 @@
  (eval-expression . 2)
  (httpd-start . 7)
  (httpd-stop . 6)
- (run-skewer . 5)
+ (run-skewer . 6)
  (list-processes . 8)
  (skewer-html-mode . 4)
  (skewer-eval-last-expression . 1)
@@ -30,7 +30,7 @@
  (byte-recompile-directory . 1)
  (nxhtml-customize . 1)
  (kill-grep . 1)
- (octave-mode . 12)
+ (octave-mode . 15)
  (compile . 1)
  (httpd-serve-directory . 2)
  (org-mode . 4)
@@ -38,7 +38,7 @@
  (sml/customize . 1)
  (dired . 2)
  (impatient-mode . 2)
- (revert-buffer . 10)
+ (revert-buffer . 15)
  (auto-revert-mode . 1)
  (prolog-mode . 1)
  (run-prolog . 1)
@@ -48,17 +48,25 @@
  (load-theme . 23)
  (pyvenv-activate . 14)
  (elpy-config . 5)
- (desktop-read . 9)
+ (desktop-read . 12)
  (eval-buffer . 1)
  (recover-this-file . 2)
  (markdown-mode . 4)
  (js2-mode . 4)
- (shell-mode . 3)
+ (shell-mode . 4)
  (set-background-color . 7)
  (make-directory . 1)
  (rename-file . 7)
- (ido-mode . 2)
+ (ido-mode . 4)
  (undo-tree-redo . 1)
  (magit-mode . 2)
  (delete-file . 1)
+ (python-shell-switch-to-shell . 2)
+ (python-mode . 1)
+ (shell . 1)
+ (crt . 98)
+ (check-parens . 2)
+ (run-octave . 2)
+ (eval-region . 6)
+ (customize-face . 1)
 )
