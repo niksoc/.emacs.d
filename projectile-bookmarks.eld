@@ -1,0 +1,1 @@
+("~/apps/group-nexus/FB-NC/" "~/apps/opsmanager/" "~/apps/attack-tools/" "~/.emacs.d/" "~/apps/rdbtools-web/" "~/apps/" "~/apps/hello-world/")

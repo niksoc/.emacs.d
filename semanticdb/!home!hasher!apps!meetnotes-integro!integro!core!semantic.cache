@@ -1,0 +1,181 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("uuid" include nil nil [1 12])
+            ("django.contrib.auth.models" include nil nil [14 57])
+            ("django.contrib.postgres.fields" include nil nil [58 110])
+            ("django.db" include nil nil [111 139])
+            ("django_extensions.db.models" include nil nil [141 195])
+            ("Client" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [230 268])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [273 429])
+                    ("updated_by" variable nil (reparse-symbol indented_block_body) [434 590]))                  
+                :type "class")
+                nil [198 591])
+            ("ClientUser" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("client" variable nil (reparse-symbol indented_block_body) [629 689])
+                    ("client_user_id" variable nil (reparse-symbol indented_block_body) [694 743])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [748 904])
+                    ("updated_by" variable nil (reparse-symbol indented_block_body) [909 1065]))                  
+                :type "class")
+                nil [593 1066])
+            ("BaseModel" type
+               (:documentation "
+        Model to store timestamp attributes
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [1164 1332])
+                    ("updated_by" variable nil (reparse-symbol indented_block_body) [1337 1505])
+                    ("created_by_client_user" variable nil (reparse-symbol indented_block_body) [1511 1769])
+                    ("updated_by_client_user" variable nil (reparse-symbol indented_block_body) [1775 2033])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [2039 2091])
+                    ("updated_at" variable nil (reparse-symbol indented_block_body) [2096 2144])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [2170 2185]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2150 2186]))                  
+                :type "class")
+                nil [1068 2186])
+            ("Tokens" type
+               (:documentation "
+        Model to store tokens
+    "
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("access_token" variable nil (reparse-symbol indented_block_body) [2263 2333])
+                    ("refresh_token" variable nil (reparse-symbol indented_block_body) [2338 2409])
+                    ("expiry_time" variable nil (reparse-symbol indented_block_body) [2414 2471]))                  
+                :type "class")
+                nil [2188 2472])
+            ("Integration" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("INTEGRATION_CALENDARS_DOMAIN" variable nil (reparse-symbol indented_block_body) [2508 2549])
+                    ("INTEGRATION_MESSAGES_DOMAIN" variable nil (reparse-symbol indented_block_body) [2554 2594])
+                    ("INTEGRATION_TASKS_DOMAIN" variable nil (reparse-symbol indented_block_body) [2599 2633])
+                    ("DOMAINS" variable nil (reparse-symbol indented_block_body) [2638 2748])
+                    ("domain" variable nil (reparse-symbol indented_block_body) [2754 2825])
+                    ("provider" variable nil (reparse-symbol indented_block_body) [2830 2872]))                  
+                :type "class")
+                nil [2474 2873])
+            ("ClientIntegration" type
+               (:documentation "
+        Model to store the name of integrations added. For example(Slack, JIRA, ASANA, Google Calendar etc.)
+    "
+                :superclasses ("BaseModel" "ActivatorModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [3056 3128])
+                    ("integration_type" variable nil (reparse-symbol indented_block_body) [3134 3209])
+                    ("display_name" variable nil (reparse-symbol indented_block_body) [3214 3260])
+                    ("description" variable nil (reparse-symbol indented_block_body) [3265 3318])
+                    ("app_client_secret" variable nil (reparse-symbol indented_block_body) [3323 3407])
+                    ("app_client_id" variable nil (reparse-symbol indented_block_body) [3425 3505])
+                    ("auth_url" variable nil (reparse-symbol indented_block_body) [3523 3588])
+                    ("tokens" variable nil (reparse-symbol indented_block_body) [3594 3690])
+                    ("additional_details" variable nil (reparse-symbol indented_block_body) [3695 3748]))                  
+                :type "class")
+                nil [2875 3749])
+            ("UserIntegration" type
+               (:documentation "
+        Model to store details of User Integrations.
+        Example: User integrated with Integro for Slack- corresponding information.
+    "
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [3942 4014])
+                    ("client_user" variable nil (reparse-symbol indented_block_body) [4020 4089])
+                    ("client_integration" variable nil (reparse-symbol indented_block_body) [4094 4186])
+                    ("client_integration_user_id" variable nil (reparse-symbol indented_block_body) [4192 4285])
+                    ("additional_details" variable nil (reparse-symbol indented_block_body) [4290 4343])
+                    ("tokens" variable nil (reparse-symbol indented_block_body) [4349 4445]))                  
+                :type "class")
+                nil [3751 4446])
+            ("Event" type
+               (:documentation "
+        Model to store the details of each event for any integration.
+        Only for logging(debugging) purposes.
+    "
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [4608 4680])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [4686 4730])
+                    ("unique_event_id" variable nil (reparse-symbol indented_block_body) [4761 4825])
+                    ("user_integration" variable nil (reparse-symbol indented_block_body) [4830 4974])
+                    ("client_integration" variable nil (reparse-symbol indented_block_body) [5009 5173])
+                    ("event_type" variable nil (reparse-symbol indented_block_body) [5214 5269])
+                    ("summary" variable nil (reparse-symbol indented_block_body) [5274 5311])
+                    ("event_link" variable nil (reparse-symbol indented_block_body) [5346 5412])
+                    ("timestamp" variable nil (reparse-symbol indented_block_body) [5438 5472])
+                    ("actor_email" variable nil (reparse-symbol indented_block_body) [5477 5545])
+                    ("actor" variable nil (reparse-symbol indented_block_body) [5550 5625])
+                    ("additional_details" variable nil (reparse-symbol indented_block_body) [5668 5721])
+                    ("raw_event_id" variable nil (reparse-symbol indented_block_body) [5726 5795])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5813 5817]))                          )
+                        (reparse-symbol indented_block_body) [5801 5917]))                  
+                :type "class")
+                nil [4448 5917])
+            ("RawEvent" type
+               (:documentation "
+        Model to store raw events which can be replayed.
+        Logging(Debugging Purposes)
+    "
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("request_path" variable nil (reparse-symbol indented_block_body) [6059 6107])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [6112 6154])
+                    ("request_body" variable nil (reparse-symbol indented_block_body) [6159 6194])
+                    ("request_meta" variable nil (reparse-symbol indented_block_body) [6199 6234])
+                    ("request_data" variable nil (reparse-symbol indented_block_body) [6239 6274])
+                    ("request_body_text" variable nil (reparse-symbol indented_block_body) [6279 6338])
+                    ("client_integration" variable nil (reparse-symbol indented_block_body) [6343 6435])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6453 6457]))                          )
+                        (reparse-symbol indented_block_body) [6441 6526]))                  
+                :type "class")
+                nil [5919 6526])
+            ("Settings" type
+               (:documentation "
+        Model to store settings key value pair.
+    "
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("key" variable nil (reparse-symbol indented_block_body) [6623 6660])
+                    ("value" variable nil (reparse-symbol indented_block_body) [6665 6705]))                  
+                :type "class")
+                nil [6528 6706])
+            ("WebhookSubscription" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("user_integration" variable nil (reparse-symbol indented_block_body) [6820 6931])
+                    ("channel_id" variable nil (reparse-symbol indented_block_body) [6936 6988])
+                    ("resource_id" variable nil (reparse-symbol indented_block_body) [6993 7062])
+                    ("resource_uri" variable nil (reparse-symbol indented_block_body) [7067 7136])
+                    ("sync_token" variable nil (reparse-symbol indented_block_body) [7141 7209])
+                    ("expiry_time" variable nil (reparse-symbol indented_block_body) [7214 7259]))                  
+                :type "class")
+                nil [6708 7260]))          
+      :file "models.py"
+      :pointmax 7260
+      :fsize 7259
+      :lastmodtime '(23239 23248 879931 648000)
+      :unmatched-syntax '(($EOI 7158 . 7158))))
+  :file "!home!hasher!apps!meetnotes-integro!integro!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

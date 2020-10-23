@@ -1,0 +1,16 @@
+;; Object Subtitles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Subtitles/"
+  :tables
+  (list
+    (semanticdb-table "seinfeld.1x01.the_stakeout.dvdrip_xvid-fov.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "seinfeld.1x01.the_stakeout.dvdrip_xvid-fov.srt"
+      :pointmax 20203
+      :fsize 21474
+      :lastmodtime '(21868 59191 681857 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!Videos!Seinfeld!subs!Subtitles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

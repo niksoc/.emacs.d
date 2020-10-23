@@ -1,0 +1,133 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("logging" include nil nil [17 31])
+            ("uuid" include nil nil [32 43])
+            ("pytz" include nil nil [45 56])
+            ("integro.api" include nil nil [58 102])
+            ("integro.calendars.api" include nil nil [103 154])
+            ("integro.calendars.api" include nil nil [155 206])
+            ("integro.calendars.constants" include nil nil [207 308])
+            ("integro.calendars.constants" include nil nil [309 396])
+            ("integro.calendars.constants" include nil nil [397 464])
+            ("integro.calendars.constants" include nil nil [465 550])
+            ("integro.calendars.constants" include nil nil [551 640])
+            ("integro.calendars.constants" include nil nil [641 734])
+            ("integro.calendars.constants" include nil nil [735 809])
+            ("integro.calendars.constants" include nil nil [810 875])
+            ("integro.calendars.office_365_calendar" include nil nil [876 935])
+            ("integro.calendars.office_365_calendar.processor" include nil nil [936 1023])
+            ("integro.calendars.office_365_calendar.processor" include nil nil [1024 1107])
+            ("integro.calendars.service" include nil nil [1108 1161])
+            ("integro.calendars.service" include nil nil [1162 1220])
+            ("integro.calendars.service" include nil nil [1221 1289])
+            ("logger" variable nil nil [1291 1327])
+            ("OFFICE_365_BASE_URL" variable nil nil [1369 1427])
+            ("OFFICE_365_BASE_PERSONAL_URL" variable nil nil [1428 1494])
+            ("CALENDAR_LIST_URL" variable nil nil [1495 1564])
+            ("CALENDAR_URL" code nil nil [1565 1616])
+            ("CALENDAR_VIEW_URL" code nil nil [1657 1713])
+            ("EVENTS_URL" code nil nil [1764 1801])
+            ("EVENT_URL" code nil nil [1802 1840])
+            ("WEBHOOKS_URL" variable nil nil [1842 1905])
+            ("WEBHOOK_URL" code nil nil [1906 1950])
+            ("REFRESH_TOKEN_URL" variable nil nil [2012 2087])
+            ("OFFICE_365_CHANNEL_MAX_TTL_SECONDS" variable nil nil [2163 2253])
+            ("Office365EventsAPI" type
+               (:documentation "
+    contains methods that operate on office 365's event API
+    "
+                :superclasses ("CalendarEventsAPI")
+                :members 
+                  ( ("SYNC_TOKEN_PARAMETER" variable nil (reparse-symbol indented_block_body) [2381 2422])
+                    ("PAGE_TOKEN_PARAMETER" variable nil (reparse-symbol indented_block_body) [2427 2467])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2481 2485])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [2487 2495])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2497 2508]))                          )
+                        (reparse-symbol indented_block_body) [2473 2684])
+                    ("list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2698 2702])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2704 2715])
+                            ("from_date" variable nil (reparse-symbol function_parameters) [2722 2731])
+                            ("to_date" variable nil (reparse-symbol function_parameters) [2738 2745])
+                            ("sync_token" variable nil (reparse-symbol function_parameters) [2752 2762])
+                            ("max_page_count" variable nil (reparse-symbol function_parameters) [2782 2796])
+                            ("show_single_events" variable nil (reparse-symbol function_parameters) [2803 2821])
+                            ("show_deleted_events" variable nil (reparse-symbol function_parameters) [2828 2847])
+                            ("request_sync_token" variable nil (reparse-symbol function_parameters) [2854 2872]))                          
+                        :documentation "
+        gets calendar events from Office API.
+            :param calendar_id: calendar_id as given by Google
+            :param from_date: datetime, Lower bound (inclusive) for an event's end time to filter by. Optional.
+            :param to_date: datetime, Upper bound (exclusive) for an event's start time to filter by. Optional.
+            :param sync_token: sync token
+            :param max_page_count: if page count of response exceeds max_page_count, the resulting events
+                will be returned without completing the fetch. In case of using sync_token the existing sync_token
+                will be returned.
+            :param show_single_events: whether to expand recurring events into instances, if sync_token it cannot be False
+            :param show_deleted_events: whether to retrieve deleted events, if sync_token it cannot be False
+            :param request_sync_token: whether to request sync token. If `sync_token` is given this will be True
+            :return: received_items, next_sync_token, meta
+        ")
+                        (reparse-symbol indented_block_body) [2689 6688]))                  
+                :type "class")
+                nil [2256 6688])
+            ("Office365WebhookChannelAPI" type
+               (:superclasses ("WebhookChannelAPI")
+                :members 
+                  ( ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6758 6762])
+                            ("notification_url" variable nil (reparse-symbol function_parameters) [6764 6780])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [6782 6793])
+                            ("token" variable nil (reparse-symbol function_parameters) [6800 6805])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [6812 6815]))                          )
+                        (reparse-symbol indented_block_body) [6747 7464])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7478 7482])
+                            ("id" variable nil (reparse-symbol function_parameters) [7484 7486])
+                            ("webhook_data" variable nil (reparse-symbol function_parameters) [7493 7505]))                          )
+                        (reparse-symbol indented_block_body) [7469 7609])
+                    ("renew" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7624 7628])
+                            ("id" variable nil (reparse-symbol function_parameters) [7630 7632])
+                            ("webhook_data" variable nil (reparse-symbol function_parameters) [7639 7651])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [7658 7661]))                          )
+                        (reparse-symbol indented_block_body) [7614 8366]))                  
+                :type "class")
+                nil [6690 8366])
+            ("CalendarService" code nil nil [8368 8501])
+            ("CalendarService" code nil nil [8502 8649])
+            ("CalendarService" code nil nil [8650 8744]))          
+      :file "api.py"
+      :pointmax 8745
+      :fsize 8728
+      :lastmodtime '(23308 61909 576187 717000)
+      :unmatched-syntax '((NAME 5445 . 5448) (IF 5462 . 5464) (ELSE 5476 . 5480) (NAME 4768 . 4775) (IF 4812 . 4814) (ELSE 4834 . 4838) (NAME 1802 . 1811) ($EOI 8745 . 8745)))
+    (semanticdb-table "semanticdb-table"
+      :file "constants.py"
+      :fsize 75
+      :lastmodtime '(23302 20356 985024 881000))
+    (semanticdb-table "semanticdb-table"
+      :file "processor.py"
+      :fsize 6868
+      :lastmodtime '(23308 58336 724056 70000)))
+  :file "!home!hasher!apps!mom!integro!calendars!office_365_calendar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

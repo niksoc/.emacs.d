@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "home.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "home.js"
+      :pointmax 95
+      :fsize 95
+      :lastmodtime '(22157 11660 598343 101000)
+      :unmatched-syntax '((VARIABLE 26 . 32) (VARIABLE 50 . 56) (VARIABLE 65 . 70) (PAREN_BLOCK 70 . 93) (PAREN_BLOCK 22 . 24) (VARIABLE 26 . 32) (VARIABLE 50 . 56) (VARIABLE 65 . 70) (PAREN_BLOCK 70 . 94) (PAREN_BLOCK 22 . 24) (VARIABLE 26 . 32) (VARIABLE 50 . 56) (VARIABLE 65 . 70) (PAREN_BLOCK 70 . 93) (PAREN_BLOCK 22 . 24))))
+  :file "!home!nikhil!niksite!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

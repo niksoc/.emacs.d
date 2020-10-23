@@ -1,0 +1,3 @@
+C-M-h mark defun
+C-x h mark buffer
+C-M-SPC mark sexp

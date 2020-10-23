@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("os" include nil nil [17 26])
+            ("os" include nil nil [27 46])
+            ("today_date" variable nil nil [48 107])
+            ("current_datetime" variable nil nil [108 155])
+            ("PROJECT_PATH" variable nil nil [157 183])
+            ("SCREENSHOT_DIRECTORY_PATH" variable nil nil [185 250])
+            ("LOG_PATH" variable nil nil [273 321])
+            ("AUTOMATION_LOG_PATH" variable nil nil [322 381])
+            ("\"\"" code nil nil [454 456])
+            ("CHROME_DRIVER_PATH" variable nil nil [457 553])
+            ("FF_DRIVER_PATH" variable nil nil [554 645])
+            ("FILE_ATTACHMENT_PATH" variable nil nil [646 712])
+            ("INPUT_DATA_PATH" variable nil nil [736 791])
+            ("MEETING_DATA_FILE_PATH" variable nil nil [792 863])
+            ("INSERT_BLOT_DATA_FILE_PATH" variable nil nil [864 943])
+            ("TEMPLATE_NAMES_FILE_PATH" variable nil nil [944 1019])
+            ("BASE_URL" variable nil nil [1033 1070])
+            ("PAGE_TIMEOUT" variable nil nil [1071 1088])
+            ("IMPLICITLY_WAIT" variable nil nil [1089 1109])
+            ("VALID_EMAIL_LOGIN" variable nil nil [1124 1301])
+            ("INVALID_EMAIL_LOGIN" variable nil nil [1302 1364])
+            ("JOIN_TEAM_NAME" variable nil nil [1383 1413])
+            ("CREATE_NEW_TEAM" variable nil nil [1414 1434])
+            ("MEETING_SEARCH" variable nil nil [1453 1480])
+            ("MEETING_NAME" variable nil nil [1481 1514])
+            ("RECURRING_MEETING_NAME" variable nil nil [1515 1568])
+            ("COUNT_TEST_MEETING_NAME" variable nil nil [1569 1611])
+            ("CALENDAR_MEETING_NAME" variable nil nil [1612 1654])
+            ("NEW_MEETING_TITLE" code nil nil [1655 1711])
+            ("INSERT_BLOT_MEETING_TITLE" code nil nil [1712 1777])
+            ("EXISTING_MEETING_TITLE" variable nil nil [1778 1830])
+            ("TEMPLATE_SELECT" variable nil nil [1831 1866])
+            ("TAKE_NOTES_TITLE" variable nil nil [1867 1901])
+            ("VIEW_NOTES_TITLE" variable nil nil [1902 1936])
+            ("COLLABORATION_TITLE" variable nil nil [1937 1979])
+            ("INVITE_ATTENDEE_DATA" variable nil nil [1995 2032])
+            ("CUSTOM_TEMPLATE_NAME" variable nil nil [2033 2074])
+            ("SHARE_MEETING_NAME" variable nil nil [2075 2144])
+            ("SLACK_CHANNEL_NAME" variable nil nil [2145 2187])
+            ("PRIVATE_SLACK_CHANNEL_NAME" variable nil nil [2188 2229])
+            ("TRELLO_BOARD_NAME" variable nil nil [2230 2281]))          
+      :file "constants.py"
+      :pointmax 2311
+      :fsize 2310
+      :lastmodtime '(23595 25748 953114 413000)
+      :unmatched-syntax '((NAME 400 . 420) (IF 430 . 432) (ELSE 449 . 453))))
+  :file "!home!hasher!apps!mom-tests!ui_test!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

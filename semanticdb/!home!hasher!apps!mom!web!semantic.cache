@@ -1,0 +1,769 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [28 43])
+            ("json" include nil nil [44 55])
+            ("logging" include nil nil [56 70])
+            ("datetime" include nil nil [71 101])
+            ("pytz" include nil nil [103 114])
+            ("celery.exceptions" include nil nil [115 150])
+            ("django.conf" include nil nil [151 183])
+            ("django.contrib.auth" include nil nil [184 228])
+            ("django.contrib.auth" include nil nil [229 275])
+            ("django.contrib.auth" include nil nil [276 327])
+            ("django.contrib.auth" include nil nil [328 366])
+            ("django.contrib.auth.backends" include nil nil [367 420])
+            ("django.contrib.auth.decorators" include nil nil [421 478])
+            ("django.contrib.auth.decorators" include nil nil [479 538])
+            ("django.contrib.auth.hashers" include nil nil [539 593])
+            ("django.contrib.auth.mixins" include nil nil [594 651])
+            ("django.contrib.auth.models" include nil nil [652 695])
+            ("django.contrib.auth.views" include nil nil [696 755])
+            ("django.contrib.auth.views" include nil nil [756 799])
+            ("django.contrib.auth.views" include nil nil [800 855])
+            ("django.contrib.auth.views" include nil nil [856 909])
+            ("django.contrib.auth.views" include nil nil [910 968])
+            ("django.contrib.auth.views" include nil nil [969 1021])
+            ("django.contrib.auth.views" include nil nil [1022 1082])
+            ("django.contrib.auth.views" include nil nil [1083 1140])
+            ("django.core.exceptions" include nil nil [1141 1199])
+            ("django.core.exceptions" include nil nil [1200 1253])
+            ("django.core.exceptions" include nil nil [1254 1304])
+            ("django.core.urlresolvers" include nil nil [1305 1349])
+            ("django.db" include nil nil [1350 1386])
+            ("django.db.models" include nil nil [1387 1417])
+            ("django.http.response" include nil nil [1418 1458])
+            ("django.http.response" include nil nil [1459 1504])
+            ("django.http.response" include nil nil [1505 1558])
+            ("django.http.response" include nil nil [1559 1604])
+            ("django.shortcuts" include nil nil [1605 1642])
+            ("django.shortcuts" include nil nil [1643 1678])
+            ("django.template.response" include nil nil [1679 1732])
+            ("django.utils" include nil nil [1733 1766])
+            ("django.utils.decorators" include nil nil [1767 1819])
+            ("django.utils.encoding" include nil nil [1820 1864])
+            ("django.utils.encoding" include nil nil [1865 1908])
+            ("django.utils.functional" include nil nil [1909 1960])
+            ("django.utils.http" include nil nil [1961 2012])
+            ("django.utils.safestring" include nil nil [2013 2058])
+            ("django.views.decorators.cache" include nil nil [2059 2112])
+            ("django.views.decorators.csrf" include nil nil [2113 2165])
+            ("django.views.decorators.debug" include nil nil [2166 2233])
+            ("django.views.generic" include nil nil [2234 2271])
+            ("jinja2" include nil nil [2272 2299])
+            ("rest_framework" include nil nil [2300 2338])
+            ("rest_framework.authtoken.models" include nil nil [2339 2388])
+            ("rest_framework.views" include nil nil [2389 2429])
+            ("rest_framework_jwt.settings" include nil nil [2430 2482])
+            ("social_core.actions" include nil nil [2483 2526])
+            ("social_core.exceptions" include nil nil [2527 2583])
+            ("social_core.exceptions" include nil nil [2584 2631])
+            ("social_core.exceptions" include nil nil [2632 2677])
+            ("social_core.exceptions" include nil nil [2678 2729])
+            ("social_django" include nil nil [2730 2761])
+            ("social_django.models" include nil nil [2762 2809])
+            ("social_django.utils" include nil nil [2810 2845])
+            ("core" include nil nil [2847 2870])
+            ("core.api" include nil nil [2871 2908])
+            ("core.api" include nil nil [2909 2939])
+            ("core.apis.api" include nil nil [2940 2991])
+            ("core.apis.api" include nil nil [2992 3048])
+            ("core.apis.api" include nil nil [3049 3096])
+            ("core.apis.api" include nil nil [3097 3147])
+            ("core.apis.decorators" include nil nil [3148 3189])
+            ("core.apis.decorators" include nil nil [3190 3240])
+            ("core.apis.utils" include nil nil [3241 3287])
+            ("core.apis.utils" include nil nil [3288 3344])
+            ("core.feature_gate_fns" include nil nil [3345 3411])
+            ("core.middleware.custom_middleware" include nil nil [3412 3474])
+            ("core.middleware.custom_middleware" include nil nil [3475 3535])
+            ("core.models" include nil nil [3536 3568])
+            ("core.models" include nil nil [3569 3601])
+            ("core.models" include nil nil [3602 3644])
+            ("core.models" include nil nil [3645 3690])
+            ("core.models" include nil nil [3691 3722])
+            ("core.models" include nil nil [3723 3755])
+            ("core.models" include nil nil [3756 3785])
+            ("core.models" include nil nil [3786 3818])
+            ("core.models" include nil nil [3819 3858])
+            ("core.models" include nil nil [3859 3887])
+            ("core.models" include nil nil [3888 3927])
+            ("core.models" include nil nil [3928 3961])
+            ("core.models" include nil nil [3962 3997])
+            ("core.models" include nil nil [3998 4042])
+            ("core.release" include nil nil [4043 4086])
+            ("core.tasks" include nil nil [4087 4140])
+            ("core.tasks" include nil nil [4141 4204])
+            ("core.tasks" include nil nil [4205 4243])
+            ("core.tasks" include nil nil [4244 4290])
+            ("core.utils" include nil nil [4291 4339])
+            ("core.utils" include nil nil [4340 4383])
+            ("core.utils" include nil nil [4384 4416])
+            ("core.version_settings" include nil nil [4417 4468])
+            ("help.form" include nil nil [4469 4499])
+            ("help.models" include nil nil [4500 4536])
+            ("meeting.api" include nil nil [4537 4576])
+            ("mom.celery" include nil nil [4577 4603])
+            ("notifier.models" include nil nil [4604 4648])
+            ("notifier.models" include nil nil [4649 4699])
+            ("notifier.models" include nil nil [4700 4751])
+            ("notifier.slack" include nil nil [4752 4809])
+            ("people.views" include nil nil [4810 4849])
+            ("web.forms" include nil nil [4850 4880])
+            ("web.forms" include nil nil [4881 4929])
+            ("web.forms" include nil nil [4930 4976])
+            ("web.forms" include nil nil [4977 5015])
+            ("web.forms" include nil nil [5016 5058])
+            ("web.forms" include nil nil [5059 5097])
+            ("web.forms" include nil nil [5098 5152])
+            ("web.invitation_manager" include nil nil [5153 5208])
+            ("web.invitation_manager" include nil nil [5209 5266])
+            ("web.invitation_manager" include nil nil [5267 5326])
+            ("web.invitation_manager" include nil nil [5327 5376])
+            ("web.invitation_manager" include nil nil [5377 5430])
+            ("web.login_manager" include nil nil [5431 5474])
+            ("web.mixins" include nil nil [5475 5516])
+            ("web.tokens" include nil nil [5517 5561])
+            ("ModelBackend" variable nil nil [5563 5621])
+            ("logger" variable nil nil [5623 5659])
+            ("LOGIN_SERVICES" variable nil nil [5661 5701])
+            ("SCRUM_TEMPLATE_NAME" variable nil nil [5703 5732])
+            ("APPLE_APP_SITE_ASSOCIATION_FILENAME" variable nil nil [5812 5878])
+            ("_get_user_data" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [5900 5904])
+                ("team" variable nil (reparse-symbol function_parameters) [5906 5910]))              ) nil [5881 8541])
+            ("login_alias_with_primary_account" function
+               (:documentation "
+        Checks for User Alias for logged in Email Id
+        If UserAlias exists, logs out the alias and logs in with the primary account
+        :param request: Request Object
+    "
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [8580 8587]))                  )
+                nil [8543 9402])
+            ("" code nil nil [9434 9474])
+            ("complete" function
+               (:documentation "Authentication complete view"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [9488 9495])
+                    ("backend" variable nil (reparse-symbol function_parameters) [9497 9504])
+                    ("args" variable nil (reparse-symbol function_parameters) [9506 9511])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [9513 9521]))                  )
+                nil [9475 10729])
+            ("_post_process_login" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [10755 10762]))              ) nil [10731 11252])
+            ("MobileTokenAPIView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11301 11305])
+                            ("request" variable nil (reparse-symbol function_parameters) [11307 11314]))                          )
+                        (reparse-symbol indented_block_body) [11293 11828]))                  
+                :type "class")
+                nil [11254 11828])
+            ("MobileLogoutView" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11892 11896])
+                            ("request" variable nil (reparse-symbol function_parameters) [11898 11905]))                          )
+                        (reparse-symbol indented_block_body) [11884 12200]))                  
+                :type "class")
+                nil [11830 12200])
+            ("Version" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("permission_classes" variable nil (reparse-symbol indented_block_body) [12230 12274])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12288 12292])
+                            ("request" variable nil (reparse-symbol function_parameters) [12294 12301]))                          )
+                        (reparse-symbol indented_block_body) [12280 12444]))                  
+                :type "class")
+                nil [12202 12444])
+            ("\"\"\"
+function overriding logout_user, required to logout the user completely by deleting cookies in client.
+Remove JWT and other cookies manually.
+\"\"\"" code nil nil [12446 12595])
+            ("logout_user" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [12614 12621]))              ) nil [12598 12798])
+            ("jwt_decode_handler" function (:arguments 
+              ( ("token" variable nil (reparse-symbol function_parameters) [12868 12873]))              ) nil [12845 13002])
+            ("error_handler_400" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [13026 13033])
+                ("args" variable nil (reparse-symbol function_parameters) [13035 13040])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [13042 13050]))              ) nil [13004 13203])
+            ("error_handler_403" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [13227 13234])
+                ("args" variable nil (reparse-symbol function_parameters) [13236 13241])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [13243 13251]))              ) nil [13205 13404])
+            ("error_handler_404" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [13428 13435])
+                ("args" variable nil (reparse-symbol function_parameters) [13437 13442])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [13444 13452]))              ) nil [13406 13605])
+            ("error_handler_500" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [13629 13636])
+                ("args" variable nil (reparse-symbol function_parameters) [13638 13643])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [13645 13653]))              ) nil [13607 13806])
+            ("_get_unfurl_context" function (:arguments 
+              ( ("next_url" variable nil (reparse-symbol function_parameters) [13832 13840]))              ) nil [13808 14926])
+            ("Login" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14959 14963])
+                            ("args" variable nil (reparse-symbol function_parameters) [14965 14970])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14972 14980]))                          )
+                        (reparse-symbol indented_block_body) [14951 15027])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15041 15045])
+                            ("args" variable nil (reparse-symbol function_parameters) [15047 15052])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15054 15062]))                          )
+                        (reparse-symbol indented_block_body) [15032 16252])
+                    ("_login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16268 16272])
+                            ("args" variable nil (reparse-symbol function_parameters) [16274 16279])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16281 16289]))                          )
+                        (reparse-symbol indented_block_body) [16257 17743]))                  
+                :type "class")
+                nil [14928 17743])
+            ("" code nil nil [17762 17792])
+            ("SignUp" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17825 17829])
+                            ("request" variable nil (reparse-symbol function_parameters) [17831 17838]))                          )
+                        (reparse-symbol indented_block_body) [17817 18833])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18847 18851])
+                            ("request" variable nil (reparse-symbol function_parameters) [18853 18860]))                          )
+                        (reparse-symbol indented_block_body) [18838 19855]))                  
+                :type "class")
+                nil [17793 19855])
+            ("team_view" function
+               (:documentation "
+        Team Metrics View to display team metrics
+        Team Members and man hours spent on meetings in a time period
+    "
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [19887 19894]))                  
+                :decorators 
+                  ( ("login_required" function (:type "decorator") nil nil))                  )
+                nil [19857 21862])
+            ("_add_extra_context" function nil nil [21864 21986])
+            ("verification_page" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [22010 22017])
+                ("uuid" variable nil (reparse-symbol function_parameters) [22019 22023]))              ) nil [21988 22572])
+            ("resend_verification_email" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [22604 22611])
+                ("uuid" variable nil (reparse-symbol function_parameters) [22613 22617]))              ) nil [22574 23209])
+            ("reset_password" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [23230 23237]))              ) nil [23211 23576])
+            ("" code nil nil [23604 23606])
+            ("email_confirm" function
+               (:decorators 
+                  ( ("never_cache" function (:type "decorator") nil nil)
+                    ("deprecate_current_app" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [23661 23668])
+                    ("uidb64" variable nil (reparse-symbol function_parameters) [23670 23676])
+                    ("token" variable nil (reparse-symbol function_parameters) [23683 23688])
+                    ("token_generator" variable nil (reparse-symbol function_parameters) [23695 23710]))                  )
+                nil [23607 25568])
+            ("_set_up_user_for_unconfirmed_user" function (:arguments 
+              ( ("unconfirmed_user" variable nil (reparse-symbol function_parameters) [25608 25624]))              ) nil [25570 26027])
+            ("" code nil nil [26046 26089])
+            ("generate_beta_signup_links" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [26121 26128]))              ) nil [26090 27328])
+            ("send_beta_registration_mail" function
+               (:documentation "
+    Sends mail to team whenever a user registers for beta
+    "
+                :arguments 
+                  ( ("user_email" variable nil (reparse-symbol function_parameters) [27362 27372]))                  )
+                nil [27330 27739])
+            ("create_beta_user" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [27762 27766])
+                ("email" variable nil (reparse-symbol function_parameters) [27773 27778]))              ) nil [27741 29229])
+            ("register_user_offer" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [29255 29262])
+                ("uidb64" variable nil (reparse-symbol function_parameters) [29264 29270]))              ) nil [29231 30858])
+            ("ClaimOffer" type
+               (:superclasses ("View")
+                :members 
+                  ( ("_render_form" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("request" variable nil (reparse-symbol function_parameters) [30923 30930])
+                            ("form" variable nil (reparse-symbol function_parameters) [30932 30936])
+                            ("offer" variable nil (reparse-symbol function_parameters) [30943 30948])
+                            ("valid" variable nil (reparse-symbol function_parameters) [30955 30960])
+                            ("complete" variable nil (reparse-symbol function_parameters) [30967 30975]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [30888 31466])
+                    ("_render_error_page" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("request" variable nil (reparse-symbol function_parameters) [31512 31519]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31471 31583])
+                    ("_get_offer_from_db" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("offer_id" variable nil (reparse-symbol function_parameters) [31629 31637]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31588 31791])
+                    ("_process_offer" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("offer" variable nil (reparse-symbol function_parameters) [31833 31838])
+                            ("offer_type" variable nil (reparse-symbol function_parameters) [31840 31850])
+                            ("email" variable nil (reparse-symbol function_parameters) [31852 31857])
+                            ("name" variable nil (reparse-symbol function_parameters) [31859 31863]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31796 32845])
+                    ("_success_response" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("request" variable nil (reparse-symbol function_parameters) [32890 32897])
+                            ("offer" variable nil (reparse-symbol function_parameters) [32899 32904]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [32850 33004])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33018 33022])
+                            ("request" variable nil (reparse-symbol function_parameters) [33024 33031])
+                            ("offer_id" variable nil (reparse-symbol function_parameters) [33033 33041]))                          )
+                        (reparse-symbol indented_block_body) [33009 33638])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33651 33655])
+                            ("request" variable nil (reparse-symbol function_parameters) [33657 33664])
+                            ("offer_id" variable nil (reparse-symbol function_parameters) [33666 33674]))                          )
+                        (reparse-symbol indented_block_body) [33643 34560]))                  
+                :type "class")
+                nil [30860 34560])
+            ("" code nil nil [34588 34590])
+            ("password_reset_confirm" function
+               (:documentation "
+    View that checks the hash in a password reset link and presents a
+    form for entering a new password.Here, we are overriding password_reset_confirm function from /django/contrib/auth/views.py
+    "
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [34654 34661])
+                    ("uidb64" variable nil (reparse-symbol function_parameters) [34663 34669])
+                    ("token" variable nil (reparse-symbol function_parameters) [34676 34681])
+                    ("template_name" variable nil (reparse-symbol function_parameters) [34715 34728])
+                    ("token_generator" variable nil (reparse-symbol function_parameters) [34800 34815])
+                    ("set_password_form" variable nil (reparse-symbol function_parameters) [34866 34883])
+                    ("post_reset_redirect" variable nil (reparse-symbol function_parameters) [34937 34956])
+                    ("extra_context" variable nil (reparse-symbol function_parameters) [34990 35003]))                  
+                :decorators 
+                  ( ("never_cache" function (:type "decorator") nil nil)
+                    ("deprecate_current_app" function (:type "decorator") nil nil))                  )
+                nil [34591 36467])
+            ("" code nil nil [36495 36497])
+            ("password_reset_for_unconfirmed_user" function
+               (:documentation "
+    View that checks the hash in a password reset link and presents a
+    form for entering a new password.
+    Here, we are overriding password_reset_confirm function from /django/contrib/auth/views.py
+    Creates user and user profile for unconfirmed user and sets a new password
+    "
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [36574 36581])
+                    ("uidb64" variable nil (reparse-symbol function_parameters) [36583 36589])
+                    ("token" variable nil (reparse-symbol function_parameters) [36596 36601])
+                    ("template_name" variable nil (reparse-symbol function_parameters) [36648 36661])
+                    ("token_generator" variable nil (reparse-symbol function_parameters) [36746 36761])
+                    ("set_password_form" variable nil (reparse-symbol function_parameters) [36825 36842])
+                    ("post_reset_redirect" variable nil (reparse-symbol function_parameters) [36909 36928])
+                    ("extra_context" variable nil (reparse-symbol function_parameters) [36975 36988]))                  
+                :decorators 
+                  ( ("never_cache" function (:type "decorator") nil nil)
+                    ("deprecate_current_app" function (:type "decorator") nil nil))                  )
+                nil [36498 39238])
+            ("reset_password_confirm" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [39267 39272])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [39274 39282]))              ) nil [39240 39576])
+            ("password_reset_unconfirmed_user" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [39614 39619])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [39621 39629]))              ) nil [39578 39949])
+            ("reset_password_complete" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [39979 39986]))              ) nil [39951 40053])
+            ("reset_password_done" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [40079 40086]))              ) nil [40055 40201])
+            ("change_password_complete" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [40232 40239]))              ) nil [40203 40355])
+            ("change_password" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [40377 40384]))              ) nil [40357 40495])
+            ("sitemap" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [40509 40516]))              ) nil [40497 40976])
+            ("HelpView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [41004 41039])
+                    ("description_label" variable nil (reparse-symbol indented_block_body) [41044 41066])
+                    ("description_placeholder" variable nil (reparse-symbol indented_block_body) [41071 41099])
+                    ("_get_email_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41128 41132])
+                            ("email" variable nil (reparse-symbol function_parameters) [41134 41139])
+                            ("help_type" variable nil (reparse-symbol function_parameters) [41141 41150])
+                            ("subject" variable nil (reparse-symbol function_parameters) [41152 41159])
+                            ("description" variable nil (reparse-symbol function_parameters) [41161 41172]))                          )
+                        (reparse-symbol indented_block_body) [41105 41407])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41420 41424])
+                            ("request" variable nil (reparse-symbol function_parameters) [41426 41433])
+                            ("args" variable nil (reparse-symbol function_parameters) [41435 41440])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [41442 41450]))                          )
+                        (reparse-symbol indented_block_body) [41412 42849])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42903 42907])
+                            ("request" variable nil (reparse-symbol function_parameters) [42909 42916]))                          
+                        :decorators 
+                          ( ("csrf_exempt" function (:type "decorator") nil nil)
+                            ("mail_error_logger" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [42854 44788]))                  
+                :type "class")
+                nil [40978 44788])
+            ("DeactivateView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [44822 44861])
+                    ("help_type" variable nil (reparse-symbol indented_block_body) [44866 44894])
+                    ("" code nil (reparse-symbol indented_block_body) [44917 44933])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44951 44955])
+                            ("args" variable nil (reparse-symbol function_parameters) [44957 44962])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [44964 44972]))                          )
+                        (reparse-symbol indented_block_body) [44938 45044])
+                    ("_get_email_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45072 45076])
+                            ("email" variable nil (reparse-symbol function_parameters) [45078 45083])
+                            ("auto_account_deletion_enabled" variable nil (reparse-symbol function_parameters) [45085 45114]))                          )
+                        (reparse-symbol indented_block_body) [45049 45347])
+                    ("send_account_deleted_mail_for_user" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("user" variable nil (reparse-symbol function_parameters) [45409 45413]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [45352 45862])
+                    ("" code nil (reparse-symbol indented_block_body) [45894 45905])
+                    ("delete_user" function (:arguments 
+                      ( ("task" variable nil (reparse-symbol function_parameters) [45926 45930])
+                        ("user_id" variable nil (reparse-symbol function_parameters) [45932 45939]))                      ) (reparse-symbol indented_block_body) [45910 46548])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46561 46565])
+                            ("request" variable nil (reparse-symbol function_parameters) [46567 46574])
+                            ("args" variable nil (reparse-symbol function_parameters) [46576 46581])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [46583 46591]))                          )
+                        (reparse-symbol indented_block_body) [46553 47113])
+                    ("" code nil (reparse-symbol indented_block_body) [47127 47129])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47166 47170])
+                            ("request" variable nil (reparse-symbol function_parameters) [47172 47179]))                          
+                        :decorators 
+                          ( ("mail_error_logger" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [47134 48548]))                  
+                :type "class")
+                nil [44790 48548])
+            ("SupportView" type
+               (:superclasses ("HelpView")
+                :members 
+                  ( ("help_type" variable nil (reparse-symbol indented_block_body) [48583 48604])
+                    ("description_label" variable nil (reparse-symbol indented_block_body) [48609 48657])
+                    ("description_placeholder" variable nil (reparse-symbol indented_block_body) [48662 48777]))                  
+                :type "class")
+                nil [48550 48778])
+            ("FeedbackView" type
+               (:superclasses ("HelpView")
+                :members 
+                  ( ("help_type" variable nil (reparse-symbol indented_block_body) [48814 48836])
+                    ("description_label" variable nil (reparse-symbol indented_block_body) [48841 48890])
+                    ("description_placeholder" variable nil (reparse-symbol indented_block_body) [48895 49038]))                  
+                :type "class")
+                nil [48780 49039])
+            ("MailView" type
+               (:documentation "
+        MAIL View to send custom mails to a given user
+    "
+                :superclasses ("StaffRequiredMixin" "View")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [49158 49188])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49202 49206])
+                            ("request" variable nil (reparse-symbol function_parameters) [49208 49215]))                          )
+                        (reparse-symbol indented_block_body) [49194 49331])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49345 49349])
+                            ("request" variable nil (reparse-symbol function_parameters) [49351 49358]))                          )
+                        (reparse-symbol indented_block_body) [49336 50373]))                  
+                :type "class")
+                nil [49041 50373])
+            ("UserDailySummaryView" type
+               (:documentation "
+        UserDailySummaryView
+    "
+                :superclasses ("StaffRequiredMixin" "View")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [50478 50517])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50531 50535])
+                            ("request" variable nil (reparse-symbol function_parameters) [50537 50544]))                          )
+                        (reparse-symbol indented_block_body) [50523 52600]))                  
+                :type "class")
+                nil [50375 52600])
+            ("" code nil nil [52619 52649])
+            ("SlackEventView" type
+               (:documentation "
+        Slack Event View - Receives events from Slack
+    "
+                :superclasses ("APIView")
+                :members 
+                  ( ("permission_classes" variable nil (reparse-symbol indented_block_body) [52755 52799])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52814 52818])
+                            ("request" variable nil (reparse-symbol function_parameters) [52820 52827]))                          )
+                        (reparse-symbol indented_block_body) [52805 53135]))                  
+                :type "class")
+                nil [52650 53135])
+            ("UserSettingsView" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [53191 53225])
+                    ("_user_notification_settings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53284 53288]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [53231 53422])
+                    ("_get_notification_setting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53457 53461])
+                            ("notification_type" variable nil (reparse-symbol function_parameters) [53463 53480]))                          )
+                        (reparse-symbol indented_block_body) [53427 53906])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53919 53923])
+                            ("request" variable nil (reparse-symbol function_parameters) [53925 53932]))                          )
+                        (reparse-symbol indented_block_body) [53911 56886])
+                    ("_update_daily_summary_reminder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56926 56930])
+                            ("reminder_status" variable nil (reparse-symbol function_parameters) [56932 56947]))                          
+                        :documentation "
+            Updated the reminder status as inactive or updates reminder time to next day
+            :param reminder_status: Reminder status (Active/Inactive)
+        ")
+                        (reparse-symbol indented_block_body) [56891 58067])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [58081 58085])
+                            ("request" variable nil (reparse-symbol function_parameters) [58087 58094]))                          )
+                        (reparse-symbol indented_block_body) [58072 59156]))                  
+                :type "class")
+                nil [53137 59156])
+            ("SettingsRedirectView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59204 59208])
+                            ("request" variable nil (reparse-symbol function_parameters) [59210 59217])
+                            ("section" variable nil (reparse-symbol function_parameters) [59219 59226])
+                            ("page" variable nil (reparse-symbol function_parameters) [59228 59232]))                          )
+                        (reparse-symbol indented_block_body) [59196 59344]))                  
+                :type "class")
+                nil [59158 59344])
+            ("InvitationView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("INVITE_DOES_NOT_EXIST_MESSAGE" variable nil (reparse-symbol indented_block_body) [59378 59439])
+                    ("VALIDATION_ERROR_MESSAGES" variable nil (reparse-symbol indented_block_body) [59444 60040])
+                    ("_handle_object_does_not_exist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60080 60084])
+                            ("invite_uuid" variable nil (reparse-symbol function_parameters) [60086 60097]))                          )
+                        (reparse-symbol indented_block_body) [60046 60373])
+                    ("_handle_validation_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60407 60411])
+                            ("invite_uuid" variable nil (reparse-symbol function_parameters) [60413 60424])
+                            ("message" variable nil (reparse-symbol function_parameters) [60426 60433]))                          )
+                        (reparse-symbol indented_block_body) [60378 60751])
+                    ("_create_new_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60777 60781])
+                            ("email" variable nil (reparse-symbol function_parameters) [60783 60788])
+                            ("password" variable nil (reparse-symbol function_parameters) [60790 60798]))                          )
+                        (reparse-symbol indented_block_body) [60756 60957])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60970 60974])
+                            ("request" variable nil (reparse-symbol function_parameters) [60976 60983])
+                            ("invite_uuid" variable nil (reparse-symbol function_parameters) [60985 60996]))                          )
+                        (reparse-symbol indented_block_body) [60962 64151])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [64165 64169])
+                            ("request" variable nil (reparse-symbol function_parameters) [64171 64178])
+                            ("invite_uuid" variable nil (reparse-symbol function_parameters) [64180 64191]))                          )
+                        (reparse-symbol indented_block_body) [64156 64854]))                  
+                :type "class")
+                nil [59346 64854])
+            ("AppleAppSiteAssociationView" type
+               (:documentation "
+        To securely associate Meetnotes iOS app with the server,
+        Apple requires that a configuration file is made available,
+        called apple-app-site-association.
+        This is a JSON file which describes the domain and supported routes.
+        :param request: Request object
+        :returns A binary file named APPLE_APP_SITE_ASSOCIATION_FILENAME which will
+                 be downloaded when the URL is hit
+    "
+                :superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65353 65357])
+                            ("request" variable nil (reparse-symbol function_parameters) [65359 65366]))                          )
+                        (reparse-symbol indented_block_body) [65345 65898]))                  
+                :type "class")
+                nil [64856 65898])
+            ("TrialExpired" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65938 65942])
+                            ("request" variable nil (reparse-symbol function_parameters) [65944 65951])
+                            ("args" variable nil (reparse-symbol function_parameters) [65953 65958])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [65960 65968]))                          )
+                        (reparse-symbol indented_block_body) [65930 66443]))                  
+                :type "class")
+                nil [65900 66443])
+            ("ExtendTrialView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [66487 66491])
+                            ("request" variable nil (reparse-symbol function_parameters) [66493 66500])
+                            ("campaign_name" variable nil (reparse-symbol function_parameters) [66502 66515]))                          )
+                        (reparse-symbol indented_block_body) [66479 67524])
+                    ("_get_valid_campaign_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [67558 67562]))                          )
+                        (reparse-symbol indented_block_body) [67529 68330])
+                    ("_get_extended_trial_period" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [68366 68370]))                          )
+                        (reparse-symbol indented_block_body) [68335 68730])
+                    ("_update_trial_period_for_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [68769 68773])
+                            ("new_trial_period" variable nil (reparse-symbol function_parameters) [68775 68791]))                          )
+                        (reparse-symbol indented_block_body) [68735 69282]))                  
+                :type "class")
+                nil [66445 69282]))          
+      :file "views.py"
+      :pointmax 69282
+      :fsize 69281
+      :lastmodtime '(23734 52383 964628 390000)
+      :unmatched-syntax '((INDENT_BLOCK 68179 . 68301) (NEWLINE 68178 . 68179) (COLON 68177 . 68178) (TRY 68088 . 68091) (AS 68173 . 68175) (NAME 66664 . 66676) (IF 66692 . 66694) (ELSE 66725 . 66729) (INDENT_BLOCK 64573 . 64854) (NEWLINE 64572 . 64573) (COLON 64571 . 64572) (ELSE 64567 . 64571) (INDENT_BLOCK 64492 . 64559) (NEWLINE 64491 . 64492) (COLON 64490 . 64491) (TRY 64341 . 64344) (AS 64486 . 64488) (INDENT_BLOCK 63681 . 64151) (NEWLINE 63680 . 63681) (COLON 63679 . 63680) (ELSE 63675 . 63679) (INDENT_BLOCK 63594 . 63667) (NEWLINE 63554 . 63555) (COLON 63553 . 63554) (AS 63549 . 63551) (EXCEPT 63526 . 63532) (INDENT_BLOCK 63451 . 63518) (NEWLINE 63409 . 63410) (COLON 63408 . 63409) (TRY 63283 . 63286) (AS 63404 . 63406) (INDENT_BLOCK 61454 . 63275) (NEWLINE 61453 . 61454) (COLON 61452 . 61453) (ELSE 61448 . 61452) (INDENT_BLOCK 61365 . 61436) (NEWLINE 61364 . 61365) (COLON 61363 . 61364) (TRY 61243 . 61246) (AS 61359 . 61361) (NAME 58242 . 58263) (IF 58271 . 58273) (ELSE 58288 . 58292) (NAME 47190 . 47199) (IF 47220 . 47222) (ELSE 47248 . 47252) (INDENT_BLOCK 46381 . 46548) (NEWLINE 46380 . 46381) (COLON 46379 . 46380) (TRY 45950 . 45953) (AS 46375 . 46377) (INDENT_BLOCK 46131 . 46278) (NEWLINE 46130 . 46131) (COLON 46129 . 46130) (TRY 46048 . 46051) (AS 46125 . 46127) (RETURN 45125 . 45131) (IF 45209 . 45211) (ELSE 45242 . 45246) (INDENT_BLOCK 40819 . 40902) (NEWLINE 40818 . 40819) (COLON 40817 . 40818) (AS 40813 . 40815) (EXCEPT 40796 . 40802) (INDENT_BLOCK 40688 . 40792) (NEWLINE 40687 . 40688) (COLON 40686 . 40687) (TRY 40599 . 40602) (AS 40682 . 40684) (NAME 33984 . 33994) (IF 34004 . 34006) (ELSE 34019 . 34023) (INDENT_BLOCK 29959 . 30100) (NEWLINE 29958 . 29959) (COLON 29957 . 29958) (TRY 29568 . 29571) (AS 29952 . 29954) (INDENT_BLOCK 29060 . 29206) (NEWLINE 29059 . 29060) (COLON 29058 . 29059) (TRY 28483 . 28486) (AS 29054 . 29056) (NAME 26819 . 26823) (IF 26840 . 26842) (ELSE 26863 . 26867) (INDENT_BLOCK 24082 . 24258) (NEWLINE 24081 . 24082) (COLON 24080 . 24081) (TRY 23813 . 23816) (AS 24075 . 24077) (NAME 16435 . 16448) (IF 16485 . 16487) (ELSE 16500 . 16504) (INDENT_BLOCK 14596 . 14830) (NEWLINE 14595 . 14596) (COLON 14594 . 14595) (AS 14590 . 14592) (EXCEPT 14573 . 14579) (INDENT_BLOCK 14331 . 14565) (NEWLINE 14330 . 14331) (COLON 14329 . 14330) (TRY 14063 . 14066) (AS 14325 . 14327) (INDENT_BLOCK 11070 . 11252) (NEWLINE 10986 . 10987) (COLON 10985 . 10986) (TRY 10769 . 10772) (AS 10981 . 10983) (INDENT_BLOCK 10672 . 10709) (NEWLINE 10671 . 10672) (COLON 10670 . 10671) (ELSE 10666 . 10670) (INDENT_BLOCK 10477 . 10662) (NEWLINE 10451 . 10452) (COLON 10450 . 10451) (AS 10446 . 10448) (EXCEPT 10429 . 10435) (INDENT_BLOCK 10121 . 10425) (NEWLINE 10120 . 10121) (COLON 10119 . 10120) (TRY 9587 . 9590) (AS 10115 . 10117) (INDENT_BLOCK 9180 . 9402) (NEWLINE 9179 . 9180) (COLON 9178 . 9179) (TRY 8817 . 8820) (AS 9174 . 9176) (INDENT_BLOCK 6532 . 7259) (NEWLINE 6531 . 6532) (COLON 6530 . 6531) (ELSE 6526 . 6530) (INDENT_BLOCK 6106 . 6522) (NEWLINE 6105 . 6106) (COLON 6104 . 6105) (TRY 6016 . 6019) (AS 6100 . 6102)))
+    (semanticdb-table "semanticdb-table"
+      :file "decorators.py"
+      :fsize 1981
+      :lastmodtime '(23248 45168 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "mixins.py"
+      :fsize 579
+      :lastmodtime '(23248 45168 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "forms.py"
+      :fsize 14166
+      :lastmodtime '(23720 27229 154658 261000))
+    (semanticdb-table "semanticdb-table"
+      :file "invitation_manager.py"
+      :fsize 5942
+      :lastmodtime '(23534 30358 980160 143000))
+    (semanticdb-table "semanticdb-table"
+      :file "login_manager.py"
+      :fsize 16764
+      :lastmodtime '(23720 27229 154658 261000))
+    (semanticdb-table "semanticdb-table"
+      :file "tokens.py"
+      :fsize 5174
+      :lastmodtime '(23248 45168 0 0)))
+  :file "!home!hasher!apps!mom!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

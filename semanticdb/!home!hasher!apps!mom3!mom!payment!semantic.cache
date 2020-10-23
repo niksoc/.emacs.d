@@ -1,0 +1,93 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("django.conf" include nil nil [17 49])
+            ("django.http" include nil nil [50 86])
+            ("django.http" include nil nil [87 131])
+            ("django.urls" include nil nil [132 167])
+            ("django.urls" include nil nil [168 199])
+            ("django.urls" include nil nil [200 231])
+            ("django.utils.deprecation" include nil nil [232 284])
+            ("rest_framework.authentication" include nil nil [285 346])
+            ("rest_framework.exceptions" include nil nil [347 405])
+            ("core.utils" include nil nil [407 457])
+            ("web.views" include nil nil [458 495])
+            ("web.views" include nil nil [496 532])
+            ("logger" variable nil nil [534 570])
+            ("PAYMENT_OVERDUE_USER_SETTINGS_CACHE_EXPIRY_MINUTES" variable nil nil [572 627])
+            ("DRF_TOKEN_AUTHENTICATION" variable nil nil [628 676])
+            ("PaymentOverdueMiddleware" type
+               (:documentation "
+    Middleware to track users whose trial has expired and payment is overdue and restrict their app access
+    "
+                :superclasses ("MiddlewareMixin")
+                :members 
+                  ( ("USER_PAYMENT_EXPIRY_KEY" variable nil (reparse-symbol indented_block_body) [856 890])
+                    ("USER_PAYMENT_IS_OVERDUE_KEY" variable nil (reparse-symbol indented_block_body) [895 937])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [988 1021])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1030 1056]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [956 960])
+                            ("args" variable nil (reparse-symbol function_parameters) [962 967])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [969 977]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [943 1057])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1082 1086])
+                            ("request" variable nil (reparse-symbol function_parameters) [1088 1095]))                          
+                        :documentation "
+        Check if the user has payment overdue then restrict user access to the app and redirect to separate page
+        with an option to pay
+        :param request: Request object
+        :return: HttpResponseRedirect if payment is overdue
+        ")
+                        (reparse-symbol indented_block_body) [1062 2721])
+                    ("_is_authenticated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2748 2752])
+                            ("request" variable nil (reparse-symbol function_parameters) [2754 2761]))                          
+                        :documentation "
+        Check whether user is authenticated via session or token
+        :return: (is_user_authenticated <Bool>, user <UserObject>)
+        ")
+                        (reparse-symbol indented_block_body) [2726 3490])
+                    ("_get_exempt_paths" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3517 3521]))                          )
+                        (reparse-symbol indented_block_body) [3495 5142])
+                    ("_get_exempt_views" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5169 5173]))                          )
+                        (reparse-symbol indented_block_body) [5147 5243]))                  
+                :type "class")
+                nil [679 5243]))          
+      :file "middleware.py"
+      :pointmax 5243
+      :fsize 5242
+      :lastmodtime '(23741 36829 510663 425000)
+      :unmatched-syntax '((INDENT_BLOCK 3279 . 3456) (NEWLINE 3278 . 3279) (COLON 3277 . 3278) (ELSE 3273 . 3277) (INDENT_BLOCK 3190 . 3265) (NEWLINE 3189 . 3190) (COLON 3188 . 3189) (TRY 3062 . 3065) (AS 3184 . 3186)))
+    (semanticdb-table "semanticdb-table"
+      :file "exceptions.py"
+      :fsize 488
+      :lastmodtime '(23579 16015 841838 335000))
+    (semanticdb-table "semanticdb-table"
+      :file "views.py"
+      :fsize 696
+      :lastmodtime '(23584 39320 585576 336000)))
+  :file "!home!hasher!apps!mom3!mom!payment!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

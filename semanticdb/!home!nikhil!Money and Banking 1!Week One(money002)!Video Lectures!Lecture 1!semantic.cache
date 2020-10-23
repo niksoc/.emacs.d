@@ -1,0 +1,16 @@
+;; Object Lecture 1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Lecture 1/"
+  :tables
+  (list
+    (semanticdb-table "1 - 1 - 1-1 The Big Picture (19-20).srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "1 - 1 - 1-1 The Big Picture (19-20).srt"
+      :pointmax 31189
+      :fsize 31188
+      :lastmodtime '(21196 5024 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!Money and Banking 1!Week One(money002)!Video Lectures!Lecture 1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

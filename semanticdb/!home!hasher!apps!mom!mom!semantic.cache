@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf" include nil nil [28 60])
+            ("django.conf.urls" include nil nil [61 97])
+            ("django.conf.urls" include nil nil [98 130])
+            ("django.contrib" include nil nil [131 163])
+            ("django.contrib.auth.decorators" include nil nil [164 221])
+            ("django.views.generic" include nil nil [222 267])
+            ("rest_framework.authtoken" include nil nil [268 334])
+            ("web" include nil nil [336 346])
+            ("core.slack_oauth" include nil nil [347 387])
+            ("core.views" include nil nil [388 428])
+            ("integrations.calendar.google_calendar.oauth" include nil nil [429 506])
+            ("integrations.calendar.google_calendar.oauth" include nil nil [507 580])
+            ("integrations.calendar.google_calendar.webhooks" include nil nil [581 661])
+            ("integrations.calendar.office365.oauth" include nil nil [662 728])
+            ("integrations.calendar.office365.webhooks" include nil nil [729 806])
+            ("integrations.drive.google_drive.api" include nil nil [807 882])
+            ("integrations.drive.google_drive.api" include nil nil [883 958])
+            ("integrations.drive.google_drive.api" include nil nil [959 1030])
+            ("integrations.trello.oauth" include nil nil [1031 1084])
+            ("integrations.trello.oauth" include nil nil [1085 1134])
+            ("web.views" include nil nil [1135 1184])
+            ("web.views" include nil nil [1185 1217])
+            ("web.views" include nil nil [1218 1245])
+            ("web.views" include nil nil [1246 1286])
+            ("web.views" include nil nil [1287 1315])
+            ("web.views" include nil nil [1316 1345])
+            ("web.views" include nil nil [1346 1383])
+            ("web.views" include nil nil [1384 1430])
+            ("web.views" include nil nil [1431 1461])
+            ("web.views" include nil nil [1462 1497])
+            ("web.views" include nil nil [1498 1537])
+            ("web.views" include nil nil [1538 1577])
+            ("web.views" include nil nil [1578 1617])
+            ("web.views" include nil nil [1618 1657])
+            ("web.views" include nil nil [1658 1706])
+            ("web.views" include nil nil [1707 1740])
+            ("web.views" include nil nil [1741 1794])
+            ("web.views" include nil nil [1795 1836])
+            ("web.views" include nil nil [1837 1884])
+            ("web.views" include nil nil [1885 1921])
+            ("web.views" include nil nil [1922 1967])
+            ("web.views" include nil nil [1968 2012])
+            ("web.views" include nil nil [2013 2054])
+            ("web.views" include nil nil [2055 2086])
+            ("web.views" include nil nil [2087 2126])
+            ("admin" variable nil nil [2128 2179])
+            ("handler400" variable nil nil [2194 2224])
+            ("handler403" variable nil nil [2225 2255])
+            ("handler404" variable nil nil [2256 2286])
+            ("handler500" variable nil nil [2287 2317])
+            ("urlpatterns" variable nil nil [2319 7358])
+            ("if" code nil nil [7360 7531]))          
+      :file "urls.py"
+      :pointmax 7531
+      :fsize 7530
+      :lastmodtime '(23720 27229 146658 185000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom!mom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

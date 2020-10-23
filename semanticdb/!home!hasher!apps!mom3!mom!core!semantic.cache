@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("django.db.models" include nil nil [17 50])
+            ("django.db.models" include nil nil [51 92])
+            ("django.db.models" include nil nil [93 123])
+            ("django.db.models" include nil nil [124 158])
+            ("django.db.models" include nil nil [159 192])
+            ("core" include nil nil [194 217])
+            ("core.models" include nil nil [218 249])
+            ("core.models" include nil nil [250 287])
+            ("core.models" include nil nil [288 323])
+            ("logger" variable nil nil [325 361])
+            ("SettingsRetriever" type
+               (:superclasses ("object")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [409 413])
+                            ("args" variable nil (reparse-symbol function_parameters) [415 420])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [422 430]))                          )
+                        (reparse-symbol indented_block_body) [401 2385])
+                    ("get_team_level_setting_for_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2426 2430])
+                            ("user" variable nil (reparse-symbol function_parameters) [2432 2436])
+                            ("setting_key" variable nil (reparse-symbol function_parameters) [2438 2449]))                          )
+                        (reparse-symbol indented_block_body) [2390 2986])
+                    ("get_team_level_setting_value_for_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3033 3037])
+                            ("user" variable nil (reparse-symbol function_parameters) [3039 3043])
+                            ("setting_key" variable nil (reparse-symbol function_parameters) [3045 3056]))                          )
+                        (reparse-symbol indented_block_body) [2991 4151]))                  
+                :type "class")
+                nil [364 4151])
+            ("setting_retriever" variable nil nil [4153 4192]))          
+      :file "version_settings.py"
+      :pointmax 4193
+      :fsize 4192
+      :lastmodtime '(23741 36829 470663 734000)
+      :unmatched-syntax '((NAME 785 . 789) (IF 822 . 824) (ELSE 835 . 839)))
+    (semanticdb-table "semanticdb-table"
+      :file "models.py"
+      :fsize 45926
+      :lastmodtime '(23741 36829 454663 859000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf" include nil nil [1 33])
+            ("global_context" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [55 60])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [62 70]))              ) nil [36 161]))          
+      :file "context_preprocessors.py"
+      :pointmax 161
+      :fsize 160
+      :lastmodtime '(23579 16019 933911 401000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django_globals" include nil nil [1 54])
+            ("ExecutionContext" type
+               (:superclasses ("object")
+                :members 
+                  ( ("user" function (:decorators 
+                      ( ("property" function (:type "decorator") nil nil))                      ) (reparse-symbol indented_block_body) [93 192])
+                    ("request" function (:decorators 
+                      ( ("property" function (:type "decorator") nil nil))                      ) (reparse-symbol indented_block_body) [197 265])
+                    ("user" function
+                       (:decorators 
+                          ( ("user.setter" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("user" variable nil (reparse-symbol function_parameters) [296 300]))                          )
+                        (reparse-symbol indented_block_body) [270 339]))                  
+                :type "class")
+                nil [57 339]))          
+      :file "execution_context.py"
+      :pointmax 339
+      :fsize 338
+      :lastmodtime '(23744 14922 222158 134000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom3!mom!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

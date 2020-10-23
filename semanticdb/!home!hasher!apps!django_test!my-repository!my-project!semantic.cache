@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"my-project URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/1.9/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.conf.urls import url, include
+    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+\"\"\"" code nil nil [1 643])
+            ("__future__" include nil nil [644 700])
+            ("views" include nil nil [708 720])
+            ("django.conf.urls" include nil nil [722 763])
+            ("django.contrib" include nil nil [764 796])
+            ("rest_framework.routers" include nil nil [798 846])
+            ("rest_framework_swagger.views" include nil nil [847 904])
+            ("UserViewSet" include nil nil [933 951])
+            ("urls" include nil nil [973 1007])
+            ("router" variable nil nil [1009 1033])
+            ("router" code nil nil [1034 1072])
+            ("schema_view" variable nil nil [1074 1129])
+            ("urlpatterns" variable nil nil [1132 1370]))          
+      :file "urls.py"
+      :pointmax 1372
+      :fsize 1371
+      :lastmodtime '(23159 61651 447213 919000)
+      :unmatched-syntax '((FROM 952 . 956) (PERIOD 957 . 958) (FROM 906 . 910) (PERIOD 911 . 912) (FROM 701 . 705) (PERIOD 706 . 707)))
+    (semanticdb-table "semanticdb-table"
+      :file "views.py"
+      :fsize 173
+      :lastmodtime '(23159 61651 451214 5000)))
+  :file "!home!hasher!apps!django_test!my-repository!my-project!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

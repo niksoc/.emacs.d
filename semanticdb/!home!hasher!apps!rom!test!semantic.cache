@@ -1,0 +1,388 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("'''
+Rom - the Redis object mapper for Python
+
+Copyright 2013-2016 Josiah Carlson
+
+Released under the LGPL license version 2.1 and version 3 (you can choose
+which you'd like to be bound under).
+'''" code nil nil [2 198])
+            ("__future__" include nil nil [200 237])
+            ("base64" include nil nil [238 251])
+            ("collections" include nil nil [252 286])
+            ("datetime" include nil nil [287 327])
+            ("decimal" include nil nil [328 367])
+            ("sys" include nil nil [368 378])
+            ("time" include nil nil [379 390])
+            ("unittest" include nil nil [391 406])
+            ("warnings" include nil nil [407 422])
+            ("redis" include nil nil [424 436])
+            ("six" include nil nil [437 447])
+            ("rom" include nil nil [449 469])
+            ("util" variable nil nil [471 507])
+            ("connect" variable nil nil [508 531])
+            ("rom" include nil nil [533 550])
+            ("rom.exceptions" include nil nil [551 579])
+            ("Text" code nil nil [613 617])
+            ("global_setup" function nil nil [620 942])
+            ("get_state" function nil nil [944 1517])
+            ("_now_time" variable nil nil [1544 1567])
+            ("_default_time" function nil nil [1570 1612])
+            ("TestORM" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1662 1666]))                          )
+                        (reparse-symbol indented_block_body) [1652 1696])
+                    ("assertIsNone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1739 1743])
+                            ("arg" variable nil (reparse-symbol function_parameters) [1745 1748]))                          )
+                        (reparse-symbol indented_block_body) [1722 1778])
+                    ("assertIs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1796 1800])
+                            ("arg1" variable nil (reparse-symbol function_parameters) [1802 1806])
+                            ("arg2" variable nil (reparse-symbol function_parameters) [1808 1812]))                          )
+                        (reparse-symbol indented_block_body) [1783 1843])
+                    ("test_basic_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1869 1873]))                          )
+                        (reparse-symbol indented_block_body) [1848 3169])
+                    ("test_unique_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3196 3200]))                          )
+                        (reparse-symbol indented_block_body) [3174 3660])
+                    ("test_unique_integer_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3695 3699]))                          )
+                        (reparse-symbol indented_block_body) [3665 4114])
+                    ("test_foreign_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4140 4144]))                          )
+                        (reparse-symbol indented_block_body) [4119 5034])
+                    ("test_foreign_key_delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5067 5071]))                          )
+                        (reparse-symbol indented_block_body) [5039 5833])
+                    ("test_unique" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5854 5858]))                          )
+                        (reparse-symbol indented_block_body) [5838 6261])
+                    ("test_saving" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6282 6286]))                          )
+                        (reparse-symbol indented_block_body) [6266 6637])
+                    ("test_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6657 6661]))                          )
+                        (reparse-symbol indented_block_body) [6642 11331])
+                    ("test_alternate_models" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11362 11366]))                          )
+                        (reparse-symbol indented_block_body) [11336 12058])
+                    ("test_model_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12089 12093]))                          )
+                        (reparse-symbol indented_block_body) [12063 12942])
+                    ("test_entity_caching" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12971 12975]))                          )
+                        (reparse-symbol indented_block_body) [12947 13209])
+                    ("test_index_preservation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13242 13246]))                          
+                        :documentation " Edits to unrelated columns should not remove the index of other
+        columns. Issue: https://github.com/josiahcarlson/rom/issues/2. ")
+                        (reparse-symbol indented_block_body) [13214 13833])
+                    ("test_json_multisave" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13862 13866]))                          )
+                        (reparse-symbol indented_block_body) [13838 14196])
+                    ("test_boolean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14218 14222]))                          )
+                        (reparse-symbol indented_block_body) [14201 15257])
+                    ("test_datetimes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15281 15285]))                          )
+                        (reparse-symbol indented_block_body) [15262 15819])
+                    ("test_deletion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15842 15846]))                          )
+                        (reparse-symbol indented_block_body) [15824 16324])
+                    ("test_empty_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16350 16354]))                          )
+                        (reparse-symbol indented_block_body) [16329 16839])
+                    ("test_refresh" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16861 16865]))                          )
+                        (reparse-symbol indented_block_body) [16844 17420])
+                    ("test_datetime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17443 17447]))                          )
+                        (reparse-symbol indented_block_body) [17425 18036])
+                    ("test_prefix_suffix_pattern" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18072 18076]))                          )
+                        (reparse-symbol indented_block_body) [18041 20642])
+                    ("test_unicode_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20669 20673]))                          )
+                        (reparse-symbol indented_block_body) [20647 22345])
+                    ("test_infinite_ranges" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22375 22379]))                          
+                        :documentation " Infinite range lookups via None in tuple.
+        The get_by method accepts None as an argument to range based
+        lookups.  A range lookup is done by passing a tuple as the value
+        to the kwarg representing the column in question such as,
+        Model.get_by(some_column=(small, large)).  The left and right side
+        are inclusive. ")
+                        (reparse-symbol indented_block_body) [22350 25009])
+                    ("test_big_int" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25031 25035]))                          
+                        :documentation " Ensure integers that overflow py2k int work. ")
+                        (reparse-symbol indented_block_body) [25014 25544])
+                    ("test_cleanup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25566 25570]))                          
+                        :documentation " Ensure no side effects are left in the db after a delete. ")
+                        (reparse-symbol indented_block_body) [25549 27136])
+                    ("test_delete_writethrough" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27170 27174]))                          
+                        :documentation " Verify that a Model.delete() writes through backing and session. ")
+                        (reparse-symbol indented_block_body) [27141 27874])
+                    ("test_restrict_on_delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27907 27911]))                          
+                        :documentation " Verify that Restrict is thrown when there is a foreign object referencing
+            the deleted object.")
+                        (reparse-symbol indented_block_body) [27879 28825])
+                    ("test_restrict_on_delete_121" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28862 28866]))                          
+                        :documentation " Verify that Restrict is thrown when there is a foreign object referencing
+            the deleted object.")
+                        (reparse-symbol indented_block_body) [28830 29742])
+                    ("_test_restrict_skip_on_delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29781 29785]))                          )
+                        (reparse-symbol indented_block_body) [29747 32216])
+                    ("test_on_delete_extra" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32246 32250]))                          )
+                        (reparse-symbol indented_block_body) [32221 32926])
+                    ("test_prefix_suffix1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32955 32959]))                          )
+                        (reparse-symbol indented_block_body) [32931 34318])
+                    ("test_prefix_suffix2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34347 34351]))                          )
+                        (reparse-symbol indented_block_body) [34323 35456])
+                    ("test_null_session" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35483 35487]))                          )
+                        (reparse-symbol indented_block_body) [35461 35991])
+                    ("test_saving_after_modifying_datetime_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36044 36048]))                          )
+                        (reparse-symbol indented_block_body) [35996 36331])
+                    ("test_index_cleared" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36359 36363]))                          )
+                        (reparse-symbol indented_block_body) [36336 37312])
+                    ("test_multi_col_unique_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37349 37353]))                          )
+                        (reparse-symbol indented_block_body) [37317 38095])
+                    ("test_iter_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38121 38125]))                          )
+                        (reparse-symbol indented_block_body) [38100 42656])
+                    ("test_foreign_model_references" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42695 42699]))                          )
+                        (reparse-symbol indented_block_body) [42661 43657])
+                    ("test_clean_old_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43687 43691]))                          )
+                        (reparse-symbol indented_block_body) [43662 47274])
+                    ("test_multi_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47300 47304]))                          )
+                        (reparse-symbol indented_block_body) [47279 48800])
+                    ("test_issue_114" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48824 48828]))                          )
+                        (reparse-symbol indented_block_body) [48805 49186])
+                    ("test_namespace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49210 49214]))                          )
+                        (reparse-symbol indented_block_body) [49191 50681])
+                    ("test_order_string_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50714 50718]))                          )
+                        (reparse-symbol indented_block_body) [50686 51583])
+                    ("test_string_in_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51611 51615]))                          )
+                        (reparse-symbol indented_block_body) [51588 52119])
+                    ("test_weird" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52139 52143]))                          )
+                        (reparse-symbol indented_block_body) [52124 52536])
+                    ("test_hooks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52556 52560]))                          )
+                        (reparse-symbol indented_block_body) [52541 54745])
+                    ("test_data_race" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54769 54773]))                          )
+                        (reparse-symbol indented_block_body) [54750 55353])
+                    ("test_keygen2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55375 55379]))                          )
+                        (reparse-symbol indented_block_body) [55358 55814])
+                    ("test_multiindex" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55839 55843]))                          )
+                        (reparse-symbol indented_block_body) [55819 56500])
+                    ("test_binary2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56669 56673]))                          )
+                        (reparse-symbol indented_block_body) [56652 56828])
+                    ("test_binary" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56849 56853])
+                            ("RomTestBinaryData" variable nil (reparse-symbol function_parameters) [56855 56872])
+                            ("bad" variable nil (reparse-symbol function_parameters) [56879 56882]))                          )
+                        (reparse-symbol indented_block_body) [56833 57782])
+                    ("test_geo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57800 57804]))                          )
+                        (reparse-symbol indented_block_body) [57787 59305])
+                    ("test_filter_delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59333 59337]))                          )
+                        (reparse-symbol indented_block_body) [59310 60367])
+                    ("test_recursive_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60397 60401]))                          )
+                        (reparse-symbol indented_block_body) [60372 60780])
+                    ("test_lock" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60799 60803]))                          )
+                        (reparse-symbol indented_block_body) [60785 61152])
+                    ("test_empty_keygen_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61186 61190]))                          )
+                        (reparse-symbol indented_block_body) [61157 61508])
+                    ("test_type_check_datetime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61542 61546]))                          )
+                        (reparse-symbol indented_block_body) [61513 62532])
+                    ("test_issue_115" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62556 62560]))                          )
+                        (reparse-symbol indented_block_body) [62537 62915])
+                    ("test_issue_118" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62939 62943]))                          )
+                        (reparse-symbol indented_block_body) [62920 63827])
+                    ("test_issue_125" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [63851 63855])
+                            ("null_session" variable nil (reparse-symbol function_parameters) [63857 63869]))                          )
+                        (reparse-symbol indented_block_body) [63832 65214])
+                    ("test_issue_125_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65240 65244]))                          )
+                        (reparse-symbol indented_block_body) [65219 65282]))                  
+                :type "class")
+                nil [1614 65282])
+            ("main" function nil nil [65284 65384])
+            ("if" code nil nil [65386 65424]))          
+      :file "test_rom.py"
+      :pointmax 65424
+      :fsize 65423
+      :lastmodtime '(23973 25424 860693 947000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!rom!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

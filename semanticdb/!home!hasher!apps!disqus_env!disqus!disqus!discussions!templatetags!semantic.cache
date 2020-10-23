@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("django.utils.html" include nil nil [18 62])
+            ("django.utils.timezone" include nil nil [63 110])
+            ("django.utils.timesince" include nil nil [111 155])
+            ("django" include nil nil [157 184])
+            ("register" variable nil nil [186 215])
+            ("" code nil nil [233 253])
+            ("daysbetween" function
+               (:documentation "
+    Takes two datetime objects and return the number of days between d and now.
+    If the difference is less than a day, it falls back to timesince.
+    Adapted in part from https://github.com/django/django/blob/master/django/utils/timesince.py
+    "
+                :arguments 
+                  ( ("d" variable nil (reparse-symbol function_parameters) [270 271])
+                    ("now" variable nil (reparse-symbol function_parameters) [273 276])
+                    ("reversed" variable nil (reparse-symbol function_parameters) [283 291]))                  )
+                nil [254 1140]))          
+      :file "daysbetween.py"
+      :pointmax 1140
+      :fsize 1139
+      :lastmodtime '(23161 38893 419350 0)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!disqus_env!disqus!disqus!discussions!templatetags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

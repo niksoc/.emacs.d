@@ -1,0 +1,30 @@
+;; Object srmxchange/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "srmxchange/"
+  :tables
+  (list
+    (semanticdb-table "manage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [27 36])
+            ("sys" include nil nil [37 47])
+            ("dotenv" include nil nil [49 62])
+            ("if" code nil nil [65 299]))          
+      :file "manage.py"
+      :pointmax 299
+      :fsize 298
+      :lastmodtime '(22422 2876 404091 249000)
+      :unmatched-syntax nil)
+    (semanticdb-table "latest.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("a" variable nil nil [1 1373])
+            ("a" code nil nil [1374 1382]))          
+      :file "latest.py"
+      :pointmax 1383
+      :fsize 1382
+      :lastmodtime '(22461 46793 409665 732000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

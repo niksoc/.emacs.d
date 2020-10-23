@@ -1,0 +1,20 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("help" function nil nil [233 1432])
+            ("$(MAKECMDGOALS)" function nil nil [1434 1874]))          
+    :file "makefile"
+    :pointmax 1874
+    :fsize 1917
+    :lastmodtime '(16306 36704 0 0)
+    :unmatched-syntax '((shell-command 1843 . 1873) (bol 1842 . 1842))
+    )
+   )
+  :file "!home!nikhil!Thinking in CPP 2!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

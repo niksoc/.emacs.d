@@ -1,0 +1,170 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29]))          
+      :file "models.py"
+      :pointmax 2052
+      :fsize 2051
+      :lastmodtime '(23173 11981 268333 194000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("django.db.models" include nil nil [34 68])
+            ("Vehicle" include nil nil [83 97])
+            ("VehicleAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("changelist_view" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [162 166])
+                            ("request" variable nil (reparse-symbol function_parameters) [168 175])
+                            ("extra_context" variable nil (reparse-symbol function_parameters) [177 190]))                          )
+                        (reparse-symbol indented_block_body) [142 853]))                  
+                :type "class")
+                nil [100 853])
+            ("admin" code nil nil [855 897]))          
+      :file "admin.py"
+      :pointmax 898
+      :fsize 897
+      :lastmodtime '(23173 19955 54965 688000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.test" include nil nil [1 33])
+            ("django.core.management" include nil nil [34 81])
+            ("os" include nil nil [82 91])
+            ("json" include nil nil [92 103])
+            ("Vehicle" include nil nil [118 132])
+            ("UpdateCarsDbTestCase" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("'''Tests update_cars_db management command'''" code nil (reparse-symbol indented_block_body) [177 222])
+                    ("test_data" variable nil (reparse-symbol indented_block_body) [227 3111])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3127 3131]))                          )
+                        (reparse-symbol indented_block_body) [3117 3325])
+                    ("test_command_updates_all_items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3365 3369]))                          
+                        :documentation "all vehicles from json file are put into database")
+                        (reparse-symbol indented_block_body) [3330 3670])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3688 3692]))                          )
+                        (reparse-symbol indented_block_body) [3675 3733]))                  
+                :type "class")
+                nil [135 3733]))          
+      :file "tests.py"
+      :pointmax 3733
+      :fsize 3732
+      :lastmodtime '(23173 13652 115652 338000)
+      :unmatched-syntax '((FROM 105 . 109) (PERIOD 110 . 111) (FROM 105 . 109) (PERIOD 110 . 111) (NAME 3735 . 3744) (NEWLINE 3747 . 3748) (FROM 105 . 109) (PERIOD 110 . 111) (INDENT_BLOCK 3672 . 3811)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [42 54])
+            ("urlpatterns" variable nil nil [56 136]))          
+      :file "urls.py"
+      :pointmax 137
+      :fsize 225
+      :lastmodtime '(23173 1925 691388 107000)
+      :unmatched-syntax '((FROM 35 . 39) (PERIOD 40 . 41)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 82])
+            ("django.views" include nil nil [83 112])
+            ("django.views.decorators.http" include nil nil [113 174])
+            ("django" include nil nil [175 199])
+            ("django.shortcuts" include nil nil [200 254])
+            ("django.contrib.auth" include nil nil [255 292])
+            ("django.contrib.auth.mixins" include nil nil [293 350])
+            ("django.contrib.auth.decorators" include nil nil [351 408])
+            ("django.contrib.auth.forms" include nil nil [409 463])
+            ("django.contrib.contenttypes.models" include nil nil [464 522])
+            ("django.core.paginator" include nil nil [524 596])
+            ("django.db.models" include nil nil [597 627])
+            ("django.forms.models" include nil nil [628 673])
+            ("django.urls" include nil nil [674 705])
+            ("django.utils.decorators" include nil nil [706 758])
+            ("uCars.users.models" include nil nil [760 800])
+            ("Vehicle" include nil nil [814 828])
+            ("logging" include nil nil [830 844])
+            ("logger" variable nil nil [845 881])
+            ("HomePageView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [914 946])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [960 964])
+                            ("request" variable nil (reparse-symbol function_parameters) [966 973])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [975 983]))                          )
+                        (reparse-symbol indented_block_body) [952 1680]))                  
+                :type "class")
+                nil [884 1680])
+            ("vehicle_detail" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1701 1708])
+                ("id" variable nil (reparse-symbol function_parameters) [1710 1712]))              ) nil [1682 2403]))          
+      :file "views.py"
+      :pointmax 2403
+      :fsize 2402
+      :lastmodtime '(23173 22140 342002 531000)
+      :unmatched-syntax '((FROM 801 . 805) (PERIOD 806 . 807) ($EOI 2403 . 2403)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pytz" include nil nil [1 12])
+            ("django" include nil nil [13 37])
+            ("django.utils.timezone" include nil nil [38 97])
+            ("TimeZoneForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("'''form which displays a field to select a time zone out of all available timezones'''" code nil (reparse-symbol indented_block_body) [136 222])
+                    ("time_zone" variable nil (reparse-symbol indented_block_body) [227 314])
+                    ("prefix" variable nil (reparse-symbol indented_block_body) [319 344]))                  
+                :type "class")
+                nil [100 345])
+            ("TimeZoneMiddleware" type
+               (:members 
+                  ( ("'''adds the timezone form to every view and also handles the submission of the form'''" code nil (reparse-symbol indented_block_body) [379 465])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [513 545]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [484 488])
+                            ("get_response" variable nil (reparse-symbol function_parameters) [490 502]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [471 546])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [564 568])
+                            ("request" variable nil (reparse-symbol function_parameters) [570 577]))                          )
+                        (reparse-symbol indented_block_body) [551 947]))                  
+                :type "class")
+                nil [347 947]))          
+      :file "middleware.py"
+      :pointmax 947
+      :fsize 946
+      :lastmodtime '(23173 12385 771581 566000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!uCars!uCars!cars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

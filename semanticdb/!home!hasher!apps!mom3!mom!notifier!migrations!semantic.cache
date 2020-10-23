@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [50 82])
+            ("social_django.fields" include nil nil [83 110])
+            ("Migration" type
+               (:superclasses ("migrations.Migration")
+                :members 
+                  ( ("dependencies" variable nil (reparse-symbol indented_block_body) [157 228])
+                    ("operations" variable nil (reparse-symbol indented_block_body) [234 445]))                  
+                :type "class")
+                nil [113 446]))          
+      :file "0017_auto_20190416_1020.py"
+      :pointmax 446
+      :fsize 445
+      :lastmodtime '(23741 36829 506663 456000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom3!mom!notifier!migrations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

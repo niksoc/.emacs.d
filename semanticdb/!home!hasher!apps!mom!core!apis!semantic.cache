@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("logging" include nil nil [42 56])
+            ("functools" include nil nil [57 84])
+            ("time" include nil nil [85 106])
+            ("django.http.response" include nil nil [108 148])
+            ("django.shortcuts" include nil nil [149 186])
+            ("django.views.generic" include nil nil [187 224])
+            ("rest_framework.views" include nil nil [225 265])
+            ("rest_framework.viewsets" include nil nil [266 316])
+            ("core.exception_handlers" include nil nil [318 374])
+            ("core.models" include nil nil [375 404])
+            ("core.models" include nil nil [405 436])
+            ("core.models" include nil nil [437 481])
+            ("logger" variable nil nil [483 519])
+            ("get_object_from_uuid" function
+               (:documentation "
+    Decorator to get event and/or meeting object from their respective UUIDs
+    and pass then in the request object. Raise 404 Not Found exception in
+    case Event/Meeting does not exist or improper UUID is passed.
+    "
+                :arguments 
+                  ( ("tag" variable nil (reparse-symbol function_parameters) [547 550]))                  )
+                nil [522 3494])
+            ("timeit" function
+               (:documentation "
+        Logs the time taken to execute a given function
+    :param function: function to be executed
+    :return:
+    "
+                :arguments 
+                  ( ("function" variable nil (reparse-symbol function_parameters) [3507 3515]))                  )
+                nil [3496 4146])
+            ("mail_error_logger" function
+               (:documentation "
+        Logs any error while sending a mail
+        :param function: Called Function
+    "
+                :arguments 
+                  ( ("function" variable nil (reparse-symbol function_parameters) [4170 4178]))                  )
+                nil [4148 4780])
+            ("get_team" function (:documentation "
+    Decorator to get team object from their respective id and pass then in the request object.
+    Raises 404 Not Found exception in case Team ID does not exist or improper ID is passed.
+    ") nil [4782 7396]))          
+      :file "decorators.py"
+      :pointmax 7396
+      :fsize 7395
+      :lastmodtime '(23565 6912 982664 184000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom!core!apis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

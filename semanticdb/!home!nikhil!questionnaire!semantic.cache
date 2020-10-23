@@ -1,0 +1,24 @@
+;; Object questionnaire/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "questionnaire/"
+  :tables
+  (list
+    (semanticdb-table "samplegen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("fstream" include (:system-flag t) nil [20 37])
+            ("stdlib.h" include (:system-flag t) nil [38 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [59 79])
+            ("main" function (:type "int") nil [138 343]))          
+      :file "samplegen.cpp"
+      :pointmax 344
+      :fsize 343
+      :lastmodtime '(22243 746 1785 286000)
+      :unmatched-syntax '((semantic-list 93 . 136) (symbol 86 . 93) (CLASS 80 . 85) (semantic-list 93 . 136) (symbol 86 . 93) (CLASS 80 . 85) (punctuation 18 . 19) (symbol 10 . 18) (punctuation 9 . 10) (symbol 2 . 9) (punctuation 1 . 2))))
+  :file "!home!nikhil!questionnaire!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

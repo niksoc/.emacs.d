@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("ALLOWED_HOSTS" variable nil nil [26 98])
+            ("DEBUG" variable nil nil [100 113]))          
+      :file "prod_settings.py"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(24008 21012 807518 982000)
+      :unmatched-syntax '((IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (NAME 26 . 39) ($EOI 98 . 98) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (NAME 26 . 39) ($EOI 105 . 105) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (NAME 26 . 39) ($EOI 106 . 106) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (NAME 26 . 39) ($EOI 47 . 47) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7) (IMPORT 16 . 22) (MULT 23 . 24) (PERIOD 6 . 7))))
+  :file "!home!hasher!apps!online_test!online_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

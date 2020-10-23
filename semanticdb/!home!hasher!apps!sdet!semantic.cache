@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("subprocess" include nil nil [11 28])
+            ("absent" variable nil nil [31 42])
+            ("https_to_ssh" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [62 65]))              ) nil [45 128])
+            ("get_username" function (:arguments 
+              ( ("ssh_url" variable nil (reparse-symbol function_parameters) [147 154]))              ) nil [130 204])
+            ("get_repo" function (:arguments 
+              ( ("ssh_url" variable nil (reparse-symbol function_parameters) [219 226]))              ) nil [206 263])
+            ("for" code nil nil [265 1740])
+            ("print" code nil nil [1741 1756])
+            ("print" code nil nil [1757 1770]))          
+      :file "clone.py"
+      :pointmax 1771
+      :fsize 1770
+      :lastmodtime '(23889 724 192244 840000)
+      :unmatched-syntax '((INDENT_BLOCK 1682 . 1740) (NEWLINE 1681 . 1682) (COLON 1680 . 1681) (TRY 1475 . 1478) (AS 1676 . 1678) (INDENT_BLOCK 1339 . 1388) (NEWLINE 1338 . 1339) (COLON 1337 . 1338) (TRY 1149 . 1152) (AS 1333 . 1335) (INDENT_BLOCK 1682 . 1740) (NEWLINE 1681 . 1682) (COLON 1680 . 1681) (TRY 1475 . 1478) (AS 1676 . 1678) (INDENT_BLOCK 1339 . 1388) (NEWLINE 1338 . 1339) (COLON 1337 . 1338) (TRY 1149 . 1152) (AS 1333 . 1335) (INDENT_BLOCK 1516 . 1574) (NEWLINE 1515 . 1516) (COLON 1514 . 1515) (TRY 1309 . 1312) (AS 1510 . 1512) (INDENT_BLOCK 1177 . 1222) (NEWLINE 1176 . 1177) (COLON 1175 . 1176) (TRY 991 . 994) (AS 1171 . 1173))))
+  :file "!home!hasher!apps!sdet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

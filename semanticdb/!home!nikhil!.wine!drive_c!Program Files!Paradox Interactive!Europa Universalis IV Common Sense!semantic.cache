@@ -1,0 +1,16 @@
+;; Object Europa Universalis IV Common Sense/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Europa Universalis IV Common Sense/"
+  :tables
+  (list
+    (semanticdb-table "AutoClientScript.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "AutoClientScript.py"
+      :pointmax 842
+      :fsize 866
+      :lastmodtime '(21880 14384 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!.wine!drive_c!Program Files!Paradox Interactive!Europa Universalis IV Common Sense!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

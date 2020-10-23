@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.core.management.base" include nil nil [1 66])
+            ("uCars.cars.models" include nil nil [67 123])
+            ("json" include nil nil [124 135])
+            ("Command" type
+               (:superclasses ("BaseCommand")
+                :members 
+                  ( ("help" variable nil (reparse-symbol indented_block_body) [170 235])
+                    ("_attribute_mapper" variable nil (reparse-symbol indented_block_body) [241 1305])
+                    ("add_arguments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1329 1333])
+                            ("parser" variable nil (reparse-symbol function_parameters) [1335 1341]))                          )
+                        (reparse-symbol indented_block_body) [1311 1390])
+                    ("_towing_capacity" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("val" variable nil (reparse-symbol function_parameters) [1434 1437]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1395 1518])
+                    ("dict_to_model" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1558 1561])
+                            ("model_dict" variable nil (reparse-symbol function_parameters) [1563 1573]))                          )
+                        (reparse-symbol indented_block_body) [1523 2837])
+                    ("update_db_with_dict" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2883 2886])
+                            ("model_dict" variable nil (reparse-symbol function_parameters) [2888 2898]))                          )
+                        (reparse-symbol indented_block_body) [2842 2976])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2992 2996])
+                            ("args" variable nil (reparse-symbol function_parameters) [2998 3003])
+                            ("options" variable nil (reparse-symbol function_parameters) [3005 3014]))                          )
+                        (reparse-symbol indented_block_body) [2981 3266]))                  
+                :type "class")
+                nil [138 3266]))          
+      :file "update_cars_db.py"
+      :pointmax 3266
+      :fsize 3265
+      :lastmodtime '(23170 56597 633030 410000)
+      :unmatched-syntax '((INDENT_BLOCK 2855 . 3216) (INDENT_BLOCK 2838 . 3221)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.core.management.base" include nil nil [1 66])
+            ("django.db.models" include nil nil [67 106])
+            ("uCars.users.models" include nil nil [107 147])
+            ("datetime" include nil nil [148 188])
+            ("django.utils.timezone" include nil nil [189 237])
+            ("json" include nil nil [240 251])
+            ("Command" type
+               (:superclasses ("BaseCommand")
+                :members 
+                  ( ("help" variable nil (reparse-symbol indented_block_body) [286 400])
+                    ("get_fav_count_by_attr_since" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("attr" variable nil (reparse-symbol function_parameters) [456 460])
+                            ("t" variable nil (reparse-symbol function_parameters) [462 463]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [406 604])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [620 624])
+                            ("args" variable nil (reparse-symbol function_parameters) [626 631])
+                            ("options" variable nil (reparse-symbol function_parameters) [633 642]))                          )
+                        (reparse-symbol indented_block_body) [609 1617]))                  
+                :type "class")
+                nil [254 1617]))          
+      :file "daily_report.py"
+      :pointmax 1617
+      :fsize 1616
+      :lastmodtime '(23172 8811 391124 532000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!uCars!uCars!cars!management!commands!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

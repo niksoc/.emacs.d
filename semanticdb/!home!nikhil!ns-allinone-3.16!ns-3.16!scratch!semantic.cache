@@ -1,0 +1,211 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ns3/config-store-module.h" include nil nil [775 811])
+            ("ns3/full-module.h" include nil nil [812 840])
+            ("ns3/wifi-module.h" include nil nil [841 869])
+            ("ns3/core-module.h" include nil nil [870 898])
+            ("ns3/network-module.h" include nil nil [899 930])
+            ("ns3/mobility-module.h" include nil nil [931 963])
+            ("ns3/tools-module.h" include nil nil [964 993])
+            ("ns3/internet-module.h" include nil nil [994 1026])
+            ("ns3/applications-module.h" include nil nil [1027 1063])
+            ("ns3/flow-monitor-module.h" include nil nil [1064 1100])
+            ("ns3/full-module.h" include nil nil [1103 1131])
+            ("iostream" include (:system-flag t) nil [1134 1153])
+            ("fstream" include (:system-flag t) nil [1154 1172])
+            ("vector" include (:system-flag t) nil [1173 1190])
+            ("string" include (:system-flag t) nil [1191 1208])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1210 1230])
+            ("NS_LOG_COMPONENT_DEFINE" function
+               (:prototype-flag t
+                :type "int")
+                nil [1232 1266])
+            ("ThroughputSeconds" function
+               (:arguments 
+                  ( ("monitor" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("FlowMonitor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1292 1317]))                  
+                :type "void")
+                nil [1268 2500])
+            ("SetForwardQueue" function
+               (:arguments 
+                  ( ("apClientMap" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Ptr" type (:template-specifier 
+                                ( ("Node" type nil nil nil))                                ) nil nil)
+                              ("std::list" type (:template-specifier 
+                                ( ("Ptr" type (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    ) nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2525 2582])
+                    ("lossModel" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("PropagationLossModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2587 2623])
+                    ("txPower" variable (:type "double") (reparse-symbol arg-sub-list) [2624 2639]))                  
+                :type "void")
+                nil [2503 4212])
+            ("ClockSeconds" function
+               (:arguments 
+                  ( ("interval" variable (:type "double") (reparse-symbol arg-sub-list) [4236 4252]))                  
+                :type "void")
+                nil [4217 4382])
+            ("d" variable
+               (:default-value "CreateObject<DuplexExperiment> ()"
+                :type ("Ptr" type
+                     (:template-specifier 
+                        ( ("DuplexExperiment" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4384 4444])
+            ("SendDataDone" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5327 5347])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5348 5364])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5365 5380])
+                    ("success" variable (:type "bool") (reparse-symbol arg-sub-list) [5381 5394])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5395 5410]))                  
+                :type "void")
+                nil [5308 5714])
+            ("FullAckTimeout" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5737 5757])
+                    ("hdr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FullWifiMacHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5758 5788]))                  
+                :type "void")
+                nil [5716 5911])
+            ("HalfAckTimeout" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5934 5954])
+                    ("hdr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("WifiMacHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5955 5981]))                  
+                :type "void")
+                nil [5913 6104])
+            ("FullSendPacket" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6127 6147])
+                    ("hdr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FullWifiMacHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6148 6178]))                  
+                :type "void")
+                nil [6106 6301])
+            ("HalfSendPacket" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6323 6343])
+                    ("hdr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("WifiMacHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6344 6370]))                  
+                :type "void")
+                nil [6303 6493])
+            ("Enqueue" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6509 6529])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6530 6546])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6547 6562]))                  
+                :type "void")
+                nil [6495 6601])
+            ("SendSecondaryPacket" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6628 6648])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6649 6665])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6666 6681]))                  
+                :type "void")
+                nil [6602 6732])
+            ("SendExposedPacket" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6757 6777])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6778 6794])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6795 6810]))                  
+                :type "void")
+                nil [6733 6859])
+            ("SendSignature" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6880 6900])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6901 6917])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6918 6933]))                  
+                :type "void")
+                nil [6860 6977])
+            ("SendPayload" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6996 7016])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7017 7033])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7034 7049]))                  
+                :type "void")
+                nil [6978 7091])
+            ("SendAck" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7106 7126])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7127 7143])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7144 7159]))                  
+                :type "void")
+                nil [7092 7197])
+            ("SendFill" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7327 7347])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7348 7364])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7365 7380]))                  
+                :type "void")
+                nil [7312 7419])
+            ("SendData" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7435 7455])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7456 7472])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7473 7488]))                  
+                :type "void")
+                nil [7420 7527])
+            ("FailedToReceiveAck" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7554 7574])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7575 7591])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7592 7607]))                  
+                :type "void")
+                nil [7529 7650])
+            ("ReceiveData" function
+               (:arguments 
+                  ( ("context" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7669 7689])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7690 7706])
+                    ("iface" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7707 7722])
+                    ("delay" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7723 7734]))                  
+                :type "void")
+                nil [7652 7813])
+            ("EnableLog" function (:type "void") nil [7815 8167])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8179 8188])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8189 8202]))                  
+                :type "int")
+                nil [8169 26519]))          
+      :file "duplex_ap_forward.cc"
+      :pointmax 26521
+      :fsize 26520
+      :lastmodtime '(23119 35816 118018 0)
+      :unmatched-syntax '((string 1256 . 1264))))
+  :file "!home!nikhil!ns-allinone-3.16!ns-3.16!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

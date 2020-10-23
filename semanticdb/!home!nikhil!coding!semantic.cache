@@ -1,0 +1,1640 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("pb" variable (:constant-flag t) nil [133 135])
+            ("all" variable (:constant-flag t) nil [175 178])
+            ("mp" variable (:constant-flag t) nil [154 156])
+            ("all" variable (:constant-flag t) nil [175 178])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("II" variable (:constant-flag t) nil [279 281])
+            ("II" variable (:constant-flag t) nil [279 281])
+            ("IL" variable (:constant-flag t) nil [346 348])
+            ("IL" variable (:constant-flag t) nil [346 348])
+            ("IC" variable (:constant-flag t) nil [312 314])
+            ("IL" variable (:constant-flag t) nil [346 348])
+            ("ID" variable (:constant-flag t) nil [380 382])
+            ("ID" variable (:constant-flag t) nil [380 382])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("IS" variable (:constant-flag t) nil [416 418])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("IS" variable (:constant-flag t) nil [416 418])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("IS" variable (:constant-flag t) nil [416 418])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("IS" variable (:constant-flag t) nil [416 418])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("pi" variable (:constant-flag t) nil [470 472])
+            ("fastio" variable (:constant-flag t) nil [515 521])
+            ("sync_with_stdio" function
+               (:prototype-flag t
+                :parent "ios_base"
+                :type "int")
+                nil [522 551])
+            ("tie" function
+               (:prototype-flag t
+                :type "int")
+                nil [556 563])
+            ("tie" function
+               (:prototype-flag t
+                :type "int")
+                nil [567 574])
+            ("Long" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [576 599])
+            ("ull" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [600 631])
+            ("vi" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [632 656])
+            ("si" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [657 677])
+            ("vl" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [678 702])
+            ("pii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [703 729])
+            ("pll" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil)
+                          ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [730 758])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("vii" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("pii" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [792 816])
+            ("forab" variable (:constant-flag t) nil [826 831])
+            ("rep" variable (:constant-flag t) nil [891 894])
+            ("rep1" variable (:constant-flag t) nil [932 936])
+            ("rofba" variable (:constant-flag t) nil [968 973])
+            ("rrep" variable (:constant-flag t) nil [1032 1036])
+            ("rrep1" variable (:constant-flag t) nil [1074 1079])
+            ("forstl" variable (:constant-flag t) nil [1111 1117])
+            ("debug" variable (:constant-flag t) nil [2604 2609]))          
+      :file "template.cpp"
+      :pointmax 2673
+      :fsize 2672
+      :lastmodtime '(23036 9056 785525 23000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ms" (spp-arg-list ("a" "v") 243 . 248) . ((symbol "memset" 249 . 255) (semantic-list "(a,v,sizeof(a))" 255 . 270)))
+          ("IC" . ((semantic-list "({char a; cin>>a; a;})" 315 . 337)))
+          ("ID" . ((semantic-list "({double a; cin>>a; a;})" 294 . 318)))
+          ("IS" . ((semantic-list "({string a; cin>>a; a;})" 330 . 354)))
+          ("rep1" (spp-arg-list ("i" "n") 936 . 942) . ((symbol "forab" 944 . 949) (semantic-list "(i, 1, n)" 950 . 959)))
+          ("pb" . ((symbol "push_back" 136 . 145)))
+          ("all" (spp-arg-list ("x") 178 . 181) . 
+              ((symbol "x" 182 . 183) (punctuation "." 183 . 184) (symbol "begin" 184 . 189) (semantic-list "()" 189 . 191) (punctuation "," 191 . 192) (symbol "x" 192 . 193) (punctuation "." 193 . 194) (symbol "end" 194 . 197) (semantic-list "()" 197 . 199)))
+          ("rof" (spp-arg-list ("i" "n") 890 . 896) . ((symbol "rofba" 898 . 903) (semantic-list "(i, 1, n)" 904 . 913)))
+          ("II" . ((semantic-list "({int a; cin>>a; a;})" 228 . 249)))
+          ("rofba" (spp-arg-list ("i" "a" "b") 973 . 982) . ((FOR "for" 983 . 986) (semantic-list "(__typeof (b)i = (b) ; i >= a ; --i)" 987 . 1023)))
+          ("EPS" . ((number "1e-10" 367 . 372)))
+          ("debug" (spp-arg-list ("x") 2609 . 2612))
+          ("per" (spp-arg-list ("i" "n") 849 . 855) . ((symbol "rofba" 857 . 862) (semantic-list "(i, 0, (n) - 1)" 863 . 878)))
+          ("rrep" (spp-arg-list ("i" "n") 1036 . 1042) . ((symbol "rofba" 1044 . 1049) (semantic-list "(i, 0, (n) - 1)" 1050 . 1065)))
+          ("rrep1" (spp-arg-list ("i" "n") 1079 . 1085) . ((symbol "rofba" 1087 . 1092) (semantic-list "(i, 1, n)" 1093 . 1102)))
+          ("IL" . ((semantic-list "({Long a; cin>>a; a;})" 349 . 371)))
+          ("forstl" (spp-arg-list ("i" "s") 1117 . 1123) . ((FOR "for" 1124 . 1127) (semantic-list "(__typeof ((s).end ()) i = (s).begin (); i != (s).end (); ++i)" 1128 . 1190)))
+          ("mp" . ((symbol "make_pair" 157 . 166)))
+          ("rep" (spp-arg-list ("i" "n") 894 . 900) . ((symbol "forab" 902 . 907) (semantic-list "(i, 0, (n) - 1)" 908 . 923)))
+          ("For" (spp-arg-list ("i" "n") 750 . 756) . ((symbol "forab" 758 . 763) (semantic-list "(i, 1, n)" 764 . 773)))
+          ("pi" . ((number "3.1415926535897932384626433832795" 368 . 401)))
+          ("forab" (spp-arg-list ("i" "a" "b") 831 . 840) . ((FOR "for" 841 . 844) (semantic-list "(__typeof (b) i = (a) ; i <= b ; ++i)" 845 . 882)))
+          ("fastio")
+          ("sz" (spp-arg-list ("x") 210 . 213) . ((semantic-list "((int) (x).size())" 214 . 232)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("main" function (:type "int") nil [53 92]))          
+      :file "maintemplate.cpp"
+      :pointmax 93
+      :fsize 92
+      :lastmodtime '(23037 25563 786231 585000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 57])
+            ("N" variable (:type "int") nil [39 57])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [39 57])
+            ("sum" variable (:type "long long") nil [58 72])
+            ("co" variable (:type "int") nil [73 80])
+            ("pre" variable (:type "int") nil [81 89])
+            ("main" function (:type "int") nil [90 371]))          
+      :file "11264.cpp"
+      :pointmax 372
+      :fsize 371
+      :lastmodtime '(22886 10697 428653 683000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("N" variable (:type "int") nil [39 54])
+            ("D" variable (:type "int") nil [39 54])
+            ("R" variable (:type "int") nil [39 54])
+            ("T" variable (:type "int") nil [39 54])
+            ("m" variable
+               (:dereference 1
+                :type "int")
+                nil [55 74])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [55 74])
+            ("main" function (:type "int") nil [76 386]))          
+      :file "11389.cpp"
+      :pointmax 387
+      :fsize 386
+      :lastmodtime '(22886 12119 961742 336000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("bags" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [40 59])
+            ("dec_count" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [76 84]))                  
+                :type "void")
+                nil [61 154])
+            ("main" function (:type "int") nil [160 622]))          
+      :file "11100.cpp"
+      :pointmax 628
+      :fsize 923
+      :lastmodtime '(22886 15924 258732 591000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("sieve" function
+               (:arguments 
+                  ( ("prime" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51 73]))                  
+                :type ("vi" type (:type "class") nil nil))
+                nil [41 409])
+            ("main" function (:type "int") nil [411 884]))          
+      :file "10892.cpp"
+      :pointmax 886
+      :fsize 885
+      :lastmodtime '(22975 34189 853932 783000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type ("int64" type (:type "class") nil nil)) nil [39 56])
+            ("N" variable (:type ("int64" type (:type "class") nil nil)) nil [39 56])
+            ("M" variable (:type ("int64" type (:type "class") nil nil)) nil [39 56])
+            ("K" variable (:type ("int64" type (:type "class") nil nil)) nil [39 56])
+            ("c" variable
+               (:dereference 2
+                :type ("int64" type (:type "class") nil nil))
+                nil [57 75])
+            ("make_sums" function (:type "void") nil [77 248])
+            ("get_sum" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [264 270])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [271 277])
+                    ("p" variable (:type "int") (reparse-symbol arg-sub-list) [278 284])
+                    ("q" variable (:type "int") (reparse-symbol arg-sub-list) [285 291]))                  
+                :type ("int64" type (:type "class") nil nil))
+                nil [250 437])
+            ("get_area" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [452 458])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [459 465])
+                    ("p" variable (:type "int") (reparse-symbol arg-sub-list) [466 472])
+                    ("q" variable (:type "int") (reparse-symbol arg-sub-list) [473 479]))                  
+                :type "int")
+                nil [439 519])
+            ("main" function (:type "int") nil [521 1228]))          
+      :file "11951.cpp"
+      :pointmax 1231
+      :fsize 1230
+      :lastmodtime '(22990 7247 754921 787000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("f" variable
+               (:dereference 1
+                :type "int")
+                nil [39 58])
+            ("p" variable
+               (:dereference 1
+                :type "int")
+                nil [39 58])
+            ("dp" variable
+               (:dereference 1
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("map" type (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [59 95])
+            ("B" variable (:type "int") nil [96 102])
+            ("main" function (:type "int") nil [104 1562])
+            ("endl" variable (:type "int") nil [277 277])
+            ("REP" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 316])
+                    ("" variable (:type ("K" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [317 319]))                  
+                :type "int")
+                nil [310 402])
+            ("REP" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [411 413])
+                    ("" variable (:type ("K" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 416]))                  
+                :type "int")
+                nil [407 1335])
+            ("ans" variable
+               (:default-value "0"
+                :type "int")
+                nil [1340 1352]))          
+      :file "11566.cpp"
+      :pointmax 1563
+      :fsize 1562
+      :lastmodtime '(22991 9562 285690 909000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("main" function (:type "int") nil [52 70]))          
+      :file "11284.cpp"
+      :pointmax 71
+      :fsize 155
+      :lastmodtime '(22991 9611 459458 977000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 75])
+            ("N" variable (:type "int") nil [39 75])
+            ("S" variable (:type "int") nil [39 75])
+            ("c" variable
+               (:dereference 2
+                :type "int")
+                nil [39 75])
+            ("dp" variable
+               (:dereference 2
+                :type "int")
+                nil [39 75])
+            ("v" variable (:type ("vi" type (:type "class") nil nil)) nil [76 81])
+            ("get_pairs" function
+               (:arguments 
+                  ( ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [105 113]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pii" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [83 360])
+            ("build" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [373 379])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [380 386]))                  
+                :type "void")
+                nil [362 626])
+            ("main" function (:type "int") nil [628 1201]))          
+      :file "10306.cpp"
+      :pointmax 1202
+      :fsize 1201
+      :lastmodtime '(22991 26057 380772 36000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 62])
+            ("N" variable (:type "int") nil [39 62])
+            ("dp" variable
+               (:dereference 2
+                :type "int")
+                nil [39 62])
+            ("solve" function (:type "void") nil [64 478])
+            ("main" function (:type "int") nil [480 662]))          
+      :file "10337.cpp"
+      :pointmax 663
+      :fsize 662
+      :lastmodtime '(22991 49932 113566 187000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("N" variable (:type "int") nil [39 45])
+            ("main" function (:type "int") nil [47 870]))          
+      :file "10401.cpp"
+      :pointmax 871
+      :fsize 870
+      :lastmodtime '(22992 50136 329347 81000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("X" variable (:type "int") nil [39 51])
+            ("dp" variable
+               (:dereference 2
+                :type ("ull" type (:type "class") nil nil))
+                nil [52 68])
+            ("gcd" function
+               (:arguments 
+                  ( ("a" variable (:type ("ull" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79 85])
+                    ("b" variable (:type ("ull" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86 92]))                  
+                :type ("ull" type (:type "class") nil nil))
+                nil [71 124])
+            ("main" function (:type "int") nil [126 727]))          
+      :file "10759.cpp"
+      :pointmax 728
+      :fsize 727
+      :lastmodtime '(22992 57694 762813 722000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("ntoi" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [53 75])
+            ("G" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("vector" type (:template-specifier 
+                        ( ("int" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [76 99])
+            ("dp" variable
+               (:dereference 2
+                :type "int")
+                nil [100 115])
+            ("dfs" function
+               (:arguments 
+                  ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [126 135]))                  
+                :type "void")
+                nil [117 436])
+            ("isunique" function
+               (:arguments 
+                  ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [452 461]))                  
+                :type "bool")
+                nil [438 811])
+            ("main" function (:type "int") nil [813 1240]))          
+      :file "1220.cpp"
+      :pointmax 1241
+      :fsize 1240
+      :lastmodtime '(22995 44009 430195 425000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("MOD" variable
+               (:constant-flag t
+                :default-value "(int)1e9 + 7"
+                :type "int")
+                nil [40 69])
+            ("vvll" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("vl" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [70 94])
+            ("T" variable (:type "int") nil [96 108])
+            ("N" variable (:type "int") nil [96 108])
+            ("M" variable (:type "int") nil [96 108])
+            ("prev" variable (:type ("array" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("35"))                    
+                  :type "class")
+                  nil nil)) nil [109 134])
+            ("cur" variable (:type ("array" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("35"))                    
+                  :type "class")
+                  nil nil)) nil [109 134])
+            ("m" variable (:type ("unordered_map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [135 161])
+            ("G" variable (:type ("vvll" type (:type "class") nil nil)) nil [163 170])
+            ("dp" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("vvll" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [171 189])
+            ("add_children" function
+               (:arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [209 219]))                  
+                :type "void")
+                nil [191 650])
+            ("matadd" function
+               (:arguments 
+                  ( ("A" variable (:type ("vvll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [664 671])
+                    ("B" variable (:type ("vvll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [672 679]))                  
+                :type ("vvll" type (:type "class") nil nil))
+                nil [652 846])
+            ("matmul" function
+               (:arguments 
+                  ( ("A" variable (:type ("vvll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [860 867])
+                    ("B" variable (:type ("vvll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 875]))                  
+                :type ("vvll" type (:type "class") nil nil))
+                nil [848 1082])
+            ("matpow" function
+               (:arguments 
+                  ( ("A" variable (:type ("vvll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1096 1103])
+                    ("p" variable (:type "int") (reparse-symbol arg-sub-list) [1104 1110]))                  
+                :type ("vvll" type (:type "class") nil nil))
+                nil [1084 1403])
+            ("main" function (:type "int") nil [1405 1931]))          
+      :file "11486.cpp"
+      :pointmax 1932
+      :fsize 1931
+      :lastmodtime '(22998 19443 420129 119000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("trails" variable (:type ("multiset" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [52 73])
+            ("main" function (:type "int") nil [75 655]))          
+      :file "11368.cpp"
+      :pointmax 656
+      :fsize 655
+      :lastmodtime '(23000 27248 639446 150000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("main" function (:type "int") nil [53 90]))          
+      :file "10635.cpp"
+      :pointmax 91
+      :fsize 90
+      :lastmodtime '(23001 6607 392321 323000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("topsort" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [52 72])
+            ("dfs" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [83 89])
+                    ("mat" variable
+                       (:dereference 2
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [90 105])
+                    ("visited" variable
+                       (:dereference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [106 123]))                  
+                :type "void")
+                nil [74 239])
+            ("main" function (:type "int") nil [241 877]))          
+      :file "10544.cpp"
+      :pointmax 878
+      :fsize 877
+      :lastmodtime '(23001 64598 441261 95000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("main" function (:type "int") nil [53 899]))          
+      :file "11569.cpp"
+      :pointmax 900
+      :fsize 899
+      :lastmodtime '(23002 2688 975412 252000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("vvii" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("vi" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [39 63])
+            ("T" variable (:type "int") nil [65 77])
+            ("N" variable (:type "int") nil [65 77])
+            ("M" variable (:type "int") nil [65 77])
+            ("dp" variable
+               (:dereference 1
+                :type "int")
+                nil [78 91])
+            ("visited" variable
+               (:dereference 1
+                :type "bool")
+                nil [93 112])
+            ("dfs" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [123 129])
+                    ("G" variable (:type ("vvii" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130 137])
+                    ("visited" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [138 152])
+                    ("topsort" variable
+                       (:reference 1
+                        :type ("vi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153 165]))                  
+                :type "void")
+                nil [114 282])
+            ("main" function (:type "int") nil [284 1344]))          
+      :file "11324.cpp"
+      :pointmax 1345
+      :fsize 1344
+      :lastmodtime '(23002 23673 394216 94000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("P" variable (:type "int") nil [40 52])
+            ("V" variable (:type "int") nil [40 52])
+            ("E" variable (:type "int") nil [40 52])
+            ("dp" variable
+               (:dereference 2
+                :type ("Long" type (:type "class") nil nil))
+                nil [53 73])
+            ("cd" variable
+               (:dereference 2
+                :type "int")
+                nil [74 93])
+            ("main" function (:type "int") nil [95 914]))          
+      :file "11514.cpp"
+      :pointmax 915
+      :fsize 914
+      :lastmodtime '(23033 39927 206486 505000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 54])
+            ("N" variable (:type "int") nil [39 54])
+            ("M" variable (:type "int") nil [39 54])
+            ("K" variable (:type "int") nil [39 54])
+            ("g" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("tuple" type (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [55 86])
+            ("dp" variable
+               (:dereference 1
+                :type "int")
+                nil [87 99])
+            ("main" function (:type "int") nil [101 978]))          
+      :file "672.cpp"
+      :pointmax 979
+      :fsize 978
+      :lastmodtime '(23033 49394 960284 213000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEBUG" variable (:constant-flag t) nil [9 14])
+            ("template.cpp" include nil nil [15 38])
+            ("T" variable (:type "int") nil [39 51])
+            ("N" variable (:type "int") nil [39 51])
+            ("M" variable (:type "int") nil [39 51])
+            ("main" function (:type "int") nil [53 90]))          
+      :file "1076.cpp"
+      :pointmax 91
+      :fsize 90
+      :lastmodtime '(23036 20866 646521 974000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG")
+          )
+))
+  :file "!home!nikhil!coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

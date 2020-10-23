@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("teams" function (:arguments 
+              ( ("state" variable nil (reparse-symbol FormalParameterList) [161 166])
+                ("action" variable nil (reparse-symbol FormalParameterList) [173 179]))              ) nil [146 315]))          
+      :file "teamsReducer.js"
+      :pointmax 315
+      :fsize 314
+      :lastmodtime '(23402 57055 270053 485000)
+      :unmatched-syntax '((BRACK_BLOCK 169 . 171) (ASSIGN_SYMBOL 167 . 168))))
+  :file "!home!hasher!apps!mom-web!src!containers!OnboardingContainer!reducers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

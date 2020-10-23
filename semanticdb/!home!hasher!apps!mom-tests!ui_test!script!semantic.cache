@@ -1,0 +1,429 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("unittest" include nil nil [1 16])
+            ("\"\"\"
+ from script.dp_sync_calendar_test import SyncCalendar 
+\"\"\"" code nil nil [187 250])
+            ("script.tc09_ap_ai_status_update_test" include nil nil [525 596])
+            ("\"\"\"
+from script.ap_ai_dialog_title_test import ActionItemDialogTitle
+\"\"\"" code nil nil [597 669])
+            ("script.tc11_ap_ai_dialog_status_test" include nil nil [670 741])
+            ("script.tc15_mp_invite_attendee_test" include nil nil [954 1018])
+            ("script.tc16_mp_share_on_slack_test" include nil nil [1019 1080])
+            ("script.tc17_mp_share_on_email_test" include nil nil [1081 1141])
+            ("script.tc18_mp_save_as_template_test" include nil nil [1142 1207])
+            ("script.tc19_mp_file_attachment_upload_test" include nil nil [1208 1285])
+            ("script.tc20_mp_connect_trello_test" include nil nil [1286 1353])
+            ("script.tc21_mp_leave_meeting_test" include nil nil [1354 1414])
+            ("script.tc22_rhs_ai_status_update_test" include nil nil [1415 1490])
+            ("\"\"\"
+from script.rhs_ai_dialog_title_test import RHSActionItemDialogTitle
+\"\"\"" code nil nil [1491 1567])
+            ("script.tc24_rhs_ai_dialog_status_test" include nil nil [1568 1649])
+            ("script.tc25_rhs_trello_sync_test" include nil nil [1650 1708])
+            ("script.tc26_rhs_disconnect_trello_board_test" include nil nil [1709 1790])
+            ("script.tc27_mp_share_on_private_slack_test" include nil nil [1791 1867])
+            ("\"\"\"
+from script.ap_ai_delete_test import ActionItemDeleteActionsPage
+\"\"\"" code nil nil [1868 1940])
+            ("script.tc29_rhs_insert_ai_test" include nil nil [1941 2004])
+            ("script.tc30_rhs_slack_followup_test" include nil nil [2005 2069])
+            ("script.tc31_rhs_email_followup_test" include nil nil [2070 2134])
+            ("script.tc32_dp_click_view_notes_test" include nil nil [2135 2193])
+            ("script.tc33_dp_click_take_notes_test" include nil nil [2194 2252])
+            ("script.tc34_sp_subcribeform_load_test" include nil nil [2253 2320]))          
+      :file "test_suite.py"
+      :pointmax 2855
+      :fsize 2854
+      :lastmodtime '(23595 20485 650363 255000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc01_lp_invalid_login_test.py"
+      :fsize 935
+      :lastmodtime '(23579 19288 486255 898000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc02_lp_valid_login_test.py"
+      :fsize 935
+      :lastmodtime '(23579 19288 486255 898000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc03_join_team_test.py"
+      :fsize 633
+      :lastmodtime '(23579 19288 486255 898000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc05_dp_search_meeting_test.py"
+      :fsize 843
+      :lastmodtime '(23579 19288 486255 898000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.dashboard_page" include nil nil [1 46])
+            ("page.join_team_page" include nil nil [47 91])
+            ("page.meeting_page" include nil nil [92 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("generic.constants" include nil nil [176 207])
+            ("unittest" include nil nil [208 223])
+            ("pytest" include nil nil [224 237])
+            ("" code nil nil [264 289])
+            ("OpenMeeting" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [348 362])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [377 381])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [383 395]))                          )
+                        (reparse-symbol indented_block_body) [367 572])
+                    ("" code nil (reparse-symbol indented_block_body) [636 645])
+                    ("test_openMeeting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [671 675]))                          )
+                        (reparse-symbol indented_block_body) [650 877]))                  
+                :type "class")
+                nil [290 877]))          
+      :file "tc06_dp_open_meeting_test.py"
+      :pointmax 877
+      :fsize 876
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc07_dp_create_new_note_test.py"
+      :fsize 1043
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.dashboard_page" include nil nil [1 46])
+            ("page.join_team_page" include nil nil [47 91])
+            ("page.meeting_page" include nil nil [92 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("ddt" include nil nil [176 209])
+            ("generic.read_data" include nil nil [210 252])
+            ("generic.constants" include nil nil [253 284])
+            ("unittest" include nil nil [285 300])
+            ("pytest" include nil nil [301 314])
+            ("" code nil nil [341 366])
+            ("CreateNoteUsingExistingNote" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [446 460])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [475 479])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [481 493]))                          )
+                        (reparse-symbol indented_block_body) [465 670])
+                    ("" code nil (reparse-symbol indented_block_body) [734 743])
+                    ("" code nil (reparse-symbol indented_block_body) [753 792])
+                    ("test_create_note_using_existing_note" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [850 854])
+                            ("action_item_data" variable nil (reparse-symbol function_parameters) [856 872]))                          
+                        :decorators 
+                          ( ("unpack" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [797 1373]))                  
+                :type "class")
+                nil [372 1373]))          
+      :file "tc08_dp_create_existing_note_test.py"
+      :pointmax 1373
+      :fsize 1372
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc09_ap_ai_status_update_test.py"
+      :fsize 871
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc11_ap_ai_dialog_status_test.py"
+      :fsize 950
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.actions_page" include nil nil [1 42])
+            ("page.header_navigation_page" include nil nil [43 103])
+            ("page.join_team_page" include nil nil [104 148])
+            ("generic.teststatus" include nil nil [149 190])
+            ("unittest" include nil nil [191 206])
+            ("pytest" include nil nil [207 220])
+            ("" code nil nil [247 272])
+            ("OpenMeetingOfActionItem" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [343 357])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [372 376])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [378 390]))                          )
+                        (reparse-symbol indented_block_body) [362 655])
+                    ("" code nil (reparse-symbol indented_block_body) [676 686])
+                    ("test_open_meeting_of_action_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [728 732]))                          )
+                        (reparse-symbol indented_block_body) [691 908]))                  
+                :type "class")
+                nil [273 908]))          
+      :file "tc12_ap_ai_open_meeting_of_ai_test.py"
+      :pointmax 908
+      :fsize 907
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.meeting_page" include nil nil [1 42])
+            ("page.join_team_page" include nil nil [43 87])
+            ("page.dashboard_page" include nil nil [88 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("ddt" include nil nil [176 209])
+            ("generic.constants" include nil nil [210 241])
+            ("generic.read_data" include nil nil [242 284])
+            ("unittest" include nil nil [285 300])
+            ("time" include nil nil [301 312])
+            ("pytest" include nil nil [313 326])
+            ("" code nil nil [353 378])
+            ("MeetingEditor" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [444 458])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [473 477])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [479 491]))                          )
+                        (reparse-symbol indented_block_body) [463 668])
+                    ("" code nil (reparse-symbol indented_block_body) [835 845])
+                    ("" code nil (reparse-symbol indented_block_body) [855 894])
+                    ("test_meeting_editor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [935 939])
+                            ("action_item_data" variable nil (reparse-symbol function_parameters) [941 957]))                          
+                        :decorators 
+                          ( ("unpack" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [899 1378]))                  
+                :type "class")
+                nil [384 1378]))          
+      :file "tc13_mp_editor_test.py"
+      :pointmax 1378
+      :fsize 1377
+      :lastmodtime '(23595 14670 139830 73000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.meeting_page" include nil nil [1 42])
+            ("page.join_team_page" include nil nil [43 87])
+            ("page.dashboard_page" include nil nil [88 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("generic.constants" include nil nil [176 207])
+            ("unittest" include nil nil [208 223])
+            ("pytest" include nil nil [224 237])
+            ("" code nil nil [264 289])
+            ("CountInDashboardAndRHS" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [359 373])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [388 392])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [394 406]))                          )
+                        (reparse-symbol indented_block_body) [378 583])
+                    ("" code nil (reparse-symbol indented_block_body) [647 657])
+                    ("test_ai_count_in_dashboard_and_rhs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [701 705]))                          )
+                        (reparse-symbol indented_block_body) [662 1158]))                  
+                :type "class")
+                nil [290 1158]))          
+      :file "tc14_rhs_ai_count_dashboard_and_rhs.py"
+      :pointmax 1158
+      :fsize 1157
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.meeting_page" include nil nil [1 42])
+            ("page.join_team_page" include nil nil [43 87])
+            ("page.dashboard_page" include nil nil [88 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("ddt" include nil nil [176 209])
+            ("generic.constants" include nil nil [210 241])
+            ("generic.read_data" include nil nil [242 284])
+            ("unittest" include nil nil [285 300])
+            ("time" include nil nil [301 312])
+            ("pytest" include nil nil [313 326])
+            ("" code nil nil [353 378])
+            ("MPInviteAttendee" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [447 461])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [476 480])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [482 494]))                          )
+                        (reparse-symbol indented_block_body) [466 671])
+                    ("" code nil (reparse-symbol indented_block_body) [735 745])
+                    ("test_invite_attendee" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [775 779]))                          )
+                        (reparse-symbol indented_block_body) [750 1251]))                  
+                :type "class")
+                nil [384 1251]))          
+      :file "tc15_mp_invite_attendee_test.py"
+      :pointmax 1251
+      :fsize 1250
+      :lastmodtime '(23595 21653 495887 528000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc16_mp_share_on_slack_test.py"
+      :fsize 1129
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.meeting_page" include nil nil [1 42])
+            ("page.join_team_page" include nil nil [43 87])
+            ("page.dashboard_page" include nil nil [88 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("generic.constants" include nil nil [176 207])
+            ("unittest" include nil nil [208 223])
+            ("time" include nil nil [224 235])
+            ("pytest" include nil nil [236 249])
+            ("random" include nil nil [250 263])
+            ("" code nil nil [290 315])
+            ("MPShareOnMail" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [376 390])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [405 409])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [411 423]))                          )
+                        (reparse-symbol indented_block_body) [395 600])
+                    ("" code nil (reparse-symbol indented_block_body) [664 674])
+                    ("test_share_notes_via_mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [709 713]))                          )
+                        (reparse-symbol indented_block_body) [679 1240]))                  
+                :type "class")
+                nil [316 1240]))          
+      :file "tc17_mp_share_on_email_test.py"
+      :pointmax 1240
+      :fsize 1239
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc18_mp_save_as_template_test.py"
+      :fsize 1340
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc19_mp_file_attachment_upload_test.py"
+      :fsize 1255
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("page.meeting_page" include nil nil [1 42])
+            ("page.join_team_page" include nil nil [43 87])
+            ("page.dashboard_page" include nil nil [88 133])
+            ("generic.teststatus" include nil nil [134 175])
+            ("ddt" include nil nil [176 209])
+            ("generic.constants" include nil nil [210 241])
+            ("generic.read_data" include nil nil [242 284])
+            ("unittest" include nil nil [285 300])
+            ("time" include nil nil [301 312])
+            ("pytest" include nil nil [313 326])
+            ("" code nil nil [353 378])
+            ("MPConnectTrelloBoard" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [451 465])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [480 484])
+                            ("oneTimeSetUp" variable nil (reparse-symbol function_parameters) [486 498]))                          )
+                        (reparse-symbol indented_block_body) [470 675])
+                    ("" code nil (reparse-symbol indented_block_body) [739 749])
+                    ("test_connect_to_trello_board" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [787 791]))                          )
+                        (reparse-symbol indented_block_body) [754 1401]))                  
+                :type "class")
+                nil [384 1401]))          
+      :file "tc20_mp_connect_trello_test.py"
+      :pointmax 1401
+      :fsize 1400
+      :lastmodtime '(23579 19288 490255 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tc21_mp_leave_meeting_test.py"
+      :fsize 1072
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc22_rhs_ai_status_update_test.py"
+      :fsize 1144
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc24_rhs_ai_dialog_status_test.py"
+      :fsize 1271
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc25_rhs_trello_sync_test.py"
+      :fsize 1350
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc26_rhs_disconnect_trello_board_test.py"
+      :fsize 1456
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc27_mp_share_on_private_slack_test.py"
+      :fsize 1186
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc29_rhs_insert_ai_test.py"
+      :fsize 1757
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc30_rhs_slack_followup_test.py"
+      :fsize 1422
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc31_rhs_email_followup_test.py"
+      :fsize 1170
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc32_dp_click_view_notes_test.py"
+      :fsize 1131
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc33_dp_click_take_notes_test.py"
+      :fsize 1097
+      :lastmodtime '(23579 19288 490255 938000))
+    (semanticdb-table "semanticdb-table"
+      :file "tc34_sp_subcribeform_load_test.py"
+      :fsize 766
+      :lastmodtime '(23579 19288 490255 938000)))
+  :file "!home!hasher!apps!mom-tests!ui_test!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

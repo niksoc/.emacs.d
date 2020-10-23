@@ -1,0 +1,29 @@
+;; Object niksite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "niksite/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("mysite" section nil nil [72 194])
+            ("MyWebsite" section (:members 
+              ( ("MyWebsite" section (:members 
+                  ( ("Home" anchor nil nil [264 267])
+                    ("roducts" anchor nil nil [306 309])
+                    ("About Us" anchor nil nil [355 358])
+                    ("Contact Us" anchor nil nil [404 407])
+                    ("link1" anchor nil nil [565 568])
+                    ("link2" anchor nil nil [602 605])
+                    ("link3" anchor nil nil [639 642])
+                    ("link4" anchor nil nil [676 679]))                  ) nil [216 7556]))              ) nil [194 7556])
+            ("" section nil nil [7556 7592])
+            ("" section nil nil [7592 7667]))          
+      :file "index.html"
+      :pointmax 7667
+      :fsize 7756
+      :lastmodtime '(22183 4106 351967 79000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!niksite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

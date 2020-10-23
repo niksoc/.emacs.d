@@ -1,0 +1,185 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("django.views.generic" include nil nil [34 79])
+            ("views" include nil nil [88 100])
+            ("JobStatusView" include nil nil [112 132])
+            ("MeetingList" include nil nil [144 162])
+            ("RecentNotesView" include nil nil [174 196])
+            ("RecentNotesViewV3" include nil nil [208 232])
+            ("SyncDetails" include nil nil [244 262]))          
+      :file "urls.py"
+      :pointmax 821
+      :fsize 820
+      :lastmodtime '(23584 39320 577575 15000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [29 44])
+            ("logging" include nil nil [45 59])
+            ("collections" include nil nil [60 95])
+            ("pytz" include nil nil [97 108])
+            ("django.conf" include nil nil [109 141])
+            ("django.contrib.auth.decorators" include nil nil [142 199])
+            ("django.contrib.auth.models" include nil nil [200 243])
+            ("django.core.exceptions" include nil nil [244 297])
+            ("django.urls" include nil nil [298 329])
+            ("django.db.models" include nil nil [330 360])
+            ("django.http.response" include nil nil [361 416])
+            ("django.http.response" include nil nil [417 470])
+            ("django.template.response" include nil nil [471 524])
+            ("django.utils" include nil nil [525 558])
+            ("django.utils.decorators" include nil nil [559 611])
+            ("django.utils.functional" include nil nil [612 663])
+            ("django.views.generic.base" include nil nil [664 706])
+            ("core" include nil nil [708 746])
+            ("core.api" include nil nil [747 784])
+            ("core.apis.decorators" include nil nil [785 838])
+            ("core.models" include nil nil [839 871])
+            ("core.models" include nil nil [872 914])
+            ("core.models" include nil nil [915 946])
+            ("core.models" include nil nil [947 978])
+            ("core.models" include nil nil [979 1018])
+            ("core.models" include nil nil [1019 1053])
+            ("core.models" include nil nil [1054 1089])
+            ("core.models" include nil nil [1090 1134])
+            ("core.release" include nil nil [1135 1178])
+            ("core.tasks" include nil nil [1179 1232])
+            ("core.utils" include nil nil [1233 1286])
+            ("core.utils" include nil nil [1287 1337])
+            ("core.utils" include nil nil [1338 1375])
+            ("core.version_settings" include nil nil [1376 1427])
+            ("notifier.notify" include nil nil [1428 1468])
+            ("people.api" include nil nil [1469 1515])
+            ("web.decorators" include nil nil [1516 1554])
+            ("web.views" include nil nil [1555 1591])
+            ("ModelBackend" variable nil nil [1593 1651])
+            ("logger" variable nil nil [1653 1689])
+            ("dashboard_decorators" variable nil nil [1691 1727])
+            ("" code nil nil [1747 1786])
+            ("DashboardView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("_check_redirect_to_slack_onboarding" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1859 1863])
+                            ("user_profile" variable nil (reparse-symbol function_parameters) [1865 1877])
+                            ("user" variable nil (reparse-symbol function_parameters) [1879 1883]))                          )
+                        (reparse-symbol indented_block_body) [1819 2081])
+                    ("_check_redirect_to_slack_bot_integration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2131 2135])
+                            ("user_profile" variable nil (reparse-symbol function_parameters) [2137 2149]))                          )
+                        (reparse-symbol indented_block_body) [2086 2573])
+                    ("_get_route" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2593 2597])
+                            ("request" variable nil (reparse-symbol function_parameters) [2599 2606])
+                            ("user_detail" variable nil (reparse-symbol function_parameters) [2608 2619]))                          
+                        :documentation " GET THE ROUTE BASED ON REQUEST
+        :return: redirect URL
+
+        ")
+                        (reparse-symbol indented_block_body) [2578 4453])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4466 4470])
+                            ("request" variable nil (reparse-symbol function_parameters) [4472 4479]))                          
+                        :documentation "The Home Page")
+                        (reparse-symbol indented_block_body) [4458 6696]))                  
+                :type "class")
+                nil [1787 6696])
+            ("" code nil nil [6719 6721])
+            ("dashboard" function
+               (:documentation "Dashboard Page."
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [6736 6743]))                  )
+                nil [6722 10308])
+            ("DashboardContext" type
+               (:documentation "Context Class for dashboard page."
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [10445 10469])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10478 10494])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10503 10531])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10540 10578])
+                            ("self" code nil (reparse-symbol indented_block_body) [10587 10611]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10404 10408])
+                            ("user" variable nil (reparse-symbol function_parameters) [10410 10414])
+                            ("meetings" variable nil (reparse-symbol function_parameters) [10416 10424])
+                            ("req_user" variable nil (reparse-symbol function_parameters) [10426 10434]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10391 10612])
+                    ("_check_if_event_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10644 10648])
+                            ("meeting" variable nil (reparse-symbol function_parameters) [10650 10657])
+                            ("event_list" variable nil (reparse-symbol function_parameters) [10659 10669]))                          )
+                        (reparse-symbol indented_block_body) [10617 10780])
+                    ("archived_meetings" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10828 10832]))                          
+                        :documentation "Filters to a list of meetings which are already archived for the current user")
+                        (reparse-symbol indented_block_body) [10785 11333])
+                    ("is_archived" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11354 11358])
+                            ("meeting" variable nil (reparse-symbol function_parameters) [11360 11367]))                          
+                        :documentation "Checks if a meeting is archived")
+                        (reparse-symbol indented_block_body) [11338 11468])
+                    ("_ordered_meetings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11495 11499]))                          
+                        :documentation "Calculating 4 variables in one loop
+            1. past_meetings = All the past meetings
+            2. upcoming_meetings = All the upcoming meetings
+            3. all_events = all the events as a dict with value if True/False for recurrence in the fetched list
+            4. past_meetings_id_list = set for selecting svg image for recurring events
+        ")
+                        (reparse-symbol indented_block_body) [11473 13844])
+                    ("is_slack_credential_present" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13902 13906]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [13849 14084]))                  
+                :type "class")
+                nil [10310 14084])
+            ("invite_user_to_team_view" function
+               (:documentation " Invite Users to MeetNotes "
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [14144 14151]))                  
+                :decorators 
+                  ( ("log_request" function (:type "decorator") nil nil)
+                    ("login_required" function (:type "decorator") nil nil))                  )
+                nil [14086 16433]))          
+      :file "views.py"
+      :pointmax 16433
+      :fsize 16432
+      :lastmodtime '(23743 3768 577772 82000)
+      :unmatched-syntax '((NAME 8616 . 8620) (IF 8654 . 8656) (ELSE 8680 . 8684) (NAME 6486 . 6498) (IF 6523 . 6525) (ELSE 6574 . 6578))))
+  :file "!home!hasher!apps!mom3!mom!dashboard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

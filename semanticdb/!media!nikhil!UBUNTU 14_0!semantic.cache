@@ -1,0 +1,16 @@
+;; Object UBUNTU 14_0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "UBUNTU 14_0/"
+  :tables
+  (list
+    (semanticdb-table "Pyaar Ka Punchnama 2 2015 Hindi 720p DvDRip x264 AAC - Hon3y.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Pyaar Ka Punchnama 2 2015 Hindi 720p DvDRip x264 AAC - Hon3y.srt"
+      :pointmax 159067
+      :fsize 169558
+      :lastmodtime '(22157 3236 0 0)
+      :unmatched-syntax nil))
+  :file "!media!nikhil!UBUNTU 14_0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

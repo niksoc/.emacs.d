@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 419
+      :fsize 418
+      :lastmodtime '(23008 23294 358426 485000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!node-redis-docker-master!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

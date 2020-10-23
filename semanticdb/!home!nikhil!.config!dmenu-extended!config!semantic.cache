@@ -1,0 +1,16 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "internetSearch.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "internetSearch.json"
+      :pointmax 682
+      :fsize 681
+      :lastmodtime '(22640 34217 386471 479000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!.config!dmenu-extended!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object loc8r/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "loc8r/"
+  :tables
+  (list
+    (semanticdb-table "package.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 378
+      :fsize 377
+      :lastmodtime '(22259 51381 791760 286000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Workspaces!loc8r!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

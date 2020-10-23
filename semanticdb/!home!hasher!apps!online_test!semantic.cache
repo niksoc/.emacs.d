@@ -1,0 +1,130 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 38])
+            ("os" include nil nil [39 48])
+            ("sys" include nil nil [49 59])
+            ("shutil" include nil nil [60 73])
+            ("distutils.dir_util" include nil nil [74 114])
+            ("distutils.file_util" include nil nil [115 156])
+            ("invoke" include nil nil [158 171])
+            ("invoke" include nil nil [172 195])
+            ("yaksh.settings" include nil nil [197 240])
+            ("SCRIPT_DIR" variable nil nil [242 297])
+            ("TARGET_CONTAINER_NAME" variable nil nil [298 341])
+            ("SRC_IMAGE_NAME" variable nil nil [342 377])
+            ("CHECK_FILE" variable nil nil [378 411])
+            ("CHECK_FILE_PATH" variable nil nil [412 480])
+            ("OS_NAME" variable nil nil [481 503])
+            ("PYTHON_COMMAND" variable nil nil [504 581])
+            ("create_dir" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [598 602]))              ) nil [583 664])
+            ("remove_check_file" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [688 692]))              ) nil [666 748])
+            ("remove_dir" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [765 769]))              ) nil [750 828])
+            ("run_as" function (:arguments 
+              ( ("os_name" variable nil (reparse-symbol function_parameters) [841 848]))              ) nil [830 1034])
+            ("get_cmd" function (:arguments 
+              ( ("run_as_cmd" variable nil (reparse-symbol function_parameters) [1048 1058])
+                ("base_cmd" variable nil (reparse-symbol function_parameters) [1060 1068]))              ) nil [1036 1178])
+            ("setupdb" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [1198 1201]))                  )
+                nil [1180 1425])
+            ("loadfixtures" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [1450 1453]))                  )
+                nil [1427 1640])
+            ("" code nil nil [1647 1670])
+            ("serve" function (:arguments 
+              ( ("ctx" variable nil (reparse-symbol function_parameters) [1681 1684]))              ) nil [1671 1819])
+            ("clean" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [1837 1840]))                  )
+                nil [1821 1944])
+            ("getimage" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [1965 1968])
+                    ("image" variable nil (reparse-symbol function_parameters) [1970 1975]))                  )
+                nil [1946 2645])
+            ("start" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [2663 2666])
+                    ("ports" variable nil (reparse-symbol function_parameters) [2668 2673])
+                    ("image" variable nil (reparse-symbol function_parameters) [2692 2697])
+                    ("unsafe" variable nil (reparse-symbol function_parameters) [2714 2720])
+                    ("version" variable nil (reparse-symbol function_parameters) [2738 2745]))                  )
+                nil [2647 4626])
+            ("stop" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [4643 4646])
+                    ("container" variable nil (reparse-symbol function_parameters) [4648 4657])
+                    ("hide" variable nil (reparse-symbol function_parameters) [4681 4685]))                  )
+                nil [4628 5625])
+            ("build" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [5677 5680]))                  )
+                nil [5661 6262])
+            ("begin" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [6280 6283]))                  )
+                nil [6264 6523])
+            ("deploy" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [6542 6545])
+                    ("fixtures" variable nil (reparse-symbol function_parameters) [6547 6555])
+                    ("static" variable nil (reparse-symbol function_parameters) [6563 6569]))                  )
+                nil [6525 7727])
+            ("status" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [7746 7749]))                  )
+                nil [7729 7922])
+            ("halt" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [7939 7942]))                  )
+                nil [7924 8155])
+            ("restart" function
+               (:decorators 
+                  ( ("task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("ctx" variable nil (reparse-symbol function_parameters) [8175 8178]))                  )
+                nil [8157 8398])
+            ("" code nil nil [8405 8411])
+            ("remove" function (:arguments 
+              ( ("ctx" variable nil (reparse-symbol function_parameters) [8423 8426]))              ) nil [8412 8727]))          
+      :file "tasks.py"
+      :pointmax 8727
+      :fsize 8726
+      :lastmodtime '(24009 38631 247338 629000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!online_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

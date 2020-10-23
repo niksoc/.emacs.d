@@ -1,0 +1,18 @@
+;; Object venv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "venv/"
+  :tables
+  (list
+    (semanticdb-table "latest.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("a" variable nil nil [1 1369])
+            ("a" code nil nil [1370 1378]))          
+      :file "latest.py"
+      :pointmax 1379
+      :fsize 1378
+      :lastmodtime '(22461 46664 45669 411000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,212 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29])
+            ("django.contrib.auth.models" include nil nil [30 73])
+            ("uCars.users.models" include nil nil [74 112])
+            ("uCars.cars.models" include nil nil [113 150])
+            ("Question" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("'''Base model for dynamic questions'''" code nil (reparse-symbol indented_block_body) [187 225])
+                    ("text" variable nil (reparse-symbol indented_block_body) [230 269])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [287 291]))                          )
+                        (reparse-symbol indented_block_body) [275 319])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [344 359]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [324 360]))                  
+                :type "class")
+                nil [153 360])
+            ("Response" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("'''Base model for responses to dynamic questions'''" code nil (reparse-symbol indented_block_body) [396 447])
+                    ("user" variable nil (reparse-symbol indented_block_body) [452 482])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [508 523]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [488 524]))                  
+                :type "class")
+                nil [362 524])
+            ("YesNoUnsureQuestion" type
+               (:superclasses ("Question")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [567 571]))                  
+                :type "class")
+                nil [526 572])
+            ("YesNoUnsureResponse" type
+               (:superclasses ("Response")
+                :members 
+                  ( ("question" variable nil (reparse-symbol indented_block_body) [615 664])
+                    ("CHOICES" variable nil (reparse-symbol indented_block_body) [669 748])
+                    ("response" variable nil (reparse-symbol indented_block_body) [753 800])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [818 822]))                          )
+                        (reparse-symbol indented_block_body) [806 925]))                  
+                :type "class")
+                nil [574 925])
+            ("IntegerRangeQuestion" type
+               (:superclasses ("Question")
+                :members 
+                  ( ("min_value" variable nil (reparse-symbol indented_block_body) [1198 1231])
+                    ("max_value" variable nil (reparse-symbol indented_block_body) [1236 1269]))                  
+                :type "class")
+                nil [1156 1270])
+            ("IntegerRangeResponse" type
+               (:superclasses ("Response")
+                :members 
+                  ( ("question" variable nil (reparse-symbol indented_block_body) [1314 1364])
+                    ("response" variable nil (reparse-symbol indented_block_body) [1369 1401])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1416 1420])
+                            ("args" variable nil (reparse-symbol function_parameters) [1422 1427])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1429 1437]))                          )
+                        (reparse-symbol indented_block_body) [1407 1768])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1785 1789]))                          )
+                        (reparse-symbol indented_block_body) [1773 1889]))                  
+                :type "class")
+                nil [1272 1889])
+            ("Interests" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [1926 1975])
+                    ("vehicle_type" variable nil (reparse-symbol indented_block_body) [1980 2086])
+                    ("sports_enthusiast" variable nil (reparse-symbol indented_block_body) [2091 2136])
+                    ("use_for_daily_commute" variable nil (reparse-symbol indented_block_body) [2141 2190])
+                    ("love_long_drives" variable nil (reparse-symbol indented_block_body) [2195 2239])
+                    ("get_vehicles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2262 2266])
+                            ("qs" variable nil (reparse-symbol function_parameters) [2268 2270]))                          )
+                        (reparse-symbol indented_block_body) [2245 3091]))                  
+                :type "class")
+                nil [1891 3091]))          
+      :file "models.py"
+      :pointmax 3091
+      :fsize 3090
+      :lastmodtime '(23173 22420 552221 632000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("Interests" include nil nil [47 149])
+            ("IntegerRangeResponse" include nil nil [47 149])
+            ("IntegerRangeQuestion" include nil nil [47 149])
+            ("YesNoUnsureResponse" include nil nil [47 149])
+            ("YesNoUnsureQuestion" include nil nil [47 149])
+            ("admin" code nil nil [151 191])
+            ("admin" code nil nil [192 232])
+            ("admin" code nil nil [233 274])
+            ("admin" code nil nil [275 316]))          
+      :file "admin.py"
+      :pointmax 348
+      :fsize 347
+      :lastmodtime '(23173 7691 298769 166000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 82])
+            ("django.views" include nil nil [83 112])
+            ("django.views.decorators.http" include nil nil [113 174])
+            ("django" include nil nil [175 199])
+            ("django.shortcuts" include nil nil [200 254])
+            ("django.contrib.auth" include nil nil [255 292])
+            ("django.contrib.auth.mixins" include nil nil [293 350])
+            ("django.contrib.auth.decorators" include nil nil [351 408])
+            ("django.contrib.auth.forms" include nil nil [409 463])
+            ("django.contrib.contenttypes.models" include nil nil [464 522])
+            ("django.core.paginator" include nil nil [524 596])
+            ("django.db.models" include nil nil [597 627])
+            ("django.forms.models" include nil nil [628 673])
+            ("django.urls" include nil nil [674 705])
+            ("django.utils.decorators" include nil nil [706 758])
+            ("Interests" include nil nil [773 875])
+            ("IntegerRangeResponse" include nil nil [773 875])
+            ("IntegerRangeQuestion" include nil nil [773 875])
+            ("YesNoUnsureResponse" include nil nil [773 875])
+            ("YesNoUnsureQuestion" include nil nil [773 875])
+            ("uCars.users.models" include nil nil [876 914])
+            ("PreferenceForm" type
+               (:superclasses ("forms.ModelForm")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [980 995])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [1004 1040]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [960 1041]))                  
+                :type "class")
+                nil [917 1041])
+            ("QuestionsForm" type
+               (:superclasses ("forms.ModelForm")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1130 1170])
+                            ("super" code nil (reparse-symbol indented_block_body) [1179 1231])
+                            ("for" code nil (reparse-symbol indented_block_body) [1241 1776]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1098 1102])
+                            ("args" variable nil (reparse-symbol function_parameters) [1104 1109])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1111 1119]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1085 1776])
+                    ("get_extra_responses" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1805 1809]))                          )
+                        (reparse-symbol indented_block_body) [1781 2000])
+                    ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [2025 2042])
+                            ("exclude" variable nil (reparse-symbol indented_block_body) [2051 2070])
+                            ("labels" variable nil (reparse-symbol indented_block_body) [2079 2357]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2005 2358]))                  
+                :type "class")
+                nil [1043 2358])
+            ("get_questions" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2378 2385]))              ) nil [2360 2523])
+            ("" code nil nil [2540 2542])
+            ("interests_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2562 2569]))              ) nil [2543 3990]))          
+      :file "views.py"
+      :pointmax 3990
+      :fsize 3989
+      :lastmodtime '(23173 8634 737885 938000)
+      :unmatched-syntax '((FROM 760 . 764) (PERIOD 765 . 766)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [42 54]))          
+      :file "urls.py"
+      :pointmax 149
+      :fsize 148
+      :lastmodtime '(23170 50346 519594 455000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!uCars!uCars!recommender!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

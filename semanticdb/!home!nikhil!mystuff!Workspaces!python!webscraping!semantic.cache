@@ -1,0 +1,19 @@
+;; Object webscraping/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "webscraping/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("urllib.request" include nil nil [1 35])
+            ("html" variable nil nil [36 96])
+            ("print" code nil nil [97 115]))          
+      :file "test.py"
+      :pointmax 116
+      :fsize 115
+      :lastmodtime '(22281 7771 236677 400000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Workspaces!python!webscraping!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

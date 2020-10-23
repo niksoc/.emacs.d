@@ -1,0 +1,364 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Tools to implement runners (https://confluence.jetbrains.com/display/~link/PyCharm+test+runners+protocol)
+\"\"\"" code nil nil [16 129])
+            ("atexit" include nil nil [130 143])
+            ("_jb_utils" include nil nil [144 160])
+            ("os" include nil nil [161 170])
+            ("re" include nil nil [171 180])
+            ("sys" include nil nil [181 191])
+            ("teamcity" include nil nil [193 249])
+            ("if" code nil nil [308 408])
+            ("JB_DISABLE_BUFFERING" code nil nil [634 693])
+            ("PROJECT_DIR" variable nil nil [694 719])
+            ("_parse_parametrized" function
+               (:documentation "
+
+    Support nose generators / py.test parameters and other functions that provides names like foo(1,2)
+    Until https://github.com/JetBrains/teamcity-messages/issues/121, all such tests are provided
+    with parentheses.
+
+    Tests with docstring are reported in similar way but they have space before parenthesis and should be ignored
+    by this function
+
+    "
+                :arguments 
+                  ( ("part" variable nil (reparse-symbol function_parameters) [746 750]))                  )
+                nil [722 1281])
+            ("_TreeManager" type
+               (:documentation "
+    Manages output tree by building it from flat test names.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1464 1500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1580 1604])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1654 1678])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1745 1766]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1449 1453]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1436 1767])
+                    ("_calculate_relation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1796 1800])
+                            ("branch_as_list" variable nil (reparse-symbol function_parameters) [1802 1816]))                          
+                        :documentation "
+        Get relation of branch_as_list to current branch.
+        :return: tuple. First argument could be: \"same\", \"child\", \"parent\" or \"sibling\"(need to start new tree)
+        Second argument is relative path from current branch to child if argument is child
+        ")
+                        (reparse-symbol indented_block_body) [1772 2654])
+                    ("_add_new_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2677 2681])
+                            ("new_node_name" variable nil (reparse-symbol function_parameters) [2683 2696]))                          
+                        :documentation "
+        Adds new node to branch
+        ")
+                        (reparse-symbol indented_block_body) [2659 2915])
+                    ("level_opened" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2937 2941])
+                            ("test_as_list" variable nil (reparse-symbol function_parameters) [2943 2955])
+                            ("func_to_open" variable nil (reparse-symbol function_parameters) [2957 2969]))                          
+                        :documentation "
+        To be called on test start.
+
+        :param test_as_list: test name splitted as list
+        :param func_to_open: func to be called if test can open new level
+        :return: None if new level opened, or tuple of command client should execute and try opening level again
+         Command is \"open\" (open provided level) or \"close\" (close it). Second item is test name as list
+        ")
+                        (reparse-symbol indented_block_body) [2920 4203])
+                    ("level_closed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4225 4229])
+                            ("test_as_list" variable nil (reparse-symbol function_parameters) [4231 4243])
+                            ("func_to_close" variable nil (reparse-symbol function_parameters) [4245 4258]))                          
+                        :documentation "
+        To be called on test end or failure.
+
+        See level_opened doc.
+        ")
+                        (reparse-symbol indented_block_body) [4208 4756])
+                    ("parent_branch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4793 4797]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4761 4873])
+                    ("_get_node_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4895 4899])
+                            ("branch" variable nil (reparse-symbol function_parameters) [4901 4907]))                          )
+                        (reparse-symbol indented_block_body) [4878 4963])
+                    ("node_ids" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4995 4999]))                          
+                        :documentation "
+
+        :return: (current_node_id, parent_node_id)
+        ")
+                        (reparse-symbol indented_block_body) [4968 5275])
+                    ("close_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5294 5298]))                          )
+                        (reparse-symbol indented_block_body) [5280 5405]))                  
+                :type "class")
+                nil [1326 5405])
+            ("TREE_MANAGER" variable nil nil [5407 5436])
+            ("_old_service_messages" variable nil nil [5438 5494])
+            ("PARSE_FUNC" variable nil nil [5496 5513])
+            ("NewTeamcityServiceMessages" type
+               (:superclasses ("_old_service_messages")
+                :members 
+                  ( ("_latest_subtest_result" variable nil (reparse-symbol indented_block_body) [5577 5606])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5624 5628])
+                            ("messageName" variable nil (reparse-symbol function_parameters) [5630 5641])
+                            ("properties" variable nil (reparse-symbol function_parameters) [5643 5655]))                          )
+                        (reparse-symbol indented_block_body) [5612 6967])
+                    ("_test_to_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6990 6994])
+                            ("test_name" variable nil (reparse-symbol function_parameters) [6996 7005]))                          
+                        :documentation "
+        Splits test name to parts to use it as list.
+        It most cases dot is used, but runner may provide custom function
+        ")
+                        (reparse-symbol indented_block_body) [6972 7313])
+                    ("_fix_setup_teardown_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7347 7351])
+                            ("test_name" variable nil (reparse-symbol function_parameters) [7353 7362]))                          
+                        :documentation "
+
+        Hack to rename setup and teardown methods to much real python signatures
+        ")
+                        (reparse-symbol indented_block_body) [7318 7631])
+                    ("blockClosed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8021 8025])
+                            ("name" variable nil (reparse-symbol function_parameters) [8027 8031])
+                            ("flowId" variable nil (reparse-symbol function_parameters) [8033 8039]))                          )
+                        (reparse-symbol indented_block_body) [8005 8650])
+                    ("subTestBlockOpened" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8678 8682])
+                            ("name" variable nil (reparse-symbol function_parameters) [8684 8688])
+                            ("subTestResult" variable nil (reparse-symbol function_parameters) [8690 8703])
+                            ("flowId" variable nil (reparse-symbol function_parameters) [8705 8711]))                          )
+                        (reparse-symbol indented_block_body) [8655 8844])
+                    ("testStarted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8865 8869])
+                            ("testName" variable nil (reparse-symbol function_parameters) [8871 8879])
+                            ("captureStandardOutput" variable nil (reparse-symbol function_parameters) [8881 8902])
+                            ("flowId" variable nil (reparse-symbol function_parameters) [8909 8915])
+                            ("is_suite" variable nil (reparse-symbol function_parameters) [8922 8930]))                          )
+                        (reparse-symbol indented_block_body) [8849 9640])
+                    ("testFailed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9660 9664])
+                            ("testName" variable nil (reparse-symbol function_parameters) [9666 9674])
+                            ("message" variable nil (reparse-symbol function_parameters) [9676 9683])
+                            ("details" variable nil (reparse-symbol function_parameters) [9688 9695])
+                            ("flowId" variable nil (reparse-symbol function_parameters) [9700 9706])
+                            ("comparison_failure" variable nil (reparse-symbol function_parameters) [9713 9731]))                          )
+                        (reparse-symbol indented_block_body) [9645 9924])
+                    ("testFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9946 9950])
+                            ("testName" variable nil (reparse-symbol function_parameters) [9952 9960])
+                            ("testDuration" variable nil (reparse-symbol function_parameters) [9962 9974])
+                            ("flowId" variable nil (reparse-symbol function_parameters) [9981 9987])
+                            ("is_suite" variable nil (reparse-symbol function_parameters) [9994 10002]))                          )
+                        (reparse-symbol indented_block_body) [9929 11017])
+                    ("do_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11037 11041])
+                            ("command" variable nil (reparse-symbol function_parameters) [11043 11050])
+                            ("test" variable nil (reparse-symbol function_parameters) [11052 11056]))                          
+                        :documentation "
+
+        Executes commands, returned by level_closed and level_opened
+        ")
+                        (reparse-symbol indented_block_body) [11022 11459])
+                    ("close_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11478 11482]))                          
+                        :documentation "
+
+        Closes all tests
+        ")
+                        (reparse-symbol indented_block_body) [11464 11683]))                  
+                :type "class")
+                nil [5516 11683])
+            ("messages" variable nil nil [11685 11746])
+            ("jb_patch_separator" function
+               (:documentation "
+    Converts python target if format \"/path/foo.py::parts.to.python\" provided by Java to
+    python specific format
+
+    :param targets: list of dot-separated targets
+    :param fs_glue: how to glue fs parts of target. I.e.: module \"eggs\" in \"spam\" package is \"spam[fs_glue]eggs\"
+    :param python_glue: how to glue python parts (glue between class and function etc)
+    :param fs_to_python_glue: between last fs-part and first python part
+    :return: list of targets with patched separators
+    "
+                :arguments 
+                  ( ("targets" variable nil (reparse-symbol function_parameters) [11789 11796])
+                    ("fs_glue" variable nil (reparse-symbol function_parameters) [11798 11805])
+                    ("python_glue" variable nil (reparse-symbol function_parameters) [11807 11818])
+                    ("fs_to_python_glue" variable nil (reparse-symbol function_parameters) [11820 11837]))                  )
+                nil [11766 12864])
+            ("jb_start_tests" function (:documentation "
+    Parses arguments, starts protocol and returns tuple of arguments
+
+    :return: (string with path or None, list of targets or None, list of additional arguments)
+    :param func_to_parse function that accepts each part of test name and returns list to be used instead of it.
+    It may return list with only one element (name itself) if name is the same or split names to several parts
+    ") nil [12866 14244])
+            ("_close_all_tests" function nil nil [14246 14315])
+            ("atexit" code nil nil [14317 14350])
+            ("jb_doc_args" function
+               (:documentation "
+    Runner encouraged to report its arguments to user with aid of this function
+
+    "
+                :arguments 
+                  ( ("framework_name" variable nil (reparse-symbol function_parameters) [14369 14383])
+                    ("args" variable nil (reparse-symbol function_parameters) [14385 14389]))                  )
+                nil [14353 14605]))          
+      :file "_jb_runner_tools.py"
+      :pointmax 14605
+      :fsize 14604
+      :lastmodtime '(23456 57375 243435 681000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "_jb_utils.py"
+      :fsize 4272
+      :lastmodtime '(23302 28911 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [16 25])
+            ("sys" include nil nil [26 36])
+            ("_jb_runner_tools" include nil nil [38 116])
+            ("if" code nil nil [118 1561]))          
+      :file "_jb_unittest_runner.py"
+      :pointmax 1561
+      :fsize 1560
+      :lastmodtime '(23456 62638 186320 261000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 32])
+            ("traceback" include nil nil [11 32])
+            ("unittest" include nil nil [33 64])
+            ("datetime" include nil nil [65 80])
+            ("tcmessages" include nil nil [82 128])
+            ("PYTHON_VERSION_MAJOR" variable nil nil [130 172])
+            ("strclass" function (:arguments 
+              ( ("cls" variable nil (reparse-symbol function_parameters) [188 191]))              ) nil [175 293])
+            ("smart_str" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [309 310]))              ) nil [295 945])
+            ("TeamcityTestResult" type
+               (:documentation "
+  Set ``_jb_do_not_call_enter_matrix`` to prevent it from runnig \"enter matrix\"
+  "
+                :superclasses ("TestResult")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("TestResult" code nil (reparse-symbol indented_block_body) [1140 1165])
+                            ("for" code nil (reparse-symbol indented_block_body) [1170 1236])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1240 1260])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1265 1341])
+                            ("if" code nil (reparse-symbol indented_block_body) [1346 1439])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1443 1470])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1475 1500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1505 1530]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1093 1097])
+                            ("stream" variable nil (reparse-symbol function_parameters) [1099 1105])
+                            ("args" variable nil (reparse-symbol function_parameters) [1118 1123])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1125 1133]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1080 1531]))                  
+                :type "class")
+                nil [947 8514])
+            ("TeamcityTestRunner" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8595 8615]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8565 8569])
+                            ("stream" variable nil (reparse-symbol function_parameters) [8571 8577]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8552 8616])
+                    ("_makeResult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8635 8639])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8641 8649]))                          )
+                        (reparse-symbol indented_block_body) [8619 8705])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8716 8720])
+                            ("test" variable nil (reparse-symbol function_parameters) [8722 8726])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8728 8736]))                          )
+                        (reparse-symbol indented_block_body) [8708 8893]))                  
+                :type "class")
+                nil [8516 8893]))          
+      :file "tcunittest.py"
+      :pointmax 8893
+      :fsize 8892
+      :lastmodtime '(23302 28911 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tcmessages.py"
+      :fsize 3544
+      :lastmodtime '(23302 28911 0 0)))
+  :file "!home!hasher!programs!pycharm-community-2018.1.4!helpers!pycharm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-jsx-mode
+      :tags 
+        '( ("PrivateRoute" function nil nil [1040 1925]))          
+      :file "App.tsx"
+      :pointmax 1946
+      :fsize 1967
+      :lastmodtime '(24019 59073 928104 148000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!opsmanager!ui!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

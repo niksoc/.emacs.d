@@ -1,0 +1,149 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("pb" variable (:constant-flag t) nil [133 135])
+            ("mp" variable (:constant-flag t) nil [154 156])
+            ("all" variable (:constant-flag t) nil [175 178])
+            ("sz" variable (:constant-flag t) nil [208 210])
+            ("ms" variable (:constant-flag t) nil [241 243])
+            ("II" variable (:constant-flag t) nil [279 281])
+            ("IC" variable (:constant-flag t) nil [312 314])
+            ("IL" variable (:constant-flag t) nil [346 348])
+            ("ID" variable (:constant-flag t) nil [380 382])
+            ("IS" variable (:constant-flag t) nil [416 418])
+            ("EPS" variable (:constant-flag t) nil [452 455])
+            ("pi" variable (:constant-flag t) nil [470 472])
+            ("fastio" variable (:constant-flag t) nil [515 521])
+            ("Long" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [576 599])
+            ("ull" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [600 631])
+            ("vi" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [632 656])
+            ("si" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [657 677])
+            ("vl" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [678 702])
+            ("pii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [703 729])
+            ("pll" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil)
+                          ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [730 758])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [759 791])
+            ("vii" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("pii" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [792 816])
+            ("ld" type
+               (:typedef ("long double")
+                :type "typedef")
+                nil [817 840])
+            ("forab" variable (:constant-flag t) nil [850 855])
+            ("rep" variable (:constant-flag t) nil [915 918])
+            ("rep1" variable (:constant-flag t) nil [956 960])
+            ("rofba" variable (:constant-flag t) nil [992 997])
+            ("rrep" variable (:constant-flag t) nil [1056 1060])
+            ("rrep1" variable (:constant-flag t) nil [1098 1103])
+            ("forstl" variable (:constant-flag t) nil [1135 1141])
+            ("debug" variable (:constant-flag t) nil [2628 2633])
+            ("DEBUG" variable (:constant-flag t) nil [2706 2711])
+            ("T" variable (:type "int") nil [2712 2724])
+            ("N" variable (:type "int") nil [2712 2724])
+            ("K" variable (:type "int") nil [2712 2724])
+            ("getNumerator" function (:type ("Long" type (:type "class") nil nil)) nil [2726 2800])
+            ("getDenominator" function (:type ("Long" type (:type "class") nil nil)) nil [2802 2868])
+            ("solve" function (:type ("ld" type (:type "class") nil nil)) nil [2870 2948])
+            ("main" function (:type "int") nil [2950 3073]))          
+      :file "temp.cpp"
+      :pointmax 3074
+      :fsize 3158
+      :lastmodtime '(23039 17104 466970 117000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ms" (spp-arg-list ("a" "v") 243 . 248) . ((symbol "memset" 249 . 255) (semantic-list "(a,v,sizeof(a))" 255 . 270)))
+          ("IC" . ((semantic-list "({char a; cin>>a; a;})" 315 . 337)))
+          ("ID" . ((semantic-list "({double a; cin>>a; a;})" 383 . 407)))
+          ("IS" . ((semantic-list "({string a; cin>>a; a;})" 419 . 443)))
+          ("rep1" (spp-arg-list ("i" "n") 960 . 966) . ((symbol "forab" 968 . 973) (semantic-list "(i, 1, n)" 974 . 983)))
+          ("pb" . ((symbol "push_back" 136 . 145)))
+          ("all" (spp-arg-list ("x") 178 . 181) . 
+              ((symbol "x" 182 . 183) (punctuation "." 183 . 184) (symbol "begin" 184 . 189) (semantic-list "()" 189 . 191) (punctuation "," 191 . 192) (symbol "x" 192 . 193) (punctuation "." 193 . 194) (symbol "end" 194 . 197) (semantic-list "()" 197 . 199)))
+          ("II" . ((semantic-list "({int a; cin>>a; a;})" 282 . 303)))
+          ("rofba" (spp-arg-list ("i" "a" "b") 997 . 1006) . ((FOR "for" 1007 . 1010) (semantic-list "(__typeof (b)i = (b) ; i >= a ; --i)" 1011 . 1047)))
+          ("EPS" . ((number "1e-10" 456 . 461)))
+          ("rrep" (spp-arg-list ("i" "n") 1060 . 1066) . ((symbol "rofba" 1068 . 1073) (semantic-list "(i, 0, (n) - 1)" 1074 . 1089)))
+          ("rrep1" (spp-arg-list ("i" "n") 1103 . 1109) . ((symbol "rofba" 1111 . 1116) (semantic-list "(i, 1, n)" 1117 . 1126)))
+          ("debug" (spp-arg-list ("x") 2633 . 2636))
+          ("IL" . ((semantic-list "({Long a; cin>>a; a;})" 349 . 371)))
+          ("forstl" (spp-arg-list ("i" "s") 1141 . 1147) . ((FOR "for" 1148 . 1151) (semantic-list "(__typeof ((s).end ()) i = (s).begin (); i != (s).end (); ++i)" 1152 . 1214)))
+          ("mp" . ((symbol "make_pair" 157 . 166)))
+          ("DEBUG")
+          ("rep" (spp-arg-list ("i" "n") 918 . 924) . ((symbol "forab" 926 . 931) (semantic-list "(i, 0, (n) - 1)" 932 . 947)))
+          ("sz" (spp-arg-list ("x") 210 . 213) . ((semantic-list "((int) (x).size())" 214 . 232)))
+          ("pi" . ((number "3.1415926535897932384626433832795" 473 . 506)))
+          ("fastio" . 
+              ((symbol "ios_base" 522 . 530) (punctuation ":" 530 . 531) (punctuation ":" 531 . 532) (symbol "sync_with_stdio" 532 . 547) (semantic-list "(0)" 547 . 550) (punctuation ";" 550 . 551) (symbol "cout" 551 . 555) (punctuation "." 555 . 556) (symbol "tie" 556 . 559) (semantic-list "(0)" 559 . 562) (punctuation ";" 562 . 563) (symbol "cin" 563 . 566) (punctuation "." 566 . 567) (symbol "tie" 567 . 570) (semantic-list "(0)" 570 . 573) (punctuation ";" 573 . 574)))
+          ("forab" (spp-arg-list ("i" "a" "b") 855 . 864) . ((FOR "for" 865 . 868) (semantic-list "(__typeof (b) i = (a) ; i <= b ; ++i)" 869 . 906)))
+          )
+))
+  :file "!home!nikhil!icpcmock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

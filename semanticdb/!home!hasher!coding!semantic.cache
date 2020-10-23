@@ -1,0 +1,144 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("pb" variable (:constant-flag t) nil [34 36])
+            ("all" variable (:constant-flag t) nil [55 58])
+            ("ms" variable (:constant-flag t) nil [88 90])
+            ("II" variable (:constant-flag t) nil [125 127])
+            ("LL" variable (:constant-flag t) nil [167 169])
+            ("DD" variable (:constant-flag t) nil [212 214])
+            ("EPS" variable (:constant-flag t) nil [258 261])
+            ("pi" variable (:constant-flag t) nil [276 278])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [313 333])
+            ("Long" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [335 358])
+            ("ull" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [359 390])
+            ("vi" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [391 415])
+            ("si" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [416 436])
+            ("vl" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [437 460])
+            ("pii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [461 486])
+            ("pll" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("Long" type nil nil nil)
+                          ("Long" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [487 514])
+            ("pdd" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [515 546])
+            ("forab" variable (:constant-flag t) nil [556 561])
+            ("rep" variable (:constant-flag t) nil [621 624])
+            ("For" variable (:constant-flag t) nil [662 665])
+            ("rofba" variable (:constant-flag t) nil [697 702])
+            ("per" variable (:constant-flag t) nil [761 764])
+            ("rof" variable (:constant-flag t) nil [802 805])
+            ("forstl" variable (:constant-flag t) nil [837 843])
+            ("main" function (:type "int") nil [918 1090]))          
+      :file "11172.cpp"
+      :pointmax 1091
+      :fsize 1090
+      :lastmodtime '(23758 55529 336822 299000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ms" (spp-arg-list ("a" "v") 90 . 95) . ((symbol "memset" 96 . 102) (semantic-list "(a,v,sizeof a)" 102 . 116)))
+          ("pb" . ((symbol "push_back" 37 . 46)))
+          ("all" (spp-arg-list ("x") 58 . 61) . 
+              ((symbol "x" 62 . 63) (punctuation "." 63 . 64) (symbol "begin" 64 . 69) (semantic-list "()" 69 . 71) (punctuation "," 71 . 72) (symbol "x" 72 . 73) (punctuation "." 73 . 74) (symbol "end" 74 . 77) (semantic-list "()" 77 . 79)))
+          ("LL" . ((semantic-list "({Long a; scanf(\"%lld\", &a); a;})" 170 . 203)))
+          ("rof" (spp-arg-list ("i" "n") 805 . 811) . ((symbol "rofba" 813 . 818) (semantic-list "(i, 1, n)" 819 . 828)))
+          ("II" . ((semantic-list "({int a; scanf(\"%d\", &a); a;})" 128 . 158)))
+          ("rofba" (spp-arg-list ("i" "a" "b") 702 . 711) . ((FOR "for" 712 . 715) (semantic-list "(__typeof (b)i = (b) ; i >= a ; --i)" 716 . 752)))
+          ("EPS" . ((number "1e-10" 262 . 267)))
+          ("per" (spp-arg-list ("i" "n") 764 . 770) . ((symbol "rofba" 772 . 777) (semantic-list "(i, 0, (n) - 1)" 778 . 793)))
+          ("forstl" (spp-arg-list ("i" "s") 843 . 849) . ((FOR "for" 850 . 853) (semantic-list "(__typeof ((s).end ()) i = (s).begin (); i != (s).end (); ++i)" 854 . 916)))
+          ("rep" (spp-arg-list ("i" "n") 624 . 630) . ((symbol "forab" 632 . 637) (semantic-list "(i, 0, (n) - 1)" 638 . 653)))
+          ("For" (spp-arg-list ("i" "n") 665 . 671) . ((symbol "forab" 673 . 678) (semantic-list "(i, 1, n)" 679 . 688)))
+          ("DD" . ((semantic-list "({double a; scanf(\"%lf\", &a); a;})" 215 . 249)))
+          ("pi" . ((number "3.1415926535897932384626433832795" 279 . 312)))
+          ("forab" (spp-arg-list ("i" "a" "b") 561 . 570) . ((FOR "for" 571 . 574) (semantic-list "(__typeof (b) i = (a) ; i <= b ; ++i)" 575 . 612)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 24])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [26 46])
+            ("pow" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [56 62])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [63 69])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [70 76]))                  
+                :type "int")
+                nil [48 337])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [348 357])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [358 370]))                  
+                :type "int")
+                nil [339 475]))          
+      :file "test.cpp"
+      :pointmax 479
+      :fsize 492
+      :lastmodtime '(24343 62411 700682 859000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

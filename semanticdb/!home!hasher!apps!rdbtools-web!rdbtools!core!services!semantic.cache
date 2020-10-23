@@ -1,0 +1,151 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("abc" include nil nil [1 36])
+            ("logging" include nil nil [37 51])
+            ("datetime" include nil nil [52 81])
+            ("typing" include nil nil [82 115])
+            ("django.http" include nil nil [117 153])
+            ("django.conf" include nil nil [154 186])
+            ("rest_framework.response" include nil nil [187 231])
+            ("logger" variable nil nil [234 272])
+            ("License" type
+               (:documentation "Use the \"get_license_obj\" class method to get an instance of the appropriate class"
+                :superclasses ("ABC")
+                :members 
+                  ( ("FEATURE_OVERVIEW" variable nil (reparse-symbol indented_block_body) [393 430])
+                    ("FEATURE_KEYSPACE_SUMMARY" variable nil (reparse-symbol indented_block_body) [435 488])
+                    ("FEATURE_RECOMMENDATIONS" variable nil (reparse-symbol indented_block_body) [493 545])
+                    ("FEATURE_MEMORY_ANALYZER" variable nil (reparse-symbol indented_block_body) [550 601])
+                    ("FEATURE_VIEWS" variable nil (reparse-symbol indented_block_body) [606 637])
+                    ("FEATURE_PROFILER" variable nil (reparse-symbol indented_block_body) [642 679])
+                    ("FEATURE_SLOWLOG" variable nil (reparse-symbol indented_block_body) [684 719])
+                    ("FEATURE_CLI" variable nil (reparse-symbol indented_block_body) [724 751])
+                    ("FEATURE_CONFIG" variable nil (reparse-symbol indented_block_body) [756 789])
+                    ("FEATURE_CLIENT_LIST" variable nil (reparse-symbol indented_block_body) [794 838])
+                    ("FEATURE_CLUSTER_MANAGEMENT" variable nil (reparse-symbol indented_block_body) [843 900])
+                    ("FEATURE_ELASTICACHE_INTEGRATION_ENABLED" variable nil (reparse-symbol indented_block_body) [905 988])
+                    ("FEATURE_SSL_INSTANCE_SUPPORT_ENABLED" variable nil (reparse-symbol indented_block_body) [993 1070])
+                    ("FEATURE_ROLE_BASED_ACCESS_CONTROL_ENABLED" variable nil (reparse-symbol indented_block_body) [1075 1162])
+                    ("FEATURE_REDISGRAPH_ENABLED" variable nil (reparse-symbol indented_block_body) [1167 1223])
+                    ("FEATURE_REDISEARCH_ENABLED" variable nil (reparse-symbol indented_block_body) [1228 1284])
+                    ("FEATURE_REDISTIMESERIES_ENABLED" variable nil (reparse-symbol indented_block_body) [1289 1355])
+                    ("LIMIT_CLUSTER_MANAGEMENT_WRITE_OPS_ENABLED" variable nil (reparse-symbol indented_block_body) [1361 1450])
+                    ("LIMIT_BROWSER_RESTRICTION_ENABLED" variable nil (reparse-symbol indented_block_body) [1455 1526])
+                    ("LIMIT_BULK_ACTION_KEY_LIMIT_ENABLED" variable nil (reparse-symbol indented_block_body) [1531 1609])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [1643 1750]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1628 1632]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1615 1750]))                  
+                :type "class")
+                nil [275 5470])
+            ("DefaultLicense" type
+               (:documentation "
+    Fully activated license. Imposes no limits.
+    Implemented as an in-memory object, not backed by any token from any database.
+    "
+                :superclasses ("License")
+                :members 
+                  ( ("FEATURE_CONFIG" variable nil (reparse-symbol indented_block_body) [5655 6672]))                  
+                :type "class")
+                nil [5472 7686])
+            ("TestLicense" type
+               (:documentation "
+    Used for unit tests. Can be configured at instantiation time
+    to include/exclude features and set limits.
+    If django `settings.USE_TEST_LICENSE` is `True`, `get_license()`
+    will return an object of this class.
+    Use the `set_test_license()` function in unit tests to configure the test license.
+    "
+                :superclasses ("License")
+                :members 
+                  ( ("DEFAULT_FEATURE_CONFIG" variable nil (reparse-symbol indented_block_body) [8047 9072])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [9436 9454])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9463 9500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9509 9546])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9555 9596])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9605 9646])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9655 9694])
+                            ("self" code nil (reparse-symbol indented_block_body) [9703 9748])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9757 9829]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9091 9095])
+                            ("None" variable nil (reparse-symbol function_parameters) [9146 9150])
+                            ("None" variable nil (reparse-symbol function_parameters) [9201 9205])
+                            ("None" variable nil (reparse-symbol function_parameters) [9254 9258])
+                            ("None" variable nil (reparse-symbol function_parameters) [9311 9315])
+                            ("int" variable nil (reparse-symbol function_parameters) [9351 9354])
+                            ("None" variable nil (reparse-symbol function_parameters) [9421 9425]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9078 9830])
+                    ("_validate_feature_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9864 9868]))                          
+                        :documentation "
+        Validates the `feature_config` argument of the constructor.
+        Raises an `ValueError` if the config is invalid.
+        ")
+                        (reparse-symbol indented_block_body) [9835 10383]))                  
+                :type "class")
+                nil [7688 11376])
+            ("__DEFAULT_LICENSE" variable nil nil [11378 11414])
+            ("__TEST_LICENSE" variable nil nil [11416 11437])
+            ("set_test_license" function (:arguments 
+              ( ("license_opts" variable nil (reparse-symbol function_parameters) [11461 11475]))              ) nil [11440 11553])
+            ("LicensingMiddleware" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11890 11922])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11931 11972]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11898 11902])
+                            ("get_response" variable nil (reparse-symbol function_parameters) [11904 11916]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11885 12010])
+                    ("process_view" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12032 12036])
+                            ("request" variable nil (reparse-symbol function_parameters) [12038 12045])
+                            ("view_func" variable nil (reparse-symbol function_parameters) [12047 12056])
+                            ("view_args" variable nil (reparse-symbol function_parameters) [12058 12067])
+                            ("view_kwargs" variable nil (reparse-symbol function_parameters) [12069 12080]))                          )
+                        (reparse-symbol indented_block_body) [12015 12558])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12576 12580])
+                            ("request" variable nil (reparse-symbol function_parameters) [12582 12589]))                          )
+                        (reparse-symbol indented_block_body) [12563 12634]))                  
+                :type "class")
+                nil [11853 12634])
+            ("license_exempt" function (:arguments 
+              ( ("view_func" variable nil (reparse-symbol function_parameters) [12655 12664]))              ) nil [12636 12724])
+            ("license_includes_feature" function
+               (:documentation "Allows access to the view function if any of the features in the list is enabled, otherwise blocks"
+                :arguments 
+                  ( ("feature_name_list" variable nil (reparse-symbol function_parameters) [12755 12772]))                  )
+                nil [12726 13353]))          
+      :file "licensing.py"
+      :pointmax 13353
+      :fsize 13352
+      :lastmodtime '(23935 15411 223754 643000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!rdbtools-web!rdbtools!core!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

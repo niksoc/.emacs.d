@@ -1,0 +1,896 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("MEM" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [101 104])
+            ("REP" variable (:constant-flag t) nil [154 157])
+            ("all" variable (:constant-flag t) nil [188 191])
+            ("IN" variable (:constant-flag t) nil [231 233])
+            ("PRESENT" variable (:constant-flag t) nil [277 284])
+            ("CPRESENT" variable (:constant-flag t) nil [325 333])
+            ("MP" variable (:constant-flag t) nil [378 380])
+            ("PB" variable (:constant-flag t) nil [399 401])
+            ("INF" variable (:constant-flag t) nil [420 423])
+            ("EPS" variable (:constant-flag t) nil [441 444])
+            ("PI" variable (:constant-flag t) nil [458 460])
+            ("MOD" variable (:constant-flag t) nil [503 506])
+            ("sz" variable (:constant-flag t) nil [526 528])
+            ("debug" variable (:constant-flag t) nil [562 567])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [605 632])
+            ("PII" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [633 660])
+            ("VI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [661 684])
+            ("VS" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [685 711])
+            ("VII" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("PII" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [712 736])
+            ("VVI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("VI" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [737 760])
+            ("MPII" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [761 787])
+            ("SETI" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [788 810])
+            ("MSETI" type
+               (:typedef ("multiset" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [811 839])
+            ("int32" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [840 863])
+            ("uint32" type
+               (:typedef ("unsigned long int")
+                :type "typedef")
+                nil [864 897])
+            ("int64" variable (:type "long int") nil [911 926])
+            ("uint64" variable (:type "long int") nil [949 966])
+            ("main" function (:type "int") nil [968 1284]))          
+      :file "834a.cpp"
+      :pointmax 1285
+      :fsize 1284
+      :lastmodtime '(22925 42820 127338 252000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 104 . 117) . ((FOR "for" 118 . 121) (semantic-list "(int i=j ; i<k ; i+=in)" 122 . 145)))
+          ("PI" . ((number "3.1415926535897932384626433832795" 461 . 494)))
+          ("MEM" (spp-arg-list ("a" "b") 60 . 66) . ((symbol "memset" 67 . 73) (semantic-list "(a, (b), sizeof(a))" 73 . 92)))
+          ("all" (spp-arg-list ("cont") 191 . 197) . 
+              ((symbol "cont" 198 . 202) (punctuation "." 202 . 203) (symbol "begin" 203 . 208) (semantic-list "()" 208 . 210) (punctuation "," 210 . 211) (symbol "cont" 212 . 216) (punctuation "." 216 . 217) (symbol "end" 217 . 220) (semantic-list "()" 220 . 222)))
+          ("PRESENT" (spp-arg-list ("c" "x") 284 . 289) . ((semantic-list "((c).find(x) != (c).end())" 290 . 316)))
+          ("PB" . ((symbol "push_back" 402 . 411)))
+          ("EPS" . ((number "1e-9" 445 . 449)))
+          ("debug" (spp-arg-list ("x") 567 . 570) . 
+              ((symbol "cerr" 571 . 575) (punctuation "<" 576 . 577) (punctuation "<" 577 . 578) (punctuation "#" 579 . 580) (symbol "x" 580 . 581) (punctuation "<" 582 . 583) (punctuation "<" 583 . 584) (string "\" = \"" 585 . 590) (punctuation "<" 591 . 592) (punctuation "<" 592 . 593) (symbol "x" 594 . 595) (punctuation "<" 596 . 597) (punctuation "<" 597 . 598) (symbol "endl" 599 . 603) (punctuation ";" 603 . 604)))
+          ("MOD" . ((number "1000000007" 507 . 517)))
+          ("REP" (spp-arg-list ("i" "j") 157 . 163) . ((symbol "FOR" 164 . 167) (semantic-list "(i, 0, j, 1)" 167 . 179)))
+          ("IN" (spp-arg-list ("A" "B" "C") 233 . 242) . ((symbol "assert" 243 . 249) (semantic-list "( B <= A && A <= C)" 249 . 268)))
+          ("CPRESENT" (spp-arg-list ("c" "x") 333 . 338) . ((semantic-list "(find(all(c),x) != (c).end())" 339 . 368)))
+          ("MP" . ((symbol "make_pair" 381 . 390)))
+          ("INF" . ((semantic-list "(int)" 424 . 429) (number "1e9" 429 . 432)))
+          ("sz" (spp-arg-list ("cont") 528 . 534) . ((INT "int" 535 . 538) (semantic-list "((cont).size())" 538 . 553)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("MEM" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [101 104])
+            ("REP" variable (:constant-flag t) nil [154 157])
+            ("all" variable (:constant-flag t) nil [188 191])
+            ("IN" variable (:constant-flag t) nil [231 233])
+            ("PRESENT" variable (:constant-flag t) nil [277 284])
+            ("CPRESENT" variable (:constant-flag t) nil [325 333])
+            ("MP" variable (:constant-flag t) nil [378 380])
+            ("PB" variable (:constant-flag t) nil [399 401])
+            ("INF" variable (:constant-flag t) nil [420 423])
+            ("EPS" variable (:constant-flag t) nil [441 444])
+            ("PI" variable (:constant-flag t) nil [458 460])
+            ("MOD" variable (:constant-flag t) nil [503 506])
+            ("sz" variable (:constant-flag t) nil [526 528])
+            ("debug" variable (:constant-flag t) nil [562 567])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [605 632])
+            ("PII" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [633 660])
+            ("VI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [661 684])
+            ("VS" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [685 711])
+            ("VII" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("PII" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [712 736])
+            ("VVI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("VI" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [737 760])
+            ("MPII" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [761 787])
+            ("SETI" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [788 810])
+            ("MSETI" type
+               (:typedef ("multiset" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [811 839])
+            ("int32" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [840 863])
+            ("uint32" type
+               (:typedef ("unsigned long int")
+                :type "typedef")
+                nil [864 897])
+            ("int64" variable (:type "long int") nil [911 926])
+            ("uint64" variable (:type "long int") nil [949 966])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [969 984])
+            ("endings" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("char" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [985 1008])
+            ("main" function (:type "int") nil [1009 1347]))          
+      :file "834b.cpp"
+      :pointmax 1348
+      :fsize 1347
+      :lastmodtime '(22925 43407 902005 150000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 104 . 117) . ((FOR "for" 118 . 121) (semantic-list "(int i=j ; i<k ; i+=in)" 122 . 145)))
+          ("PI" . ((number "3.1415926535897932384626433832795" 461 . 494)))
+          ("MEM" (spp-arg-list ("a" "b") 60 . 66) . ((symbol "memset" 67 . 73) (semantic-list "(a, (b), sizeof(a))" 73 . 92)))
+          ("all" (spp-arg-list ("cont") 191 . 197) . 
+              ((symbol "cont" 198 . 202) (punctuation "." 202 . 203) (symbol "begin" 203 . 208) (semantic-list "()" 208 . 210) (punctuation "," 210 . 211) (symbol "cont" 212 . 216) (punctuation "." 216 . 217) (symbol "end" 217 . 220) (semantic-list "()" 220 . 222)))
+          ("PRESENT" (spp-arg-list ("c" "x") 284 . 289) . ((semantic-list "((c).find(x) != (c).end())" 290 . 316)))
+          ("PB" . ((symbol "push_back" 402 . 411)))
+          ("EPS" . ((number "1e-9" 445 . 449)))
+          ("debug" (spp-arg-list ("x") 567 . 570) . 
+              ((symbol "cerr" 571 . 575) (punctuation "<" 576 . 577) (punctuation "<" 577 . 578) (punctuation "#" 579 . 580) (symbol "x" 580 . 581) (punctuation "<" 582 . 583) (punctuation "<" 583 . 584) (string "\" = \"" 585 . 590) (punctuation "<" 591 . 592) (punctuation "<" 592 . 593) (symbol "x" 594 . 595) (punctuation "<" 596 . 597) (punctuation "<" 597 . 598) (symbol "endl" 599 . 603) (punctuation ";" 603 . 604)))
+          ("MOD" . ((number "1000000007" 507 . 517)))
+          ("REP" (spp-arg-list ("i" "j") 157 . 163) . ((symbol "FOR" 164 . 167) (semantic-list "(i, 0, j, 1)" 167 . 179)))
+          ("IN" (spp-arg-list ("A" "B" "C") 233 . 242) . ((symbol "assert" 243 . 249) (semantic-list "( B <= A && A <= C)" 249 . 268)))
+          ("CPRESENT" (spp-arg-list ("c" "x") 333 . 338) . ((semantic-list "(find(all(c),x) != (c).end())" 339 . 368)))
+          ("MP" . ((symbol "make_pair" 381 . 390)))
+          ("INF" . ((semantic-list "(int)" 424 . 429) (number "1e9" 429 . 432)))
+          ("sz" (spp-arg-list ("cont") 528 . 534) . ((INT "int" 535 . 538) (semantic-list "((cont).size())" 538 . 553)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("MEM" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [101 104])
+            ("REP" variable (:constant-flag t) nil [154 157])
+            ("all" variable (:constant-flag t) nil [188 191])
+            ("IN" variable (:constant-flag t) nil [231 233])
+            ("PRESENT" variable (:constant-flag t) nil [277 284])
+            ("CPRESENT" variable (:constant-flag t) nil [325 333])
+            ("MP" variable (:constant-flag t) nil [378 380])
+            ("PB" variable (:constant-flag t) nil [399 401])
+            ("INF" variable (:constant-flag t) nil [420 423])
+            ("EPS" variable (:constant-flag t) nil [441 444])
+            ("PI" variable (:constant-flag t) nil [458 460])
+            ("MOD" variable (:constant-flag t) nil [503 506])
+            ("sz" variable (:constant-flag t) nil [526 528])
+            ("debug" variable (:constant-flag t) nil [562 567])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [605 632])
+            ("PII" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [633 660])
+            ("VI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [661 684])
+            ("VS" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [685 711])
+            ("VII" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("PII" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [712 736])
+            ("VVI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("VI" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [737 760])
+            ("MPII" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [761 787])
+            ("SETI" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [788 810])
+            ("MSETI" type
+               (:typedef ("multiset" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [811 839])
+            ("int32" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [840 863])
+            ("uint32" type
+               (:typedef ("unsigned long int")
+                :type "typedef")
+                nil [864 897])
+            ("int64" variable (:type "long int") nil [911 926])
+            ("uint64" variable (:type "long int") nil [949 965])
+            ("sieve" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [987 993]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [968 1255])
+            ("main" function (:type "int") nil [1258 1965]))          
+      :file "834c.cpp"
+      :pointmax 1966
+      :fsize 1965
+      :lastmodtime '(22925 53786 539381 705000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 104 . 117) . ((FOR "for" 118 . 121) (semantic-list "(int i=j ; i<k ; i+=in)" 122 . 145)))
+          ("PI" . ((number "3.1415926535897932384626433832795" 461 . 494)))
+          ("MEM" (spp-arg-list ("a" "b") 60 . 66) . ((symbol "memset" 67 . 73) (semantic-list "(a, (b), sizeof(a))" 73 . 92)))
+          ("all" (spp-arg-list ("cont") 191 . 197) . 
+              ((symbol "cont" 198 . 202) (punctuation "." 202 . 203) (symbol "begin" 203 . 208) (semantic-list "()" 208 . 210) (punctuation "," 210 . 211) (symbol "cont" 212 . 216) (punctuation "." 216 . 217) (symbol "end" 217 . 220) (semantic-list "()" 220 . 222)))
+          ("PRESENT" (spp-arg-list ("c" "x") 284 . 289) . ((semantic-list "((c).find(x) != (c).end())" 290 . 316)))
+          ("PB" . ((symbol "push_back" 402 . 411)))
+          ("EPS" . ((number "1e-9" 445 . 449)))
+          ("debug" (spp-arg-list ("x") 567 . 570) . 
+              ((symbol "cerr" 571 . 575) (punctuation "<" 576 . 577) (punctuation "<" 577 . 578) (punctuation "#" 579 . 580) (symbol "x" 580 . 581) (punctuation "<" 582 . 583) (punctuation "<" 583 . 584) (string "\" = \"" 585 . 590) (punctuation "<" 591 . 592) (punctuation "<" 592 . 593) (symbol "x" 594 . 595) (punctuation "<" 596 . 597) (punctuation "<" 597 . 598) (symbol "endl" 599 . 603) (punctuation ";" 603 . 604)))
+          ("MOD" . ((number "1000000007" 507 . 517)))
+          ("REP" (spp-arg-list ("i" "j") 157 . 163) . ((symbol "FOR" 164 . 167) (semantic-list "(i, 0, j, 1)" 167 . 179)))
+          ("IN" (spp-arg-list ("A" "B" "C") 233 . 242) . ((symbol "assert" 243 . 249) (semantic-list "( B <= A && A <= C)" 249 . 268)))
+          ("CPRESENT" (spp-arg-list ("c" "x") 333 . 338) . ((semantic-list "(find(all(c),x) != (c).end())" 339 . 368)))
+          ("MP" . ((symbol "make_pair" 381 . 390)))
+          ("INF" . ((semantic-list "(int)" 424 . 429) (number "1e9" 429 . 432)))
+          ("sz" (spp-arg-list ("cont") 528 . 534) . ((INT "int" 535 . 538) (semantic-list "((cont).size())" 538 . 553)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_CRT_SECURE_NO_WARNINGS" variable (:constant-flag t) nil [9 32])
+            ("iostream" include (:system-flag t) nil [33 52])
+            ("algorithm" include (:system-flag t) nil [53 73])
+            ("unordered_set" include (:system-flag t) nil [74 98])
+            ("vector" include (:system-flag t) nil [99 116])
+            ("cmath" include (:system-flag t) nil [117 133])
+            ("string" include (:system-flag t) nil [134 151])
+            ("set" include (:system-flag t) nil [152 166])
+            ("map" include (:system-flag t) nil [167 181])
+            ("cstdio" include (:system-flag t) nil [182 199])
+            ("functional" include (:system-flag t) nil [200 221])
+            ("random" include (:system-flag t) nil [222 239])
+            ("ctime" include (:system-flag t) nil [240 256])
+            ("cassert" include (:system-flag t) nil [257 275])
+            ("bitset" include (:system-flag t) nil [276 293])
+            ("unordered_map" include (:system-flag t) nil [294 318])
+            ("math.h" include (:system-flag t) nil [319 336])
+            ("queue" include (:system-flag t) nil [337 353])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [355 375])
+            ("N" variable (:constant-flag t) nil [385 386])
+            ("M" variable (:constant-flag t) nil [401 402])
+            ("F" variable (:constant-flag t) nil [414 415])
+            ("gen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [432 442]))                  
+                :type ("mt19937" type (:type "class") nil nil))
+                nil [420 444])
+            ("forn" variable (:constant-flag t) nil [453 457])
+            ("fornv" variable (:constant-flag t) nil [500 505])
+            ("pii" variable (:constant-flag t) nil [553 556])
+            ("forlr" variable (:constant-flag t) nil [580 585])
+            ("forlrv" variable (:constant-flag t) nil [632 638])
+            ("debug" variable (:constant-flag t) nil [685 690])
+            ("mp" variable (:constant-flag t) nil [749 751])
+            ("ll" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [762 783])
+            ("ull" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [784 815])
+            ("eps" variable
+               (:constant-flag t
+                :default-value "1e-9"
+                :type "long double")
+                nil [816 845])
+            ("inf" variable
+               (:constant-flag t
+                :default-value "2e9"
+                :type "int")
+                nil [846 866])
+            ("mod" variable
+               (:constant-flag t
+                :default-value "1e9 + 7"
+                :type "int")
+                nil [867 891])
+            ("infinity" variable
+               (:constant-flag t
+                :default-value "2 * 1e18"
+                :type ("ll" type (:type "class") nil nil))
+                nil [892 921])
+            ("p" variable (:constant-flag t) nil [930 931])
+            ("endl" variable (:constant-flag t) nil [943 947])
+            ("t" variable
+               (:dereference 1
+                :type "int")
+                nil [954 983])
+            ("d" variable
+               (:dereference 1
+                :type "int")
+                nil [954 983])
+            ("w" variable
+               (:dereference 1
+                :type "int")
+                nil [954 983])
+            ("dp" variable
+               (:dereference 2
+                :type "int")
+                nil [985 998])
+            ("n" variable (:type "int") nil [1000 1009])
+            ("k" variable (:type "int") nil [1000 1009])
+            ("build" function
+               (:arguments 
+                  ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [1022 1028])
+                    ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1029 1035])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [1036 1042])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [1043 1049]))                  
+                :type "void")
+                nil [1011 1181])
+            ("push" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1193 1199])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1200 1208]))                  
+                :type "void")
+                nil [1183 1321])
+            ("update" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1335 1341])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [1342 1348])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [1349 1355])
+                    ("L" variable (:type "int") (reparse-symbol arg-sub-list) [1356 1362])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [1363 1369]))                  
+                :type "void")
+                nil [1323 1661])
+            ("get" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [1671 1677])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [1678 1684])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [1685 1691])
+                    ("L" variable (:type "int") (reparse-symbol arg-sub-list) [1692 1698])
+                    ("R" variable (:type "int") (reparse-symbol arg-sub-list) [1699 1705]))                  
+                :type "int")
+                nil [1663 1965])
+            ("p2" variable
+               (:dereference 1
+                :type "int")
+                nil [1967 1976])
+            ("last" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1977 1996])
+            ("solve" function
+               (:arguments 
+                  ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [2009 2015]))                  
+                :type "void")
+                nil [1998 2203])
+            ("main" function (:type "int") nil [2206 2596]))          
+      :file "834d.cpp"
+      :pointmax 2597
+      :fsize 2596
+      :lastmodtime '(22929 48114 222996 969000)
+      :unmatched-syntax '((semantic-list 436 . 442))
+      :lexical-table 
+        '(("N" . ((number "35005" 387 . 392)))
+          ("forlrv" (spp-arg-list ("i" "l" "r") 638 . 647) . ((FOR "for" 648 . 651) (semantic-list "(int i = r; i >= l; i--)" 652 . 676)))
+          ("endl" . ((string "'\\n'" 948 . 952)))
+          ("F" . ((number "200" 416 . 419)))
+          ("forn" (spp-arg-list ("i" "n") 457 . 463) . ((FOR "for" 464 . 467) (semantic-list "(int i = 0; i < n; i++)" 468 . 491)))
+          ("fornv" (spp-arg-list ("i" "n") 505 . 511) . ((FOR "for" 512 . 515) (semantic-list "(int i = n - 1; i >= 0; i--)" 516 . 544)))
+          ("debug" (spp-arg-list ("...") 690 . 695) . 
+              ((symbol "fprintf" 696 . 703) (semantic-list "(stderr, __VA_ARGS__)" 703 . 724) (punctuation "," 724 . 725) (symbol "fflush" 726 . 732) (semantic-list "(stderr)" 732 . 740)))
+          ("p" . ((symbol "p2" 932 . 934)))
+          ("forlr" (spp-arg-list ("i" "l" "r") 585 . 594) . ((FOR "for" 595 . 598) (semantic-list "(int i = l; i <= r; i++)" 599 . 623)))
+          ("_CRT_SECURE_NO_WARNINGS")
+          ("mp" . ((symbol "make_pair" 752 . 761)))
+          ("pii" . 
+              ((symbol "pair" 557 . 561) (punctuation "<" 561 . 562) (INT "int" 562 . 565) (punctuation "," 565 . 566) (INT "int" 567 . 570) (punctuation ">" 570 . 571)))
+          ("M" . ((number "55" 403 . 405)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("MEM" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [101 104])
+            ("REP" variable (:constant-flag t) nil [154 157])
+            ("all" variable (:constant-flag t) nil [188 191])
+            ("IN" variable (:constant-flag t) nil [231 233])
+            ("PRESENT" variable (:constant-flag t) nil [277 284])
+            ("CPRESENT" variable (:constant-flag t) nil [325 333])
+            ("MP" variable (:constant-flag t) nil [378 380])
+            ("PB" variable (:constant-flag t) nil [399 401])
+            ("INF" variable (:constant-flag t) nil [420 423])
+            ("EPS" variable (:constant-flag t) nil [441 444])
+            ("PI" variable (:constant-flag t) nil [458 460])
+            ("MOD" variable (:constant-flag t) nil [503 506])
+            ("sz" variable (:constant-flag t) nil [526 528])
+            ("debug" variable (:constant-flag t) nil [562 567])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [605 632])
+            ("PII" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [633 660])
+            ("VI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [661 684])
+            ("VS" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [685 711])
+            ("VII" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("PII" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [712 736])
+            ("VVI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("VI" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [737 760])
+            ("MPII" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [761 787])
+            ("SETI" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [788 810])
+            ("MSETI" type
+               (:typedef ("multiset" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [811 839])
+            ("int32" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [840 863])
+            ("uint32" type
+               (:typedef ("unsigned long int")
+                :type "typedef")
+                nil [864 897])
+            ("int64" variable (:type "long int") nil [911 926])
+            ("uint64" variable (:type "long int") nil [949 966])
+            ("ending" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [968 989])
+            ("pos" variable
+               (:default-value "{0,1,2}"
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [990 1016])
+            ("dp" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("tuple" type (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil)
+                          ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        ) nil nil)
+                      ("long long" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1017 1062])
+            ("re" function
+               (:arguments 
+                  ( ("pl" variable (:type "int") (reparse-symbol arg-sub-list) [1077 1084])
+                    ("pr" variable (:type "int") (reparse-symbol arg-sub-list) [1085 1092])
+                    ("pcl" variable (:type "int") (reparse-symbol arg-sub-list) [1093 1101])
+                    ("pcr" variable (:type "int") (reparse-symbol arg-sub-list) [1102 1110]))                  
+                :type "long long")
+                nil [1064 2090])
+            ("main" function (:type "int") nil [2092 2307]))          
+      :file "149d.cpp"
+      :pointmax 2308
+      :fsize 2307
+      :lastmodtime '(22932 33004 717298 762000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 104 . 117) . ((FOR "for" 118 . 121) (semantic-list "(int i=j ; i<k ; i+=in)" 122 . 145)))
+          ("PI" . ((number "3.1415926535897932384626433832795" 461 . 494)))
+          ("MEM" (spp-arg-list ("a" "b") 60 . 66) . ((symbol "memset" 67 . 73) (semantic-list "(a, (b), sizeof(a))" 73 . 92)))
+          ("all" (spp-arg-list ("cont") 191 . 197) . 
+              ((symbol "cont" 198 . 202) (punctuation "." 202 . 203) (symbol "begin" 203 . 208) (semantic-list "()" 208 . 210) (punctuation "," 210 . 211) (symbol "cont" 212 . 216) (punctuation "." 216 . 217) (symbol "end" 217 . 220) (semantic-list "()" 220 . 222)))
+          ("PRESENT" (spp-arg-list ("c" "x") 284 . 289) . ((semantic-list "((c).find(x) != (c).end())" 290 . 316)))
+          ("PB" . ((symbol "push_back" 402 . 411)))
+          ("EPS" . ((number "1e-9" 445 . 449)))
+          ("debug" (spp-arg-list ("x") 567 . 570) . 
+              ((symbol "cerr" 571 . 575) (punctuation "<" 576 . 577) (punctuation "<" 577 . 578) (punctuation "#" 579 . 580) (symbol "x" 580 . 581) (punctuation "<" 582 . 583) (punctuation "<" 583 . 584) (string "\" = \"" 585 . 590) (punctuation "<" 591 . 592) (punctuation "<" 592 . 593) (symbol "x" 594 . 595) (punctuation "<" 596 . 597) (punctuation "<" 597 . 598) (symbol "endl" 599 . 603) (punctuation ";" 603 . 604)))
+          ("MOD" . ((number "1000000007" 507 . 517)))
+          ("REP" (spp-arg-list ("i" "j") 157 . 163) . ((symbol "FOR" 164 . 167) (semantic-list "(i, 0, j, 1)" 167 . 179)))
+          ("IN" (spp-arg-list ("A" "B" "C") 233 . 242) . ((symbol "assert" 243 . 249) (semantic-list "( B <= A && A <= C)" 249 . 268)))
+          ("CPRESENT" (spp-arg-list ("c" "x") 333 . 338) . ((semantic-list "(find(all(c),x) != (c).end())" 339 . 368)))
+          ("MP" . ((symbol "make_pair" 381 . 390)))
+          ("INF" . ((semantic-list "(int)" 424 . 429) (number "1e9" 429 . 432)))
+          ("sz" (spp-arg-list ("cont") 528 . 534) . ((INT "int" 535 . 538) (semantic-list "((cont).size())" 538 . 553)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("MEM" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [101 104])
+            ("REP" variable (:constant-flag t) nil [154 157])
+            ("all" variable (:constant-flag t) nil [188 191])
+            ("IN" variable (:constant-flag t) nil [231 233])
+            ("PRESENT" variable (:constant-flag t) nil [277 284])
+            ("CPRESENT" variable (:constant-flag t) nil [325 333])
+            ("MP" variable (:constant-flag t) nil [378 380])
+            ("PB" variable (:constant-flag t) nil [399 401])
+            ("INF" variable (:constant-flag t) nil [420 423])
+            ("EPS" variable (:constant-flag t) nil [441 444])
+            ("PI" variable (:constant-flag t) nil [458 460])
+            ("MOD" variable (:constant-flag t) nil [503 506])
+            ("sz" variable (:constant-flag t) nil [526 528])
+            ("debug" variable (:constant-flag t) nil [562 567])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [605 632])
+            ("PII" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [633 660])
+            ("VI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [661 684])
+            ("VS" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [685 711])
+            ("VII" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("PII" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [712 736])
+            ("VVI" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("VI" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [737 760])
+            ("MPII" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [761 787])
+            ("SETI" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [788 810])
+            ("MSETI" type
+               (:typedef ("multiset" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [811 839])
+            ("int32" type
+               (:typedef ("long int")
+                :type "typedef")
+                nil [840 863])
+            ("uint32" type
+               (:typedef ("unsigned long int")
+                :type "typedef")
+                nil [864 897])
+            ("int64" variable (:type "long int") nil [911 926])
+            ("uint64" variable (:type "long int") nil [949 965])
+            ("v" variable (:type ("VII" type (:type "class") nil nil)) nil [967 973])
+            ("dp" variable
+               (:dereference 2
+                :type "int")
+                nil [974 991])
+            ("re" function
+               (:arguments 
+                  ( ("p" variable (:type "int") (reparse-symbol arg-sub-list) [1001 1007])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [1008 1014])
+                    ("N1" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1022])
+                    ("K1" variable (:type "int") (reparse-symbol arg-sub-list) [1023 1030])
+                    ("two" variable (:type "int") (reparse-symbol arg-sub-list) [1031 1039])
+                    ("five" variable (:type "int") (reparse-symbol arg-sub-list) [1040 1049]))                  
+                :type "int")
+                nil [994 1378])
+            ("re" function
+               (:arguments 
+                  ( ("N1" variable (:type "int") (reparse-symbol arg-sub-list) [1388 1395])
+                    ("K1" variable (:type "int") (reparse-symbol arg-sub-list) [1396 1403]))                  
+                :type "int")
+                nil [1381 1441])
+            ("solve" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [1454 1460])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [1461 1467]))                  
+                :type "void")
+                nil [1443 1661])
+            ("main" function (:type "int") nil [1663 2055]))          
+      :file "837d.cpp"
+      :pointmax 2056
+      :fsize 2055
+      :lastmodtime '(22933 44372 428218 58000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 104 . 117) . ((FOR "for" 118 . 121) (semantic-list "(int i=j ; i<k ; i+=in)" 122 . 145)))
+          ("PI" . ((number "3.1415926535897932384626433832795" 461 . 494)))
+          ("MEM" (spp-arg-list ("a" "b") 60 . 66) . ((symbol "memset" 67 . 73) (semantic-list "(a, (b), sizeof(a))" 73 . 92)))
+          ("all" (spp-arg-list ("cont") 191 . 197) . 
+              ((symbol "cont" 198 . 202) (punctuation "." 202 . 203) (symbol "begin" 203 . 208) (semantic-list "()" 208 . 210) (punctuation "," 210 . 211) (symbol "cont" 212 . 216) (punctuation "." 216 . 217) (symbol "end" 217 . 220) (semantic-list "()" 220 . 222)))
+          ("PRESENT" (spp-arg-list ("c" "x") 284 . 289) . ((semantic-list "((c).find(x) != (c).end())" 290 . 316)))
+          ("PB" . ((symbol "push_back" 402 . 411)))
+          ("EPS" . ((number "1e-9" 445 . 449)))
+          ("debug" (spp-arg-list ("x") 567 . 570) . 
+              ((symbol "cerr" 571 . 575) (punctuation "<" 576 . 577) (punctuation "<" 577 . 578) (punctuation "#" 579 . 580) (symbol "x" 580 . 581) (punctuation "<" 582 . 583) (punctuation "<" 583 . 584) (string "\" = \"" 585 . 590) (punctuation "<" 591 . 592) (punctuation "<" 592 . 593) (symbol "x" 594 . 595) (punctuation "<" 596 . 597) (punctuation "<" 597 . 598) (symbol "endl" 599 . 603) (punctuation ";" 603 . 604)))
+          ("MOD" . ((number "1000000007" 507 . 517)))
+          ("REP" (spp-arg-list ("i" "j") 157 . 163) . ((symbol "FOR" 164 . 167) (semantic-list "(i, 0, j, 1)" 167 . 179)))
+          ("IN" (spp-arg-list ("A" "B" "C") 233 . 242) . ((symbol "assert" 243 . 249) (semantic-list "( B <= A && A <= C)" 249 . 268)))
+          ("CPRESENT" (spp-arg-list ("c" "x") 333 . 338) . ((semantic-list "(find(all(c),x) != (c).end())" 339 . 368)))
+          ("MP" . ((symbol "make_pair" 381 . 390)))
+          ("INF" . ((semantic-list "(int)" 424 . 429) (number "1e9" 429 . 432)))
+          ("sz" (spp-arg-list ("cont") 528 . 534) . ((INT "int" 535 . 538) (semantic-list "((cont).size())" 538 . 553)))
+          )
+))
+  :file "!home!nikhil!coding!codeforces!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

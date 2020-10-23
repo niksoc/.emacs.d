@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 37])
+            ("django.shortcuts" include nil nil [38 92])
+            ("django.contrib.auth.decorators" include nil nil [93 150])
+            ("django.views.decorators.http" include nil nil [151 212])
+            ("django.core.exceptions" include nil nil [213 266])
+            ("disqus.discussions.models" include nil nil [268 310])
+            ("Subscription" include nil nil [324 343])
+            ("" code nil nil [382 392])
+            ("subscribe" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [407 414]))              ) nil [393 923])
+            ("" code nil nil [961 971])
+            ("unsubscribe" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [988 995]))              ) nil [972 1165]))          
+      :file "views.py"
+      :pointmax 1165
+      :fsize 1164
+      :lastmodtime '(23160 20619 143975 226000)
+      :unmatched-syntax '((FROM 311 . 315) (PERIOD 316 . 317)))
+    (semanticdb-table "semanticdb-table"
+      :file "models.py"
+      :fsize 1304
+      :lastmodtime '(23160 20619 143975 226000)))
+  :file "!home!hasher!apps!disqus_env!disqus!disqus!pushpa!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

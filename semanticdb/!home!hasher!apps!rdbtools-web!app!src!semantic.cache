@@ -1,0 +1,390 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags 
+        '( ("getIndexInfo" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [280 290])
+                ("index" variable nil (reparse-symbol FormalParameterList) [292 297]))              ) nil [258 401])
+            ("getPageName" function (:arguments 
+              ( ("name" variable nil (reparse-symbol FormalParameterList) [431 435]))              ) nil [410 509])
+            ("execQuery" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [537 547])
+                ("index" variable nil (reparse-symbol FormalParameterList) [549 554])
+                ("command" variable nil (reparse-symbol FormalParameterList) [556 563])
+                ("page" variable nil (reparse-symbol FormalParameterList) [565 569]))              ) nil [518 827])
+            ("exportSearchResultsToCsv" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [870 880])
+                ("index" variable nil (reparse-symbol FormalParameterList) [882 887])
+                ("command" variable nil (reparse-symbol FormalParameterList) [889 896])
+                ("page" variable nil (reparse-symbol FormalParameterList) [898 902]))              ) nil [836 1164])
+            ("checkRediSeachModuleLoaded" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [1209 1219]))              ) nil [1173 1332])
+            ("getKeyPatternsStats" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [1371 1381])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [1383 1393])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [1395 1403]))              ) nil [1341 1561])
+            ("addCustomKeyPattern" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [1600 1610])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [1612 1622])
+                ("keyPattern" variable nil (reparse-symbol FormalParameterList) [1624 1634])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [1636 1644]))              ) nil [1570 1953])
+            ("deleteKeyPattern" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [1989 1999])
+                ("keyPattern" variable nil (reparse-symbol FormalParameterList) [2001 2011])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [2013 2023])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [2025 2033]))              ) nil [1962 2340])
+            ("getSnapshotSummary" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [2378 2388])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [2390 2400])
+                ("limit" variable nil (reparse-symbol FormalParameterList) [2402 2407]))              ) nil [2349 2548])
+            ("getDatatypeSummary" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [2586 2596])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [2598 2608])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [2610 2618]))              ) nil [2557 2780])
+            ("getExpiryChart" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [2814 2824])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [2826 2836])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [2838 2846]))              ) nil [2789 3004])
+            ("getRecommendations" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [3042 3052])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [3054 3064]))              ) nil [3013 3206])
+            ("getRecommendationLength" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [3249 3259])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [3261 3271]))              ) nil [3215 3424])
+            ("getCustomQueryResults" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [3465 3475])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [3477 3487])
+                ("querySpec" variable nil (reparse-symbol FormalParameterList) [3489 3498])
+                ("offset" variable nil (reparse-symbol FormalParameterList) [3500 3506])
+                ("limit" variable nil (reparse-symbol FormalParameterList) [3510 3515])
+                ("summary" variable nil (reparse-symbol FormalParameterList) [3520 3527])
+                ("false" variable nil (reparse-symbol FormalParameterList) [3528 3533]))              ) nil [3433 3955])
+            ("getSnapshotReadyStatus" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [3997 4007])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [4009 4019]))              ) nil [3964 4157])
+            ("getAllSnapshotsInfo" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [4196 4206]))              ) nil [4166 4298])
+            ("generateAPIToken" function nil nil [4307 4412])
+            ("getKeys" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [4462 4472])
+                ("pattern" variable nil (reparse-symbol FormalParameterList) [4474 4481])
+                ("db" variable nil (reparse-symbol FormalParameterList) [4487 4489])
+                ("cursor" variable nil (reparse-symbol FormalParameterList) [4491 4497])
+                ("datatypes" variable nil (reparse-symbol FormalParameterList) [4503 4512])
+                ("cost" variable nil (reparse-symbol FormalParameterList) [4514 4518])
+                ("abortController" variable nil (reparse-symbol FormalParameterList) [4522 4537])
+                ("undefined" variable nil (reparse-symbol FormalParameterList) [4538 4547])
+                ("exemptRestriction" variable nil (reparse-symbol FormalParameterList) [4549 4566])
+                ("false" variable nil (reparse-symbol FormalParameterList) [4567 4572]))              ) nil [4445 4881])
+            ("getVisualisationResults" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [4923 4933])
+                ("db" variable nil (reparse-symbol FormalParameterList) [4935 4937])
+                ("keyName" variable nil (reparse-symbol FormalParameterList) [4939 4946])
+                ("body" variable nil (reparse-symbol FormalParameterList) [4948 4952])
+                ("abortController" variable nil (reparse-symbol FormalParameterList) [4954 4969])
+                ("undefined" variable nil (reparse-symbol FormalParameterList) [4970 4979])
+                ("exemptRestriction" variable nil (reparse-symbol FormalParameterList) [4981 4998])
+                ("false" variable nil (reparse-symbol FormalParameterList) [4999 5004]))              ) nil [4890 5283])
+            ("postProfilingStart" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [5321 5331]))              ) nil [5292 5485])
+            ("postProfilingStop" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [5522 5532]))              ) nil [5494 5643])
+            ("getProfilingResults" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [5682 5692]))              ) nil [5652 5791])
+            ("getCommands" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [5822 5832])
+                ("searchText" variable nil (reparse-symbol FormalParameterList) [5834 5844])
+                ("lineNumber" variable nil (reparse-symbol FormalParameterList) [5846 5856])
+                ("selectedNode" variable nil (reparse-symbol FormalParameterList) [5858 5870]))              ) nil [5800 6083])
+            ("getSlowLogs" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [6114 6124]))              ) nil [6092 6214])
+            ("clearSlowLog" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [6246 6256]))              ) nil [6223 6366])
+            ("postLiveInstanceData" function (:arguments 
+              ( ("instance_name" variable nil (reparse-symbol FormalParameterList) [6406 6419])
+                ("host" variable nil (reparse-symbol FormalParameterList) [6421 6425])
+                ("port" variable nil (reparse-symbol FormalParameterList) [6427 6431])
+                ("password" variable nil (reparse-symbol FormalParameterList) [6433 6441])
+                ("over_ssl" variable nil (reparse-symbol FormalParameterList) [6443 6451])
+                ("checkConnection" variable nil (reparse-symbol FormalParameterList) [6453 6468]))              ) nil [6375 6895])
+            ("postmessages" function (:arguments 
+              ( ("formDataFeedback" variable nil (reparse-symbol FormalParameterList) [6927 6943]))              ) nil [6904 7096])
+            ("getRedisInfo" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [7128 7138]))              ) nil [7105 7231])
+            ("registerSelfHosted" function nil nil [7240 7340])
+            ("postAnalyzeNow" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [7374 7384])
+                ("analysis_mode" variable nil (reparse-symbol FormalParameterList) [7386 7399])
+                ("analyze_backup_source" variable nil (reparse-symbol FormalParameterList) [7401 7422])
+                ("s3_urls" variable nil (reparse-symbol FormalParameterList) [7424 7431])
+                ("local_files" variable nil (reparse-symbol FormalParameterList) [7433 7444]))              ) nil [7349 7829])
+            ("getConfig" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [7858 7868])
+                ("host" variable nil (reparse-symbol FormalParameterList) [7870 7874])
+                ("port" variable nil (reparse-symbol FormalParameterList) [7876 7880]))              ) nil [7838 8037])
+            ("editConfig" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [8067 8077])
+                ("changes" variable nil (reparse-symbol FormalParameterList) [8079 8086])
+                ("target" variable nil (reparse-symbol FormalParameterList) [8088 8094])
+                ("host" variable nil (reparse-symbol FormalParameterList) [8096 8100])
+                ("port" variable nil (reparse-symbol FormalParameterList) [8105 8109]))              ) nil [8046 8414])
+            ("rewriteConfig" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [8447 8457]))              ) nil [8423 8568])
+            ("saveConfigCommanName" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [8608 8618])
+                ("commandName" variable nil (reparse-symbol FormalParameterList) [8620 8631]))              ) nil [8577 8840])
+            ("postCLICommand" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [8874 8884])
+                ("command" variable nil (reparse-symbol FormalParameterList) [8886 8893])
+                ("safe" variable nil (reparse-symbol FormalParameterList) [8895 8899])
+                ("null" variable nil (reparse-symbol FormalParameterList) [8902 8906]))              ) nil [8849 9179])
+            ("connectToCli" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [9211 9221]))              ) nil [9188 9312])
+            ("getLicenseHistory" function nil nil [9321 9417])
+            ("getUserPermitStatus" function nil nil [9427 9537])
+            ("setUserPermitForInstanceDataReporting" function (:arguments 
+              ( ("userPermit" variable nil (reparse-symbol FormalParameterList) [9594 9604]))              ) nil [9546 9806])
+            ("deleteInstance" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [9839 9849]))              ) nil [9815 9960])
+            ("getClientList" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [9993 10003]))              ) nil [9970 10092])
+            ("killClient" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [10121 10131])
+                ("address" variable nil (reparse-symbol FormalParameterList) [10133 10140]))              ) nil [10101 10355])
+            ("stopSnapshotAnalyze" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [10393 10403])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [10405 10415]))              ) nil [10364 10567])
+            ("getKeyProperty" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [10600 10610])
+                ("db" variable nil (reparse-symbol FormalParameterList) [10612 10614])
+                ("keyName" variable nil (reparse-symbol FormalParameterList) [10616 10623]))              ) nil [10576 10782])
+            ("patchNewKeyValue" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [10817 10827])
+                ("db" variable nil (reparse-symbol FormalParameterList) [10829 10831])
+                ("key" variable nil (reparse-symbol FormalParameterList) [10833 10836])
+                ("body" variable nil (reparse-symbol FormalParameterList) [10838 10842])
+                ("dataType" variable nil (reparse-symbol FormalParameterList) [10844 10852]))              ) nil [10791 11150])
+            ("patchKeyExpiry" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [11183 11193])
+                ("db" variable nil (reparse-symbol FormalParameterList) [11195 11197])
+                ("key" variable nil (reparse-symbol FormalParameterList) [11199 11202])
+                ("exp" variable nil (reparse-symbol FormalParameterList) [11204 11207]))              ) nil [11159 11475])
+            ("autoDiscoverInstance" function nil nil [11484 11597])
+            ("addAutoDiscoverInstance" function (:arguments 
+              ( ("instances" variable nil (reparse-symbol FormalParameterList) [11640 11649]))              ) nil [11606 11878])
+            ("checkConnection" function (:arguments 
+              ( ("instance" variable nil (reparse-symbol FormalParameterList) [11913 11921]))              ) nil [11887 12142])
+            ("getInstanceLeft" function nil nil [12151 12250])
+            ("getLocalRdbFiles" function nil nil [12259 12361])
+            ("downloadKeyValue" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [12397 12407])
+                ("db" variable nil (reparse-symbol FormalParameterList) [12409 12411])
+                ("key" variable nil (reparse-symbol FormalParameterList) [12413 12416]))              ) nil [12370 12529])
+            ("bulkOperation" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [12562 12572])
+                ("operation" variable nil (reparse-symbol FormalParameterList) [12574 12583])
+                ("params" variable nil (reparse-symbol FormalParameterList) [12585 12591])
+                ("preview" variable nil (reparse-symbol FormalParameterList) [12593 12600]))              ) nil [12538 12930])
+            ("bulkExport" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [12960 12970])
+                ("exportType" variable nil (reparse-symbol FormalParameterList) [12972 12982])
+                ("params" variable nil (reparse-symbol FormalParameterList) [12984 12990]))              ) nil [12939 13275])
+            ("getBulkOperationResult" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [13317 13327])
+                ("offset" variable nil (reparse-symbol FormalParameterList) [13329 13335])
+                ("jobId" variable nil (reparse-symbol FormalParameterList) [13337 13342]))              ) nil [13284 13549])
+            ("addNewKey" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [13577 13587])
+                ("db" variable nil (reparse-symbol FormalParameterList) [13589 13591])
+                ("keyName" variable nil (reparse-symbol FormalParameterList) [13593 13600])
+                ("dataType" variable nil (reparse-symbol FormalParameterList) [13602 13610])
+                ("value" variable nil (reparse-symbol FormalParameterList) [13612 13617]))              ) nil [13558 13950])
+            ("createNewIndex" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [13983 13993])
+                ("db" variable nil (reparse-symbol FormalParameterList) [13995 13997])
+                ("keyName" variable nil (reparse-symbol FormalParameterList) [13999 14006])
+                ("value" variable nil (reparse-symbol FormalParameterList) [14008 14013]))              ) nil [13959 14310])
+            ("getAllIndex" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [14340 14350])
+                ("db" variable nil (reparse-symbol FormalParameterList) [14352 14354]))              ) nil [14319 14454])
+            ("deleteKey" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [14483 14493])
+                ("db" variable nil (reparse-symbol FormalParameterList) [14495 14497])
+                ("keyName" variable nil (reparse-symbol FormalParameterList) [14499 14506]))              ) nil [14463 14753])
+            ("getLatestVersion" function nil nil [14762 14862])
+            ("skipUpdateLatestVersion" function (:arguments 
+              ( ("latestVersion" variable nil (reparse-symbol FormalParameterList) [14904 14917]))              ) nil [14871 15112])
+            ("reshardCluster" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [15145 15155])
+                ("migrationPlan" variable nil (reparse-symbol FormalParameterList) [15157 15170])
+                ("retryOnFailure" variable nil (reparse-symbol FormalParameterList) [15172 15186])
+                ("timeout" variable nil (reparse-symbol FormalParameterList) [15188 15195])
+                ("maxKeys" variable nil (reparse-symbol FormalParameterList) [15197 15204]))              ) nil [15121 15594])
+            ("pollReshardStatus" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [15630 15640])
+                ("cont" variable nil (reparse-symbol FormalParameterList) [15642 15646]))              ) nil [15603 15767])
+            ("keyInfoBySlot" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [15799 15809])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [15811 15821])
+                ("slots" variable nil (reparse-symbol FormalParameterList) [15823 15828]))              ) nil [15776 16137])
+            ("getRebalanceMigrationPlan" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [16181 16191])
+                ("slotCoverage" variable nil (reparse-symbol FormalParameterList) [16193 16205]))              ) nil [16146 16351])
+            ("clusterFailOver" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [16385 16395])
+                ("replicaHost" variable nil (reparse-symbol FormalParameterList) [16397 16408])
+                ("replicaPort" variable nil (reparse-symbol FormalParameterList) [16410 16421]))              ) nil [16360 16576])
+            ("addClusterNode" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [16609 16619])
+                ("nodeHost" variable nil (reparse-symbol FormalParameterList) [16621 16629])
+                ("nodePort" variable nil (reparse-symbol FormalParameterList) [16631 16639])
+                ("nodePassword" variable nil (reparse-symbol FormalParameterList) [16641 16653])
+                ("nodeSsl" variable nil (reparse-symbol FormalParameterList) [16655 16662]))              ) nil [16585 17033])
+            ("failoverClusterNode" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [17071 17081])
+                ("failoverReplicaHost" variable nil (reparse-symbol FormalParameterList) [17083 17102])
+                ("failoverReplicaPort" variable nil (reparse-symbol FormalParameterList) [17104 17123]))              ) nil [17042 17300])
+            ("getClusterAlerts" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [17335 17345]))              ) nil [17309 17442])
+            ("removeClusterNode" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [17479 17489])
+                ("nodeId" variable nil (reparse-symbol FormalParameterList) [17491 17497])
+                ("nodeHost" variable nil (reparse-symbol FormalParameterList) [17499 17507])
+                ("nodePort" variable nil (reparse-symbol FormalParameterList) [17509 17517]))              ) nil [17451 17682])
+            ("dismissReshardingResult" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [17724 17734]))              ) nil [17691 17925])
+            ("clusterReplicate" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [17960 17970])
+                ("masterId" variable nil (reparse-symbol FormalParameterList) [17972 17980])
+                ("nodeHost" variable nil (reparse-symbol FormalParameterList) [17982 17990])
+                ("nodePort" variable nil (reparse-symbol FormalParameterList) [17992 18000]))              ) nil [17934 18166])
+            ("assingSlotToNode" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [18202 18212])
+                ("host" variable nil (reparse-symbol FormalParameterList) [18214 18218])
+                ("port" variable nil (reparse-symbol FormalParameterList) [18220 18224])
+                ("slotRange" variable nil (reparse-symbol FormalParameterList) [18226 18235]))              ) nil [18176 18378])
+            ("fixCluster" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [18407 18417]))              ) nil [18387 18551])
+            ("addSentinelNode" function (:arguments 
+              ( ("sentinelInfo" variable nil (reparse-symbol FormalParameterList) [18585 18597])
+                ("sentinelMasters" variable nil (reparse-symbol FormalParameterList) [18599 18614]))              ) nil [18560 18890])
+            ("addClusterInstance" function (:arguments 
+              ( ("instanceName" variable nil (reparse-symbol FormalParameterList) [18927 18939])
+                ("seedNodes" variable nil (reparse-symbol FormalParameterList) [18941 18950]))              ) nil [18899 19187])
+            ("getAllConsumerGroups" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [19249 19259])
+                ("key" variable nil (reparse-symbol FormalParameterList) [19261 19264])
+                ("db" variable nil (reparse-symbol FormalParameterList) [19266 19268]))              ) nil [19219 19410])
+            ("getAllConsumer" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [19443 19453])
+                ("key" variable nil (reparse-symbol FormalParameterList) [19455 19458])
+                ("db" variable nil (reparse-symbol FormalParameterList) [19460 19462])
+                ("body" variable nil (reparse-symbol FormalParameterList) [19464 19468]))              ) nil [19419 19627])
+            ("getPendingList" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [19660 19670])
+                ("key" variable nil (reparse-symbol FormalParameterList) [19672 19675])
+                ("db" variable nil (reparse-symbol FormalParameterList) [19677 19679])
+                ("body" variable nil (reparse-symbol FormalParameterList) [19681 19685]))              ) nil [19636 19847])
+            ("ackStreamMsg" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [19878 19888])
+                ("key" variable nil (reparse-symbol FormalParameterList) [19890 19893])
+                ("db" variable nil (reparse-symbol FormalParameterList) [19895 19897])
+                ("body" variable nil (reparse-symbol FormalParameterList) [19899 19903]))              ) nil [19856 20204])
+            ("getApplicationConfiguration" function nil nil [20213 20299])
+            ("getEvictionStats" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [20334 20344])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [20346 20356])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [20358 20366]))              ) nil [20308 20526])
+            ("getIdleKeyChart" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [20561 20571])
+                ("snapshotId" variable nil (reparse-symbol FormalParameterList) [20573 20583])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [20585 20593]))              ) nil [20535 20753])
+            ("getRestoreKeysStatus" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [20793 20803]))              ) nil [20762 20905])
+            ("postStartRestoreJob" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [20944 20954])
+                ("rdbPath" variable nil (reparse-symbol FormalParameterList) [20956 20963])
+                ("overwriteKeys" variable nil (reparse-symbol FormalParameterList) [20965 20978])
+                ("handleExpiry" variable nil (reparse-symbol FormalParameterList) [20980 20992])
+                ("pattern" variable nil (reparse-symbol FormalParameterList) [20994 21001])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [21003 21011])
+                ("dataType" variable nil (reparse-symbol FormalParameterList) [21013 21021]))              ) nil [20914 21409])
+            ("claimStreamKey" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [21442 21452])
+                ("key" variable nil (reparse-symbol FormalParameterList) [21454 21457])
+                ("db" variable nil (reparse-symbol FormalParameterList) [21459 21461])
+                ("body" variable nil (reparse-symbol FormalParameterList) [21463 21467]))              ) nil [21418 21756])
+            ("addNewConsumerGroup" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [21794 21804])
+                ("key" variable nil (reparse-symbol FormalParameterList) [21806 21809])
+                ("db" variable nil (reparse-symbol FormalParameterList) [21811 21813])
+                ("body" variable nil (reparse-symbol FormalParameterList) [21815 21819]))              ) nil [21765 22115])
+            ("deleteConsumer" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [22148 22158])
+                ("key" variable nil (reparse-symbol FormalParameterList) [22160 22163])
+                ("db" variable nil (reparse-symbol FormalParameterList) [22165 22167])
+                ("body" variable nil (reparse-symbol FormalParameterList) [22169 22173]))              ) nil [22124 22462])
+            ("setStreamConsumerGroupId" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [22505 22515])
+                ("key" variable nil (reparse-symbol FormalParameterList) [22517 22520])
+                ("db" variable nil (reparse-symbol FormalParameterList) [22522 22524])
+                ("body" variable nil (reparse-symbol FormalParameterList) [22526 22530]))              ) nil [22471 22825])
+            ("deleteConsumerGroup" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [22863 22873])
+                ("key" variable nil (reparse-symbol FormalParameterList) [22875 22878])
+                ("db" variable nil (reparse-symbol FormalParameterList) [22880 22882])
+                ("body" variable nil (reparse-symbol FormalParameterList) [22884 22888]))              ) nil [22834 23183])
+            ("getPatternData" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [23217 23227])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [23229 23237])
+                ("pattern" variable nil (reparse-symbol FormalParameterList) [23239 23246])
+                ("cursor" variable nil (reparse-symbol FormalParameterList) [23248 23254]))              ) nil [23192 23421])
+            ("sendGraphQuery" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [23454 23464])
+                ("query" variable nil (reparse-symbol FormalParameterList) [23466 23471])
+                ("key" variable nil (reparse-symbol FormalParameterList) [23473 23476])
+                ("db" variable nil (reparse-symbol FormalParameterList) [23478 23480]))              ) nil [23430 23764])
+            ("getGraphModuleInfo" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [23802 23812]))              ) nil [23774 23917])
+            ("getTimeSeriesModuleInfo" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [23959 23969]))              ) nil [23926 24079])
+            ("sendTimeSeriesQuery" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [24117 24127])
+                ("dbNumber" variable nil (reparse-symbol FormalParameterList) [24129 24137])
+                ("query" variable nil (reparse-symbol FormalParameterList) [24139 24144])
+                ("format" variable nil (reparse-symbol FormalParameterList) [24146 24152]))              ) nil [24088 24536])
+            ("getGraphs" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [24564 24574])
+                ("db" variable nil (reparse-symbol FormalParameterList) [24576 24578]))              ) nil [24545 24690])
+            ("deleteGraphKey" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [24723 24733])
+                ("key" variable nil (reparse-symbol FormalParameterList) [24735 24738])
+                ("db" variable nil (reparse-symbol FormalParameterList) [24740 24742]))              ) nil [24699 24988])
+            ("getAllBulkOperationJobDetails" function (:arguments 
+              ( ("instanceId" variable nil (reparse-symbol FormalParameterList) [25036 25046]))              ) nil [24997 25148])
+            ("autoDiscoverRedisEnterpriseDbs" function (:arguments 
+              ( ("clusterHost" variable nil (reparse-symbol FormalParameterList) [25440 25451])
+                ("clusterPort" variable nil (reparse-symbol FormalParameterList) [25453 25464])
+                ("clusterAdminUsername" variable nil (reparse-symbol FormalParameterList) [25466 25486])
+                ("clusterAdminPassword" variable nil (reparse-symbol FormalParameterList) [25488 25508]))              ) nil [25400 25747])
+            ("addRedisEnterpriseDbs" function (:arguments 
+              ( ("dbUids" variable nil (reparse-symbol FormalParameterList) [26096 26102])
+                ("clusterHost" variable nil (reparse-symbol FormalParameterList) [26104 26115])
+                ("clusterPort" variable nil (reparse-symbol FormalParameterList) [26117 26128])
+                ("clusterAdminUsername" variable nil (reparse-symbol FormalParameterList) [26130 26150])
+                ("clusterAdminPassword" variable nil (reparse-symbol FormalParameterList) [26152 26172]))              ) nil [26065 26617])
+            ("setEulaAccepted" function (:arguments 
+              ( ("eulaAccepted" variable nil (reparse-symbol FormalParameterList) [26846 26858])
+                ("analyticsOptIn" variable nil (reparse-symbol FormalParameterList) [26860 26874]))              ) nil [26820 27161]))          
+      :file "services.js"
+      :pointmax 27162
+      :fsize 27161
+      :lastmodtime '(23963 12872 603509 248000)
+      :unmatched-syntax '((ASSIGN_SYMBOL 8900 . 8901) (STRING 8110 . 8112) (ASSIGN_SYMBOL 8109 . 8110) (STRING 8101 . 8103) (ASSIGN_SYMBOL 8100 . 8101) (ASSIGN_SYMBOL 4998 . 4999) (ASSIGN_SYMBOL 4969 . 4970) (ASSIGN_SYMBOL 4566 . 4567) (ASSIGN_SYMBOL 4537 . 4538) (NUMBER 4519 . 4520) (ASSIGN_SYMBOL 4518 . 4519) (STRING 4498 . 4501) (ASSIGN_SYMBOL 4497 . 4498) (STRING 4482 . 4485) (ASSIGN_SYMBOL 4481 . 4482) (ASSIGN_SYMBOL 3527 . 3528) (NUMBER 3516 . 3518) (ASSIGN_SYMBOL 3515 . 3516) (NUMBER 3507 . 3508) (ASSIGN_SYMBOL 3506 . 3507) (NUMBER 2408 . 2410) (ASSIGN_SYMBOL 2407 . 2408))))
+  :file "!home!hasher!apps!rdbtools-web!app!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

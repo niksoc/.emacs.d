@@ -1,0 +1,9 @@
+;; Object migrations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "migrations/"
+  :tables
+  (list
+)
+  :file "!home!nikhil!venv!srmxchange!app!migrations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

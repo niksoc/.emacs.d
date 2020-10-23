@@ -1,0 +1,16 @@
+;; Object Europa Universalis IV/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Europa Universalis IV/"
+  :tables
+  (list
+    (semanticdb-table "AutoClientScript.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "AutoClientScript.py"
+      :pointmax 842
+      :fsize 866
+      :lastmodtime '(21923 58314 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!programs!Europa Universalis IV!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

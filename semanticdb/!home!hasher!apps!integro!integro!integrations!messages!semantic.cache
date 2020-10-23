@@ -1,0 +1,118 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("django.core.exceptions" include nil nil [12 65])
+            ("django.utils.functional" include nil nil [66 117])
+            ("integro.integro" include nil nil [119 161])
+            ("integro.integro.utils" include nil nil [162 204])
+            ("INSTANT_MESSAGE_EVENT_TYPE" variable nil nil [206 256])
+            ("InstantMessageEvent" type
+               (:documentation "
+    Message Event class which should be extended by different types of message events from various instant messaging
+    applications
+    "
+                :superclasses ("events.Event")
+                :members 
+                  ( ("event_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [484 488]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [455 533])
+                    ("" code nil (reparse-symbol indented_block_body) [547 568])
+                    ("username" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [600 604]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [573 620])
+                    ("" code nil (reparse-symbol indented_block_body) [634 655])
+                    ("channel_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [689 693]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [660 709])
+                    ("" code nil (reparse-symbol indented_block_body) [723 744])
+                    ("_get_user_details" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [771 775])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [777 784]))                          )
+                        (reparse-symbol indented_block_body) [749 800])
+                    ("" code nil (reparse-symbol indented_block_body) [814 835])
+                    ("event_source" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [871 875]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [840 891])
+                    ("" code nil (reparse-symbol indented_block_body) [905 926])
+                    ("team_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [959 963]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [931 979])
+                    ("" code nil (reparse-symbol indented_block_body) [993 1014])
+                    ("channel_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1050 1054]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1019 1070])
+                    ("" code nil (reparse-symbol indented_block_body) [1084 1105])
+                    ("_parse_message_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1137 1141])
+                            ("message" variable nil (reparse-symbol function_parameters) [1143 1150]))                          )
+                        (reparse-symbol indented_block_body) [1110 1166])
+                    ("" code nil (reparse-symbol indented_block_body) [1180 1201])
+                    ("event_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1235 1239]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1206 1255])
+                    ("_get_user_details_from_user_integration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1304 1308])
+                            ("integration_user_id" variable nil (reparse-symbol function_parameters) [1310 1329]))                          
+                        :documentation "
+            Args:
+                integration_user_id: User ID of the Integration
+            :return: UserIntegration Object
+        ")
+                        (reparse-symbol indented_block_body) [1260 1649])
+                    ("data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1684 1688]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1654 1722]))                  
+                :type "class")
+                nil [259 1722]))          
+      :file "instant_message_event.py"
+      :pointmax 1722
+      :fsize 1721
+      :lastmodtime '(23224 40648 680115 944000)
+      :unmatched-syntax '(($EOI 1722 . 1722))))
+  :file "!home!hasher!apps!integro!integro!integrations!messages!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

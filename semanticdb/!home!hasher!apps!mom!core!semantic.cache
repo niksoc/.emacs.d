@@ -1,0 +1,1158 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("ast" include nil nil [42 52])
+            ("logging" include nil nil [53 67])
+            ("uuid" include nil nil [68 79])
+            ("jsonfield" include nil nil [81 97])
+            ("django.conf" include nil nil [98 130])
+            ("django.contrib.auth.hashers" include nil nil [131 184])
+            ("django.contrib.auth.models" include nil nil [185 229])
+            ("django.contrib.auth.models" include nil nil [230 273])
+            ("django.core.exceptions" include nil nil [274 324])
+            ("django.db" include nil nil [325 353])
+            ("django.utils" include nil nil [354 387])
+            ("pytz" include nil nil [388 418])
+            ("social_django.fields" include nil nil [419 461])
+            ("core" include nil nil [463 496])
+            ("core.managers" include nil nil [497 548])
+            ("core.managers" include nil nil [549 601])
+            ("core.managers" include nil nil [602 662])
+            ("core.managers" include nil nil [663 704])
+            ("core.managers" include nil nil [705 757])
+            ("core.managers" include nil nil [758 799])
+            ("core.managers" include nil nil [800 846])
+            ("core.managers" include nil nil [847 895])
+            ("core.managers" include nil nil [896 944])
+            ("core.parser.blots.agenda" include nil nil [945 992])
+            ("core.parser.parser" include nil nil [993 1030])
+            ("integro.calendars.constants" include nil nil [1031 1094])
+            ("integro.calendars.constants" include nil nil [1095 1155])
+            ("integro.calendars.constants" include nil nil [1156 1214])
+            ("integro.calendars.constants" include nil nil [1215 1273])
+            ("integro.calendars.constants" include nil nil [1274 1331])
+            ("AttendeeQuerySet" include nil nil [1347 1370])
+            ("MeetingMetadataManager" include nil nil [1386 1415])
+            ("NoteItemManager" include nil nil [1431 1453])
+            ("ReminderManager" include nil nil [1469 1491])
+            ("SlackCredentialManager" include nil nil [1507 1536])
+            ("logger" variable nil nil [1538 1574])
+            ("USER_GUEST_ROLE" variable nil nil [1576 1601])
+            ("USER_MEMBER_ROLE" variable nil nil [1602 1629])
+            ("USER_ADMIN_ROLE" variable nil nil [1630 1655])
+            ("TEAM_PERMISSION_CHOICES" variable nil nil [1656 1709])
+            ("USER_ROLE_CHOICES" variable nil nil [1710 1782])
+            ("JOB_STATUS_CHOICES" variable nil nil [1783 1840])
+            ("SRC_EDITOR" variable nil nil [1842 1867])
+            ("SRC_AI_DIALOG" variable nil nil [1868 1899])
+            ("SRC_SLACK" variable nil nil [1900 1923])
+            ("MEETING_SOURCE_FOR_GOOGLE" variable nil nil [1925 1961])
+            ("MEETING_SOURCE_FOR_OFFICE_365" variable nil nil [1962 2005])
+            ("MEETING_SOURCE_FOR_MEET_NOTES" variable nil nil [2006 2049])
+            ("MEETING_SOURCE" variable nil nil [2136 2242])
+            ("CALENDAR_SOURCES" variable nil nil [2243 2320])
+            ("DEFAULT_MEETING_SOURCE" variable nil nil [2321 2401])
+            ("MEETNOTES_CALENDAR_NAME" variable nil nil [2402 2439])
+            ("MoMBaseModel" type
+               (:documentation "Contains basic fields that are inherited by other classes"
+                :superclasses ("models.Model")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [2602 2739])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [2785 2837])
+                    ("updated_at" variable nil (reparse-symbol indented_block_body) [2842 2890])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [2916 2931]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2896 2932]))                  
+                :type "class")
+                nil [2442 2932])
+            ("BaseCommandStore" type
+               (:documentation "Contains most of the fields required for storing commands for a model change. Inherited by other classes"
+                :superclasses ("models.Model")
+                :members 
+                  ( ("CQRS_COMMAND_INIT" variable nil (reparse-symbol indented_block_body) [3091 3117])
+                    ("CQRS_COMMAND_UPDATE" variable nil (reparse-symbol indented_block_body) [3122 3152])
+                    ("COMMAND_OPTIONS" variable nil (reparse-symbol indented_block_body) [3157 3215])
+                    ("command" variable nil (reparse-symbol indented_block_body) [3220 3308])
+                    ("field" variable nil (reparse-symbol indented_block_body) [3313 3352])
+                    ("previous_value" variable nil (reparse-symbol indented_block_body) [3357 3401])
+                    ("new_value" variable nil (reparse-symbol indented_block_body) [3406 3445])
+                    ("src" variable nil (reparse-symbol indented_block_body) [3450 3510])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [3515 3567])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [3572 3674])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [3700 3715]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [3680 3716]))                  
+                :type "class")
+                nil [2934 3716])
+            ("Invitee" type
+               (:documentation " Contains email id of a user from the launch site"
+                :superclasses ("models.Model")
+                :members 
+                  ( ("email" variable nil (reparse-symbol indented_block_body) [3811 3852])
+                    ("source" variable nil (reparse-symbol indented_block_body) [3857 3923])
+                    ("invite_type" variable nil (reparse-symbol indented_block_body) [3928 3995]))                  
+                :type "class")
+                nil [3718 3996])
+            ("UserProfile" type
+               (:documentation "Contains the user profile details"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [4079 4138])
+                    ("user" variable nil (reparse-symbol indented_block_body) [4143 4223])
+                    ("profile_picture" variable nil (reparse-symbol indented_block_body) [4228 4272])
+                    ("timezone" variable nil (reparse-symbol indented_block_body) [4277 4426])
+                    ("is_dashboard_tour_shown" variable nil (reparse-symbol indented_block_body) [4431 4491])
+                    ("is_meeting_board_tour_shown" variable nil (reparse-symbol indented_block_body) [4496 4560])
+                    ("is_first_login" variable nil (reparse-symbol indented_block_body) [4565 4619])
+                    ("is_beta_invited" variable nil (reparse-symbol indented_block_body) [4624 4676])
+                    ("is_beta_user" variable nil (reparse-symbol indented_block_body) [4681 4730])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [4735 4764])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4782 4786]))                          )
+                        (reparse-symbol indented_block_body) [4770 4836]))                  
+                :type "class")
+                nil [3998 4836])
+            ("UnconfirmedUser" type
+               (:documentation "
+    A temporary pending user with an unverified email address.
+    To be deleted when the user's email is verified and a User object
+    should be created in its place.
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("username" variable nil (reparse-symbol indented_block_body) [5064 5119])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [5124 5167])
+                    ("first_name" variable nil (reparse-symbol indented_block_body) [5172 5228])
+                    ("last_name" variable nil (reparse-symbol indented_block_body) [5233 5288])
+                    ("email" variable nil (reparse-symbol indented_block_body) [5293 5331])
+                    ("password" variable nil (reparse-symbol indented_block_body) [5336 5379])
+                    ("last_login" variable nil (reparse-symbol indented_block_body) [5384 5440])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [5445 5500])
+                    ("is_confirmed" variable nil (reparse-symbol indented_block_body) [5505 5554])
+                    ("set_password" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5577 5581])
+                            ("raw_password" variable nil (reparse-symbol function_parameters) [5583 5595]))                          )
+                        (reparse-symbol indented_block_body) [5560 5650])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5667 5671]))                          )
+                        (reparse-symbol indented_block_body) [5655 5735]))                  
+                :type "class")
+                nil [4838 5735])
+            ("CalendarCredential" type
+               (:documentation "
+        Model to store calendar credentials
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("GOOGLE_CALENDAR" variable nil (reparse-symbol indented_block_body) [5933 5976])
+                    ("OFFICE_365_CALENDAR" variable nil (reparse-symbol indented_block_body) [5981 6032])
+                    ("user" variable nil (reparse-symbol indented_block_body) [6037 6123])
+                    ("source" variable nil (reparse-symbol indented_block_body) [6128 6272])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [6277 6320])
+                    ("webhook_data" variable nil (reparse-symbol indented_block_body) [6325 6351])
+                    ("email" variable nil (reparse-symbol indented_block_body) [6356 6383])
+                    ("config_details" variable nil (reparse-symbol indented_block_body) [6388 6416])
+                    ("access_token" variable nil (reparse-symbol indented_block_body) [6421 6475])
+                    ("refresh_token" variable nil (reparse-symbol indented_block_body) [6480 6535])
+                    ("last_sync" variable nil (reparse-symbol indented_block_body) [6540 6595])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [6600 6645])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [6651 6730])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6752 6756]))                          )
+                        (reparse-symbol indented_block_body) [6736 6814])
+                    ("deactivate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6834 6838]))                          )
+                        (reparse-symbol indented_block_body) [6819 6892]))                  
+                :type "class")
+                nil [5737 6892])
+            ("WebhookChannel" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("RESOURCE_CHOICES" variable nil (reparse-symbol indented_block_body) [6934 7000])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [7006 7049])
+                    ("credential" variable nil (reparse-symbol indented_block_body) [7054 7154])
+                    ("resource_type" variable nil (reparse-symbol indented_block_body) [7159 7255])
+                    ("resource_id" variable nil (reparse-symbol indented_block_body) [7260 7324])
+                    ("webhook_data" variable nil (reparse-symbol indented_block_body) [7329 7377])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [7383 7428])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [7454 7504]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [7434 7505]))                  
+                :type "class")
+                nil [6894 7505])
+            ("Event" type
+               (:documentation "Contains the description of calendar events"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [7592 7651])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [7656 7700])
+                    ("hashed_id" variable nil (reparse-symbol indented_block_body) [7705 7749])
+                    ("organizer" variable nil (reparse-symbol indented_block_body) [7754 7865])
+                    ("organizer_email" variable nil (reparse-symbol indented_block_body) [7870 7928])
+                    ("source_event_id" variable nil (reparse-symbol indented_block_body) [7933 7984])
+                    ("source_event_hashed_id" variable nil (reparse-symbol indented_block_body) [7989 8046])
+                    ("source_calendar_id" variable nil (reparse-symbol indented_block_body) [8051 8123])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [8128 8167])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8189 8193]))                          )
+                        (reparse-symbol indented_block_body) [8173 8251]))                  
+                :type "class")
+                nil [7507 8251])
+            ("EventLink" type
+               (:documentation "
+        Model to store Event Model Links between google identifiers
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("source" variable nil (reparse-symbol indented_block_body) [8372 8414])
+                    ("source_hashed_id" variable nil (reparse-symbol indented_block_body) [8419 8485])
+                    ("destination" variable nil (reparse-symbol indented_block_body) [8527 8574])
+                    ("destination_hashed_id" variable nil (reparse-symbol indented_block_body) [8579 8635])
+                    ("active" variable nil (reparse-symbol indented_block_body) [8640 8682])
+                    ("active_hashed_id" variable nil (reparse-symbol indented_block_body) [8687 8738])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8760 8764]))                          )
+                        (reparse-symbol indented_block_body) [8744 8869]))                  
+                :type "class")
+                nil [8253 8869])
+            ("MeetingType" type
+               (:documentation "
+        Stores type of Meeting and whether to notify for that meeting or not
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [9001 9040])
+                    ("send_notification" variable nil (reparse-symbol indented_block_body) [9068 9122])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [9127 9156])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9178 9182]))                          )
+                        (reparse-symbol indented_block_body) [9162 9237]))                  
+                :type "class")
+                nil [8871 9237])
+            ("Meeting" type
+               (:documentation "Contains the description of meeting events"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("VISIBILITY_CHOICES" variable nil (reparse-symbol indented_block_body) [9325 9406])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [9411 9485])
+                    ("etag" variable nil (reparse-symbol indented_block_body) [9490 9556])
+                    ("event" variable nil (reparse-symbol indented_block_body) [9561 9643])
+                    ("meeting_id" variable nil (reparse-symbol indented_block_body) [9648 9694])
+                    ("hashed_id" variable nil (reparse-symbol indented_block_body) [9699 9743])
+                    ("title" variable nil (reparse-symbol indented_block_body) [9748 9795])
+                    ("edited_title" variable nil (reparse-symbol indented_block_body) [9800 9854])
+                    ("start_time" variable nil (reparse-symbol indented_block_body) [9859 9915])
+                    ("end_time" variable nil (reparse-symbol indented_block_body) [9920 9974])
+                    ("actual_start_time" variable nil (reparse-symbol indented_block_body) [9979 10053])
+                    ("actual_end_time" variable nil (reparse-symbol indented_block_body) [10058 10130])
+                    ("running_status" variable nil (reparse-symbol indented_block_body) [10135 10275])
+                    ("doc_id" variable nil (reparse-symbol indented_block_body) [10280 10328])
+                    ("meeting_type" variable nil (reparse-symbol indented_block_body) [10333 10493])
+                    ("archived" variable nil (reparse-symbol indented_block_body) [10498 10543])
+                    ("shared_notes" variable nil (reparse-symbol indented_block_body) [10548 10597])
+                    ("shared_by_email" variable nil (reparse-symbol indented_block_body) [10602 10660])
+                    ("shared_by_user" variable nil (reparse-symbol indented_block_body) [10665 10781])
+                    ("shared_at" variable nil (reparse-symbol indented_block_body) [10786 10841])
+                    ("is_published" variable nil (reparse-symbol indented_block_body) [10846 10895])
+                    ("source" variable nil (reparse-symbol indented_block_body) [10900 11047])
+                    ("calendar" variable nil (reparse-symbol indented_block_body) [11052 11132])
+                    ("in_active" variable nil (reparse-symbol indented_block_body) [11137 11183])
+                    ("is_default" variable nil (reparse-symbol indented_block_body) [11298 11345])
+                    ("classifier_type" variable nil (reparse-symbol indented_block_body) [11453 11605])
+                    ("source_event" variable nil (reparse-symbol indented_block_body) [11610 11773])
+                    ("visibility" variable nil (reparse-symbol indented_block_body) [11778 11937])
+                    ("manager" variable nil (reparse-symbol indented_block_body) [11942 11980])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12002 12006]))                          )
+                        (reparse-symbol indented_block_body) [11986 12083]))                  
+                :type "class")
+                nil [9239 12083])
+            ("MeetingUserData" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("meeting" variable nil (reparse-symbol indented_block_body) [12126 12214])
+                    ("user" variable nil (reparse-symbol indented_block_body) [12219 12304])
+                    ("is_meeting_archived" variable nil (reparse-symbol indented_block_body) [12309 12365])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [12371 12405])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12423 12427]))                          )
+                        (reparse-symbol indented_block_body) [12411 12488]))                  
+                :type "class")
+                nil [12085 12488])
+            ("MeetingMetadata" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("HAS_AGENDA" variable nil (reparse-symbol indented_block_body) [12531 12556])
+                    ("HAS_NON_EMPTY_NOTES" variable nil (reparse-symbol indented_block_body) [12561 12604])
+                    ("WRITTEN_MEETING_LINK_MESSAGE_LABEL" variable nil (reparse-symbol indented_block_body) [12609 12682])
+                    ("SUPPORTED_VIDEO_PROVIDERS_LINKS" variable nil (reparse-symbol indented_block_body) [12687 12754])
+                    ("MEETING_METADATA_KEYS" variable nil (reparse-symbol indented_block_body) [12760 12915])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [12921 13008])
+                    ("key" variable nil (reparse-symbol indented_block_body) [13013 13109])
+                    ("value" variable nil (reparse-symbol indented_block_body) [13114 13143])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [13149 13183])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13205 13209]))                          )
+                        (reparse-symbol indented_block_body) [13189 13288])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [13313 13349]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [13293 13350]))                  
+                :type "class")
+                nil [12490 13350])
+            ("ATTENDEE_STATUS_CHOICES" variable nil nil [13352 13412])
+            ("Attendee" type
+               (:documentation "Contains the description of meeting attendees"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("event" variable nil (reparse-symbol indented_block_body) [13505 13605])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [13610 13669])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [13674 13761])
+                    ("user" variable nil (reparse-symbol indented_block_body) [13766 13876])
+                    ("email" variable nil (reparse-symbol indented_block_body) [13972 14020])
+                    ("joining_time" variable nil (reparse-symbol indented_block_body) [14025 14094])
+                    ("leaving_time" variable nil (reparse-symbol indented_block_body) [14099 14168])
+                    ("name" variable nil (reparse-symbol indented_block_body) [14173 14235])
+                    ("source" variable nil (reparse-symbol indented_block_body) [14240 14387])
+                    ("is_meeting_archived" variable nil (reparse-symbol indented_block_body) [14460 14516])
+                    ("is_invitation_email_sent" variable nil (reparse-symbol indented_block_body) [14585 14646])
+                    ("active" variable nil (reparse-symbol indented_block_body) [14651 14693])
+                    ("status" variable nil (reparse-symbol indented_block_body) [14698 14851])
+                    ("source_event" variable nil (reparse-symbol indented_block_body) [14856 15020])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [15025 15064])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15086 15090]))                          )
+                        (reparse-symbol indented_block_body) [15070 15175]))                  
+                :type "class")
+                nil [13415 15175])
+            ("Calendar" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [15211 15270])
+                    ("calendar_id" variable nil (reparse-symbol indented_block_body) [15275 15334])
+                    ("calendar_name" variable nil (reparse-symbol indented_block_body) [15339 15387])
+                    ("source" variable nil (reparse-symbol indented_block_body) [15392 15544])
+                    ("owner_email" variable nil (reparse-symbol indented_block_body) [15549 15603])
+                    ("calendar_integrations" variable nil (reparse-symbol indented_block_body) [15608 15790])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [15796 15823])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15841 15845]))                          )
+                        (reparse-symbol indented_block_body) [15829 15911]))                  
+                :type "class")
+                nil [15177 15911])
+            ("Agenda" type
+               (:documentation "Contains the description of agenda items"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [15996 16055])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [16060 16145])
+                    ("title" variable nil (reparse-symbol indented_block_body) [16150 16190])
+                    ("estimated_time" variable nil (reparse-symbol indented_block_body) [16195 16243])
+                    ("actual_start_time" variable nil (reparse-symbol indented_block_body) [16248 16322])
+                    ("actual_end_time" variable nil (reparse-symbol indented_block_body) [16327 16399])
+                    ("running_status" variable nil (reparse-symbol indented_block_body) [16404 16544])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16566 16570]))                          )
+                        (reparse-symbol indented_block_body) [16550 16625]))                  
+                :type "class")
+                nil [15913 16625])
+            ("RawNote" type
+               (:documentation "Contains the description of raw notes"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [16708 16767])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [16772 16859])
+                    ("body" variable nil (reparse-symbol indented_block_body) [16864 16910])
+                    ("rich_text" variable nil (reparse-symbol indented_block_body) [16915 16966])
+                    ("access_type" variable nil (reparse-symbol indented_block_body) [16985 17068])
+                    ("raw_html" variable nil (reparse-symbol indented_block_body) [17073 17111])
+                    ("old_raw_html" variable nil (reparse-symbol indented_block_body) [17116 17170])
+                    ("formatted_html" variable nil (reparse-symbol indented_block_body) [17175 17231])
+                    ("delta" variable nil (reparse-symbol indented_block_body) [17236 17283])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17305 17309]))                          )
+                        (reparse-symbol indented_block_body) [17289 17367])
+                    ("is_empty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17385 17389]))                          )
+                        (reparse-symbol indented_block_body) [17372 17470])
+                    ("has_agenda" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17490 17494]))                          )
+                        (reparse-symbol indented_block_body) [17475 18368]))                  
+                :type "class")
+                nil [16627 18368])
+            ("MeetingTemplate" type
+               (:documentation "Meeting Templates for board, one on one meeting etc."
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [18474 18545])
+                    ("body" variable nil (reparse-symbol indented_block_body) [18550 18596])
+                    ("access_type" variable nil (reparse-symbol indented_block_body) [18601 18684])
+                    ("raw_html" variable nil (reparse-symbol indented_block_body) [18689 18727])
+                    ("delta" variable nil (reparse-symbol indented_block_body) [18732 18767])
+                    ("archived" variable nil (reparse-symbol indented_block_body) [18772 18817])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [18822 18865])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18887 18891]))                          )
+                        (reparse-symbol indented_block_body) [18871 18942]))                  
+                :type "class")
+                nil [18370 18942])
+            ("Channels" type
+               (:documentation "
+        Model to store channels for note item tags.
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [19046 19105])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [19110 19151])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19173 19177]))                          )
+                        (reparse-symbol indented_block_body) [19157 19235]))                  
+                :type "class")
+                nil [18944 19235])
+            ("NoteItem" type
+               (:documentation "Contains the description of note items"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("PENDING_STATUS" variable nil (reparse-symbol indented_block_body) [19320 19346])
+                    ("DOING_STATUS" variable nil (reparse-symbol indented_block_body) [19351 19373])
+                    ("DONE_STATUS" variable nil (reparse-symbol indented_block_body) [19378 19398])
+                    ("SRC_CHOICES" variable nil (reparse-symbol indented_block_body) [19404 19456])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [19462 19534])
+                    ("event" variable nil (reparse-symbol indented_block_body) [19539 19608])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [19613 19712])
+                    ("note_type" variable nil (reparse-symbol indented_block_body) [19717 19796])
+                    ("note" variable nil (reparse-symbol indented_block_body) [19801 19847])
+                    ("assignee" variable nil (reparse-symbol indented_block_body) [19852 20002])
+                    ("assigned_to" variable nil (reparse-symbol indented_block_body) [20007 20076])
+                    ("status" variable nil (reparse-symbol indented_block_body) [20081 20163])
+                    ("access_type" variable nil (reparse-symbol indented_block_body) [20168 20251])
+                    ("due_date" variable nil (reparse-symbol indented_block_body) [20256 20325])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [20330 20376])
+                    ("channels" variable nil (reparse-symbol indented_block_body) [20381 20447])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [20452 20479])
+                    ("is_externally_modified" variable nil (reparse-symbol indented_block_body) [20484 20543])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [20548 20595])
+                    ("source" variable nil (reparse-symbol indented_block_body) [20600 20699])
+                    ("source_event" variable nil (reparse-symbol indented_block_body) [20704 20868])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20890 20894]))                          )
+                        (reparse-symbol indented_block_body) [20874 20941]))                  
+                :type "class")
+                nil [19237 20941])
+            ("NoteItemCommandStore" type
+               (:superclasses ("BaseCommandStore")
+                :members 
+                  ( ("SRC_EDITOR" variable nil (reparse-symbol indented_block_body) [20993 21016])
+                    ("SRC_AI_DIALOG" variable nil (reparse-symbol indented_block_body) [21021 21050])
+                    ("SRC_SLACK" variable nil (reparse-symbol indented_block_body) [21055 21076])
+                    ("noteitem" variable nil (reparse-symbol indented_block_body) [21082 21146])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21164 21168]))                          )
+                        (reparse-symbol indented_block_body) [21152 21245]))                  
+                :type "class")
+                nil [20943 21245])
+            ("MailTemplate" type
+               (:documentation "Contains the welcome mail template"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("template" variable nil (reparse-symbol indented_block_body) [21330 21359])
+                    ("subject" variable nil (reparse-symbol indented_block_body) [21364 21417])
+                    ("name" variable nil (reparse-symbol indented_block_body) [21422 21471]))                  
+                :type "class")
+                nil [21247 21472])
+            ("TemporaryEvent" type
+               (:documentation "Temporary table used for bulk create"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [21561 21620])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [21625 21669])
+                    ("hashed_id" variable nil (reparse-symbol indented_block_body) [21674 21718])
+                    ("organizer" variable nil (reparse-symbol indented_block_body) [21723 21839])
+                    ("organizer_email" variable nil (reparse-symbol indented_block_body) [21844 21902])
+                    ("transaction_id" variable nil (reparse-symbol indented_block_body) [21907 21951])
+                    ("source_event_id" variable nil (reparse-symbol indented_block_body) [22027 22078])
+                    ("source_event_hashed_id" variable nil (reparse-symbol indented_block_body) [22083 22140])
+                    ("source_calendar_id" variable nil (reparse-symbol indented_block_body) [22145 22217])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22239 22243]))                          )
+                        (reparse-symbol indented_block_body) [22223 22301]))                  
+                :type "class")
+                nil [21474 22301])
+            ("TemporaryMeeting" type
+               (:documentation "Temporary table used for bulk create"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [22392 22451])
+                    ("etag" variable nil (reparse-symbol indented_block_body) [22456 22522])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [22598 22641])
+                    ("event_hashed_id" variable nil (reparse-symbol indented_block_body) [22646 22720])
+                    ("meeting_id" variable nil (reparse-symbol indented_block_body) [22725 22771])
+                    ("hashed_id" variable nil (reparse-symbol indented_block_body) [22776 22820])
+                    ("title" variable nil (reparse-symbol indented_block_body) [22825 22872])
+                    ("start_time" variable nil (reparse-symbol indented_block_body) [22877 22933])
+                    ("end_time" variable nil (reparse-symbol indented_block_body) [22938 22992])
+                    ("actual_start_time" variable nil (reparse-symbol indented_block_body) [22997 23071])
+                    ("actual_end_time" variable nil (reparse-symbol indented_block_body) [23076 23148])
+                    ("running_status" variable nil (reparse-symbol indented_block_body) [23153 23293])
+                    ("doc_id" variable nil (reparse-symbol indented_block_body) [23298 23346])
+                    ("archived" variable nil (reparse-symbol indented_block_body) [23351 23396])
+                    ("source" variable nil (reparse-symbol indented_block_body) [23401 23548])
+                    ("calendar" variable nil (reparse-symbol indented_block_body) [23553 23633])
+                    ("in_active" variable nil (reparse-symbol indented_block_body) [23638 23684])
+                    ("transaction_id" variable nil (reparse-symbol indented_block_body) [23689 23733])
+                    ("saved_meeting_id" variable nil (reparse-symbol indented_block_body) [23738 23814])
+                    ("source_event_hashed_id" variable nil (reparse-symbol indented_block_body) [23819 23899])
+                    ("active_event_id" variable nil (reparse-symbol indented_block_body) [23904 23964])
+                    ("visibility" variable nil (reparse-symbol indented_block_body) [23969 24144])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24166 24170]))                          )
+                        (reparse-symbol indented_block_body) [24150 24247]))                  
+                :type "class")
+                nil [22303 24247])
+            ("TemporaryAttendee" type
+               (:documentation "Temporary table used for bulk create"
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("event_id" variable nil (reparse-symbol indented_block_body) [24410 24454])
+                    ("event_hashed_id" variable nil (reparse-symbol indented_block_body) [24459 24509])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [24514 24573])
+                    ("meeting_id" variable nil (reparse-symbol indented_block_body) [24578 24624])
+                    ("meeting_hashed_id" variable nil (reparse-symbol indented_block_body) [24629 24681])
+                    ("email" variable nil (reparse-symbol indented_block_body) [24778 24826])
+                    ("user" variable nil (reparse-symbol indented_block_body) [24831 24946])
+                    ("joining_time" variable nil (reparse-symbol indented_block_body) [24951 25020])
+                    ("leaving_time" variable nil (reparse-symbol indented_block_body) [25025 25094])
+                    ("status" variable nil (reparse-symbol indented_block_body) [25099 25252])
+                    ("transaction_id" variable nil (reparse-symbol indented_block_body) [25257 25301])
+                    ("source" variable nil (reparse-symbol indented_block_body) [25306 25414])
+                    ("Meta" type
+                       (:members 
+                          ( ("index_together" variable nil (reparse-symbol indented_block_body) [25440 25496]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [25420 25497]))                  
+                :type "class")
+                nil [24249 25497])
+            ("Setting" type
+               (:documentation "
+        Application Level Settings will be stored here.
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("key" variable nil (reparse-symbol indented_block_body) [25604 25654])
+                    ("value" variable nil (reparse-symbol indented_block_body) [25659 25699])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25721 25725]))                          )
+                        (reparse-symbol indented_block_body) [25705 25765]))                  
+                :type "class")
+                nil [25499 25765])
+            ("AutoSave" type
+               (:documentation "
+    Contains details regarding auto save of meeting raw notes and note items
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("event" variable nil (reparse-symbol indented_block_body) [25955 26013])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [26018 26111])
+                    ("last_synced_key" variable nil (reparse-symbol indented_block_body) [26116 26165])
+                    ("last_save_time" variable nil (reparse-symbol indented_block_body) [26170 26222])
+                    ("source_event" variable nil (reparse-symbol indented_block_body) [26227 26391]))                  
+                :type "class")
+                nil [25828 26392])
+            ("RequestLog" type
+               (:documentation "
+        Contains logs of all request to the server
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [26497 26534])
+                    ("url" variable nil (reparse-symbol indented_block_body) [26539 26577])
+                    ("timestamp" variable nil (reparse-symbol indented_block_body) [26582 26633])
+                    ("user_agent" variable nil (reparse-symbol indented_block_body) [26638 26694])
+                    ("event_id" variable nil (reparse-symbol indented_block_body) [26699 26752])
+                    ("meeting_id" variable nil (reparse-symbol indented_block_body) [26757 26812])
+                    ("ip" variable nil (reparse-symbol indented_block_body) [26817 26853])
+                    ("referrer" variable nil (reparse-symbol indented_block_body) [26858 26912])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26934 26938]))                          )
+                        (reparse-symbol indented_block_body) [26918 27015]))                  
+                :type "class")
+                nil [26394 27015])
+            ("UnregisteredInvitee" type
+               (:documentation "
+    Contains details of unregistered invitees
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("event" variable nil (reparse-symbol indented_block_body) [27124 27182])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [27187 27249])
+                    ("email" variable nil (reparse-symbol indented_block_body) [27254 27295])
+                    ("token" variable nil (reparse-symbol indented_block_body) [27300 27326])
+                    ("expiry" variable nil (reparse-symbol indented_block_body) [27331 27362])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27384 27388]))                          )
+                        (reparse-symbol indented_block_body) [27368 27454]))                  
+                :type "class")
+                nil [27017 27454])
+            ("Team" type
+               (:documentation "
+        Model to store team details - Name, type of team, etc
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("SOURCE_MEETNOTES" variable nil (reparse-symbol indented_block_body) [27564 27594])
+                    ("SOURCE_SLACK" variable nil (reparse-symbol indented_block_body) [27599 27621])
+                    ("TEAM_SOURCES" variable nil (reparse-symbol indented_block_body) [27626 27673])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [27679 27751])
+                    ("name" variable nil (reparse-symbol indented_block_body) [27756 27808])
+                    ("permission" variable nil (reparse-symbol indented_block_body) [27813 28024])
+                    ("domain" variable nil (reparse-symbol indented_block_body) [28029 28092])
+                    ("source" variable nil (reparse-symbol indented_block_body) [28165 28272])
+                    ("source_id" variable nil (reparse-symbol indented_block_body) [28277 28344])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [28349 28483])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28505 28509]))                          )
+                        (reparse-symbol indented_block_body) [28489 28586]))                  
+                :type "class")
+                nil [27456 28586])
+            ("UserTeamRelationship" type
+               (:documentation "
+        Model to store User-Team Relationship, role of user
+        User to Team Many to Many Relationship
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [28757 28909])
+                    ("team" variable nil (reparse-symbol indented_block_body) [28914 28970])
+                    ("email" variable nil (reparse-symbol indented_block_body) [28975 29038])
+                    ("role" variable nil (reparse-symbol indented_block_body) [29043 29218])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29240 29244]))                          )
+                        (reparse-symbol indented_block_body) [29224 29323]))                  
+                :type "class")
+                nil [28588 29323])
+            ("TeamInvite" type
+               (:documentation "
+        Model to store Team Invitations
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("INVITE_TYPE_TEAM_MEMBER" variable nil (reparse-symbol indented_block_body) [29417 29456])
+                    ("INVITE_TYPE_MEETING_ATTENDEE" variable nil (reparse-symbol indented_block_body) [29461 29510])
+                    ("INVITE_TYPE_MULTI_USE_TEAM_INVITE" variable nil (reparse-symbol indented_block_body) [29515 29574])
+                    ("INVITE_TYPES" variable nil (reparse-symbol indented_block_body) [29579 29684])
+                    ("INVITE_SRC_ONBOARDING" variable nil (reparse-symbol indented_block_body) [29690 29726])
+                    ("INVITE_SRC_SETTINGS_PAGE" variable nil (reparse-symbol indented_block_body) [29731 29773])
+                    ("INVITE_SRC_MEETING_PAGE" variable nil (reparse-symbol indented_block_body) [29778 29818])
+                    ("INVITE_SRC_SLACK_WELCOME_MSG" variable nil (reparse-symbol indented_block_body) [29823 29873])
+                    ("INVITE_SOURCES" variable nil (reparse-symbol indented_block_body) [29878 29969])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [29975 30047])
+                    ("parent_invite" variable nil (reparse-symbol indented_block_body) [30052 30142])
+                    ("invite_type" variable nil (reparse-symbol indented_block_body) [30147 30301])
+                    ("invite_src" variable nil (reparse-symbol indented_block_body) [30306 30463])
+                    ("team" variable nil (reparse-symbol indented_block_body) [30468 30547])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [30552 30637])
+                    ("user" variable nil (reparse-symbol indented_block_body) [30642 30754])
+                    ("email" variable nil (reparse-symbol indented_block_body) [30759 30807])
+                    ("status" variable nil (reparse-symbol indented_block_body) [30812 31088])
+                    ("expiry_time" variable nil (reparse-symbol indented_block_body) [31093 31150])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [31155 31184])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31206 31210]))                          )
+                        (reparse-symbol indented_block_body) [31190 31301]))                  
+                :type "class")
+                nil [29325 31301])
+            ("TeamTag" type
+               (:documentation "
+        Model to store Team and Tag Relationship
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [31401 31473])
+                    ("tag" variable nil (reparse-symbol indented_block_body) [31478 31537])
+                    ("team" variable nil (reparse-symbol indented_block_body) [31542 31598])
+                    ("description" variable nil (reparse-symbol indented_block_body) [31603 31649])
+                    ("color_hex_code" variable nil (reparse-symbol indented_block_body) [31654 31701])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31723 31727]))                          )
+                        (reparse-symbol indented_block_body) [31707 31819]))                  
+                :type "class")
+                nil [31303 31819])
+            ("BetaUser" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("email" variable nil (reparse-symbol indented_block_body) [31855 31893])
+                    ("user" variable nil (reparse-symbol indented_block_body) [31898 31965])
+                    ("name" variable nil (reparse-symbol indented_block_body) [31970 32032])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32050 32054]))                          )
+                        (reparse-symbol indented_block_body) [32038 32114]))                  
+                :type "class")
+                nil [31821 32114])
+            ("Reminder" type
+               (:documentation "
+        A reminder to send to send for a given task to a set of targets
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("SLACK" variable nil (reparse-symbol indented_block_body) [32238 32253])
+                    ("EMAIL" variable nil (reparse-symbol indented_block_body) [32258 32273])
+                    ("CHROME" variable nil (reparse-symbol indented_block_body) [32278 32295])
+                    ("task_id" variable nil (reparse-symbol indented_block_body) [32301 32366])
+                    ("message" variable nil (reparse-symbol indented_block_body) [32371 32420])
+                    ("target" variable nil (reparse-symbol indented_block_body) [32425 32489])
+                    ("link" variable nil (reparse-symbol indented_block_body) [32494 32556])
+                    ("active" variable nil (reparse-symbol indented_block_body) [32561 32603])
+                    ("method" variable nil (reparse-symbol indented_block_body) [32608 32777])
+                    ("reminder_type" variable nil (reparse-symbol indented_block_body) [32782 32853])
+                    ("interval" variable nil (reparse-symbol indented_block_body) [32858 32899])
+                    ("interval_sequence" variable nil (reparse-symbol indented_block_body) [32947 33075])
+                    ("extra_data" variable nil (reparse-symbol indented_block_body) [33133 33200])
+                    ("next_run" variable nil (reparse-symbol indented_block_body) [33205 33238])
+                    ("run_count" variable nil (reparse-symbol indented_block_body) [33243 33285])
+                    ("max_run" variable nil (reparse-symbol indented_block_body) [33290 33353])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [33359 33386])
+                    ("Meta" type
+                       (:members 
+                          ( ("index_together" variable nil (reparse-symbol indented_block_body) [33412 33476]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [33392 33477])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33498 33502]))                          )
+                        (reparse-symbol indented_block_body) [33482 33578]))                  
+                :type "class")
+                nil [32116 33578])
+            ("generate_default_shortkey" function nil nil [33580 33641])
+            ("Offer" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("shortkey" variable nil (reparse-symbol indented_block_body) [33674 33764])
+                    ("title" variable nil (reparse-symbol indented_block_body) [33769 33831])
+                    ("description" variable nil (reparse-symbol indented_block_body) [33836 33889])
+                    ("is_valid" variable nil (reparse-symbol indented_block_body) [33894 33938])
+                    ("expiry_date" variable nil (reparse-symbol indented_block_body) [33943 33979])
+                    ("parent" variable nil (reparse-symbol indented_block_body) [33984 34082])
+                    ("email" variable nil (reparse-symbol indented_block_body) [34087 34149])
+                    ("user_name" variable nil (reparse-symbol indented_block_body) [34154 34220])
+                    ("used_count" variable nil (reparse-symbol indented_block_body) [34225 34268])
+                    ("max_count" variable nil (reparse-symbol indented_block_body) [34518 34572])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34590 34594]))                          )
+                        (reparse-symbol indented_block_body) [34578 34679])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34694 34698]))                          )
+                        (reparse-symbol indented_block_body) [34684 34868])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34882 34886])
+                            ("args" variable nil (reparse-symbol function_parameters) [34888 34893])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [34895 34903]))                          )
+                        (reparse-symbol indented_block_body) [34873 34981]))                  
+                :type "class")
+                nil [33643 34981])
+            ("SlackCredential" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [35024 35118])
+                    ("username" variable nil (reparse-symbol indented_block_body) [35123 35188])
+                    ("bot_token" variable nil (reparse-symbol indented_block_body) [35193 35260])
+                    ("slack_user_id" variable nil (reparse-symbol indented_block_body) [35265 35335])
+                    ("team_id" variable nil (reparse-symbol indented_block_body) [35340 35404])
+                    ("config_details" variable nil (reparse-symbol indented_block_body) [35409 35437])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [35442 35487])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [35493 35527])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35549 35553]))                          )
+                        (reparse-symbol indented_block_body) [35533 35612]))                  
+                :type "class")
+                nil [34983 35612])
+            ("JobStatus" type
+               (:documentation "
+        Model to maintain job status
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("IN_PROGRESS_STATUS" variable nil (reparse-symbol indented_block_body) [35702 35736])
+                    ("SUCCESS_STATUS" variable nil (reparse-symbol indented_block_body) [35741 35767])
+                    ("FAILED_STATUS" variable nil (reparse-symbol indented_block_body) [35772 35796])
+                    ("user" variable nil (reparse-symbol indented_block_body) [35802 35913])
+                    ("job_type" variable nil (reparse-symbol indented_block_body) [35918 35960])
+                    ("key" variable nil (reparse-symbol indented_block_body) [35965 36017])
+                    ("status" variable nil (reparse-symbol indented_block_body) [36022 36173])
+                    ("timeout" variable nil (reparse-symbol indented_block_body) [36178 36230])
+                    ("result" variable nil (reparse-symbol indented_block_body) [36235 36255])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36277 36281]))                          )
+                        (reparse-symbol indented_block_body) [36261 36340]))                  
+                :type "class")
+                nil [35614 36340])
+            ("CalendarIntegrationCalendar" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("calendar_credential" variable nil (reparse-symbol indented_block_body) [36395 36570])
+                    ("calendar" variable nil (reparse-symbol indented_block_body) [36575 36639])
+                    ("is_primary" variable nil (reparse-symbol indented_block_body) [36644 36691])
+                    ("webhook_data" variable nil (reparse-symbol indented_block_body) [36696 36722])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [36727 36772])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [36778 36824])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36842 36846]))                          )
+                        (reparse-symbol indented_block_body) [36830 36925]))                  
+                :type "class")
+                nil [36342 36925])
+            ("CalendarPermission" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("VIEW_PERMISSION_FIELDS" variable nil (reparse-symbol indented_block_body) [36971 37034])
+                    ("calendar" variable nil (reparse-symbol indented_block_body) [37040 37104])
+                    ("email" variable nil (reparse-symbol indented_block_body) [37109 37136])
+                    ("calendar_credential" variable nil (reparse-symbol indented_block_body) [37141 37249])
+                    ("user" variable nil (reparse-symbol indented_block_body) [37254 37400])
+                    ("can_read" variable nil (reparse-symbol indented_block_body) [37405 37450])
+                    ("can_write" variable nil (reparse-symbol indented_block_body) [37455 37501])
+                    ("can_share" variable nil (reparse-symbol indented_block_body) [37506 37552])
+                    ("can_view_private_items" variable nil (reparse-symbol indented_block_body) [37557 37616])
+                    ("is_primary" variable nil (reparse-symbol indented_block_body) [37621 37668])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [37674 37723])
+                    ("view_permission_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37769 37773]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [37729 37880])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37897 37901]))                          )
+                        (reparse-symbol indented_block_body) [37885 37961]))                  
+                :type "class")
+                nil [36927 37961])
+            ("MeetingSource" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("calendar" variable nil (reparse-symbol indented_block_body) [38002 38066])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [38071 38133])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [38139 38171])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38189 38193]))                          )
+                        (reparse-symbol indented_block_body) [38177 38255]))                  
+                :type "class")
+                nil [37963 38255])
+            ("MeetingAlias" type
+               (:documentation "
+        Model to store alias email for User object
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [38362 38429])
+                    ("email" variable nil (reparse-symbol indented_block_body) [38434 38461])
+                    ("nickname" variable nil (reparse-symbol indented_block_body) [38466 38508])
+                    ("event" variable nil (reparse-symbol indented_block_body) [38513 38571])
+                    ("source_event" variable nil (reparse-symbol indented_block_body) [38576 38744])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38766 38770]))                          )
+                        (reparse-symbol indented_block_body) [38750 38826]))                  
+                :type "class")
+                nil [38257 38826])
+            ("UserAlias" type
+               (:documentation "
+        Model to store alias email for User object
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("MEET_NOTES_SOURCE" variable nil (reparse-symbol indented_block_body) [38930 38961])
+                    ("MEET_NOTES_INVITE_SOURCE" variable nil (reparse-symbol indented_block_body) [38966 39011])
+                    ("CALENDAR_SOURCE" variable nil (reparse-symbol indented_block_body) [39016 39044])
+                    ("SOURCE_CHOICES" variable nil (reparse-symbol indented_block_body) [39049 39128])
+                    ("user" variable nil (reparse-symbol indented_block_body) [39134 39190])
+                    ("email" variable nil (reparse-symbol indented_block_body) [39195 39222])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [39227 39270])
+                    ("source" variable nil (reparse-symbol indented_block_body) [39275 39415])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39437 39441]))                          )
+                        (reparse-symbol indented_block_body) [39421 39497]))                  
+                :type "class")
+                nil [38828 39497])
+            ("GoogleDriveCredential" type
+               (:documentation "
+        Model to store Google Drive Credential
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [39609 39692])
+                    ("email" variable nil (reparse-symbol indented_block_body) [39697 39724])
+                    ("config_details" variable nil (reparse-symbol indented_block_body) [39729 39757])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39779 39783]))                          )
+                        (reparse-symbol indented_block_body) [39763 39839]))                  
+                :type "class")
+                nil [39499 39839])
+            ("GoogleDriveExport" type
+               (:documentation "
+        Model to save Google Drive Exports
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [39943 40033])
+                    ("email" variable nil (reparse-symbol indented_block_body) [40038 40065])
+                    ("link" variable nil (reparse-symbol indented_block_body) [40070 40095])
+                    ("response" variable nil (reparse-symbol indented_block_body) [40100 40122])
+                    ("meeting" variable nil (reparse-symbol indented_block_body) [40127 40226])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40248 40252]))                          )
+                        (reparse-symbol indented_block_body) [40232 40350]))                  
+                :type "class")
+                nil [39841 40350])
+            ("NoteItemComments" type
+               (:documentation "
+        Model to store comments for note items.
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [40458 40517])
+                    ("user" variable nil (reparse-symbol indented_block_body) [40522 40619])
+                    ("username" variable nil (reparse-symbol indented_block_body) [40848 40891])
+                    ("comment" variable nil (reparse-symbol indented_block_body) [40896 40924])
+                    ("noteitem" variable nil (reparse-symbol indented_block_body) [40929 41026])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [41098 41143])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41165 41169]))                          )
+                        (reparse-symbol indented_block_body) [41149 41231]))                  
+                :type "class")
+                nil [40352 41231])
+            ("TaskStatus" type
+               (:documentation "
+        Model to store status of the background tasks
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("IN_PROGRESS_STATUS" variable nil (reparse-symbol indented_block_body) [41339 41373])
+                    ("SUCCESS_STATUS" variable nil (reparse-symbol indented_block_body) [41378 41404])
+                    ("FAILED_STATUS" variable nil (reparse-symbol indented_block_body) [41409 41433])
+                    ("reminder" variable nil (reparse-symbol indented_block_body) [41439 41527])
+                    ("task_name" variable nil (reparse-symbol indented_block_body) [41532 41587])
+                    ("task_id" variable nil (reparse-symbol indented_block_body) [41592 41647])
+                    ("status" variable nil (reparse-symbol indented_block_body) [41652 41806])
+                    ("expiry" variable nil (reparse-symbol indented_block_body) [41811 41862])
+                    ("error_trace" variable nil (reparse-symbol indented_block_body) [41867 41892]))                  
+                :type "class")
+                nil [41233 41893])
+            ("SettingOption" type
+               (:documentation "
+        Contains possible options for keys in User Settings
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [42010 42049])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42071 42075]))                          )
+                        (reparse-symbol indented_block_body) [42055 42103]))                  
+                :type "class")
+                nil [41895 42103])
+            ("UserSetting" type
+               (:documentation "
+        Contains the User Level Settings.
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [42291 42405])
+                    ("team" variable nil (reparse-symbol indented_block_body) [42410 42524])
+                    ("group" variable nil (reparse-symbol indented_block_body) [42529 42676])
+                    ("key" variable nil (reparse-symbol indented_block_body) [42681 42756])
+                    ("value" variable nil (reparse-symbol indented_block_body) [42761 42801])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42823 42827]))                          )
+                        (reparse-symbol indented_block_body) [42807 42933]))                  
+                :type "class")
+                nil [42105 42933])
+            ("PendingVerification" type
+               (:documentation "
+        Contains verification pending data
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("USER_ALIAS_TYPE" variable nil (reparse-symbol indented_block_body) [43039 43069])
+                    ("TYPE_CHOICES" variable nil (reparse-symbol indented_block_body) [43074 43107])
+                    ("user" variable nil (reparse-symbol indented_block_body) [43112 43291])
+                    ("team" variable nil (reparse-symbol indented_block_body) [43296 43475])
+                    ("verification_type" variable nil (reparse-symbol indented_block_body) [43480 43572])
+                    ("email" variable nil (reparse-symbol indented_block_body) [43577 43604])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [43609 43668])
+                    ("extra_data" variable nil (reparse-symbol indented_block_body) [43673 43697])
+                    ("is_verified" variable nil (reparse-symbol indented_block_body) [43702 43750])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43772 43776]))                          )
+                        (reparse-symbol indented_block_body) [43756 43862]))                  
+                :type "class")
+                nil [42935 43862])
+            ("SharePreference" type
+               (:documentation "
+        Stores share preference for every event or user
+    "
+                :superclasses ("MoMBaseModel")
+                :members 
+                  ( ("SLACK" variable nil (reparse-symbol indented_block_body) [43977 43992])
+                    ("EMAIL" variable nil (reparse-symbol indented_block_body) [43997 44012])
+                    ("CHROME" variable nil (reparse-symbol indented_block_body) [44017 44034])
+                    ("user" variable nil (reparse-symbol indented_block_body) [44039 44186])
+                    ("event" variable nil (reparse-symbol indented_block_body) [44191 44272])
+                    ("method" variable nil (reparse-symbol indented_block_body) [44277 44446])
+                    ("data" variable nil (reparse-symbol indented_block_body) [44451 44502])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44520 44524]))                          )
+                        (reparse-symbol indented_block_body) [44508 44589]))                  
+                :type "class")
+                nil [43864 44589])
+            ("RealTimeAction" type
+               (:superclasses ("MoMBaseModel")
+                :members 
+                  ( ("REAL_TIME_ACTION_SLACK_ADD_AGENDA" variable nil (reparse-symbol indented_block_body) [44631 44685])
+                    ("REAL_TIME_ACTIONS" variable nil (reparse-symbol indented_block_body) [44690 44746])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [44796 44855])
+                    ("action_type" variable nil (reparse-symbol indented_block_body) [44860 44956])
+                    ("additional_data" variable nil (reparse-symbol indented_block_body) [44961 44990])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [44995 45040])
+                    ("actor_user" variable nil (reparse-symbol indented_block_body) [45045 45203])
+                    ("target_user" variable nil (reparse-symbol indented_block_body) [45208 45369])
+                    ("target_event" variable nil (reparse-symbol indented_block_body) [45374 45463])
+                    ("target_meeting" variable nil (reparse-symbol indented_block_body) [45468 45561])
+                    ("target_team" variable nil (reparse-symbol indented_block_body) [45566 45653])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45671 45675]))                          )
+                        (reparse-symbol indented_block_body) [45659 45762]))                  
+                :type "class")
+                nil [44591 45762]))          
+      :file "models.py"
+      :pointmax 45762
+      :fsize 45761
+      :lastmodtime '(23720 27229 126657 994000)
+      :unmatched-syntax '((INDENT_BLOCK 17939 . 18231) (NEWLINE 17938 . 17939) (COLON 17937 . 17938) (TRY 17848 . 17851) (AS 17933 . 17935) (FROM 1492 . 1496) (PERIOD 1497 . 1498) (FROM 1454 . 1458) (PERIOD 1459 . 1460) (FROM 1416 . 1420) (PERIOD 1421 . 1422) (FROM 1371 . 1375) (PERIOD 1376 . 1377) (FROM 1332 . 1336) (PERIOD 1337 . 1338) ($EOI 45762 . 45762) (INDENT_BLOCK 17939 . 18231) (NEWLINE 17938 . 17939) (COLON 17937 . 17938) (TRY 17848 . 17851) (AS 17933 . 17935) (FROM 1492 . 1496) (PERIOD 1497 . 1498) (FROM 1454 . 1458) (PERIOD 1459 . 1460) (FROM 1416 . 1420) (PERIOD 1421 . 1422) (FROM 1371 . 1375) (PERIOD 1376 . 1377) (FROM 1332 . 1336) (PERIOD 1337 . 1338) ($EOI 45762 . 45762) (INDENT_BLOCK 17939 . 18231) (NEWLINE 17938 . 17939) (COLON 17937 . 17938) (TRY 17848 . 17851) (AS 17933 . 17935) (FROM 1492 . 1496) (PERIOD 1497 . 1498) (FROM 1454 . 1458) (PERIOD 1459 . 1460) (FROM 1416 . 1420) (PERIOD 1421 . 1422) (FROM 1371 . 1375) (PERIOD 1376 . 1377) (FROM 1332 . 1336) (PERIOD 1337 . 1338) ($EOI 45762 . 45762) (INDENT_BLOCK 17939 . 18231) (NEWLINE 17938 . 17939) (COLON 17937 . 17938) (TRY 17848 . 17851) (AS 17933 . 17935) (FROM 1492 . 1496) (PERIOD 1497 . 1498) (FROM 1454 . 1458) (PERIOD 1459 . 1460) (FROM 1416 . 1420) (PERIOD 1421 . 1422) (FROM 1371 . 1375) (PERIOD 1376 . 1377) (FROM 1332 . 1336) (PERIOD 1337 . 1338)))
+    (semanticdb-table "semanticdb-table"
+      :file "exceptions.py"
+      :fsize 58
+      :lastmodtime '(23565 6912 982664 184000))
+    (semanticdb-table "semanticdb-table"
+      :file "db.py"
+      :fsize 609
+      :lastmodtime '(23543 48600 196554 549000))
+    (semanticdb-table "semanticdb-table"
+      :file "utils.py"
+      :fsize 19551
+      :lastmodtime '(23720 27229 134658 71000))
+    (semanticdb-table "semanticdb-table"
+      :file "managers.py"
+      :fsize 21882
+      :lastmodtime '(23726 3278 119736 28000)))
+  :file "!home!hasher!apps!mom!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

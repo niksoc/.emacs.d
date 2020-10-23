@@ -1,0 +1,259 @@
+;; Object C04/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C04/"
+  :tables (list 
+   (semanticdb-table "TESTHEADER_Fullwrap.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Fullwrap.h" include nil nil [433 453])
+            ("main" function (:type "int") nil [454 467]))          
+    :file "TESTHEADER_Fullwrap.cpp"
+    :pointmax 468
+    :fsize 479
+    :lastmodtime '(16306 36700 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Fullwrap.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FULLWRAP_H" variable (:constant-flag t) nil [336 346])
+            ("cstddef" include (:system-flag t) nil [347 365])
+            ("cstdio" include (:system-flag t) nil [366 383])
+            ("std::size_t" using (:type ("std::size_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [422 440])
+            ("std::fpos_t" using (:type ("std::fpos_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [441 459])
+            ("File" type
+               (:members 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("std::FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [476 489])
+                    ("F" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("std::FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [492 507])
+                    ("public" label nil (reparse-symbol classsubparts) [541 548])
+                    ("File" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [551 558])
+                    ("File" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [603 620])
+                            ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [621 639]))                          
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [598 645])
+                    ("File" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [648 656])
+                    ("open" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [668 685])
+                            ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [686 704]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [659 710])
+                    ("reopen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [724 741])
+                            ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [742 759]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [713 760])
+                    ("getc" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [763 774])
+                    ("ungetc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [788 794]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [777 795])
+                    ("putc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [807 813]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [798 814])
+                    ("puts" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [826 840]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [817 841])
+                    ("gets" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [855 863])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [864 870]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [844 871])
+                    ("printf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("format" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [885 904])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [905 909]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [874 910])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [925 935])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [936 948])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [949 958]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [913 959])
+                    ("write" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [975 991])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [992 1004])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1005 1014]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [962 1015])
+                    ("eof" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1018 1028])
+                    ("close" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1031 1043])
+                    ("flush" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1046 1058])
+                    ("seek" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "long") (reparse-symbol arg-sub-list) [1070 1082])
+                            ("whence" variable (:type "int") (reparse-symbol arg-sub-list) [1083 1094]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1061 1095])
+                    ("getpos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable
+                               (:pointer 1
+                                :type ("fpos_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1109 1121]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1098 1122])
+                    ("setpos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("fpos_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1136 1154]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1125 1155])
+                    ("tell" function
+                       (:prototype-flag t
+                        :type "long")
+                        (reparse-symbol classsubparts) [1158 1170])
+                    ("rewind" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1173 1187])
+                    ("setbuf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1202 1212]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1190 1213])
+                    ("setvbuf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1228 1238])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1239 1248])
+                            ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1249 1259]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1216 1260])
+                    ("error" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1263 1275])
+                    ("clearErr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1278 1294]))                  
+                :type "class")
+                nil [461 1297]))          
+    :file "Fullwrap.h"
+    :pointmax 1325
+    :fsize 1371
+    :lastmodtime '(16306 36698 0 0)
+    :unmatched-syntax '((string 705 . 708) (punctuation 703 . 704) (string 640 . 643) (punctuation 638 . 639))
+    :lexical-table 
+        '(("FULLWRAP_H")
+          )
+
+    )
+   )
+  :file "!home!nikhil!Thinking in CPP 2!code!C04!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

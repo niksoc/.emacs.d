@@ -1,0 +1,46 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("selenium" include nil nil [1 31])
+            ("selenium.common.exceptions" include nil nil [32 93])
+            ("selenium.webdriver.common.keys" include nil nil [94 141])
+            ("time" include nil nil [142 164])
+            ("ignore_issue_numbers" variable nil nil [166 237])
+            ("base_url" variable nil nil [240 283])
+            ("my_issues_url" code nil nil [284 353])
+            ("workflow_transitions" variable nil nil [355 404])
+            ("workflow_transition_id_format" variable nil nil [405 451])
+            ("driver" variable nil nil [454 497])
+            ("sleep" code nil nil [498 507])
+            ("driver" code nil nil [508 533])
+            ("sleep" code nil nil [534 542])
+            ("issue_link_tags" variable nil nil [544 620])
+            ("issue_links" variable nil nil [622 638])
+            ("for" code nil nil [639 976])
+            ("input" code nil nil [977 1008])
+            ("for" code nil nil [1010 1567])
+            ("driver" code nil nil [1568 1582]))          
+      :file "jira.py"
+      :pointmax 1583
+      :fsize 1582
+      :lastmodtime '(23384 12669 715784 434000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("36" code nil nil [1 3])
+            ("37" code nil nil [4 6])
+            ("38" code nil nil [7 9])
+            ("149" code nil nil [10 13])
+            ("150" code nil nil [14 17]))          
+      :file "mg.py"
+      :pointmax 21
+      :unmatched-syntax '((NUMBER_LITERAL 18 . 21) ($EOI 21 . 21))))
+  :file "!home!hasher!apps!selenium!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "package.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 955
+      :fsize 954
+      :lastmodtime '(22466 61571 67911 845000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!app!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

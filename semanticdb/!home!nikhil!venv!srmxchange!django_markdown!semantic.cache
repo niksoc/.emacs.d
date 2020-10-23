@@ -1,0 +1,19 @@
+;; Object django_markdown/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "django_markdown/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\" Define preview URL. \"\"\"" code nil nil [1 28])
+            ("django.conf.urls" include nil nil [30 62])
+            ("preview" include nil nil [76 90]))          
+      :file "urls.py"
+      :pointmax 172
+      :fsize 171
+      :lastmodtime '(22457 33479 46642 507000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!django_markdown!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

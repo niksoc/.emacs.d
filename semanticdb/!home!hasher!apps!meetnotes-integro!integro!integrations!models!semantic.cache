@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("uuid" include nil nil [1 12])
+            ("django.db" include nil nil [14 42])
+            ("integro.core.models" include nil nil [44 91])
+            ("integro.core.models" include nil nil [92 134])
+            ("integro.core.models" include nil nil [135 176])
+            ("Calendar" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [210 282])
+                    ("user_integration" variable nil (reparse-symbol indented_block_body) [288 376])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [381 428])
+                    ("is_primary" variable nil (reparse-symbol indented_block_body) [433 480])
+                    ("name" variable nil (reparse-symbol indented_block_body) [485 547])
+                    ("source_calendar_id" variable nil (reparse-symbol indented_block_body) [552 605]))                  
+                :type "class")
+                nil [179 606])
+            ("Event" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [636 708])
+                    ("EVENT_SOURCE_GOOGLE_CALENDAR" variable nil (reparse-symbol indented_block_body) [714 762])
+                    ("EVENT_SOURCE_OUTLOOK_CALENDAR" variable nil (reparse-symbol indented_block_body) [767 817])
+                    ("EVENT_SOURCE_CHOICES" variable nil (reparse-symbol indented_block_body) [823 930])
+                    ("source_event_id" variable nil (reparse-symbol indented_block_body) [936 986])
+                    ("source" variable nil (reparse-symbol indented_block_body) [991 1097])
+                    ("organizer" variable nil (reparse-symbol indented_block_body) [1103 1261])
+                    ("organizer_email" variable nil (reparse-symbol indented_block_body) [1266 1324])
+                    ("creator" variable nil (reparse-symbol indented_block_body) [1329 1481])
+                    ("creator_email" variable nil (reparse-symbol indented_block_body) [1486 1542])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [1548 1595]))                  
+                :type "class")
+                nil [608 1596])
+            ("EventInstance" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("EVENT_STATUS_CONFIRMED" variable nil (reparse-symbol indented_block_body) [1634 1670])
+                    ("EVENT_STATUS_CANCELLED" variable nil (reparse-symbol indented_block_body) [1675 1711])
+                    ("EVENT_STATUS_TENTATIVE" variable nil (reparse-symbol indented_block_body) [1716 1752])
+                    ("EVENT_STATUS_CHOICES" variable nil (reparse-symbol indented_block_body) [1757 1883])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [1889 1961])
+                    ("source_event_instance_id" variable nil (reparse-symbol indented_block_body) [1967 2026])
+                    ("event" variable nil (reparse-symbol indented_block_body) [2031 2089])
+                    ("title" variable nil (reparse-symbol indented_block_body) [2095 2158])
+                    ("description" variable nil (reparse-symbol indented_block_body) [2163 2216])
+                    ("start_time" variable nil (reparse-symbol indented_block_body) [2221 2256])
+                    ("end_time" variable nil (reparse-symbol indented_block_body) [2261 2294])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [2299 2346])
+                    ("location_name" variable nil (reparse-symbol indented_block_body) [2351 2421])
+                    ("location_address" variable nil (reparse-symbol indented_block_body) [2426 2484])
+                    ("status" variable nil (reparse-symbol indented_block_body) [2489 2648]))                  
+                :type "class")
+                nil [1598 2649])
+            ("Attendee" type
+               (:documentation "Contains the description of meeting attendees"
+                :superclasses ("BaseModel")
+                :members 
+                  ( ("ATTENDEE_STATUS_YES" variable nil (reparse-symbol indented_block_body) [2738 2765])
+                    ("ATTENDEE_STATUS_NO" variable nil (reparse-symbol indented_block_body) [2770 2795])
+                    ("ATTENDEE_STATUS_MAYBE" variable nil (reparse-symbol indented_block_body) [2800 2831])
+                    ("ATTENDEE_STATUS_NO_ACTION" variable nil (reparse-symbol indented_block_body) [2836 2874])
+                    ("ATTENDEE_STATUS_UNKNOWN" variable nil (reparse-symbol indented_block_body) [2879 2914])
+                    ("ATTENDEE_STATUS_CHOICES" variable nil (reparse-symbol indented_block_body) [2920 3109])
+                    ("event_instance" variable nil (reparse-symbol indented_block_body) [3115 3240])
+                    ("user" variable nil (reparse-symbol indented_block_body) [3245 3359])
+                    ("email" variable nil (reparse-symbol indented_block_body) [3364 3412])
+                    ("status" variable nil (reparse-symbol indented_block_body) [3417 3585])
+                    ("reminder_on" variable nil (reparse-symbol indented_block_body) [3590 3637])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [3642 3689]))                  
+                :type "class")
+                nil [2651 3690]))          
+      :file "calendar.py"
+      :pointmax 3690
+      :fsize 3689
+      :lastmodtime '(23239 22838 943937 317000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 25
+      :fsize 24
+      :lastmodtime '(23239 22848 839937 180000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!meetnotes-integro!integro!integrations!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

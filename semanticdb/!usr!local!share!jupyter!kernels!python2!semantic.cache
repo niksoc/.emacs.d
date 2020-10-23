@@ -1,0 +1,16 @@
+;; Object python2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python2/"
+  :tables
+  (list
+    (semanticdb-table "kernel.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "kernel.json"
+      :pointmax 150
+      :fsize 149
+      :lastmodtime '(22294 19737 462963 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!share!jupyter!kernels!python2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

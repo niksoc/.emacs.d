@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags nil
+      :file "addons.js"
+      :pointmax 129
+      :fsize 128
+      :lastmodtime '(23936 58026 823763 931000)
+      :unmatched-syntax '((STRING 8 . 44) (VARIABLE 45 . 51) (STRING 52 . 86) (VARIABLE 87 . 93) (STRING 94 . 128) ($EOI 129 . 129) (STRING 8 . 44) (VARIABLE 45 . 51) (STRING 52 . 86) ($EOI 87 . 87)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags nil
+      :file "config.js"
+      :pointmax 284
+      :fsize 283
+      :lastmodtime '(23936 61699 750160 63000)
+      :unmatched-syntax '((VARIABLE 197 . 206) (PAREN_BLOCK 206 . 282) (BRACE_BLOCK 8 . 35) (VARIABLE 36 . 40) (STRING 41 . 59) (VARIABLE 61 . 67) (BRACE_BLOCK 68 . 81) (VARIABLE 82 . 86) (STRING 87 . 111) (VARIABLE 114 . 126) (PAREN_BLOCK 126 . 137) (VARIABLE 197 . 206) (PAREN_BLOCK 206 . 273) (BRACE_BLOCK 8 . 35) (VARIABLE 36 . 40) (STRING 41 . 59) (VARIABLE 61 . 67) (BRACE_BLOCK 68 . 81) (VARIABLE 82 . 86) (STRING 87 . 111) (VARIABLE 114 . 126) (PAREN_BLOCK 126 . 137) (VARIABLE 183 . 192) (PAREN_BLOCK 192 . 259) (BRACE_BLOCK 8 . 21) (VARIABLE 22 . 26) (STRING 27 . 45) (VARIABLE 47 . 53) (BRACE_BLOCK 54 . 67) (VARIABLE 68 . 72) (STRING 73 . 97) (VARIABLE 100 . 112) (PAREN_BLOCK 112 . 123) (VARIABLE 183 . 192) (PAREN_BLOCK 192 . 259) (BRACE_BLOCK 8 . 21) (VARIABLE 22 . 26) (STRING 27 . 45) (VARIABLE 47 . 53) (BRACE_BLOCK 54 . 67) (VARIABLE 68 . 72) (STRING 73 . 97) (VARIABLE 99 . 111) (PAREN_BLOCK 111 . 122) (BRACE_BLOCK 8 . 21) (VARIABLE 22 . 26) (STRING 27 . 45) (VARIABLE 47 . 53) (BRACE_BLOCK 54 . 67) (VARIABLE 68 . 72) (STRING 73 . 97) (VARIABLE 158 . 167) (PAREN_BLOCK 167 . 234) (BRACE_BLOCK 8 . 21) (VARIABLE 22 . 26) (STRING 27 . 45) (VARIABLE 105 . 114) (PAREN_BLOCK 114 . 181)))
+)
+  :file "!home!hasher!apps!mcm!ui!.storybook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

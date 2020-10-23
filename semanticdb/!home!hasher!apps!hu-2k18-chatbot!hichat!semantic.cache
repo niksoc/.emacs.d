@@ -1,0 +1,159 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("django.http" include nil nil [14 50])
+            ("django.views.decorators.csrf" include nil nil [51 103])
+            ("chat.models" include nil nil [104 136])
+            ("django.contrib.auth.models" include nil nil [137 180])
+            ("hichat" include nil nil [182 243])
+            ("INTENT_SERVICES_MAPPING" variable nil nil [245 1042])
+            ("_extract_intent" function (:arguments 
+              ( ("dialogflow_body" variable nil (reparse-symbol function_parameters) [1065 1080]))              ) nil [1045 1155])
+            ("_extract_params" function (:arguments 
+              ( ("dialogflow_body" variable nil (reparse-symbol function_parameters) [1177 1192]))              ) nil [1157 1256])
+            ("get_user" function (:arguments 
+              ( ("payload" variable nil (reparse-symbol function_parameters) [1271 1278]))              ) nil [1258 1839])
+            ("webhook" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [1866 1873]))                  )
+                nil [1841 2328]))          
+      :file "views.py"
+      :pointmax 2328
+      :fsize 2327
+      :lastmodtime '(23191 55021 864855 103000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("core.models" include nil nil [1 38])
+            ("django.contrib.auth.models" include nil nil [39 82])
+            ("datetime" include nil nil [83 98])
+            ("NO_TODOS_MESSAGE" variable nil nil [100 141])
+            ("NO_TODO_WITH_ID_MESSAGE" variable nil nil [142 199])
+            ("NO_STATUS_CHANGE_MESSAGE" variable nil nil [200 265])
+            ("NO_HOLIDAY_MESSAGE" variable nil nil [267 305])
+            ("_parse_holiday" function (:arguments 
+              ( ("holiday" variable nil (reparse-symbol function_parameters) [327 334]))              ) nil [308 387])
+            ("_parse_holidays" function (:arguments 
+              ( ("holidays" variable nil (reparse-symbol function_parameters) [409 417]))              ) nil [389 472])
+            ("get_holidays" function (:arguments 
+              ( ("qs" variable nil (reparse-symbol function_parameters) [491 493])
+                ("limit" variable nil (reparse-symbol function_parameters) [495 500]))              ) nil [474 602])
+            ("get_next_holiday" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [625 629]))              ) nil [604 735])
+            ("get_last_holiday" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [758 762]))              ) nil [737 869])
+            ("get_holidays_in_range" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [897 901])
+                ("date_range" variable nil (reparse-symbol function_parameters) [903 913]))              ) nil [871 1089])
+            ("get_holiday_date_by_name" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1120 1124])
+                ("holiday_name" variable nil (reparse-symbol function_parameters) [1126 1138]))              ) nil [1091 1216])
+            ("get_holiday_name_by_date" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1247 1251])
+                ("date" variable nil (reparse-symbol function_parameters) [1253 1257]))              ) nil [1218 1324])
+            ("_parse_todo" function (:arguments 
+              ( ("todo" variable nil (reparse-symbol function_parameters) [1342 1346]))              ) nil [1326 1526])
+            ("_parse_todos" function (:arguments 
+              ( ("todos" variable nil (reparse-symbol function_parameters) [1545 1550]))              ) nil [1528 1599])
+            ("hello" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [1611 1615]))              ) nil [1601 1674])
+            ("get_todos" function (:arguments 
+              ( ("qs" variable nil (reparse-symbol function_parameters) [1690 1692]))              ) nil [1676 1776])
+            ("get_all_todos" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1796 1800])
+                ("filters" variable nil (reparse-symbol function_parameters) [1802 1809]))              ) nil [1778 1871])
+            ("create_todo" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1889 1893])
+                ("todo_item" variable nil (reparse-symbol function_parameters) [1895 1904]))              ) nil [1873 2039])
+            ("get_last_n_todos" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2062 2066])
+                ("num_todos" variable nil (reparse-symbol function_parameters) [2068 2077]))              ) nil [2041 2201])
+            ("change_todo_status" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2226 2230])
+                ("todo_id" variable nil (reparse-symbol function_parameters) [2232 2239])
+                ("todo_status" variable nil (reparse-symbol function_parameters) [2241 2252]))              ) nil [2203 2709])
+            ("delete_todo" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2727 2731])
+                ("todo_id" variable nil (reparse-symbol function_parameters) [2733 2740]))              ) nil [2711 2907]))          
+      :file "intent_services.py"
+      :pointmax 2907
+      :fsize 2906
+      :lastmodtime '(23191 57259 580917 317000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("core.models" include nil nil [1 43])
+            ("django.contrib.auth.models" include nil nil [44 87])
+            ("datetime" include nil nil [88 103])
+            ("_parse_timesheet_entry" function (:arguments 
+              ( ("timesheet_entry" variable nil (reparse-symbol function_parameters) [133 148]))              ) nil [106 373])
+            ("_parse_timesheet_entries" function (:arguments 
+              ( ("timesheet_entries" variable nil (reparse-symbol function_parameters) [404 421]))              ) nil [375 493])
+            ("_get_timesheet_entries" function (:arguments 
+              ( ("qs" variable nil (reparse-symbol function_parameters) [522 524])
+                ("limit" variable nil (reparse-symbol function_parameters) [526 531]))              ) nil [495 636])
+            ("timesheet_create" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [659 663])
+                ("day" variable nil (reparse-symbol function_parameters) [665 668])
+                ("time_spent" variable nil (reparse-symbol function_parameters) [670 680])
+                ("project" variable nil (reparse-symbol function_parameters) [682 689])
+                ("timesheet_entry_type" variable nil (reparse-symbol function_parameters) [691 711]))              ) nil [638 1578])
+            ("timesheet_get" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1598 1602])
+                ("filters" variable nil (reparse-symbol function_parameters) [1604 1613]))              ) nil [1580 2260]))          
+      :file "timesheet_intent_services.py"
+      :pointmax 2260
+      :fsize 2259
+      :lastmodtime '(23191 60289 293320 320000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Django settings for hichat project.
+
+Generated by 'django-admin startproject' using Django 2.0.2.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/2.0/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/2.0/ref/settings/
+\"\"\"" code nil nil [1 306])
+            ("os" include nil nil [308 317])
+            ("BASE_DIR" variable nil nil [391 461])
+            ("SECRET_KEY" variable nil nil [667 732])
+            ("DEBUG" variable nil nil [800 812])
+            ("ALLOWED_HOSTS" variable nil nil [814 835])
+            ("INSTALLED_APPS" variable nil nil [864 1094])
+            ("MIDDLEWARE" variable nil nil [1096 1508])
+            ("ROOT_URLCONF" variable nil nil [1510 1538])
+            ("TEMPLATES" variable nil nil [1540 2023])
+            ("WSGI_APPLICATION" variable nil nil [2025 2069])
+            ("DATABASES" variable nil nil [2148 2288])
+            ("AUTH_PASSWORD_VALIDATORS" variable nil nil [2393 2816])
+            ("LANGUAGE_CODE" variable nil nil [2896 2919])
+            ("TIME_ZONE" variable nil nil [2921 2938])
+            ("USE_I18N" variable nil nil [2940 2955])
+            ("USE_L10N" variable nil nil [2957 2972])
+            ("USE_TZ" variable nil nil [2974 2987])
+            ("STATIC_URL" variable nil nil [3092 3115]))          
+      :file "settings.py"
+      :pointmax 3116
+      :fsize 3115
+      :lastmodtime '(23191 39313 434039 706000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!hu-2k18-chatbot!hichat!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,40 @@
+;; Object Season 3 - [DVD]/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Season 3 - [DVD]/"
+  :tables
+  (list
+    (semanticdb-table "Seinfeld.S03E10.DVDRip.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Seinfeld.S03E10.DVDRip.en.srt"
+      :pointmax 31366
+      :fsize 33353
+      :lastmodtime '(20037 56202 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Seinfeld.S03E21.DVDRip.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Seinfeld.S03E21.DVDRip.en.srt"
+      :pointmax 31013
+      :fsize 32963
+      :lastmodtime '(20037 56204 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Seinfeld.S03E20.DVDRip.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Seinfeld.S03E20.DVDRip.en.srt"
+      :pointmax 30441
+      :fsize 32344
+      :lastmodtime '(20037 56204 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Seinfeld.S03E22.DVDRip.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Seinfeld.S03E22.DVDRip.en.srt"
+      :pointmax 34844
+      :fsize 37008
+      :lastmodtime '(20037 56204 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Entertainment!Seinfeld!Season 3 - [DVD]!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

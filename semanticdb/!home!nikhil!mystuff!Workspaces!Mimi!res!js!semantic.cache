@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags nil
+      :file "content.js"
+      :pointmax 14972
+      :fsize 14971
+      :lastmodtime '(22776 19330 626531 508000)
+      :unmatched-syntax '((PAREN_BLOCK 1 . 14970) (PAREN_BLOCK 1 . 14964) (PAREN_BLOCK 1 . 14968)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags 
+        '( ("sortByKey" function (:arguments 
+              ( ("array" variable nil (reparse-symbol FormalParameterList) [52 57])
+                ("key" variable nil (reparse-symbol FormalParameterList) [59 62]))              ) nil [33 205]))          
+      :file "login.js"
+      :pointmax 2307
+      :fsize 2306
+      :lastmodtime '(22776 19196 254533 915000)
+      :unmatched-syntax '((PAREN_BLOCK 224 . 2305) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2288) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 210 . 2256) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 210 . 2199) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 210 . 2226) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 210 . 2223) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 210 . 2261) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 210 . 2144) (DOT 204 . 205) (VARIABLE 193 . 194) (PAREN_BLOCK 194 . 204) (PAREN_BLOCK 224 . 2305) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2283) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2274) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2273) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2267) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2145) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2137) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2120) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2115) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2115) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2103) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2073) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2077) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 2090) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 1903) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218) (PAREN_BLOCK 224 . 1900) (DOT 218 . 219) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 218))))
+  :file "!home!nikhil!mystuff!Workspaces!Mimi!res!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

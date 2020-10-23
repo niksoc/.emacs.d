@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js2-mode
+      :tags 
+        '( ("getAnchorLinks" function nil nil [41 762]))          
+      :file "hackernews.js"
+      :pointmax 820
+      :fsize 819
+      :lastmodtime '(24347 51062 951561 45000)
+      :unmatched-syntax '((PAREN_BLOCK 803 . 818) (DOT 797 . 798) (PAREN_BLOCK 784 . 797) (DOT 779 . 780) (VARIABLE 763 . 777) (PAREN_BLOCK 777 . 779) (VARIABLE 7 . 16) (PAREN_BLOCK 26 . 39))))
+  :file "!home!hasher!apps!native-app!backend!collector1!src!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

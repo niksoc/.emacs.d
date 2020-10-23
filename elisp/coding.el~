@@ -1,0 +1,10 @@
+;;;convenience functions for competitive coding
+
+(defun crt ()
+  "compiles current file, runs it and performs diff on output and expected output file"
+  (interactive)
+  (let (var1 var2)
+    (shell)
+    (setq var2)
+    ;; do something …
+    ))

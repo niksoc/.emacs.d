@@ -1,0 +1,35 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+
+    (semanticdb-table "auth_backends.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.contrib.auth.models" include nil nil [1 44])
+            ("TestUserBackend" type
+               (:superclasses ("object")
+                :members 
+                  ( ("authenticate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [99 103])
+                            ("testcase_user" variable nil (reparse-symbol function_parameters) [105 118]))                          )
+                        (reparse-symbol indented_block_body) [82 155])
+                    ("get_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [173 177])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [179 186]))                          )
+                        (reparse-symbol indented_block_body) [160 233]))                  
+                :type "class")
+                nil [47 233]))          
+      :file "auth_backends.py"
+      :pointmax 233
+      :fsize 232
+      :lastmodtime '(22650 62537 747578 227000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

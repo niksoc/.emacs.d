@@ -1,0 +1,32 @@
+;; Object subs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "subs/"
+  :tables
+  (list
+    (semanticdb-table "001 Seinfeld S00 E01 - Good News, Bad News.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "001 Seinfeld S00 E01 - Good News, Bad News.srt"
+      :pointmax 17976
+      :fsize 19065
+      :lastmodtime '(21868 59358 898139 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "seinfeld.1x04.the_stock_tip.dvdrip_xvid-fov.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "seinfeld.1x04.the_stock_tip.dvdrip_xvid-fov.srt"
+      :pointmax 20611
+      :fsize 21873
+      :lastmodtime '(21868 59391 245264 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "001 - The Seinfeld Chronicles.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "001 - The Seinfeld Chronicles.srt"
+      :pointmax 17976
+      :fsize 19065
+      :lastmodtime '(21868 59358 896161 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Entertainment!Seinfeld!subs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

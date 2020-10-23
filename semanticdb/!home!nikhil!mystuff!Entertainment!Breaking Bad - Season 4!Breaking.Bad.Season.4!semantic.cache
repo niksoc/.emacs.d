@@ -1,0 +1,24 @@
+;; Object Breaking.Bad.Season.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Breaking.Bad.Season.4/"
+  :tables
+  (list
+    (semanticdb-table "Breaking Bad - 4x02 - Thirty-Eight Snub.HDTV.PROPER.FQM.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Breaking Bad - 4x02 - Thirty-Eight Snub.HDTV.PROPER.FQM.en.srt"
+      :pointmax 40085
+      :fsize 42879
+      :lastmodtime '(20019 40916 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Breaking Bad - 4x07 - Problem Dog.HDTV.FQM.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Breaking Bad - 4x07 - Problem Dog.HDTV.FQM.en.srt"
+      :pointmax 46446
+      :fsize 49690
+      :lastmodtime '(20060 13532 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Entertainment!Breaking Bad - Season 4!Breaking.Bad.Season.4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,646 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("datetime" include nil nil [42 57])
+            ("json" include nil nil [58 69])
+            ("logging" include nil nil [70 84])
+            ("random" include nil nil [85 98])
+            ("django_filters" include nil nil [100 121])
+            ("django.conf" include nil nil [122 154])
+            ("django.contrib.auth.mixins" include nil nil [155 212])
+            ("django.contrib.auth.models" include nil nil [213 256])
+            ("django.core.exceptions" include nil nil [257 315])
+            ("django.core.exceptions" include nil nil [316 369])
+            ("django.core.exceptions" include nil nil [370 420])
+            ("django.core.validators" include nil nil [421 470])
+            ("django.db.models" include nil nil [471 501])
+            ("django.template.response" include nil nil [502 555])
+            ("django.utils.functional" include nil nil [556 607])
+            ("django.views.generic" include nil nil [608 645])
+            ("jinja2" include nil nil [646 690])
+            ("rest_framework" include nil nil [691 725])
+            ("rest_framework" include nil nil [726 759])
+            ("rest_framework.mixins" include nil nil [760 808])
+            ("rest_framework.response" include nil nil [809 853])
+            ("rest_framework.views" include nil nil [854 894])
+            ("rest_framework.viewsets" include nil nil [895 945])
+            ("rest_framework.viewsets" include nil nil [946 994])
+            ("core" include nil nil [996 1019])
+            ("core.api" include nil nil [1020 1050])
+            ("core.apis.decorators" include nil nil [1051 1092])
+            ("core.apis.decorators" include nil nil [1093 1143])
+            ("core.models" include nil nil [1144 1180])
+            ("core.models" include nil nil [1181 1213])
+            ("core.models" include nil nil [1214 1242])
+            ("core.tasks" include nil nil [1243 1296])
+            ("core.tracker.token_generator" include nil nil [1297 1361])
+            ("core.utils" include nil nil [1362 1404])
+            ("core.utils" include nil nil [1405 1453])
+            ("core.utils" include nil nil [1454 1508])
+            ("core.version_settings" include nil nil [1509 1560])
+            ("mom.celery" include nil nil [1561 1587])
+            ("notifier.context" include nil nil [1588 1635])
+            ("notifier.notify" include nil nil [1636 1676])
+            ("notifier.slack" include nil nil [1677 1724])
+            ("notifier.slack" include nil nil [1725 1771])
+            ("notifier.slack" include nil nil [1772 1819])
+            ("people.exceptions" include nil nil [1820 1877])
+            ("people.exceptions" include nil nil [1878 1935])
+            ("people.exceptions" include nil nil [1936 1987])
+            ("people.exceptions" include nil nil [1988 2036])
+            ("people.exceptions" include nil nil [2037 2113])
+            ("people.exceptions" include nil nil [2114 2180])
+            ("people.exceptions" include nil nil [2181 2235])
+            ("people.exceptions" include nil nil [2236 2287])
+            ("people.exceptions" include nil nil [2288 2351])
+            ("people.exceptions" include nil nil [2352 2408])
+            ("people.serializers" include nil nil [2409 2478])
+            ("people.serializers" include nil nil [2479 2530])
+            ("people.serializers" include nil nil [2531 2582])
+            ("people.serializers" include nil nil [2583 2631])
+            ("people.serializers" include nil nil [2632 2682])
+            ("FollowUp" include nil nil [2696 2711])
+            ("TeamSerializer" include nil nil [2730 2751])
+            ("logger" variable nil nil [2753 2789])
+            ("DEFAULT_TEAM_DATA" variable nil nil [2791 3151])
+            ("DATE_FORMAT" variable nil nil [3153 3177])
+            ("ALIAS_VERIFICATION_TOKEN_EXPIRY_DAYS" variable nil nil [3178 3218])
+            ("ALIAS_VERIFICATION_LINK" variable nil nil [3219 3278])
+            ("get_followup_mail_data" function
+               (:documentation "
+    generates the subject and email context from post data
+    :param target: email address to which the email is to be sent
+    :param user: user that has initiated the followup
+    :param message: custom message from user to target, included in the mail
+    :param action_items: list of NoteItem objects selected by user
+    :return: (subject, email_string) -
+        subject: subject of the email to be sent
+        email_string: html content of the email to be sent
+    "
+                :arguments 
+                  ( ("target" variable nil (reparse-symbol function_parameters) [3308 3314])
+                    ("user" variable nil (reparse-symbol function_parameters) [3316 3320])
+                    ("message" variable nil (reparse-symbol function_parameters) [3322 3329])
+                    ("action_items" variable nil (reparse-symbol function_parameters) [3358 3370])
+                    ("target_user" variable nil (reparse-symbol function_parameters) [3372 3383]))                  )
+                nil [3281 4686])
+            ("FollowUpView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("mail_error_logger" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4753 4757])
+                            ("request" variable nil (reparse-symbol function_parameters) [4759 4766]))                          
+                        :documentation "
+            Create a followup for a given user
+            with passed action items
+            request.data = {
+                                \"target\": \"saral.nigam@hashedin.com\",
+                                \"target_user\": 2,
+                                \"message\": \"Custom Message will go here\",
+                                \"details\": { \"actionItems\": [uuid1,uuid2,uuid3,uuid4] },
+                                \"type\": \"E\"
+                            }
+        :param request:
+        :return: Follow Up ID
+        ")
+                        (reparse-symbol indented_block_body) [4721 8141]))                  
+                :type "class")
+                nil [4688 8141])
+            ("TeamViewSet" type
+               (:superclasses ("ModelViewSet")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [8180 8216])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [8221 8254])
+                    ("_load_tags_to_team" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8283 8287])
+                            ("instance" variable nil (reparse-symbol function_parameters) [8289 8297]))                          )
+                        (reparse-symbol indented_block_body) [8260 8971])
+                    ("_setup_admin_role_for_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9007 9011])
+                            ("instance" variable nil (reparse-symbol function_parameters) [9013 9021]))                          )
+                        (reparse-symbol indented_block_body) [8976 9135])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9157 9161]))                          )
+                        (reparse-symbol indented_block_body) [9140 9375])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9391 9395])
+                            ("request" variable nil (reparse-symbol function_parameters) [9397 9404])
+                            ("args" variable nil (reparse-symbol function_parameters) [9406 9411])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9413 9421]))                          )
+                        (reparse-symbol indented_block_body) [9380 10166])
+                    ("perform_create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10190 10194])
+                            ("serializer" variable nil (reparse-symbol function_parameters) [10196 10206]))                          )
+                        (reparse-symbol indented_block_body) [10171 10632]))                  
+                :type "class")
+                nil [8143 10632])
+            ("TeamDetailAPIView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("INVALID_TEAM_MESSAGE" variable nil (reparse-symbol indented_block_body) [10672 10724])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [10729 10768])
+                    ("_get_team_members" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10796 10800])
+                            ("team" variable nil (reparse-symbol function_parameters) [10802 10806]))                          )
+                        (reparse-symbol indented_block_body) [10774 10878])
+                    ("_get_team_invites" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10905 10909])
+                            ("team" variable nil (reparse-symbol function_parameters) [10911 10915]))                          )
+                        (reparse-symbol indented_block_body) [10883 11122])
+                    ("_get_team_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11146 11150])
+                            ("team" variable nil (reparse-symbol function_parameters) [11152 11156]))                          )
+                        (reparse-symbol indented_block_body) [11127 11215])
+                    ("_get_team_templates" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11244 11248])
+                            ("team" variable nil (reparse-symbol function_parameters) [11250 11254])
+                            ("members" variable nil (reparse-symbol function_parameters) [11256 11263]))                          )
+                        (reparse-symbol indented_block_body) [11220 11527])
+                    ("get_serializer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11551 11555])
+                            ("instance" variable nil (reparse-symbol function_parameters) [11557 11565]))                          )
+                        (reparse-symbol indented_block_body) [11532 11620])
+                    ("" code nil (reparse-symbol indented_block_body) [11634 11636])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11649 11653])
+                            ("request" variable nil (reparse-symbol function_parameters) [11655 11662]))                          )
+                        (reparse-symbol indented_block_body) [11641 12249])
+                    ("perform_update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12273 12277])
+                            ("serializer" variable nil (reparse-symbol function_parameters) [12279 12289]))                          )
+                        (reparse-symbol indented_block_body) [12254 12318])
+                    ("" code nil (reparse-symbol indented_block_body) [12332 12334])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12348 12352])
+                            ("request" variable nil (reparse-symbol function_parameters) [12354 12361]))                          )
+                        (reparse-symbol indented_block_body) [12339 13223]))                  
+                :type "class")
+                nil [10634 13223])
+            ("TeamActionView" type
+               (:documentation "
+        API for all the actions that are taken on a team
+
+        /teams/<id>/<section>/<action>/
+
+        * Change Role for a Team Member /members/edit/
+        * Login to Team as a Team Member /members/login/
+        * Invite User for a Team /invites/add/
+        * Resend Invite for a Team member /invites/resend/
+        * Request to a join a Team /invites/request/
+        * Approve User for a Team /invites/approve/
+        * Approve User for a Team /invites/reject/
+        * Approve User for a Team /invites/remove/
+        * Remove User from Team /members/remove/
+        * Accept Invite for a Team /invites/accept/
+        * Add a Tag to Team /tags/add/
+        * Change Description, Hex Color, Tag for a Tag /tags/edit/
+        * Remove a Tag from Team /tags/remove/
+        * Remove a Template from Team /templates/remove/
+
+        Default: Edit the team information
+
+    "
+                :superclasses ("APIView")
+                :members 
+                  ( ("is_team_member" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14176 14180])
+                            ("team" variable nil (reparse-symbol function_parameters) [14182 14186])
+                            ("user" variable nil (reparse-symbol function_parameters) [14188 14192]))                          )
+                        (reparse-symbol indented_block_body) [14157 14348])
+                    ("routes" variable nil (reparse-symbol indented_block_body) [14353 15138])
+                    ("_get_invite" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15160 15164])
+                            ("id" variable nil (reparse-symbol function_parameters) [15166 15168])
+                            ("status" variable nil (reparse-symbol function_parameters) [15170 15176]))                          )
+                        (reparse-symbol indented_block_body) [15144 15540])
+                    ("_get_team_admin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15565 15569])
+                            ("team" variable nil (reparse-symbol function_parameters) [15571 15575]))                          )
+                        (reparse-symbol indented_block_body) [15545 15777])
+                    ("_check_if_required_parameters_are_passed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15827 15831])
+                            ("data" variable nil (reparse-symbol function_parameters) [15833 15837])
+                            ("required_params" variable nil (reparse-symbol function_parameters) [15839 15854]))                          )
+                        (reparse-symbol indented_block_body) [15782 15985])
+                    ("_get_team_tag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16008 16012])
+                            ("id" variable nil (reparse-symbol function_parameters) [16014 16016]))                          )
+                        (reparse-symbol indented_block_body) [15990 16191])
+                    ("_get_or_create_team_tag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16224 16228])
+                            ("name" variable nil (reparse-symbol function_parameters) [16230 16234]))                          )
+                        (reparse-symbol indented_block_body) [16196 16499])
+                    ("perform_members_edit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16529 16533])
+                            ("data" variable nil (reparse-symbol function_parameters) [16535 16539]))                          
+                        :documentation "
+            Update Role of a Team Member
+        :param data: should contain the id and new role of the user
+        :return:
+        ")
+                        (reparse-symbol indented_block_body) [16504 18501])
+                    ("perform_invites_add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18530 18534])
+                            ("data" variable nil (reparse-symbol function_parameters) [18536 18540]))                          )
+                        (reparse-symbol indented_block_body) [18506 20738])
+                    ("perform_invites_resend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20770 20774])
+                            ("data" variable nil (reparse-symbol function_parameters) [20776 20780]))                          )
+                        (reparse-symbol indented_block_body) [20743 21241])
+                    ("perform_invites_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21274 21278])
+                            ("data" variable nil (reparse-symbol function_parameters) [21280 21284]))                          )
+                        (reparse-symbol indented_block_body) [21246 21872])
+                    ("perform_members_login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21903 21907])
+                            ("data" variable nil (reparse-symbol function_parameters) [21909 21913]))                          )
+                        (reparse-symbol indented_block_body) [21877 22144])
+                    ("perform_invites_reject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22176 22180])
+                            ("data" variable nil (reparse-symbol function_parameters) [22182 22186]))                          )
+                        (reparse-symbol indented_block_body) [22149 22408])
+                    ("perform_invites_remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22440 22444])
+                            ("data" variable nil (reparse-symbol function_parameters) [22446 22450]))                          )
+                        (reparse-symbol indented_block_body) [22413 22626])
+                    ("perform_invites_accept" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22658 22662])
+                            ("data" variable nil (reparse-symbol function_parameters) [22664 22668]))                          )
+                        (reparse-symbol indented_block_body) [22631 22993])
+                    ("perform_invites_approve" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23026 23030])
+                            ("data" variable nil (reparse-symbol function_parameters) [23032 23036]))                          )
+                        (reparse-symbol indented_block_body) [22998 23876])
+                    ("perform_members_remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23908 23912])
+                            ("data" variable nil (reparse-symbol function_parameters) [23914 23918]))                          )
+                        (reparse-symbol indented_block_body) [23881 25252])
+                    ("perform_tags_add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25278 25282])
+                            ("data" variable nil (reparse-symbol function_parameters) [25284 25288]))                          )
+                        (reparse-symbol indented_block_body) [25257 25902])
+                    ("perform_tags_edit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25929 25933])
+                            ("data" variable nil (reparse-symbol function_parameters) [25935 25939]))                          )
+                        (reparse-symbol indented_block_body) [25907 26550])
+                    ("perform_tags_remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26579 26583])
+                            ("data" variable nil (reparse-symbol function_parameters) [26585 26589]))                          )
+                        (reparse-symbol indented_block_body) [26555 26941])
+                    ("perform_templates_remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26975 26979])
+                            ("data" variable nil (reparse-symbol function_parameters) [26981 26985]))                          )
+                        (reparse-symbol indented_block_body) [26946 27247])
+                    ("get_method" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27267 27271])
+                            ("section" variable nil (reparse-symbol function_parameters) [27273 27280])
+                            ("action" variable nil (reparse-symbol function_parameters) [27282 27288]))                          )
+                        (reparse-symbol indented_block_body) [27252 27350])
+                    ("" code nil (reparse-symbol indented_block_body) [27364 27366])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27380 27384])
+                            ("request" variable nil (reparse-symbol function_parameters) [27386 27393])
+                            ("args" variable nil (reparse-symbol function_parameters) [27395 27400])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27402 27410]))                          )
+                        (reparse-symbol indented_block_body) [27371 28591]))                  
+                :type "class")
+                nil [13225 28591])
+            ("TeamInvitesFilter" type
+               (:documentation "
+        Filter Class for Team Invite View Set
+    "
+                :superclasses ("django_filters.FilterSet")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [28731 28756])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [28765 28824]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [28711 28825]))                  
+                :type "class")
+                nil [28593 28825])
+            ("TeamInviteViewSet" type
+               (:superclasses ("ListModelMixin" "GenericViewSet")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [28888 28930])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [28935 28974])
+                    ("filter_backends" variable nil (reparse-symbol indented_block_body) [28979 29027])
+                    ("filter_class" variable nil (reparse-symbol indented_block_body) [29032 29064])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29087 29091]))                          )
+                        (reparse-symbol indented_block_body) [29070 29322]))                  
+                :type "class")
+                nil [28827 29322])
+            ("generate_alias_verification_token" function (:arguments 
+              ( ("pending_verification_obj" variable nil (reparse-symbol function_parameters) [29362 29386])
+                ("expiry_days" variable nil (reparse-symbol function_parameters) [29388 29399]))              ) nil [29324 29674])
+            ("send_alias_verification_mail" function
+               (:decorators 
+                  ( ("app.task" function (:type "decorator") nil nil)
+                    ("mail_error_logger" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("pending_verification_obj" variable nil (reparse-symbol function_parameters) [29738 29762]))                  )
+                nil [29676 30334])
+            ("UserAliasAPIView" type
+               (:documentation "
+        User Alias API View
+    "
+                :superclasses ("APIView")
+                :members 
+                  ( ("EXISTING_USER_ERROR_MESSAGE" variable nil (reparse-symbol indented_block_body) [30418 30588])
+                    ("INVALID_EMAIL_ERROR_MESSAGE" variable nil (reparse-symbol indented_block_body) [30593 30638])
+                    ("ALIAS_EXISTS_FOR_USER_ERROR_MESSAGE" variable nil (reparse-symbol indented_block_body) [30643 30729])
+                    ("ALIAS_EXISTS_ERROR_MESSAGE" variable nil (reparse-symbol indented_block_body) [30734 30912])
+                    ("VERIFICATION_PENDING_ERROR_MESSAGE" variable nil (reparse-symbol indented_block_body) [30917 31105])
+                    ("_user_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31141 31145]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31111 31219])
+                    ("_pending_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31257 31261]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31224 31472])
+                    ("_add_pending_verification_for_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31517 31521])
+                            ("email" variable nil (reparse-symbol function_parameters) [31523 31528]))                          )
+                        (reparse-symbol indented_block_body) [31477 31724])
+                    ("_does_alias_exists_for_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31776 31780]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31729 31858])
+                    ("_does_pending_verification_exists_for_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31925 31929]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [31863 32180])
+                    ("_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32210 32214]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [32185 32263])
+                    ("_does_user_exists_for_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32314 32318]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [32268 32426])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32439 32443])
+                            ("request" variable nil (reparse-symbol function_parameters) [32445 32452]))                          )
+                        (reparse-symbol indented_block_body) [32431 32712])
+                    ("_validator_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32741 32745])
+                            ("is_valid" variable nil (reparse-symbol function_parameters) [32747 32755])
+                            ("error_msg" variable nil (reparse-symbol function_parameters) [32757 32766]))                          )
+                        (reparse-symbol indented_block_body) [32717 32807])
+                    ("_validate_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32832 32836]))                          )
+                        (reparse-symbol indented_block_body) [32812 33059])
+                    ("_validate_user_does_not_exist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33098 33102]))                          )
+                        (reparse-symbol indented_block_body) [33064 33281])
+                    ("_validate_alias_does_not_exist_on_meet_notes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33335 33339]))                          )
+                        (reparse-symbol indented_block_body) [33286 33518])
+                    ("_validate_alias_does_not_exist_for_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33567 33571]))                          )
+                        (reparse-symbol indented_block_body) [33523 33843])
+                    ("_validate_pending_verification_does_not_exist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33898 33902]))                          )
+                        (reparse-symbol indented_block_body) [33848 34104])
+                    ("ADD_ALIAS_EMAIL_VALIDATORS" variable nil (reparse-symbol indented_block_body) [34109 34456])
+                    ("validate_alias_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34487 34491]))                          )
+                        (reparse-symbol indented_block_body) [34462 34756])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34770 34774])
+                            ("request" variable nil (reparse-symbol function_parameters) [34776 34783]))                          )
+                        (reparse-symbol indented_block_body) [34761 35152])
+                    ("_update_attendee_on_alias_deletion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35196 35200])
+                            ("alias" variable nil (reparse-symbol function_parameters) [35202 35207]))                          )
+                        (reparse-symbol indented_block_body) [35157 35413])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35429 35433])
+                            ("request" variable nil (reparse-symbol function_parameters) [35435 35442]))                          )
+                        (reparse-symbol indented_block_body) [35418 36310]))                  
+                :type "class")
+                nil [30336 36310])
+            ("VerifyUserAliasAPIView" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("_decrypt_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36391 36395])
+                            ("token" variable nil (reparse-symbol function_parameters) [36397 36402]))                          )
+                        (reparse-symbol indented_block_body) [36372 36597])
+                    ("_is_token_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36622 36626])
+                            ("data" variable nil (reparse-symbol function_parameters) [36628 36632]))                          )
+                        (reparse-symbol indented_block_body) [36602 36846])
+                    ("_get_pending_verification_user_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36892 36896])
+                            ("data" variable nil (reparse-symbol function_parameters) [36898 36902]))                          )
+                        (reparse-symbol indented_block_body) [36851 37161])
+                    ("_update_attendee_on_alias_addition" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37205 37209])
+                            ("alias" variable nil (reparse-symbol function_parameters) [37211 37216]))                          )
+                        (reparse-symbol indented_block_body) [37166 37301])
+                    ("_verify_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37324 37328])
+                            ("pending_verification_obj" variable nil (reparse-symbol function_parameters) [37330 37354]))                          )
+                        (reparse-symbol indented_block_body) [37306 37863])
+                    ("_does_user_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37890 37894])
+                            ("pending_verification_obj" variable nil (reparse-symbol function_parameters) [37896 37920]))                          )
+                        (reparse-symbol indented_block_body) [37868 38005])
+                    ("_get_user_alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38030 38034])
+                            ("pending_verification_obj" variable nil (reparse-symbol function_parameters) [38036 38060]))                          )
+                        (reparse-symbol indented_block_body) [38010 38156])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38169 38173])
+                            ("request" variable nil (reparse-symbol function_parameters) [38175 38182])
+                            ("token" variable nil (reparse-symbol function_parameters) [38184 38189]))                          )
+                        (reparse-symbol indented_block_body) [38161 39695]))                  
+                :type "class")
+                nil [36312 39695])
+            ("UserAliasVerificationMailAPIView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("_pending_verification_obj" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39801 39805]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [39750 40036])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40050 40054])
+                            ("request" variable nil (reparse-symbol function_parameters) [40056 40063]))                          )
+                        (reparse-symbol indented_block_body) [40041 40321]))                  
+                :type "class")
+                nil [39697 40321])
+            ("get_user_logged_in_team" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [40351 40358]))              ) nil [40323 40400]))          
+      :file "api.py"
+      :pointmax 40400
+      :fsize 40399
+      :lastmodtime '(23720 27229 150658 223000)
+      :unmatched-syntax '((INDENT_BLOCK 28391 . 28519) (NEWLINE 28390 . 28391) (COLON 28389 . 28390) (AS 28385 . 28387) (EXCEPT 28368 . 28374) (INDENT_BLOCK 28281 . 28360) (NEWLINE 28279 . 28280) (COLON 28278 . 28279) (AS 28274 . 28276) (EXCEPT 28109 . 28115) (INDENT_BLOCK 27618 . 28101) (NEWLINE 27617 . 27618) (COLON 27616 . 27617) (TRY 27534 . 27537) (AS 27612 . 27614) (INDENT_BLOCK 24171 . 24394) (NEWLINE 24170 . 24171) (COLON 24169 . 24170) (TRY 24039 . 24042) (AS 24165 . 24167) (INDENT_BLOCK 17434 . 17632) (NEWLINE 17433 . 17434) (COLON 17432 . 17433) (AS 17428 . 17430) (INDENT_BLOCK 17007 . 17302) (NEWLINE 17006 . 17007) (COLON 17005 . 17006) (TRY 16850 . 16853) (AS 17001 . 17003) (INDENT_BLOCK 15419 . 15518) (NEWLINE 15418 . 15419) (COLON 15417 . 15418) (TRY 15316 . 15319) (AS 15413 . 15415) (INDENT_BLOCK 10484 . 10544) (NEWLINE 10418 . 10419) (COLON 10417 . 10418) (TRY 10283 . 10286) (AS 10413 . 10415) (INDENT_BLOCK 8769 . 8971) (NEWLINE 8768 . 8769) (COLON 8767 . 8768) (FINALLY 8760 . 8767) (INDENT_BLOCK 8520 . 8748) (NEWLINE 8519 . 8520) (COLON 8518 . 8519) (TRY 8366 . 8369) (AS 8514 . 8516) (NAME 6431 . 6446) (IF 6488 . 6490) (ELSE 6515 . 6519) (IF 4181 . 4183) (ELSE 4196 . 4200) (NAME 4023 . 4038) (IF 4113 . 4115) (ELSE 4155 . 4159) (FROM 2712 . 2716) (PERIOD 2717 . 2718) (FROM 2683 . 2687) (PERIOD 2688 . 2689)))
+    (semanticdb-table "semanticdb-table"
+      :file "models.py"
+      :fsize 1414
+      :lastmodtime '(23720 27229 154658 261000))
+    (semanticdb-table "semanticdb-table"
+      :file "exceptions.py"
+      :fsize 771
+      :lastmodtime '(23274 46174 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "views.py"
+      :fsize 10188
+      :lastmodtime '(23720 27229 154658 261000))
+    (semanticdb-table "semanticdb-table"
+      :file "serializers.py"
+      :fsize 4431
+      :lastmodtime '(23565 6913 22666 812000)))
+  :file "!home!hasher!apps!mom!people!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [24 39])
+            ("redis" include nil nil [40 52])
+            ("flask" include nil nil [53 65])
+            ("calendar" include nil nil [66 81])
+            ("dateutil.parser" include nil nil [82 104])
+            ("gevent.pywsgi" include nil nil [105 141])
+            ("flask" include nil nil [142 174])
+            ("flask_cors" include nil nil [175 216])
+            ("app" variable nil nil [218 239])
+            ("CORS" code nil nil [240 249])
+            ("REDIS_POOL" variable nil nil [251 268])
+            ("SCAN_TYPE_SCRIPT" variable nil nil [269 638])
+            ("" code nil nil [651 656])
+            ("" code nil nil [670 672])
+            ("hello_world" function nil nil [673 708])
+            ("" code nil nil [720 756])
+            ("" code nil nil [770 772])
+            ("search" function nil nil [773 1117])
+            ("process_targets" function (:arguments 
+              ( ("targets" variable nil (reparse-symbol function_parameters) [1139 1146])
+                ("redis_client" variable nil (reparse-symbol function_parameters) [1148 1160]))              ) nil [1119 1390])
+            ("" code nil nil [1402 1437])
+            ("query" function nil nil [1438 2333])
+            ("" code nil nil [2345 2361])
+            ("annotations" function nil nil [2362 2404])
+            ("main" function nil nil [2406 3041])
+            ("if" code nil nil [3043 3081]))          
+      :file "GrafanaDatastoreServer.py"
+      :pointmax 3081
+      :fsize 3080
+      :lastmodtime '(23811 27052 836741 940000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!grafana-redistimeseries!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

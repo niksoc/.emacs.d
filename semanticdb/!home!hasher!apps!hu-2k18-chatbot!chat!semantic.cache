@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib.auth.models" include nil nil [1 44])
+            ("django.db" include nil nil [45 73])
+            ("ChatUser" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [110 164])
+                    ("source" variable nil (reparse-symbol indented_block_body) [212 252]))                  
+                :type "class")
+                nil [76 253]))          
+      :file "models.py"
+      :pointmax 253
+      :fsize 252
+      :lastmodtime '(23191 40870 210644 848000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!hu-2k18-chatbot!chat!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

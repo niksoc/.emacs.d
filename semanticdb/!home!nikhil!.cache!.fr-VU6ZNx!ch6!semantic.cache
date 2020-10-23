@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1 21])
+            ("ctype.h" include (:system-flag t) nil [22 40])
+            ("iostream" include (:system-flag t) nil [109 128])
+            ("map" include (:system-flag t) nil [129 143])
+            ("fstream" include (:system-flag t) nil [144 162])
+            ("sstream" include (:system-flag t) nil [163 181])
+            ("string" include (:system-flag t) nil [182 199])
+            ("string.h" include (:system-flag t) nil [216 235])
+            ("vector" include (:system-flag t) nil [236 253])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [254 274])
+            ("isvowel" function
+               (:arguments 
+                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [288 296]))                  
+                :type "int")
+                nil [276 444])
+            ("main" function (:type "int") nil [446 2586]))          
+      :file "ch6_01_basic_string.cpp"
+      :pointmax 2587
+      :fsize 2665
+      :lastmodtime '(20890 31284 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!.cache!.fr-VU6ZNx!ch6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

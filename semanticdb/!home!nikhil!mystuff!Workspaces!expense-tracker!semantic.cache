@@ -1,0 +1,16 @@
+;; Object expense-tracker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "expense-tracker/"
+  :tables
+  (list
+    (semanticdb-table "package.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 497
+      :fsize 496
+      :lastmodtime '(22314 12472 215560 990000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Workspaces!expense-tracker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

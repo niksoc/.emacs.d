@@ -1,0 +1,24 @@
+;; Object subs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "subs/"
+  :tables
+  (list
+    (semanticdb-table "001 - The Seinfeld Chronicles.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "001 - The Seinfeld Chronicles.srt"
+      :pointmax 17976
+      :fsize 19065
+      :lastmodtime '(21868 59358 896161 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "seinfeld.1x01.the_stakeout.dvdrip_xvid-fov.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "seinfeld.1x01.the_stakeout.dvdrip_xvid-fov.srt"
+      :pointmax 20203
+      :fsize 21474
+      :lastmodtime '(21868 59391 240288 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!Videos!Seinfeld!subs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

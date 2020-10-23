@@ -1,0 +1,84 @@
+;; Object searchableselect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "searchableselect/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [41 53]))          
+      :file "urls.py"
+      :pointmax 149
+      :fsize 148
+      :lastmodtime '(22448 10669 650705 960000)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.apps" include nil nil [1 29])
+            ("django.http" include nil nil [30 66])
+            ("django.contrib.auth.decorators" include nil nil [67 124])
+            ("filter_models" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [161 168]))              ) nil [143 572]))          
+      :file "views.py"
+      :pointmax 572
+      :fsize 571
+      :lastmodtime '(22448 16549 906600 656000)
+      :unmatched-syntax nil)
+    (semanticdb-table "widgets.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django" include nil nil [1 25])
+            ("django.apps" include nil nil [26 54])
+            ("django.template.loader" include nil nil [55 106])
+            ("django.utils.datastructures" include nil nil [108 162])
+            ("SearchableSelect" type
+               (:superclasses ("forms.CheckboxSelectMultiple")
+                :members 
+                  ( ("Media" type
+                       (:members 
+                          ( ("css" variable nil (reparse-symbol indented_block_body) [244 341])
+                            ("js" variable nil (reparse-symbol indented_block_body) [350 512]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [223 513])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [563 595])
+                            ("self" variable nil (reparse-symbol indented_block_body) [604 650])
+                            ("self" variable nil (reparse-symbol indented_block_body) [659 695])
+                            ("super" code nil (reparse-symbol indented_block_body) [705 760]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [531 535])
+                            ("args" variable nil (reparse-symbol function_parameters) [537 542])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [544 552]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [518 761])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [777 781])
+                            ("name" variable nil (reparse-symbol function_parameters) [783 787])
+                            ("value" variable nil (reparse-symbol function_parameters) [789 794])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [796 801])
+                            ("choices" variable nil (reparse-symbol function_parameters) [808 815]))                          )
+                        (reparse-symbol indented_block_body) [766 1489])
+                    ("value_from_datadict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1518 1522])
+                            ("data" variable nil (reparse-symbol function_parameters) [1524 1528])
+                            ("files" variable nil (reparse-symbol function_parameters) [1530 1535])
+                            ("name" variable nil (reparse-symbol function_parameters) [1537 1541]))                          )
+                        (reparse-symbol indented_block_body) [1494 1679]))                  
+                :type "class")
+                nil [165 1679]))          
+      :file "widgets.py"
+      :pointmax 1679
+      :fsize 1678
+      :lastmodtime '(22448 13328 830658 339000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!searchableselect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

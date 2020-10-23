@@ -1,0 +1,418 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("generic.basepage" include nil nil [1 38])
+            ("mn_logging.custom_logger" include nil nil [39 76])
+            ("generic.constants" include nil nil [77 108])
+            ("generic.util" include nil nil [109 138])
+            ("logging" include nil nil [139 153])
+            ("DashboardPage" type
+               (:superclasses ("BasePage")
+                :members 
+                  ( ("log" variable nil (reparse-symbol indented_block_body) [204 240])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [270 294])
+                            ("self" variable nil (reparse-symbol indented_block_body) [303 323])
+                            ("self" variable nil (reparse-symbol indented_block_body) [332 350]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [259 263])
+                            ("driver" variable nil (reparse-symbol function_parameters) [265 271]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [246 363])
+                    ("_search_icon" variable nil (reparse-symbol indented_block_body) [383 427])
+                    ("_search_bar" variable nil (reparse-symbol indented_block_body) [432 481])
+                    ("_sync_button" variable nil (reparse-symbol indented_block_body) [486 536])
+                    ("_googleMeetingName" code nil (reparse-symbol indented_block_body) [541 613])
+                    ("_meetingsearch" code nil (reparse-symbol indented_block_body) [618 681])
+                    ("_dashboardPageTitle" variable nil (reparse-symbol indented_block_body) [931 976])
+                    ("_createNote_button" variable nil (reparse-symbol indented_block_body) [981 1046])
+                    ("_new_note" variable nil (reparse-symbol indented_block_body) [1051 1095])
+                    ("_existing_note" variable nil (reparse-symbol indented_block_body) [1100 1154])
+                    ("_meeting_title_textarea" variable nil (reparse-symbol indented_block_body) [1159 1226])
+                    ("_meeting_title_dropdown" variable nil (reparse-symbol indented_block_body) [1231 1299])
+                    ("_template_dropdown" variable nil (reparse-symbol indented_block_body) [1304 1368])
+                    ("_select_meeting_title" variable nil (reparse-symbol indented_block_body) [1373 1443])
+                    ("_select_template" variable nil (reparse-symbol indented_block_body) [1448 1513])
+                    ("_create_button" variable nil (reparse-symbol indented_block_body) [1518 1625])
+                    ("_view_notes" variable nil (reparse-symbol indented_block_body) [1630 1870])
+                    ("_take_notes" variable nil (reparse-symbol indented_block_body) [1875 2115])
+                    ("_settings_icon" variable nil (reparse-symbol indented_block_body) [2120 2175])
+                    ("click_search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2198 2202]))                          )
+                        (reparse-symbol indented_block_body) [2181 2279])
+                    ("enter_text_in_search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2309 2313])
+                            ("meeting" variable nil (reparse-symbol function_parameters) [2315 2322]))                          )
+                        (reparse-symbol indented_block_body) [2284 2518])
+                    ("verify_search_meeting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2549 2553]))                          )
+                        (reparse-symbol indented_block_body) [2523 2901])
+                    ("click_on_meeting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2927 2931])
+                            ("meeting_name" variable nil (reparse-symbol function_parameters) [2933 2945]))                          )
+                        (reparse-symbol indented_block_body) [2906 3354])
+                    ("click_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3429 3433]))                          )
+                        (reparse-symbol indented_block_body) [3414 3510])
+                    ("verify_calendar_meeting_sync_creation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3557 3561]))                          )
+                        (reparse-symbol indented_block_body) [3515 3657])
+                    ("action_item_count_of_meeting_recentnotes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3707 3711]))                          )
+                        (reparse-symbol indented_block_body) [3662 3808])
+                    ("verify_dashboard_page_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3845 3849]))                          )
+                        (reparse-symbol indented_block_body) [3813 3914])
+                    ("click_create_note_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3948 3952]))                          )
+                        (reparse-symbol indented_block_body) [3919 4057])
+                    ("select_new_note_radio_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4095 4099]))                          )
+                        (reparse-symbol indented_block_body) [4062 4173])
+                    ("select_existing_note_radio_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4216 4220]))                          )
+                        (reparse-symbol indented_block_body) [4178 4299])
+                    ("enter_new_meeting_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4332 4336])
+                            ("meeting_title" variable nil (reparse-symbol function_parameters) [4338 4351]))                          )
+                        (reparse-symbol indented_block_body) [4304 4495])
+                    ("select_meeting_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4525 4529])
+                            ("meeting_title" variable nil (reparse-symbol function_parameters) [4531 4544]))                          )
+                        (reparse-symbol indented_block_body) [4500 4913])
+                    ("select_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4938 4942]))                          )
+                        (reparse-symbol indented_block_body) [4918 5275])
+                    ("click_create_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5304 5308]))                          )
+                        (reparse-symbol indented_block_body) [5280 5466])
+                    ("click_view_notes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5492 5496])
+                            ("meeting_title" variable nil (reparse-symbol function_parameters) [5498 5511]))                          )
+                        (reparse-symbol indented_block_body) [5471 5710])
+                    ("click_take_notes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5736 5740])
+                            ("meeting_title" variable nil (reparse-symbol function_parameters) [5742 5755]))                          )
+                        (reparse-symbol indented_block_body) [5715 5954])
+                    ("click_settings_icon" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5983 5987]))                          )
+                        (reparse-symbol indented_block_body) [5959 6066]))                  
+                :type "class")
+                nil [168 6066]))          
+      :file "dashboard_page.py"
+      :pointmax 6066
+      :fsize 6065
+      :lastmodtime '(23595 11905 578601 561000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("generic.basepage" include nil nil [1 38])
+            ("mn_logging.custom_logger" include nil nil [39 76])
+            ("traceback" include nil nil [77 110])
+            ("page.dashboard_page" include nil nil [111 156])
+            ("selenium.webdriver.common.keys" include nil nil [157 204])
+            ("generic.read_data" include nil nil [205 247])
+            ("generic.constants" include nil nil [248 279])
+            ("generic.util" include nil nil [280 309])
+            ("logging" include nil nil [310 324])
+            ("time" include nil nil [325 336])
+            ("MeetingPage" type
+               (:superclasses ("BasePage")
+                :members 
+                  ( ("log" variable nil (reparse-symbol indented_block_body) [373 409])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [451 475])
+                            ("self" variable nil (reparse-symbol indented_block_body) [484 504])
+                            ("self" variable nil (reparse-symbol indented_block_body) [513 531])
+                            ("self" variable nil (reparse-symbol indented_block_body) [540 576]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [428 432])
+                            ("driver" variable nil (reparse-symbol function_parameters) [434 440]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [415 577])
+                    ("_editor" variable nil (reparse-symbol indented_block_body) [597 644])
+                    ("_rhs_action_items_count" variable nil (reparse-symbol indented_block_body) [649 762])
+                    ("_ellipsis" variable nil (reparse-symbol indented_block_body) [767 817])
+                    ("_ellipsis_share_on_slack" variable nil (reparse-symbol indented_block_body) [822 892])
+                    ("_select_slack_channel_dropdown" variable nil (reparse-symbol indented_block_body) [897 961])
+                    ("_select_slack_channel" code nil (reparse-symbol indented_block_body) [966 1073])
+                    ("_select_private_slack_channel" code nil (reparse-symbol indented_block_body) [1078 1203])
+                    ("_select_private_option" variable nil (reparse-symbol indented_block_body) [1208 1264])
+                    ("_button_share_on_slack_class" variable nil (reparse-symbol indented_block_body) [1269 1346])
+                    ("_invite_attendees" variable nil (reparse-symbol indented_block_body) [1351 1416])
+                    ("_invite_attendees_dialog_text_box" variable nil (reparse-symbol indented_block_body) [1421 1510])
+                    ("_invite_attendees_autocomplete_box" variable nil (reparse-symbol indented_block_body) [1515 1585])
+                    ("_first_attendee_in_list" variable nil (reparse-symbol indented_block_body) [1590 1658])
+                    ("_button_invite" variable nil (reparse-symbol indented_block_body) [1663 1725])
+                    ("_button_share" variable nil (reparse-symbol indented_block_body) [1730 1812])
+                    ("_button_leave" variable nil (reparse-symbol indented_block_body) [1817 1899])
+                    ("_share_via_email" variable nil (reparse-symbol indented_block_body) [1904 1961])
+                    ("_button_leave_to_dashboard" variable nil (reparse-symbol indented_block_body) [1966 2041])
+                    ("_meetingPageTitle" code nil (reparse-symbol indented_block_body) [2046 2096])
+                    ("_toast_message" variable nil (reparse-symbol indented_block_body) [2101 2159])
+                    ("_radio_button_only_me" variable nil (reparse-symbol indented_block_body) [2164 2224])
+                    ("_button_send_mail" variable nil (reparse-symbol indented_block_body) [2229 2295])
+                    ("_ellipsis_save_as_template" variable nil (reparse-symbol indented_block_body) [2300 2373])
+                    ("_custom_template_text_box" variable nil (reparse-symbol indented_block_body) [2378 2463])
+                    ("_template_save_button" variable nil (reparse-symbol indented_block_body) [2468 2538])
+                    ("_file_upload_button" variable nil (reparse-symbol indented_block_body) [2543 2608])
+                    ("_file_select_dialog_button" variable nil (reparse-symbol indented_block_body) [2613 2673])
+                    ("_pin_message_section" variable nil (reparse-symbol indented_block_body) [2678 2752])
+                    ("_ellipsis_connect_to_trello" variable nil (reparse-symbol indented_block_body) [2757 2833])
+                    ("_select_trello_board_dropdown" variable nil (reparse-symbol indented_block_body) [2838 2906])
+                    ("_connect_to_trello_button" variable nil (reparse-symbol indented_block_body) [2911 2985])
+                    ("_trello_icon_in_rhs" variable nil (reparse-symbol indented_block_body) [2990 3059])
+                    ("_template_overwrite_msg" variable nil (reparse-symbol indented_block_body) [3064 3131])
+                    ("_overwrite_button" variable nil (reparse-symbol indented_block_body) [3136 3193])
+                    ("_user_profile_pic" variable nil (reparse-symbol indented_block_body) [3198 3266])
+                    ("_user_profile_pic_dropdown_logout" variable nil (reparse-symbol indented_block_body) [3271 3338])
+                    ("_meetnotes_logo" variable nil (reparse-symbol indented_block_body) [3343 3417])
+                    ("_all_users_ai_count_button" variable nil (reparse-symbol indented_block_body) [3422 3498])
+                    ("_insert_in_notes" variable nil (reparse-symbol indented_block_body) [3503 3566])
+                    ("_close_icon" variable nil (reparse-symbol indented_block_body) [3571 3627])
+                    ("_rhs_ai_text" variable nil (reparse-symbol indented_block_body) [3632 3696])
+                    ("_blot_ai_titles" variable nil (reparse-symbol indented_block_body) [3701 3813])
+                    ("click_on_editor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3839 3843]))                          )
+                        (reparse-symbol indented_block_body) [3819 3979])
+                    ("click_on_editor_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4006 4010]))                          )
+                        (reparse-symbol indented_block_body) [3984 4082])
+                    ("type_text_and_create_action_item_in_editor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4134 4138])
+                            ("action_item_data" variable nil (reparse-symbol function_parameters) [4140 4156]))                          )
+                        (reparse-symbol indented_block_body) [4087 4404])
+                    ("verify_entered_action_items_in_editor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4451 4455]))                          )
+                        (reparse-symbol indented_block_body) [4409 4809])
+                    ("verify_action_items_count_in_dashboard_and_rhs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4865 4869])
+                            ("count_in_dashboard" variable nil (reparse-symbol function_parameters) [4871 4889]))                          )
+                        (reparse-symbol indented_block_body) [4814 5146])
+                    ("click_on_ellipsis" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5173 5177]))                          )
+                        (reparse-symbol indented_block_body) [5151 5327])
+                    ("ellipsis_select_share_on_slack" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5367 5371]))                          )
+                        (reparse-symbol indented_block_body) [5332 5473])
+                    ("select_slack_channel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5503 5507])
+                            ("channel_type" variable nil (reparse-symbol function_parameters) [5509 5521]))                          )
+                        (reparse-symbol indented_block_body) [5478 6290])
+                    ("click_share_on_slack_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6327 6331]))                          )
+                        (reparse-symbol indented_block_body) [6295 6459])
+                    ("click_invite_attendee" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6490 6494]))                          )
+                        (reparse-symbol indented_block_body) [6464 6576])
+                    ("enter_invite_attendee_mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6612 6616]))                          )
+                        (reparse-symbol indented_block_body) [6581 6827])
+                    ("select_invitee_from_autocomplete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6869 6873]))                          )
+                        (reparse-symbol indented_block_body) [6832 7320])
+                    ("click_invite_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7349 7353]))                          )
+                        (reparse-symbol indented_block_body) [7325 7432])
+                    ("click_leave_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7460 7464]))                          )
+                        (reparse-symbol indented_block_body) [7437 7542])
+                    ("click_leave_to_dashboard_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7583 7587]))                          )
+                        (reparse-symbol indented_block_body) [7547 7691])
+                    ("verify_meeting_page_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7726 7730])
+                            ("meeting_name" variable nil (reparse-symbol function_parameters) [7732 7744]))                          )
+                        (reparse-symbol indented_block_body) [7696 7810])
+                    ("verify_toast_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7840 7844])
+                            ("actual_text" variable nil (reparse-symbol function_parameters) [7846 7857]))                          )
+                        (reparse-symbol indented_block_body) [7815 8490])
+                    ("click_share_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8518 8522]))                          )
+                        (reparse-symbol indented_block_body) [8495 8784])
+                    ("select_share_via_email_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8823 8827]))                          )
+                        (reparse-symbol indented_block_body) [8789 8908])
+                    ("select_only_me_radio_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8945 8949]))                          )
+                        (reparse-symbol indented_block_body) [8913 9061])
+                    ("click_send_mail_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9093 9097]))                          )
+                        (reparse-symbol indented_block_body) [9066 9179])
+                    ("ellipsis_select_save_as_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9221 9225]))                          )
+                        (reparse-symbol indented_block_body) [9184 9329])
+                    ("enter_custom_template_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9365 9369])
+                            ("template_name" variable nil (reparse-symbol function_parameters) [9371 9384]))                          )
+                        (reparse-symbol indented_block_body) [9334 9573])
+                    ("click_template_save_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9609 9613]))                          )
+                        (reparse-symbol indented_block_body) [9578 10083])
+                    ("click_attach_file_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10117 10121]))                          )
+                        (reparse-symbol indented_block_body) [10088 10291])
+                    ("click_file_select_dialog_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10332 10336]))                          )
+                        (reparse-symbol indented_block_body) [10296 10758])
+                    ("verify_pin_message_open_after_uploading_attachment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10818 10822]))                          )
+                        (reparse-symbol indented_block_body) [10763 10999])
+                    ("click_on_connect_to_trello" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11035 11039]))                          )
+                        (reparse-symbol indented_block_body) [11004 11144])
+                    ("select_trello_board" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11173 11177]))                          )
+                        (reparse-symbol indented_block_body) [11149 11576])
+                    ("click_connect_to_trello_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11616 11620]))                          )
+                        (reparse-symbol indented_block_body) [11581 11723])
+                    ("verify_trello_icon_in_rhs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11758 11762]))                          )
+                        (reparse-symbol indented_block_body) [11728 11981])
+                    ("logout_from_meeting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12010 12014]))                          )
+                        (reparse-symbol indented_block_body) [11986 12204])
+                    ("click_on_meetnotes_logo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12237 12241]))                          )
+                        (reparse-symbol indented_block_body) [12209 12394])
+                    ("insert_action_by_individual_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12436 12440]))                          )
+                        (reparse-symbol indented_block_body) [12399 13473])
+                    ("get_inserted_blot_ai_titles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14040 14044]))                          )
+                        (reparse-symbol indented_block_body) [14008 14184])
+                    ("verify_blot_titles_match_rhs_titles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14229 14233])
+                            ("rhs_titles" variable nil (reparse-symbol function_parameters) [14235 14245])
+                            ("blot_titles" variable nil (reparse-symbol function_parameters) [14247 14258]))                          )
+                        (reparse-symbol indented_block_body) [14189 14351]))                  
+                :type "class")
+                nil [339 14351]))          
+      :file "meeting_page.py"
+      :pointmax 14351
+      :fsize 14350
+      :lastmodtime '(23595 21456 951333 783000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom-tests!ui_test!page!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

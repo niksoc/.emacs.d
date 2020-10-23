@@ -1,0 +1,139 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("copy" include nil nil [1 12])
+            ("functools" include nil nil [13 42])
+            ("six" include nil nil [44 54])
+            ("core.feature_gate_fns" include nil nil [56 118])
+            ("core.utils" include nil nil [119 167])
+            ("Logger" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__new__" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [208 211])
+                        ("args" variable nil (reparse-symbol function_parameters) [213 218])
+                        ("kwargs" variable nil (reparse-symbol function_parameters) [220 228]))                      ) (reparse-symbol indented_block_body) [196 924])
+                    ("_create_current_logger_with_child_logger" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [991 994])
+                            ("child_logger" variable nil (reparse-symbol function_parameters) [996 1008])
+                            ("args" variable nil (reparse-symbol function_parameters) [1010 1015])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1017 1025]))                          )
+                        (reparse-symbol indented_block_body) [929 1279])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1332 1364])
+                            ("for" code nil (reparse-symbol indented_block_body) [1373 1482]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1297 1301])
+                            ("child_logger" variable nil (reparse-symbol function_parameters) [1303 1315])
+                            ("args" variable nil (reparse-symbol function_parameters) [1317 1322])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1324 1332]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1284 1493])
+                    ("log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1506 1510])
+                            ("lvl" variable nil (reparse-symbol function_parameters) [1512 1515])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1517 1520])
+                            ("args" variable nil (reparse-symbol function_parameters) [1522 1527])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1529 1537]))                          )
+                        (reparse-symbol indented_block_body) [1498 1602]))                  
+                :type "class")
+                nil [170 1602])
+            ("CalendarSyncLogger" type
+               (:documentation " selectively logs based on setting "
+                :superclasses ("Logger")
+                :members 
+                  ( ("log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1697 1701])
+                            ("lvl" variable nil (reparse-symbol function_parameters) [1703 1706])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1708 1711])
+                            ("args" variable nil (reparse-symbol function_parameters) [1713 1718])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1720 1728]))                          )
+                        (reparse-symbol indented_block_body) [1689 1866]))                  
+                :type "class")
+                nil [1604 1866])
+            ("ExtraLogger" type
+               (:documentation " kwargs other than exc_info will go into the extra field "
+                :superclasses ("Logger")
+                :members 
+                  ( ("log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1976 1980])
+                            ("lvl" variable nil (reparse-symbol function_parameters) [1982 1985])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1987 1990])
+                            ("exc_info" variable nil (reparse-symbol function_parameters) [1992 2000])
+                            ("args" variable nil (reparse-symbol function_parameters) [2008 2013])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2015 2023]))                          )
+                        (reparse-symbol indented_block_body) [1968 2207]))                  
+                :type "class")
+                nil [1868 2207])
+            ("PathLogger" type
+               (:documentation "
+        Adds the calling function name, the calling function's class name (if exists) to the message
+        NOTE: MUST BE THE OUTERMOST LOGGER TO FUNCTION PROPERLY
+    "
+                :superclasses ("Logger")
+                :members 
+                  ( ("log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2429 2433])
+                            ("lvl" variable nil (reparse-symbol function_parameters) [2435 2438])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2440 2443])
+                            ("args" variable nil (reparse-symbol function_parameters) [2445 2450])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2452 2460]))                          )
+                        (reparse-symbol indented_block_body) [2421 2666]))                  
+                :type "class")
+                nil [2209 2666])
+            ("PersistentLogger" type
+               (:documentation " adds persist_kwargs to kwargs on every log call. "
+                :superclasses ("Logger")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2800 2855])
+                            ("super" code nil (reparse-symbol indented_block_body) [2864 2919]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2779 2783])
+                            ("args" variable nil (reparse-symbol function_parameters) [2785 2790])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2792 2800]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2766 2931])
+                    ("log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2944 2948])
+                            ("lvl" variable nil (reparse-symbol function_parameters) [2950 2953])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2955 2958])
+                            ("args" variable nil (reparse-symbol function_parameters) [2960 2965])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2967 2975]))                          )
+                        (reparse-symbol indented_block_body) [2936 3134]))                  
+                :type "class")
+                nil [2668 3134]))          
+      :file "loggers.py"
+      :pointmax 3134
+      :fsize 3133
+      :lastmodtime '(23744 26988 574298 604000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "utils.py"
+      :fsize 4056
+      :lastmodtime '(23741 36829 382664 416000)))
+  :file "!home!hasher!apps!mom3!mom!calendars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

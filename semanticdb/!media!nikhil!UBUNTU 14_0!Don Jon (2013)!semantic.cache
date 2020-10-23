@@ -1,0 +1,16 @@
+;; Object Don Jon (2013)/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Don Jon (2013)/"
+  :tables
+  (list
+    (semanticdb-table "don-jon-yify-english.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "don-jon-yify-english.srt"
+      :pointmax 104257
+      :fsize 110214
+      :lastmodtime '(21170 42658 0 0)
+      :unmatched-syntax nil))
+  :file "!media!nikhil!UBUNTU 14_0!Don Jon (2013)!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

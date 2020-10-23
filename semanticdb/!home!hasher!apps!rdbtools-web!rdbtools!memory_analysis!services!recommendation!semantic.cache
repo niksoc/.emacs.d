@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\" Copyright (C) HashedIn Technologies, Inc - All Rights Reserved
+  Unauthorized copying of this file, via any medium is strictly prohibited
+  Proprietary and confidential
+  Written by Chandan Patel <chandan@rdbtools.com>, April 2018
+\"\"\"" code nil nil [1 239])
+            ("QRY_CREATE_INDEX" variable nil nil [241 294])
+            ("TOTAL_SUMMARY" variable nil nil [297 392])
+            ("DATATYPE_STATS" variable nil nil [394 548])
+            ("GET_KEYS" variable nil nil [550 581])
+            ("CASE_PATTERN" variable nil nil [583 631])
+            ("GET_PATTERN" variable nil nil [633 718])
+            ("CREATE_SNAPSHOT_SUMMARY" variable nil nil [720 1599])
+            ("CREATE_INSTANCE_INFO" variable nil nil [1601 1893])
+            ("CREATE_INSTANCE_CONFIG" variable nil nil [1895 2191])
+            ("CREATE_RECOMMENDATIONS" variable nil nil [2193 2497])
+            ("INSERT_INSTANCE_CONFIG" variable nil nil [2499 2588])
+            ("INSERT_INSTANCE_INFO" variable nil nil [2589 2675])
+            ("INSERT_SNAPSHOT_SUMMARY" variable nil nil [2678 2951])
+            ("GET_MEMORY" variable nil nil [2954 3038])
+            ("INSERT_RECOMMENDATIONS" variable nil nil [3040 3184])
+            ("CREATE_KEY_PATTERNS" variable nil nil [3187 3976])
+            ("CREATE_TOP_PATTERNS_KEYS" variable nil nil [3978 4372])
+            ("INSERT_TOP_PATTERN_KEYS" variable nil nil [4374 4516])
+            ("GET_PATTERN_SUMMARY" variable nil nil [4519 5109])
+            ("INSERT_PATTERNS_SUMMARY" variable nil nil [5111 5639])
+            ("COMPRESSION_SAVING_QUERY" variable nil nil [5641 6009])
+            ("SMALL_STRING_SAVING_QUERY" variable nil nil [6035 6447])
+            ("LIST_COMPRESSION_QUERY" variable nil nil [6449 6886])
+            ("COMPRESS_FIELD_NAME_QUERY" variable nil nil [6888 7333])
+            ("BIG_STRINGS_QUERY" variable nil nil [7335 7665])
+            ("PROBABILISTIC_DATA_TYPE_QUERY" variable nil nil [7667 8146])
+            ("SWITCH_TO_INTSET" variable nil nil [8148 8841])
+            ("SWITCH_TO_INTSET_PATTERNS" variable nil nil [8843 9158])
+            ("SWITCH_TO_32_BIT" variable nil nil [9160 9259])
+            ("UPGRADE_REDIS" variable nil nil [9261 9342])
+            ("CHANGE_SERIALIZER" variable nil nil [9344 9449])
+            ("SMALL_STRING_TO_HASH" variable nil nil [9451 9557])
+            ("LUA_SCRIPT_CONSUMING_HIGH_MEMORY_QUERY" variable nil nil [9560 9668])
+            ("PERSISTENT_CONNECTION" variable nil nil [9670 9798])
+            ("REDIS_DB_QUERY" variable nil nil [9800 9873])
+            ("BIG_TO_SMALL_HASHES_QUERY" variable nil nil [9875 9994])
+            ("TOTAL_KEYS_QUERY" variable nil nil [9996 10073])
+            ("HASH_MAP_ZIPLIST_QUERY" variable nil nil [10075 14476])
+            ("HASH_MAP_ZIPLIST_PATTERNS_QUERY" variable nil nil [14478 14857])
+            ("HASH_TO_NAME_TUPLE_QUERY" variable nil nil [14859 15338])
+            ("ZSET_TO_ZIPLIST_QUERY" variable nil nil [15340 20767])
+            ("ZSET_TO_ZIPLIST_PATTERNS_QUERY" variable nil nil [20769 21147])
+            ("DANGEROUS_COMMAND_QUERY" variable nil nil [21181 21277]))          
+      :file "queries.py"
+      :pointmax 21278
+      :fsize 21277
+      :lastmodtime '(23802 529 372047 540000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!rdbtools-web!rdbtools!memory_analysis!services!recommendation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

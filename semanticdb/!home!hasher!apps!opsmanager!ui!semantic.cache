@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 1929
+      :fsize 1928
+      :lastmodtime '(24021 28045 620171 943000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "tsconfig.json"
+      :pointmax 485
+      :fsize 484
+      :lastmodtime '(24019 52582 774744 81000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!opsmanager!ui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

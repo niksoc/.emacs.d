@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("SPHINXOPTS" variable nil nil [93 109])
+            ("SPHINXBUILD" variable (:default-value ("sphinx-build")) nil [109 138])
+            ("PAPER" variable nil nil [138 154])
+            ("PAPEROPT_a4" variable (:default-value ("-D" "latex_paper_size=a4")) nil [177 218])
+            ("PAPEROPT_letter" variable (:default-value ("-D" "latex_paper_size=letter")) nil [218 263])
+            ("ALLSPHINXOPTS" variable (:default-value ("-d" "_build/doctrees" "$(PAPEROPT_$(PAPER))" "$(SPHINXOPTS)" ".")) nil [263 337])
+            (".PHONY" function (:arguments ("help" "clean" "html" "dirhtml" "pickle" "json" "htmlhelp" "qthelp" "latex" "changes" "linkcheck" "doctest")) nil [338 430])
+            ("help" function nil nil [431 1134])
+            ("clean" function nil nil [1135 1187])
+            ("html" function nil nil [1188 1337])
+            ("dirhtml" function nil nil [1338 1499])
+            ("pickle" function nil nil [1500 1635])
+            ("json" function nil nil [1636 1763])
+            ("htmlhelp" function nil nil [1764 1960])
+            ("qthelp" function nil nil [1961 2323])
+            ("latex" function nil nil [2324 2587])
+            ("changes" function nil nil [2588 2712])
+            ("linkcheck" function nil nil [2713 2911])
+            ("doctest" function nil nil [2912 3096]))          
+      :file "Makefile"
+      :pointmax 3096
+      :fsize 3095
+      :lastmodtime '(20692 63318 0 0)
+      :unmatched-syntax '((shell-command 2981 . 3095) (bol 2980 . 2980))))
+  :file "!home!nikhil!ns-allinone-3.16!pybindgen-0.15.0.809!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

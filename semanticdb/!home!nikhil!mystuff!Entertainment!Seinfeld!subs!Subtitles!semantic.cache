@@ -1,0 +1,16 @@
+;; Object Subtitles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Subtitles/"
+  :tables
+  (list
+    (semanticdb-table "seinfeld.2x09.the_deal.dvdrip_xvid-fov.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "seinfeld.2x09.the_deal.dvdrip_xvid-fov.srt"
+      :pointmax 19267
+      :fsize 20481
+      :lastmodtime '(21868 59028 951848 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Entertainment!Seinfeld!subs!Subtitles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

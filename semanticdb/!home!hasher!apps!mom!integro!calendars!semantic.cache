@@ -1,0 +1,166 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("integro.api" include nil nil [1 35])
+            ("CalendarEventsAPI" type
+               (:superclasses ("IntegroAPI")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [87 91])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [93 101])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [103 114]))                          )
+                        (reparse-symbol indented_block_body) [79 156])
+                    ("list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [170 174])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [176 187])
+                            ("from_date" variable nil (reparse-symbol function_parameters) [194 203])
+                            ("to_date" variable nil (reparse-symbol function_parameters) [210 217])
+                            ("sync_token" variable nil (reparse-symbol function_parameters) [224 234])
+                            ("max_page_count" variable nil (reparse-symbol function_parameters) [254 268])
+                            ("show_single_events" variable nil (reparse-symbol function_parameters) [275 293])
+                            ("show_deleted_events" variable nil (reparse-symbol function_parameters) [300 319])
+                            ("request_sync_token" variable nil (reparse-symbol function_parameters) [326 344]))                          
+                        :documentation "
+        gets calendar events from the provider's API.
+            :param calendar_id: calendar_id as given by provider
+            :param from_date: datetime, Lower bound (inclusive) for an event's end time to filter by. Optional.
+            :param to_date: datetime, Upper bound (exclusive) for an event's start time to filter by. Optional.
+            :param sync_token: if sync_token is provided, from_date and to_date are not considered
+            :param max_page_count: if page count of response exceeds max_page_count, the resulting events
+                will be returned without completing the fetch. In case of using sync_token the existing sync_token
+                will be returned.
+            :param show_single_events: whether to expand recurring events into instances, if sync_token it cannot be False
+            :param show_deleted_events: whether to retrieve deleted events, if sync_token it cannot be False
+            :param request_sync_token: whether to request sync token. If `sync_token` is given this will be True
+            :return: received_items, next_sync_token, meta
+        ")
+                        (reparse-symbol indented_block_body) [161 1511])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1527 1531])
+                            ("event_dict" variable nil (reparse-symbol function_parameters) [1533 1543])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [1545 1556]))                          )
+                        (reparse-symbol indented_block_body) [1516 1598])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1614 1618])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [1620 1628])
+                            ("event_dict" variable nil (reparse-symbol function_parameters) [1630 1640])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [1642 1653]))                          )
+                        (reparse-symbol indented_block_body) [1603 1695])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1711 1715])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [1717 1725])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [1727 1738]))                          )
+                        (reparse-symbol indented_block_body) [1700 1780]))                  
+                :type "class")
+                nil [38 1780])
+            ("WebhookChannelAPI" type
+               (:superclasses ("IntegroAPI")
+                :members 
+                  ( ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1834 1838])
+                            ("args" variable nil (reparse-symbol function_parameters) [1840 1845])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1847 1855]))                          )
+                        (reparse-symbol indented_block_body) [1823 1892])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1906 1910])
+                            ("args" variable nil (reparse-symbol function_parameters) [1912 1917])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1919 1927]))                          )
+                        (reparse-symbol indented_block_body) [1897 1964])
+                    ("renew" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1979 1983])
+                            ("args" variable nil (reparse-symbol function_parameters) [1985 1990])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1992 2000]))                          )
+                        (reparse-symbol indented_block_body) [1969 2037]))                  
+                :type "class")
+                nil [1782 2037])
+            ("ProcessedEventsAPI" type
+               (:superclasses ("CalendarEventsAPI")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2145 2183])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2192 2220]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2101 2105])
+                            ("processor_class" variable nil (reparse-symbol function_parameters) [2107 2122])
+                            ("events_api" variable nil (reparse-symbol function_parameters) [2124 2134]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2088 2221])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2234 2238])
+                            ("args" variable nil (reparse-symbol function_parameters) [2240 2245])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2247 2255]))                          )
+                        (reparse-symbol indented_block_body) [2226 2354])
+                    ("list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2368 2372])
+                            ("args" variable nil (reparse-symbol function_parameters) [2374 2379])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2381 2389]))                          )
+                        (reparse-symbol indented_block_body) [2359 2581])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2597 2601])
+                            ("integro_event_dict" variable nil (reparse-symbol function_parameters) [2603 2621])
+                            ("extra_data" variable nil (reparse-symbol function_parameters) [2623 2633])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2640 2651]))                          )
+                        (reparse-symbol indented_block_body) [2586 2919])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2935 2939])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [2941 2949])
+                            ("integro_event_dict" variable nil (reparse-symbol function_parameters) [2951 2969])
+                            ("extra_data" variable nil (reparse-symbol function_parameters) [2971 2981])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2988 2999]))                          )
+                        (reparse-symbol indented_block_body) [2924 3277])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3293 3297])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [3299 3307])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [3309 3320]))                          )
+                        (reparse-symbol indented_block_body) [3282 3389])
+                    ("_make_integration_event_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3427 3431])
+                            ("extra_data" variable nil (reparse-symbol function_parameters) [3433 3443])
+                            ("integro_event_dict" variable nil (reparse-symbol function_parameters) [3445 3463]))                          )
+                        (reparse-symbol indented_block_body) [3394 3654]))                  
+                :type "class")
+                nil [2039 3654])
+            ("EventsDescriptor" variable nil nil [3656 3936]))          
+      :file "api.py"
+      :pointmax 3937
+      :fsize 3991
+      :lastmodtime '(23308 61285 468164 721000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!mom!integro!calendars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

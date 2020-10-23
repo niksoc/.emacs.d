@@ -1,0 +1,268 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("FOR" variable (:constant-flag t) nil [133 136])
+            ("REP" variable (:constant-flag t) nil [186 189])
+            ("all" variable (:constant-flag t) nil [220 223])
+            ("sz" variable (:constant-flag t) nil [263 265])
+            ("debug" variable (:constant-flag t) nil [299 304])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [342 369])
+            ("ll" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [370 391])
+            ("ii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [392 418])
+            ("N" variable (:type "int") nil [420 432])
+            ("T" variable (:type "int") nil [420 432])
+            ("Q" variable (:type "int") nil [420 432])
+            ("size" variable (:type ("ll" type (:type "class") nil nil)) nil [433 441])
+            ("op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [451 458])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [459 463]))                  
+                :type "void")
+                nil [443 464])
+            ("trie" type
+               (:members 
+                  ( ("node" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [497 504])
+                            ("next" variable
+                               (:pointer 1
+                                :dereference 1
+                                :default-value "{NULL, NULL}"
+                                :type ("node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [505 534]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [481 539])
+                    ("root" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [542 553])
+                    ("add" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:pointer 1
+                                :type ("node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [565 574])
+                            ("w" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [575 583]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [556 725])
+                    ("public" label nil (reparse-symbol classsubparts) [728 735])
+                    ("trie" function
+                       (:constructor-flag t
+                        :type ("trie" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [738 773])
+                    ("add" function
+                       (:arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [785 793]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [776 817]))                  
+                :type "class")
+                nil [466 820])
+            ("main" function (:type "int") nil [822 1171])
+            ("op" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1182 1190])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [1191 1197]))                  
+                :type "void")
+                nil [1174 1300]))          
+      :file "wbt.cpp"
+      :pointmax 1301
+      :fsize 1300
+      :lastmodtime '(22923 3892 769203 947000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 136 . 149) . ((FOR "for" 150 . 153) (semantic-list "(int i=j ; i<k ; i+=in)" 154 . 177)))
+          ("all" (spp-arg-list ("cont") 223 . 229) . 
+              ((symbol "cont" 230 . 234) (punctuation "." 234 . 235) (symbol "begin" 235 . 240) (semantic-list "()" 240 . 242) (punctuation "," 242 . 243) (symbol "cont" 244 . 248) (punctuation "." 248 . 249) (symbol "end" 249 . 252) (semantic-list "()" 252 . 254)))
+          ("debug" (spp-arg-list ("x") 304 . 307) . 
+              ((symbol "cerr" 308 . 312) (punctuation "<" 313 . 314) (punctuation "<" 314 . 315) (punctuation "#" 316 . 317) (symbol "x" 317 . 318) (punctuation "<" 319 . 320) (punctuation "<" 320 . 321) (string "\" = \"" 322 . 327) (punctuation "<" 328 . 329) (punctuation "<" 329 . 330) (symbol "x" 331 . 332) (punctuation "<" 333 . 334) (punctuation "<" 334 . 335) (symbol "endl" 336 . 340) (punctuation ";" 340 . 341)))
+          ("REP" (spp-arg-list ("i" "j") 189 . 195) . ((symbol "FOR" 196 . 199) (semantic-list "(i, 0, j, 1)" 199 . 211)))
+          ("sz" (spp-arg-list ("cont") 265 . 271) . ((INT "int" 272 . 275) (semantic-list "((cont).size())" 275 . 290)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/stdc++.h" include (:system-flag t) nil [1 25])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [27 47])
+            ("FOR" variable (:constant-flag t) nil [57 60])
+            ("FOR" variable (:constant-flag t) nil [57 60])
+            ("REP" variable (:constant-flag t) nil [110 113])
+            ("all" variable (:constant-flag t) nil [144 147])
+            ("sz" variable (:constant-flag t) nil [187 189])
+            ("debug" variable (:constant-flag t) nil [223 228])
+            ("pi" variable
+               (:constant-flag t
+                :default-value "acos(-1.0)"
+                :type "double")
+                nil [266 293])
+            ("ll" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [294 315])
+            ("ii" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [316 342])
+            ("N" variable (:type "int") nil [344 356])
+            ("T" variable (:type "int") nil [344 356])
+            ("Q" variable (:type "int") nil [344 356])
+            ("size" variable (:type ("ll" type (:type "class") nil nil)) nil [357 365])
+            ("op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [375 382])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [383 387]))                  
+                :type "void")
+                nil [367 388])
+            ("add" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [399 407])
+                    ("tree" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [408 419]))                  
+                :type "void")
+                nil [390 576])
+            ("main" function (:type "int") nil [579 958])
+            ("op" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [969 977])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [978 984]))                  
+                :type "void")
+                nil [961 1087]))          
+      :file "ref.cpp"
+      :pointmax 1088
+      :fsize 1087
+      :lastmodtime '(22923 9122 6498 183000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FOR" (spp-arg-list ("i" "j" "k" "in") 60 . 73) . ((FOR "for" 74 . 77) (semantic-list "(int i=j ; i<k ; i+=in)" 78 . 101)))
+          ("all" (spp-arg-list ("cont") 223 . 229) . 
+              ((symbol "cont" 230 . 234) (punctuation "." 234 . 235) (symbol "begin" 235 . 240) (semantic-list "()" 240 . 242) (punctuation "," 242 . 243) (symbol "cont" 244 . 248) (punctuation "." 248 . 249) (symbol "end" 249 . 252) (semantic-list "()" 252 . 254)))
+          ("debug" (spp-arg-list ("x") 304 . 307) . 
+              ((symbol "cerr" 308 . 312) (punctuation "<" 313 . 314) (punctuation "<" 314 . 315) (punctuation "#" 316 . 317) (symbol "x" 317 . 318) (punctuation "<" 319 . 320) (punctuation "<" 320 . 321) (string "\" = \"" 322 . 327) (punctuation "<" 328 . 329) (punctuation "<" 329 . 330) (symbol "x" 331 . 332) (punctuation "<" 333 . 334) (punctuation "<" 334 . 335) (symbol "endl" 336 . 340) (punctuation ";" 340 . 341)))
+          ("REP" (spp-arg-list ("i" "j") 189 . 195) . ((symbol "FOR" 196 . 199) (semantic-list "(i, 0, j, 1)" 199 . 211)))
+          ("sz" (spp-arg-list ("cont") 265 . 271) . ((INT "int" 272 . 275) (semantic-list "((cont).size())" 275 . 290)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("tcframe/spec.hpp" include (:system-flag t) nil [1 28])
+            ("assert.h" include (:system-flag t) nil [29 47])
+            ("tcframe" using (:type ("tcframe" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [48 72])
+            ("ProblemSpec" type
+               (:superclasses 
+                  ( ("BaseProblemSpec" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [120 130])
+                    ("N" variable (:type "int") (reparse-symbol classsubparts) [133 142])
+                    ("Q" variable (:type "int") (reparse-symbol classsubparts) [133 142])
+                    ("T" variable (:type "int") (reparse-symbol classsubparts) [145 151])
+                    ("size" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [154 171])
+                    ("q" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("char" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [174 189])
+                    ("c" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type (:template-specifier 
+                                ( ("int" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [192 215])
+                    ("InputFormat" function (:type "void") (reparse-symbol classsubparts) [219 286])
+                    ("OutputFormat" function (:type "void") (reparse-symbol classsubparts) [290 332])
+                    ("MultipleTestCasesConfig" function (:type "void") (reparse-symbol classsubparts) [337 389])
+                    ("MultipleTestCasesConstraints" function (:type "void") (reparse-symbol classsubparts) [393 463])
+                    ("GradingConfig" function (:type "void") (reparse-symbol classsubparts) [467 532])
+                    ("Constraints" function (:type "void") (reparse-symbol classsubparts) [536 622]))                  
+                :type "class")
+                nil [74 625])
+            ("TestSpec" type
+               (:superclasses 
+                  ( ("BaseTestSpec" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("randomArray" function (:type "void") (reparse-symbol classsubparts) [681 999])
+                    ("protected" label nil (reparse-symbol classsubparts) [1001 1011])
+                    ("SampleTestCase1" function (:type "void") (reparse-symbol classsubparts) [1014 1344])
+                    ("TestCases" function (:type "void") (reparse-symbol classsubparts) [1348 1395])
+                    ("BeforeTestCase" function (:type "void") (reparse-symbol classsubparts) [1398 1455]))                  
+                :type "class")
+                nil [627 1458]))          
+      :file "spec.cpp"
+      :pointmax 1459
+      :fsize 1458
+      :lastmodtime '(22923 12162 982731 130000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!wbt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

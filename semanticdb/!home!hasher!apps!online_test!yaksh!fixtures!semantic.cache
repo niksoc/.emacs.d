@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "demo_fixtures.json"
+      :pointmax 3443
+      :fsize 3442
+      :lastmodtime '(23975 13923 293940 947000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 3442))))
+  :file "!home!hasher!apps!online_test!yaksh!fixtures!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

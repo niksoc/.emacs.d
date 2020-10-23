@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("org.terasology.projectile" package nil nil [598 632])
+            ("org.terasology.entitySystem.entity.EntityRef" include nil nil [634 686])
+            ("org.terasology.entitySystem.event.EventPriority" include nil nil [687 742])
+            ("org.terasology.entitySystem.event.ReceiveEvent" include nil nil [743 797])
+            ("org.terasology.entitySystem.systems.BaseComponentSystem" include nil nil [798 861])
+            ("org.terasology.entitySystem.systems.RegisterMode" include nil nil [862 918])
+            ("org.terasology.entitySystem.systems.RegisterSystem" include nil nil [919 977])
+            ("org.terasology.logic.health.DoDamageEvent" include nil nil [978 1027])
+            ("org.terasology.logic.inventory.events.DropItemEvent" include nil nil [1028 1087])
+            ("org.terasology.logic.location.LocationComponent" include nil nil [1088 1143])
+            ("org.terasology.math.geom.Vector3f" include nil nil [1144 1185])
+            ("ProjectileCollisionHandler" type
+               (:typemodifiers ("public")
+                :superclasses "BaseComponentSystem"
+                :members 
+                  ( ("onCollision" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "HitTargetEvent") (reparse-symbol formal_parameters) [1504 1524])
+                            ("entity" variable (:type "EntityRef") (reparse-symbol formal_parameters) [1526 1542])
+                            ("projectile" variable (:type "ProjectileActionComponent") (reparse-symbol formal_parameters) [1544 1580]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1480 1963]))                  
+                :type "class")
+                nil [1267 1965]))          
+      :file "ProjectileCollisionHandler.java"
+      :pointmax 1966
+      :fsize 1965
+      :lastmodtime '(22790 19629 660962 95000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("org.terasology.projectile" package nil nil [598 632])
+            ("org.terasology.entitySystem.Component" include nil nil [634 679])
+            ("org.terasology.entitySystem.prefab.Prefab" include nil nil [680 729])
+            ("org.terasology.logic.health.EngineDamageTypes" include nil nil [730 783])
+            ("org.terasology.math.geom.Vector3f" include nil nil [784 825])
+            ("ProjectileActionComponent" type
+               (:typemodifiers ("public")
+                :interfaces ("Component")
+                :members 
+                  ( ("reusable" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [969 1001])
+                    ("affectedByGravity" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1073 1114])
+                    ("currentVelocity" variable
+                       (:typemodifiers ("public")
+                        :type "Vector3f")
+                        (reparse-symbol class_member_declaration) [1179 1218])
+                    ("frictionCoefficient" variable
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [1370 1410])
+                    ("direction" variable
+                       (:typemodifiers ("public")
+                        :type "Vector3f")
+                        (reparse-symbol class_member_declaration) [1472 1505])
+                    ("distanceTravelled" variable
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [1576 1611])
+                    ("velocity" variable
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [1672 1698])
+                    ("maxDistance" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1769 1797])
+                    ("damageAmount" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1857 1885])
+                    ("projectilesPerSecond" variable
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [1959 2000])
+                    ("damageType" variable
+                       (:typemodifiers ("public")
+                        :type "Prefab")
+                        (reparse-symbol class_member_declaration) [2006 2066]))                  
+                :type "class")
+                nil [868 2068]))          
+      :file "ProjectileActionComponent.java"
+      :pointmax 2069
+      :fsize 2068
+      :lastmodtime '(22751 51346 282101 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Workspaces!Terasology!modules!Projectile!src!main!java!org!terasology!projectile!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

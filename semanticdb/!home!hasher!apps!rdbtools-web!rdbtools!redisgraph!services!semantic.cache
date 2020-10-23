@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("django.conf" include nil nil [18 50])
+            ("redis.exceptions" include nil nil [51 90])
+            ("rdbtools.core.models" include nil nil [92 134])
+            ("rdbtools.utils" include nil nil [135 216])
+            ("build_graph_response" include nil nil [231 258])
+            ("Edge" include nil nil [291 315])
+            ("Node" include nil nil [291 315])
+            ("Graph" include nil nil [291 315])
+            ("GRAPH_MODULE_NAME" variable nil nil [317 344])
+            ("is_graph_2" function (:arguments 
+              ( ("redis_graph" variable nil (reparse-symbol function_parameters) [362 373]))              ) nil [347 414])
+            ("RGraphQueryError" type
+               (:documentation "Redis Graph Query Error"
+                :superclasses ("Exception")
+                :type "class")
+                nil [416 485])
+            ("RGraphNotLoaded" type
+               (:documentation "Redis Graph Module is not loaded"
+                :superclasses ("Exception")
+                :type "class")
+                nil [487 564])
+            ("RGraphKeyNotFound" type
+               (:documentation "Redis Graph key not found"
+                :superclasses ("Exception")
+                :type "class")
+                nil [566 638])
+            ("parse_redis_response_v2" function
+               (:documentation "
+    Parse redis graph 2 query response
+    "
+                :arguments 
+                  ( ("result" variable nil (reparse-symbol function_parameters) [668 674]))                  )
+                nil [640 2406])
+            ("parse_redis_response" function
+               (:documentation "
+    Parse redis graph query response
+
+    There are three types of graph responses, one that returns data,
+    one that returns the graph information and the one that does both.
+
+    Queries that has a `RETURN` clause will have the data in the
+    response.  Queries that modify the graph will have the graph
+    modification details in the response.
+
+    The response returned by redis is in the following manner:
+    [[[graph-data else None]], [graph-modification-data else None]]
+
+    "
+                :arguments 
+                  ( ("output_bytes" variable nil (reparse-symbol function_parameters) [2433 2445]))                  )
+                nil [2408 3708])
+            ("parse_execution_plan" function (:arguments 
+              ( ("result" variable nil (reparse-symbol function_parameters) [3734 3740]))              ) nil [3709 3805])
+            ("exec_command" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3823 3827])
+                ("instance_id" variable nil (reparse-symbol function_parameters) [3829 3840])
+                ("command" variable nil (reparse-symbol function_parameters) [3842 3849])
+                ("dangerous" variable nil (reparse-symbol function_parameters) [3851 3860]))              ) nil [3806 5306])
+            ("delete_key_graph" function (:arguments 
+              ( ("instance_id" variable nil (reparse-symbol function_parameters) [5329 5340])
+                ("key" variable nil (reparse-symbol function_parameters) [5342 5345]))              ) nil [5308 5642])
+            ("find_keys_graph" function (:arguments 
+              ( ("instance_id" variable nil (reparse-symbol function_parameters) [5664 5675])
+                ("cursor" variable nil (reparse-symbol function_parameters) [5697 5703])
+                ("count" variable nil (reparse-symbol function_parameters) [5729 5734])
+                ("max_cost" variable nil (reparse-symbol function_parameters) [5781 5789])
+                ("response_cost" variable nil (reparse-symbol function_parameters) [5839 5852]))              ) nil [5644 7224]))          
+      :file "__init__.py"
+      :pointmax 7224
+      :fsize 7223
+      :lastmodtime '(23864 11952 894262 203000)
+      :unmatched-syntax '((INDENT_BLOCK 5595 . 5642) (NEWLINE 5594 . 5595) (COLON 5593 . 5594) (TRY 5497 . 5500) (AS 5589 . 5591) (INDENT_BLOCK 5260 . 5306) (NEWLINE 5259 . 5260) (COLON 5258 . 5259) (TRY 4295 . 4298) (AS 5254 . 5256) (NAME 1385 . 1391) (IF 1410 . 1412) (ELSE 1439 . 1443) (PERIOD 265 . 266) (FROM 259 . 263) (PERIOD 264 . 265) (PERIOD 223 . 224) (FROM 217 . 221) (PERIOD 222 . 223))))
+  :file "!home!hasher!apps!rdbtools-web!rdbtools!redisgraph!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

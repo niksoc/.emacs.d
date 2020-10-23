@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "oauth.py"
+      :fsize 2448
+      :lastmodtime '(23244 18018 655815 867000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "api.py"
+      :pointmax 13042
+      :fsize 12959
+      :lastmodtime '(23244 18063 455737 707000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!meetnotes-integro!integro!integrations!calendar!google!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

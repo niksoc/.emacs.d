@@ -1,0 +1,151 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "processor.py"
+      :fsize 7893
+      :lastmodtime '(23308 6479 756234 40000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("copy" include nil nil [1 12])
+            ("datetime" include nil nil [13 28])
+            ("logging" include nil nil [29 43])
+            ("uuid" include nil nil [44 55])
+            ("integro.api" include nil nil [57 101])
+            ("integro.calendars.api" include nil nil [102 153])
+            ("integro.calendars.api" include nil nil [154 205])
+            ("integro.calendars.constants" include nil nil [206 307])
+            ("integro.calendars.constants" include nil nil [308 395])
+            ("integro.calendars.constants" include nil nil [396 463])
+            ("integro.calendars.constants" include nil nil [464 549])
+            ("integro.calendars.constants" include nil nil [550 639])
+            ("integro.calendars.constants" include nil nil [640 733])
+            ("integro.calendars.constants" include nil nil [734 808])
+            ("integro.calendars.constants" include nil nil [809 874])
+            ("integro.calendars.google_calendar" include nil nil [875 930])
+            ("integro.calendars.google_calendar.processor" include nil nil [931 1011])
+            ("integro.calendars.google_calendar.processor" include nil nil [1012 1088])
+            ("integro.calendars.service" include nil nil [1089 1142])
+            ("integro.calendars.service" include nil nil [1143 1201])
+            ("integro.calendars.service" include nil nil [1202 1270])
+            ("logger" variable nil nil [1272 1308])
+            ("GOOGLE_CALENDAR_BASE_URL" variable nil nil [1350 1419])
+            ("CALENDAR_LIST_URL" variable nil nil [1420 1497])
+            ("CALENDAR_URL" variable nil nil [1498 1572])
+            ("EVENTS_URL" code nil nil [1573 1611])
+            ("EVENT_URL" code nil nil [1612 1649])
+            ("CALENDAR_EVENTS_CHANNEL_URL" code nil nil [1651 1701])
+            ("CHANNELS_URL" variable nil nil [1702 1766])
+            ("CHANNELS_STOP_URL" code nil nil [1767 1809])
+            ("GOOGLE_CALENDAR_WEBHOOK_CHANNEL_MAX_TTL_SECONDS" variable nil nil [1811 1908])
+            ("GoogleEventsAPI" type
+               (:documentation "
+    contains methods that operate on google's event API
+    "
+                :superclasses ("CalendarEventsAPI")
+                :members 
+                  ( ("SYNC_TOKEN_PARAMETER" variable nil (reparse-symbol indented_block_body) [2029 2063])
+                    ("PAGE_TOKEN_PARAMETER" variable nil (reparse-symbol indented_block_body) [2068 2102])
+                    ("NEXT_PAGE_TOKEN_FIELD" variable nil (reparse-symbol indented_block_body) [2107 2146])
+                    ("NEXT_SYNC_TOKEN_FIELD" variable nil (reparse-symbol indented_block_body) [2151 2190])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2204 2208])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [2210 2218])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2220 2231]))                          )
+                        (reparse-symbol indented_block_body) [2196 2400])
+                    ("list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2414 2418])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [2420 2431])
+                            ("from_date" variable nil (reparse-symbol function_parameters) [2438 2447])
+                            ("to_date" variable nil (reparse-symbol function_parameters) [2454 2461])
+                            ("sync_token" variable nil (reparse-symbol function_parameters) [2468 2478])
+                            ("max_page_count" variable nil (reparse-symbol function_parameters) [2498 2512])
+                            ("show_single_events" variable nil (reparse-symbol function_parameters) [2519 2537])
+                            ("show_deleted_events" variable nil (reparse-symbol function_parameters) [2544 2563])
+                            ("request_sync_token" variable nil (reparse-symbol function_parameters) [2570 2588]))                          
+                        :documentation "
+        gets calendar events from Google API. see https://developers.google.com/calendar/v3/reference/events/list.
+            :param calendar_id: calendar_id as given by Google
+            :param from_date: datetime, Lower bound (inclusive) for an event's end time to filter by. Optional.
+            :param to_date: datetime, Upper bound (exclusive) for an event's start time to filter by. Optional.
+            :param sync_token: if sync_token is provided, from_date and to_date are not considered
+            :param max_page_count: if page count of response exceeds max_page_count, the resulting events
+                will be returned without completing the fetch. In case of using sync_token the existing sync_token
+                will be returned.
+            :param show_single_events: whether to expand recurring events into instances, if sync_token it cannot be False
+            :param show_deleted_events: whether to retrieve deleted events, if sync_token it cannot be False
+            :param request_sync_token: whether to request sync token. If `sync_token` is given this will be True
+            :return: received_items, next_sync_token, meta
+        ")
+                        (reparse-symbol indented_block_body) [2405 6070])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6086 6090])
+                            ("event_dict" variable nil (reparse-symbol function_parameters) [6092 6102])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [6104 6115]))                          )
+                        (reparse-symbol indented_block_body) [6075 6284])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6300 6304])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [6306 6314])
+                            ("event_dict" variable nil (reparse-symbol function_parameters) [6316 6326])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [6328 6339]))                          )
+                        (reparse-symbol indented_block_body) [6289 6525])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6541 6545])
+                            ("event_id" variable nil (reparse-symbol function_parameters) [6547 6555])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [6557 6568]))                          )
+                        (reparse-symbol indented_block_body) [6530 6740]))                  
+                :type "class")
+                nil [1911 6740])
+            ("GoogleWebhookChannelAPI" type
+               (:superclasses ("WebhookChannelAPI")
+                :members 
+                  ( ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6807 6811])
+                            ("notification_url" variable nil (reparse-symbol function_parameters) [6813 6829])
+                            ("calendar_id" variable nil (reparse-symbol function_parameters) [6831 6842])
+                            ("id" variable nil (reparse-symbol function_parameters) [6849 6851])
+                            ("token" variable nil (reparse-symbol function_parameters) [6858 6863])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [6870 6873])
+                            ("params" variable nil (reparse-symbol function_parameters) [6880 6886]))                          )
+                        (reparse-symbol indented_block_body) [6796 7485])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7499 7503])
+                            ("id" variable nil (reparse-symbol function_parameters) [7505 7507])
+                            ("resource_id" variable nil (reparse-symbol function_parameters) [7514 7525])
+                            ("webhook_data" variable nil (reparse-symbol function_parameters) [7532 7544])
+                            ("token" variable nil (reparse-symbol function_parameters) [7551 7556]))                          )
+                        (reparse-symbol indented_block_body) [7490 8080]))                  
+                :type "class")
+                nil [6742 8080])
+            ("CalendarService" code nil nil [8082 8209])
+            ("CalendarService" code nil nil [8210 8351])
+            ("CalendarService" code nil nil [8352 8446]))          
+      :file "api.py"
+      :pointmax 8447
+      :fsize 7778
+      :lastmodtime '(23308 62082 116194 75000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "constants.py"
+      :fsize 70
+      :lastmodtime '(23279 62795 808994 297000)))
+  :file "!home!hasher!apps!mom!integro!calendars!google_calendar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

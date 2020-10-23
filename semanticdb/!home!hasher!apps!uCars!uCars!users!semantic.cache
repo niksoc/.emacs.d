@@ -1,0 +1,139 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29])
+            ("django.contrib.auth.models" include nil nil [30 73])
+            ("django.dispatch" include nil nil [74 110])
+            ("django.db.models.signals" include nil nil [111 157])
+            ("uCars.cars.models" include nil nil [159 196])
+            ("Profile" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("'''Userprofile model that extends Django's User model'''" code nil (reparse-symbol indented_block_body) [232 288])
+                    ("user" variable nil (reparse-symbol indented_block_body) [293 385])
+                    ("garage" variable nil (reparse-symbol indented_block_body) [390 483])
+                    ("vehicle_type_preference" variable nil (reparse-symbol indented_block_body) [488 615])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [633 637]))                          )
+                        (reparse-symbol indented_block_body) [621 670]))                  
+                :type "class")
+                nil [199 670])
+            ("Favourite" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("'''ManyToMany intermediary model between Vehicle and User for the favourited cars functionality'''" code nil (reparse-symbol indented_block_body) [707 805])
+                    ("vehicle" variable nil (reparse-symbol indented_block_body) [810 872])
+                    ("user" variable nil (reparse-symbol indented_block_body) [877 936])
+                    ("created" variable nil (reparse-symbol indented_block_body) [941 990]))                  
+                :type "class")
+                nil [672 991])
+            ("" code nil nil [1002 1026])
+            ("create_user_profile" function (:arguments 
+              ( ("sender" variable nil (reparse-symbol function_parameters) [1051 1057])
+                ("instance" variable nil (reparse-symbol function_parameters) [1059 1067])
+                ("created" variable nil (reparse-symbol function_parameters) [1069 1076])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1078 1086]))              ) nil [1027 1214])
+            ("" code nil nil [1225 1249])
+            ("save_user_profile" function (:arguments 
+              ( ("sender" variable nil (reparse-symbol function_parameters) [1272 1278])
+                ("instance" variable nil (reparse-symbol function_parameters) [1280 1288])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1290 1298]))              ) nil [1250 1389]))          
+      :file "models.py"
+      :pointmax 1389
+      :fsize 1388
+      :lastmodtime '(23173 12115 729150 545000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("Favourite" include nil nil [47 72])
+            ("Profile" include nil nil [47 72])
+            ("admin" code nil nil [74 102])
+            ("admin" code nil nil [103 133]))          
+      :file "admin.py"
+      :pointmax 134
+      :fsize 133
+      :lastmodtime '(23170 56328 652825 405000)
+      :unmatched-syntax '((FROM 34 . 38) (PERIOD 39 . 40) ($EOI 134 . 134) (FROM 34 . 38) (PERIOD 39 . 40)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 82])
+            ("django.views" include nil nil [83 112])
+            ("django.views.decorators.http" include nil nil [113 174])
+            ("django" include nil nil [175 199])
+            ("django.shortcuts" include nil nil [200 254])
+            ("django.contrib.auth" include nil nil [255 292])
+            ("django.contrib.auth.mixins" include nil nil [293 350])
+            ("django.contrib.auth.decorators" include nil nil [351 408])
+            ("django.contrib.auth.forms" include nil nil [409 463])
+            ("django.contrib.contenttypes.models" include nil nil [464 522])
+            ("django.core.paginator" include nil nil [524 596])
+            ("django.db.models" include nil nil [597 627])
+            ("django.forms.models" include nil nil [628 673])
+            ("django.urls" include nil nil [674 705])
+            ("django.utils.decorators" include nil nil [706 758])
+            ("django.contrib.auth.models" include nil nil [759 802])
+            ("Vehicle" include nil nil [817 831])
+            ("MyUserCreationForm" type
+               (:superclasses ("UserCreationForm")
+                :members 
+                  ( ("Meta" type
+                       (:superclasses ("UserCreationForm.Meta")
+                        :members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [925 937])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [946 983]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [882 984]))                  
+                :type "class")
+                nil [834 984])
+            ("CreateProfileView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1030 1034])
+                            ("request" variable nil (reparse-symbol function_parameters) [1036 1043]))                          )
+                        (reparse-symbol indented_block_body) [1021 1385])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1398 1402])
+                            ("request" variable nil (reparse-symbol function_parameters) [1404 1411]))                          )
+                        (reparse-symbol indented_block_body) [1390 1533]))                  
+                :type "class")
+                nil [986 1533])
+            ("myprofile" function
+               (:decorators 
+                  ( ("login_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [1565 1572]))                  )
+                nil [1535 1618]))          
+      :file "views.py"
+      :pointmax 1618
+      :fsize 1617
+      :lastmodtime '(23170 58767 48155 919000)
+      :unmatched-syntax '((FROM 804 . 808) (PERIOD 809 . 810)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [42 54])
+            ("urlpatterns" variable nil nil [56 224]))          
+      :file "urls.py"
+      :pointmax 225
+      :fsize 224
+      :lastmodtime '(23169 45814 123248 357000)
+      :unmatched-syntax '((FROM 35 . 39) (PERIOD 40 . 41))))
+  :file "!home!hasher!apps!uCars!uCars!users!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

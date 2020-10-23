@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.test" include nil nil [1 33])
+            ("django.core.management" include nil nil [34 81])
+            ("os" include nil nil [82 91])
+            ("json" include nil nil [92 103])
+            ("Vehicle" include nil nil [118 132])
+            ("UpdateCarsDbTestCase" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("'''Tests update_cars_db management command'''" code nil (reparse-symbol indented_block_body) [177 222])
+                    ("test_data" variable nil (reparse-symbol indented_block_body) [227 3111])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3127 3131]))                          )
+                        (reparse-symbol indented_block_body) [3117 3325])
+                    ("test_command_updates_all_items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3365 3369]))                          
+                        :documentation "all vehicles from json file are put into database")
+                        (reparse-symbol indented_block_body) [3330 3670])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3688 3692]))                          )
+                        (reparse-symbol indented_block_body) [3675 3733]))                  
+                :type "class")
+                nil [135 3733]))          
+      :file "tests.py"
+      :pointmax 3733
+      :fsize 3732
+      :lastmodtime '(23173 13689 938405 187000)
+      :unmatched-syntax '((FROM 105 . 109) (PERIOD 110 . 111))))
+  :file "!home!hasher!dk!uCars!uCars!cars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

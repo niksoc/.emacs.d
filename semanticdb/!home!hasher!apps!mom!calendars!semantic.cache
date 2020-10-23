@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("functools" include nil nil [1 30])
+            ("django.conf" include nil nil [32 64])
+            ("social_django.utils" include nil nil [65 110])
+            ("calendars.exceptions" include nil nil [112 168])
+            ("core" include nil nil [169 207])
+            ("integro.calendars.google_calendar.api" include nil nil [208 303])
+            ("integro.calendars.office_365_calendar.api" include nil nil [304 403])
+            ("update_tokens" function (:arguments 
+              ( ("calendar_credential" variable nil (reparse-symbol function_parameters) [424 443])
+                ("tokens" variable nil (reparse-symbol function_parameters) [445 451]))              ) nil [406 687])
+            ("get_google_oauth_key_and_secret_and_token_uri" function (:arguments 
+              ( ("calendar_credential" variable nil (reparse-symbol function_parameters) [739 758]))              ) nil [689 1819])
+            ("get_credentials" function
+               (:documentation "
+    Returns the credentials for the user and provider combination needed by integro for authentication.
+    Converts the meetnotes' credentials model to integro's.
+        :param provider: the calendar provider
+        :param user: User Object
+    "
+                :arguments 
+                  ( ("provider" variable nil (reparse-symbol function_parameters) [1841 1849])
+                    ("user" variable nil (reparse-symbol function_parameters) [1851 1855]))                  )
+                nil [1821 3921]))          
+      :file "credentials.py"
+      :pointmax 3921
+      :fsize 3920
+      :lastmodtime '(23557 1673 776018 854000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "utils.py"
+      :fsize 4099
+      :lastmodtime '(23720 27229 110657 842000))
+    (semanticdb-table "semanticdb-table"
+      :file "exceptions.py"
+      :fsize 106
+      :lastmodtime '(23720 27229 98657 728000)))
+  :file "!home!hasher!apps!mom!calendars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

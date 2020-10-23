@@ -1,0 +1,16 @@
+;; Object Breaking.Bad.Season.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Breaking.Bad.Season.4/"
+  :tables
+  (list
+    (semanticdb-table "Breaking Bad - 4x13 - Face Off.HDTV.Xvid-FQM.en.srt"
+      :major-mode 'srecode-template-mode
+      :tags nil
+      :file "Breaking Bad - 4x13 - Face Off.HDTV.Xvid-FQM.en.srt"
+      :pointmax 44469
+      :fsize 47559
+      :lastmodtime '(20497 57388 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!.Entertainment!Breaking Bad - Season 4!Breaking.Bad.Season.4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

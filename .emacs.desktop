@@ -2,66 +2,270 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Apr 17 10:34:46 2017
+;; Created Wed Jul 24 18:13:43 2019
 ;; Desktop file format version 208
-;; Emacs version 26.0.50
+;; Emacs version 25.3.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (22772 19694 485282 603000) (desktop . "208") "nikhil@N-PC" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-mlss-Anonymous Pro-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter . "Anonymous Pro") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#d3d3d3") (background-color . "#000000") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#dcdccc") (environment) (frameset--id . "0D17-9047-376E-945A") (frameset--mini t . t) (height . 45) (width . 150) (modeline . t) (unsplittable) (left . 0) (top . 18) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 90) (min-pixel-height-ignore . 32) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 16) (min-pixel-width-safe . 18)) leaf (pixel-width . 1366) (pixel-height . 715) (total-width . 151) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (buffer "content.js" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 13837) (start . 13038))))])
+(setq desktop-saved-frameset [frameset 1 (23864 21119 281544 818000) (desktop . "208") "hasher@nikhilsatish" nil nil ((((font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Fira Code Retina-11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#111111") (background-color . "#FFFFFF") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "#FF0055") (environment) (sticky) (frameset--id . "B487-5B16-8388-4A49") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 38) (width . 135) (left . 0) (top . 18)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 76) (min-pixel-width . 100) (min-pixel-height-ignore . 38) (min-pixel-width-ignore . 40) (min-pixel-height-safe . 19) (min-pixel-width-safe . 20)) leaf (pixel-width . 1366) (pixel-height . 712) (total-width . 136) (total-height . 37) (normal-height . 1.0) (normal-width . 1.0) (buffer "Chart.tsx<components>" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1310) (start . 706))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring '("book" "save_" "create_mal_man" "update_mal" "parse_ba"))
-(setq register-alist '((48 . "		<script src=\"res/js/login.js\"></script>\n")))
-(setq file-name-history '("~/.emacs.d/" "/home/nikhil/mystuff/Workspaces/Mimi/res/js/login.js" "/home/nikhil/mystuff/Workspaces/Mimi/res/js/content.js" "/home/nikhil/mystuff/Workspaces/Mimi/README.md" "/home/nikhil/mystuff/Workspaces/Mimi/popup.html" "/home/nikhil/mystuff/Workspaces/Mimi/manifest.json"))
+(setq regexp-search-ring '("consol" "primary" "WATERMARK_" "textwatermark" "e" "fontsize" "export" "svg" "\"" "toSVG" "createt" "textnode" "console" "img" "console" "consol"))
+(setq register-alist nil)
+(setq file-name-history '("/home/hasher/apps/rdbtools-web/app/src/constants.ts" "/home/hasher/apps/rdbtools-web/app/src/utils/imgUtils.ts" "/home/hasher/apps/rdbtools-web/app/node_modules/ogma/ogma.min.js" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisGraph/RedisGraph.tsx" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisGraph/RedisGraphConstants.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisGraphComponents/RedisGraphInterfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/constants.ts" "/home/hasher/apps/rdbtools-web/app/node_modules/plotly.js-basic-dist/plotly-basic.js" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/JSONTree.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisGraphComponents/RedisGraphInterfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/QueryResult.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/ChartResultView.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/common.scss" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/TimeSeriesContainer.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/TimeSeriesContainer.tsx" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/Chart.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisGraphComponents/QueryCard.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/TimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/QueryResult.tsx" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/lttb.ts" "/home/hasher/apps/rdbtools-web/app/src/services.js" "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/Chart.tsx" "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/TimeSeriesContainer.tsx"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/nikhil/mystuff/Workspaces/Mimi/res/js/content.js"
-  "content.js"
-  'js2-mode
-  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
-  13837
-  '(13829 nil)
-  nil
-  nil
-  '((buffer-display-time 22772 19692 435869 417000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
-  '((mark-ring (8976 6595 6486 3957 3957 3074 3074 9307 8769 8787 6722 6613 10701 6323 1593 7322))))
-
-(desktop-create-buffer 208
-  "/home/nikhil/mystuff/Workspaces/Mimi/manifest.json"
-  "manifest.json"
-  'js-mode
-  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
-  319
-  '(319 nil)
-  nil
-  nil
-  '((buffer-display-time 22772 17292 243796 534000) (buffer-file-coding-system . utf-8-dos) (overwrite-mode))
-  '((mark-ring (453 453))))
-
-(desktop-create-buffer 208
-  "/home/nikhil/mystuff/Workspaces/Mimi/popup.html"
-  "popup.html"
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/Chart.tsx"
+  "Chart.tsx"
   'web-mode
-  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode)
-  151
-  '(151 nil)
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  1310
+  '(705 nil)
   nil
   nil
-  '((buffer-display-time 22772 17110 15711 644000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
-  '((mark-ring (149 149 523))))
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (705 705 3239 2922 404 388 3149 2672 1007 1007 130 3027 3373 3177 3181 3181))))
 
 (desktop-create-buffer 208
-  "/home/nikhil/mystuff/Workspaces/Mimi/res/js/login.js"
-  "login.js"
-  'js2-mode
-  '(auto-complete-mode yas-minor-mode flycheck-mode centered-cursor-mode undo-tree-mode auto-revert-mode evil-mc-mode skewer-mode)
-  312
-  '(312 nil)
+  "/home/hasher/apps/rdbtools-web/app/src/utils/imgUtils.ts"
+  "imgUtils.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  2105
+  '(2105 nil)
   nil
   nil
-  '((buffer-display-time 22772 14656 666074 477000) (buffer-file-coding-system . utf-8-dos) (overwrite-mode))
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (2035 2035 1067 1067 973 973 1856 1903 1905 1905 1905 1905 1905 1905 1905 719))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/constants.ts"
+  "constants.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  4591
+  '(4591 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (4613 4613 4221 4657 4759))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/constants.ts"
+  "constants.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  258
+  '(258 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (469 257 257 257 257 257 257 257 257 257 257 257 257))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisGraphComponents/GraphItem.tsx"
+  "GraphItem.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  7068
+  '(7068 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (7188 7082 6974 6954 6802 6775 1867 1785 1785 1770 1770 441 374 305 258 249))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/node_modules/ogma/ogma.min.d.ts"
+  "ogma.min.d.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  226470
+  '(226470 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (218966 222200 222200 222444 222444 218329 214169 214110 212585 212400 277380 277380 277292 276999 272311 272118))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/containers/RedisGraph/RedisGraphConstants.ts"
+  "RedisGraphConstants.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  87
+  '(106 t)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
   '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/node_modules/typescript/lib/lib.dom.d.ts"
+  "lib.dom.d.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  172098
+  '(172098 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (172098 165890 1911 1911 142539 727505 147244 727803 727505 147244 727803 727505 437842 437842 439140 221962))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/node_modules/plotly.js-basic-dist/plotly-basic.js"
+  "plotly-basic.js"
+  'js2-mode
+  '(projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode skewer-mode)
+  5
+  '(5 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1829712 1831514 1575533 1575781 1574423 1574552 1337386 911252 891994 891942 891535 891485 891450 891155 891088 891065))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/TimeSeriesContainer.tsx"
+  "TimeSeriesContainer.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  2990
+  '(2990 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1478 1478 1268 28 28 1554 1614 1534 1534 1531 1798 1798 1737 1754 1754 1744))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/containers/MainContainer.js"
+  "MainContainer.js"
+  'js2-mode
+  '(projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode skewer-mode)
+  411
+  '(248 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (248 248 248 248))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/containers/RedisGraph/HistoryContainer.ts"
+  "HistoryContainer.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  91
+  '(91 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/node_modules/@types/plotly.js/index.d.ts"
+  "index.d.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (25437 1281 1281 1 1 38123 38107 38082 37995 22432 11015 9035 9035))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/QueryResult.tsx"
+  "QueryResult.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  2913
+  '(2913 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (2913 1488 1484 1855 1703 1863 1992 1992 1254 1254 1 1 1 1 1254 40))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/interfaces.ts"
+  "interfaces.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  497
+  '(497 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (387 487 387 387 387 500 475 495 495 495 495 495 495 495 495 495))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/JSONTree.tsx"
+  "JSONTree.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  99
+  '(99 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8) (overwrite-mode))
+  '((mark-ring (99 100 100 100 58 49 49 1 41 80))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/ChartResultView.tsx"
+  "ChartResultView.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  1112
+  '(1112 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1835 1870))))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/containers/RedisTimeSeries/Chart.tsx"
+  "Chart.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisGraphComponents/QueryCard.tsx"
+  "QueryCard.tsx"
+  'web-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode auto-revert-mode evil-mc-mode flycheck-mode override-global-mode auto-complete-mode company-mode tide-mode)
+  768
+  '(366 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/node_modules/@types/react-json-tree/index.d.ts"
+  "index.d.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  1207
+  '(1207 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/hasher/apps/rdbtools-web/app/src/components/RedisTimeSeries/lttb.ts"
+  "lttb.ts"
+  'typescript-mode
+  '(eldoc-mode projectile-mode flx-ido-mode centered-cursor-mode yas-minor-mode undo-tree-mode evil-mc-mode flycheck-mode override-global-mode company-mode tide-mode)
+  2436
+  '(2436 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (2466 2466 319 2504 2466 2487 2090 782 782 1783 1272 1 2505 189 189 189))))
 

@@ -1,0 +1,110 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib.auth.models" include nil nil [1 44])
+            ("django.db" include nil nil [45 73])
+            ("django.db.models" include nil nil [102 141])
+            ("BaseModel" type
+               (:documentation "Contains basic fields that are inherited by other classes"
+                :superclasses ("models.Model")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [247 357])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [362 414])
+                    ("updated_at" variable nil (reparse-symbol indented_block_body) [419 467])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [493 508]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [473 509]))                  
+                :type "class")
+                nil [144 509])
+            ("Task" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("DONE_STATUS" variable nil (reparse-symbol indented_block_body) [538 553])
+                    ("owner" variable nil (reparse-symbol indented_block_body) [732 825])
+                    ("description" variable nil (reparse-symbol indented_block_body) [830 883])
+                    ("status" variable nil (reparse-symbol indented_block_body) [888 951])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [969 973]))                          )
+                        (reparse-symbol indented_block_body) [957 1036]))                  
+                :type "class")
+                nil [511 1036])
+            ("Holiday" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("date" variable nil (reparse-symbol indented_block_body) [1068 1093])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1098 1137])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1155 1159]))                          )
+                        (reparse-symbol indented_block_body) [1143 1214]))                  
+                :type "class")
+                nil [1038 1214])
+            ("Leave" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [1244 1284])
+                    ("date" variable nil (reparse-symbol indented_block_body) [1289 1314])
+                    ("owner" variable nil (reparse-symbol indented_block_body) [1319 1413])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1431 1435]))                          )
+                        (reparse-symbol indented_block_body) [1419 1506]))                  
+                :type "class")
+                nil [1216 1506])
+            ("Project" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("code" variable nil (reparse-symbol indented_block_body) [1538 1576])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1581 1620])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1638 1642]))                          )
+                        (reparse-symbol indented_block_body) [1626 1697]))                  
+                :type "class")
+                nil [1508 1697])
+            ("TIME_SHEET_ENTRY_TYPES" variable nil nil [1699 1805])
+            ("TimeSheet" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("owner" variable nil (reparse-symbol indented_block_body) [1840 1946])
+                    ("day" variable nil (reparse-symbol indented_block_body) [1951 1975])
+                    ("hrs" variable nil (reparse-symbol indented_block_body) [1980 2005])
+                    ("project_code" variable nil (reparse-symbol indented_block_body) [2010 2077])
+                    ("description" variable nil (reparse-symbol indented_block_body) [2082 2128])
+                    ("entry_type" variable nil (reparse-symbol indented_block_body) [2133 2247])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2265 2269]))                          )
+                        (reparse-symbol indented_block_body) [2253 2346]))                  
+                :type "class")
+                nil [1808 2346]))          
+      :file "models.py"
+      :pointmax 2346
+      :fsize 2345
+      :lastmodtime '(23190 33701 547476 204000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.shortcuts" include nil nil [1 36]))          
+      :file "views.py"
+      :pointmax 64
+      :fsize 63
+      :lastmodtime '(23190 10041 20739 225000)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!hu-2k18-chatbot!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

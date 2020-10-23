@@ -1,0 +1,16 @@
+;; Object deeplearning/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "deeplearning/"
+  :tables
+  (list
+    (semanticdb-table "kernel.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "kernel.json"
+      :pointmax 170
+      :fsize 170
+      :lastmodtime '(22582 63827 748736 0)
+      :unmatched-syntax '((END_BLOCK 169 . 170) (BRACK_BLOCK 63 . 168) (COLON 61 . 62) (COLON 42 . 43) (COLON 17 . 18))))
+  :file "!home!nikhil!.ipython!kernels!deeplearning!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

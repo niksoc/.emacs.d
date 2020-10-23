@@ -1,0 +1,25 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"srmxchange main app url config\"\"\"" code nil nil [1 37])
+            ("django.conf.urls" include nil nil [40 72])
+            ("django.contrib" include nil nil [73 105])
+            ("views" include nil nil [107 119])
+            ("urlpatterns" variable nil nil [121 180]))          
+      :file "urls.py"
+      :pointmax 182
+      :fsize 181
+      :lastmodtime '(22417 51673 90129 73000)
+      :unmatched-syntax '(($EOI 182 . 182) ($EOI 199 . 199)))
+    (semanticdb-table "views.py"
+      :file "views.py"
+      :fsize 339
+      :lastmodtime '(22417 50762 650154 965000)))
+  :file "!home!nikhil!srmxchange!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

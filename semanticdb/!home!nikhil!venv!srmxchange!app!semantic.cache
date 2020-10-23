@@ -1,0 +1,1855 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Definition of models.
+\"\"\"" code nil nil [1 30])
+            ("django.db" include nil nil [32 60])
+            ("django.db.models" include nil nil [61 91])
+            ("django.contrib.auth.models" include nil nil [92 135])
+            ("django.contrib.auth" include nil nil [136 182])
+            ("django.contrib" include nil nil [183 215])
+            ("imagekit.models" include nil nil [216 263])
+            ("imagekit.processors" include nil nil [264 308])
+            ("django_markdown.models" include nil nil [309 357])
+            ("django.utils.html" include nil nil [358 394])
+            ("datetime" include nil nil [395 410])
+            ("get_sentinel_user" function nil nil [413 511])
+            ("TimeStampedModel" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("created" variable nil (reparse-symbol indented_block_body) [838 887])
+                    ("modified" variable nil (reparse-symbol indented_block_body) [892 935])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [950 954])
+                            ("_modified" variable nil (reparse-symbol function_parameters) [956 965])
+                            ("args" variable nil (reparse-symbol function_parameters) [967 972])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [974 982]))                          )
+                        (reparse-symbol indented_block_body) [941 1120])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [1145 1160]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1125 1161]))                  
+                :type "class")
+                nil [796 1161])
+            ("SearchableModel" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("'''adds a last modified in the point of view of indexing for search'''" code nil (reparse-symbol indented_block_body) [1204 1274])
+                    ("last_modified" variable nil (reparse-symbol indented_block_body) [1279 1334])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1349 1353])
+                            ("args" variable nil (reparse-symbol function_parameters) [1355 1360])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1362 1370]))                          )
+                        (reparse-symbol indented_block_body) [1340 1485])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1501 1505])
+                            ("args" variable nil (reparse-symbol function_parameters) [1507 1512])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1514 1522]))                          )
+                        (reparse-symbol indented_block_body) [1490 1639])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [1664 1679]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1644 1680]))                  
+                :type "class")
+                nil [1163 1680])
+            ("ActivatableModelMixin" type
+               (:documentation "
+    overrides delete to make is_active field false
+    subclass should create an is_active field
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [1862 1877]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1842 1878])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1894 1898])
+                            ("force" variable nil (reparse-symbol function_parameters) [1900 1905])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1913 1921]))                          
+                        :documentation "
+        It is impossible to delete an activatable model unless force is True.
+        This function instead sets it to inactive.
+        ")
+                        (reparse-symbol indented_block_body) [1883 2284]))                  
+                :type "class")
+                nil [1682 2284])
+            ("Dept" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [2316 2354])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2372 2376]))                          )
+                        (reparse-symbol indented_block_body) [2360 2404]))                  
+                :type "class")
+                nil [2286 2404])
+            ("Tag" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [2435 2552])
+                    ("is_moderator_only" variable nil (reparse-symbol indented_block_body) [2557 2611])
+                    ("dept" variable nil (reparse-symbol indented_block_body) [2616 2770])
+                    ("count" variable nil (reparse-symbol indented_block_body) [2775 2813])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2831 2835]))                          )
+                        (reparse-symbol indented_block_body) [2819 2863]))                  
+                :type "class")
+                nil [2406 2863])
+            ("UserProfile" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [2902 2961])
+                    ("course_choices" variable nil (reparse-symbol indented_block_body) [2966 3074])
+                    ("year_choices" variable nil (reparse-symbol indented_block_body) [3079 3195])
+                    ("campus_choices" variable nil (reparse-symbol indented_block_body) [3200 3371])
+                    ("first_name" variable nil (reparse-symbol indented_block_body) [3376 3420])
+                    ("last_name" variable nil (reparse-symbol indented_block_body) [3425 3468])
+                    ("display_name" variable nil (reparse-symbol indented_block_body) [3473 3519])
+                    ("register_no" variable nil (reparse-symbol indented_block_body) [3524 3614])
+                    ("course" variable nil (reparse-symbol indented_block_body) [3619 3736])
+                    ("department" variable nil (reparse-symbol indented_block_body) [3741 3836])
+                    ("year" variable nil (reparse-symbol indented_block_body) [3841 3912])
+                    ("campus" variable nil (reparse-symbol indented_block_body) [3917 4033])
+                    ("profile_text" variable nil (reparse-symbol indented_block_body) [4038 4148])
+                    ("profile_image" variable nil (reparse-symbol indented_block_body) [4153 4529])
+                    ("interests" variable nil (reparse-symbol indented_block_body) [4534 4585])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [4590 4632])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4650 4654]))                          )
+                        (reparse-symbol indented_block_body) [4638 4690])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4704 4708])
+                            ("args" variable nil (reparse-symbol function_parameters) [4710 4715])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4717 4725]))                          )
+                        (reparse-symbol indented_block_body) [4695 4905])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4920 4924]))                          )
+                        (reparse-symbol indented_block_body) [4910 5131])
+                    ("get_interest_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5159 5163]))                          )
+                        (reparse-symbol indented_block_body) [5136 5234])
+                    ("get_search_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5259 5263]))                          )
+                        (reparse-symbol indented_block_body) [5239 5739])
+                    ("first_name" variable nil (reparse-symbol indented_block_body) [5744 5788])
+                    ("last_name" variable nil (reparse-symbol indented_block_body) [5793 5836])
+                    ("display_name" variable nil (reparse-symbol indented_block_body) [5841 5887])
+                    ("register_no" variable nil (reparse-symbol indented_block_body) [5892 5982])
+                    ("course" variable nil (reparse-symbol indented_block_body) [5987 6104])
+                    ("department" variable nil (reparse-symbol indented_block_body) [6109 6204])
+                    ("year" variable nil (reparse-symbol indented_block_body) [6209 6280])
+                    ("campus" variable nil (reparse-symbol indented_block_body) [6285 6401])
+                    ("profile_text" variable nil (reparse-symbol indented_block_body) [6406 6516])
+                    ("interests" variable nil (reparse-symbol indented_block_body) [6521 6572])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [6577 6622]))                  
+                :type "class")
+                nil [2865 6623])
+            ("User" variable nil nil [6625 6704])
+            ("Notification" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("owner" variable nil (reparse-symbol indented_block_body) [6745 6802])
+                    ("created" variable nil (reparse-symbol indented_block_body) [6807 6856])
+                    ("message" variable nil (reparse-symbol indented_block_body) [6861 6903])
+                    ("url" variable nil (reparse-symbol indented_block_body) [6908 6946])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6964 6968]))                          )
+                        (reparse-symbol indented_block_body) [6952 7018]))                  
+                :type "class")
+                nil [6707 7018])
+            ("AlertToUser" type
+               (:superclasses ("ActivatableModelMixin")
+                :members 
+                  ( ("owner" variable nil (reparse-symbol indented_block_body) [7066 7123])
+                    ("created" variable nil (reparse-symbol indented_block_body) [7128 7177])
+                    ("text" variable nil (reparse-symbol indented_block_body) [7182 7204])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [7209 7254])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7272 7276]))                          )
+                        (reparse-symbol indented_block_body) [7260 7323]))                  
+                :type "class")
+                nil [7020 7323])
+            ("Feature" type
+               (:superclasses ("TimeStampedModel" "ActivatableModelMixin" "SearchableModel")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [7402 7455])
+                    ("text" variable nil (reparse-symbol indented_block_body) [7460 7482])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [7487 7529])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [7534 7580])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [7585 7630])
+                    ("__original_title_text" variable nil (reparse-symbol indented_block_body) [7636 7664])
+                    ("__original_modified" variable nil (reparse-symbol indented_block_body) [7669 7695])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [7607 7653])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7662 7714])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7723 7763]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7714 7718])
+                            ("args" variable nil (reparse-symbol function_parameters) [7720 7725])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7727 7735]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7701 7903])
+                    ("get_tag_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7926 7930]))                          )
+                        (reparse-symbol indented_block_body) [7908 7986])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8003 8007]))                          )
+                        (reparse-symbol indented_block_body) [7991 8036])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8050 8054])
+                            ("args" variable nil (reparse-symbol function_parameters) [8056 8061])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8063 8071]))                          )
+                        (reparse-symbol indented_block_body) [8041 8328])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8344 8348])
+                            ("args" variable nil (reparse-symbol function_parameters) [8350 8355])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8357 8365]))                          )
+                        (reparse-symbol indented_block_body) [8333 8519])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [8544 8559]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [8524 8560])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8575 8579]))                          )
+                        (reparse-symbol indented_block_body) [8565 8622]))                  
+                :type "class")
+                nil [7325 8622])
+            ("Question" type
+               (:superclasses ("Feature")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [8653 8784])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [8789 8970])
+                    ("last_active" variable nil (reparse-symbol indented_block_body) [8975 9028])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [9033 9148])
+                    ("num_votes" variable nil (reparse-symbol indented_block_body) [9153 9195])
+                    ("num_answers" variable nil (reparse-symbol indented_block_body) [9200 9244])
+                    ("followers" variable nil (reparse-symbol indented_block_body) [9249 9289])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9304 9308])
+                            ("args" variable nil (reparse-symbol function_parameters) [9310 9315])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9317 9325]))                          )
+                        (reparse-symbol indented_block_body) [9295 9499])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [9524 9574]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [9504 9575]))                  
+                :type "class")
+                nil [8624 9575])
+            ("Answer" type
+               (:superclasses ("TimeStampedModel" "ActivatableModelMixin")
+                :members 
+                  ( ("for_question" variable nil (reparse-symbol indented_block_body) [9636 9704])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [9709 9838])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [9843 10022])
+                    ("text" variable nil (reparse-symbol indented_block_body) [10027 10060])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [10065 10178])
+                    ("num_votes" variable nil (reparse-symbol indented_block_body) [10183 10225])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [10230 10275])
+                    ("followers" variable nil (reparse-symbol indented_block_body) [10280 10320])
+                    ("__original_text" variable nil (reparse-symbol indented_block_body) [10326 10348])
+                    ("__original_modified" variable nil (reparse-symbol indented_block_body) [10353 10379])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10397 10401]))                          )
+                        (reparse-symbol indented_block_body) [10385 10434])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [10344 10389])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10398 10430])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10439 10479]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10452 10456])
+                            ("args" variable nil (reparse-symbol function_parameters) [10458 10463])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10465 10473]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10439 10620])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10634 10638])
+                            ("args" variable nil (reparse-symbol function_parameters) [10640 10645])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10647 10655]))                          )
+                        (reparse-symbol indented_block_body) [10625 11529])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [11554 11589]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [11534 11590])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11606 11610])
+                            ("args" variable nil (reparse-symbol function_parameters) [11612 11617])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11619 11627]))                          )
+                        (reparse-symbol indented_block_body) [11595 11756]))                  
+                :type "class")
+                nil [9577 11756])
+            ("Story" type
+               (:superclasses ("Feature")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [11784 11913])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [11918 12097])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [12102 12215])
+                    ("num_votes" variable nil (reparse-symbol indented_block_body) [12220 12262])
+                    ("followers" variable nil (reparse-symbol indented_block_body) [12267 12307])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [12333 12383]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [12313 12384])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12398 12402])
+                            ("args" variable nil (reparse-symbol function_parameters) [12404 12409])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12411 12419]))                          )
+                        (reparse-symbol indented_block_body) [12389 12590]))                  
+                :type "class")
+                nil [11758 12590])
+            ("Wanted" type
+               (:superclasses ("Feature")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [12619 12748])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [12753 12932])
+                    ("followers" variable nil (reparse-symbol indented_block_body) [12937 12977])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [13003 13040]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [12983 13041])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13055 13059])
+                            ("args" variable nil (reparse-symbol function_parameters) [13061 13066])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13068 13076]))                          )
+                        (reparse-symbol indented_block_body) [13046 13248]))                  
+                :type "class")
+                nil [12592 13248])
+            ("Available" type
+               (:superclasses ("Feature")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [13280 13412])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [13417 13599])
+                    ("followers" variable nil (reparse-symbol indented_block_body) [13604 13644])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [13670 13707]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [13650 13708])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13722 13726])
+                            ("args" variable nil (reparse-symbol function_parameters) [13728 13733])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13735 13743]))                          )
+                        (reparse-symbol indented_block_body) [13713 13918]))                  
+                :type "class")
+                nil [13250 13918])
+            ("Project" type
+               (:superclasses ("Feature")
+                :members 
+                  ( ("created_by" variable nil (reparse-symbol indented_block_body) [13948 14078])
+                    ("modified_by" variable nil (reparse-symbol indented_block_body) [14083 14263])
+                    ("image" variable nil (reparse-symbol indented_block_body) [14268 14641])
+                    ("Meta" type
+                       (:members 
+                          ( ("ordering" variable nil (reparse-symbol indented_block_body) [14667 14704]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [14647 14705]))                  
+                :type "class")
+                nil [13920 14705])
+            ("Moderator" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [14742 14813]))                  
+                :type "class")
+                nil [14707 14814])
+            ("CommentBaseModel" type
+               (:superclasses ("TimeStampedModel" "ActivatableModelMixin")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [14885 14945])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [14950 14995])
+                    ("__original_text" variable nil (reparse-symbol indented_block_body) [15001 15023])
+                    ("__original_modified" variable nil (reparse-symbol indented_block_body) [15028 15054])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [14965 15020])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15029 15061])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15070 15110]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15073 15077])
+                            ("args" variable nil (reparse-symbol function_parameters) [15079 15084])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15086 15094]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15060 15251])
+                    ("comment_created" function (:arguments 
+                      ( ("instance" variable nil (reparse-symbol function_parameters) [15276 15284]))                      ) (reparse-symbol indented_block_body) [15256 16069])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16085 16089])
+                            ("args" variable nil (reparse-symbol function_parameters) [16091 16096])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16098 16106]))                          )
+                        (reparse-symbol indented_block_body) [16074 16239])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16253 16257])
+                            ("args" variable nil (reparse-symbol function_parameters) [16259 16264])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16266 16274]))                          )
+                        (reparse-symbol indented_block_body) [16244 16572])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16589 16593]))                          )
+                        (reparse-symbol indented_block_body) [16577 16621])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [16646 16661]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [16626 16662]))                  
+                :type "class")
+                nil [14816 16662])
+            ("Comment_Question" type
+               (:superclasses ("CommentBaseModel")
+                :members 
+                  ( ("for_item" variable nil (reparse-symbol indented_block_body) [16710 16832])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [16837 16980])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16995 16999])
+                            ("args" variable nil (reparse-symbol function_parameters) [17001 17006])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17008 17016]))                          )
+                        (reparse-symbol indented_block_body) [16986 17170]))                  
+                :type "class")
+                nil [16664 17170])
+            ("Comment_Answer" type
+               (:superclasses ("CommentBaseModel")
+                :members 
+                  ( ("for_item" variable nil (reparse-symbol indented_block_body) [17216 17336])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [17341 17482]))                  
+                :type "class")
+                nil [17172 17483])
+            ("Comment_Available" type
+               (:superclasses ("CommentBaseModel")
+                :members 
+                  ( ("for_item" variable nil (reparse-symbol indented_block_body) [17532 17655])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [17660 17804]))                  
+                :type "class")
+                nil [17485 17805])
+            ("Comment_Wanted" type
+               (:superclasses ("CommentBaseModel")
+                :members 
+                  ( ("for_item" variable nil (reparse-symbol indented_block_body) [17851 17971])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [17976 18117]))                  
+                :type "class")
+                nil [17807 18118])
+            ("Comment_Story" type
+               (:superclasses ("CommentBaseModel")
+                :members 
+                  ( ("for_item" variable nil (reparse-symbol indented_block_body) [18163 18282])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [18287 18428]))                  
+                :type "class")
+                nil [18120 18429])
+            ("App_Text" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [18465 18517])
+                    ("text" variable nil (reparse-symbol indented_block_body) [18522 18544])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18562 18566]))                          )
+                        (reparse-symbol indented_block_body) [18550 18595]))                  
+                :type "class")
+                nil [18431 18595])
+            ("Feedback" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [18631 18739])
+                    ("text" variable nil (reparse-symbol indented_block_body) [18744 18766])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18784 18788]))                          )
+                        (reparse-symbol indented_block_body) [18772 18817]))                  
+                :type "class")
+                nil [18597 18817])
+            ("admin" code nil nil [18819 18851])
+            ("admin" code nil nil [18852 18881])
+            ("admin" code nil nil [18882 18909])
+            ("admin" code nil nil [18910 18936])
+            ("admin" code nil nil [18937 18967])
+            ("admin" code nil nil [18968 18995])
+            ("admin" code nil nil [18996 19020])
+            ("admin" code nil nil [19021 19054])
+            ("admin" code nil nil [19055 19085])
+            ("admin" code nil nil [19086 19123])
+            ("admin" code nil nil [19124 19159])
+            ("admin" code nil nil [19160 19198])
+            ("admin" code nil nil [19199 19234])
+            ("admin" code nil nil [19235 19269])
+            ("admin" code nil nil [19270 19299])
+            ("admin" code nil nil [19300 19329])
+            ("admin" code nil nil [19330 19355])
+            ("admin" code nil nil [19356 19388]))          
+      :file "models.py"
+      :pointmax 19389
+      :fsize 19388
+      :lastmodtime '(22652 35332 959096 842000)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Definition of views.
+\"\"\"" code nil nil [1 29])
+            ("django" include nil nil [31 44])
+            ("" code nil nil [74 92])
+            ("django.http" include nil nil [93 128])
+            ("django.http" include nil nil [129 165])
+            ("django.http" include nil nil [166 202])
+            ("django.http" include nil nil [203 234])
+            ("django.apps" include nil nil [235 263])
+            ("django.db.models" include nil nil [264 294])
+            ("django.db.models" include nil nil [295 325])
+            ("django.views.decorators.http" include nil nil [326 376])
+            ("datetime" include nil nil [377 392])
+            ("utils" include nil nil [400 412])
+            ("models" include nil nil [420 433])
+            ("django.contrib.auth" include nil nil [435 472])
+            ("django.contrib.auth.models" include nil nil [473 516])
+            ("home" function
+               (:documentation "Renders the home page."
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [528 535]))                  )
+                nil [519 1046])
+            ("redirect_to_home_bare" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1074 1081]))              ) nil [1048 1113])
+            ("redirect_to_home" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1136 1143])
+                ("route" variable nil (reparse-symbol function_parameters) [1145 1150]))              ) nil [1115 1219])
+            ("logout" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1232 1239]))              ) nil [1221 1311])
+            ("user" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1322 1329]))              ) nil [1313 1651])
+            ("is_subscribed" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1671 1678]))              ) nil [1653 2007])
+            ("subscribe" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2023 2030]))              ) nil [2009 2361])
+            ("unsubscribe" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2379 2386]))              ) nil [2363 2687])
+            ("voted" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2699 2706]))              ) nil [2689 3012])
+            ("vote" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3023 3030]))              ) nil [3014 3383])
+            ("unvote" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3396 3403]))              ) nil [3385 3740])
+            ("latest_notification" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3766 3773]))              ) nil [3742 3940])
+            ("" code nil nil [3952 3992])
+            ("notifications" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4011 4018]))              ) nil [3993 4331])
+            ("clear_notifications" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4357 4364]))              ) nil [4333 4487])
+            ("alerts" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4500 4507]))              ) nil [4489 4939])
+            ("clear_alert" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4957 4964])
+                ("pk" variable nil (reparse-symbol function_parameters) [4966 4968]))              ) nil [4941 5141]))          
+      :file "views.py"
+      :pointmax 5141
+      :fsize 5140
+      :lastmodtime '(22652 23030 354335 938000)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"srmxchange main app url config\"\"\"" code nil nil [1 37])
+            ("django.conf.urls" include nil nil [39 80])
+            ("django.views.generic" include nil nil [81 126])
+            ("views" include nil nil [135 147]))          
+      :file "urls.py"
+      :pointmax 888
+      :fsize 887
+      :lastmodtime '(22651 54643 665286 285000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pipeline.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [1 40])
+            ("django.core.files.base" include nil nil [41 87])
+            ("django.contrib.auth" include nil nil [88 126])
+            ("save_profile" function (:arguments 
+              ( ("backend" variable nil (reparse-symbol function_parameters) [146 153])
+                ("user" variable nil (reparse-symbol function_parameters) [155 159])
+                ("is_new" variable nil (reparse-symbol function_parameters) [161 167])
+                ("response" variable nil (reparse-symbol function_parameters) [169 177])
+                ("args" variable nil (reparse-symbol function_parameters) [179 184])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [186 194]))              ) nil [129 1819])
+            ("social_user" function (:arguments 
+              ( ("backend" variable nil (reparse-symbol function_parameters) [1837 1844])
+                ("uid" variable nil (reparse-symbol function_parameters) [1846 1849])
+                ("user" variable nil (reparse-symbol function_parameters) [1851 1855])
+                ("args" variable nil (reparse-symbol function_parameters) [1862 1867])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1869 1877]))              ) nil [1821 2460]))          
+      :file "pipeline.py"
+      :pointmax 2460
+      :fsize 2459
+      :lastmodtime '(22505 2341 189736 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "forms.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Definition of forms.
+\"\"\"" code nil nil [2 30])
+            ("django" include nil nil [32 56])
+            ("models" include nil nil [64 77]))          
+      :file "forms.py"
+      :pointmax 197
+      :fsize 196
+      :lastmodtime '(22465 28161 35332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db.models.fields.related" include nil nil [1 89])
+            ("django.db.models.fields.files" include nil nil [90 141])
+            ("to_dict" function (:arguments 
+              ( ("instance" variable nil (reparse-symbol function_parameters) [156 164])
+                ("args" variable nil (reparse-symbol function_parameters) [166 171])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [173 181]))              ) nil [144 969]))          
+      :file "utils.py"
+      :pointmax 969
+      :fsize 968
+      :lastmodtime '(22465 28160 903332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "rest_form_views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("" code nil nil [25 48])
+            ("django.contrib.auth.models" include nil nil [49 92])
+            ("django.forms" include nil nil [93 127])
+            ("" code nil nil [161 197])
+            ("searchableselect.widgets" include nil nil [198 251])
+            ("django.apps" include nil nil [252 280])
+            ("django.db.models" include nil nil [281 311])
+            ("models" include nil nil [320 333])
+            ("isCreator" function (:arguments 
+              ( ("temp" variable nil (reparse-symbol function_parameters) [391 395])
+                ("obj" variable nil (reparse-symbol function_parameters) [397 400])
+                ("user" variable nil (reparse-symbol function_parameters) [402 406]))              ) nil [377 443])
+            ("isCreatorOrModerator" function (:arguments 
+              ( ("temp" variable nil (reparse-symbol function_parameters) [511 515])
+                ("obj" variable nil (reparse-symbol function_parameters) [517 520])
+                ("user" variable nil (reparse-symbol function_parameters) [522 526]))              ) nil [486 648])
+            ("CommonCreateFormViewBase" type
+               (:superclasses ("CreateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [698 729])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [743 747])
+                            ("request" variable nil (reparse-symbol function_parameters) [749 756])
+                            ("args" variable nil (reparse-symbol function_parameters) [758 763])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [765 773]))                          )
+                        (reparse-symbol indented_block_body) [735 979])
+                    ("form_invalid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1001 1005])
+                            ("form" variable nil (reparse-symbol function_parameters) [1007 1011]))                          
+                        :documentation "
+        If the form is invalid, re-render the context data with the
+        data-filled form and errors.
+        ")
+                        (reparse-symbol indented_block_body) [984 1216])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1236 1240])
+                            ("form" variable nil (reparse-symbol function_parameters) [1242 1246]))                          )
+                        (reparse-symbol indented_block_body) [1221 1682]))                  
+                :type "class")
+                nil [650 1682])
+            ("CommonUpdateFormViewBase" type
+               (:superclasses ("UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [1732 1763])
+                    ("permissions" variable nil (reparse-symbol indented_block_body) [1768 1791])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2194 2198])
+                            ("form" variable nil (reparse-symbol function_parameters) [2200 2204]))                          )
+                        (reparse-symbol indented_block_body) [2179 3031]))                  
+                :type "class")
+                nil [1684 3031])
+            ("CommonDeleteViewBase" type
+               (:superclasses ("DeleteView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3077 3108])
+                    ("permissions" variable nil (reparse-symbol indented_block_body) [3113 3147])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [3152 3189])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3206 3210])
+                            ("request" variable nil (reparse-symbol function_parameters) [3212 3219])
+                            ("args" variable nil (reparse-symbol function_parameters) [3221 3226])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3228 3236]))                          )
+                        (reparse-symbol indented_block_body) [3195 3553]))                  
+                :type "class")
+                nil [3033 3553])
+            ("tagsWidget" variable nil nil [3554 3648])
+            ("FeedbackCreateFormView" type
+               (:superclasses ("CreateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3697 3728])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [3733 3759])
+                    ("model" variable nil (reparse-symbol indented_block_body) [3764 3787])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [3792 3829]))                  
+                :type "class")
+                nil [3651 3830])
+            ("TagCreateFormView" type
+               (:superclasses ("CreateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3873 3904])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [3909 3927])
+                    ("model" variable nil (reparse-symbol indented_block_body) [3932 3950])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [3955 3987]))                  
+                :type "class")
+                nil [3832 3988])
+            ("FeedbackUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("fields" variable nil (reparse-symbol indented_block_body) [4050 4076])
+                    ("model" variable nil (reparse-symbol indented_block_body) [4081 4104])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [4109 4146]))                  
+                :type "class")
+                nil [3990 4147])
+            ("WantedCreateFormView" type
+               (:superclasses ("CommonCreateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [4269 4290])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [4303 4338])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [4351 4371]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [4245 4372]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4208 4372])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [4376 4398])
+                    ("model" variable nil (reparse-symbol indented_block_body) [4403 4424])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [4429 4466]))                  
+                :type "class")
+                nil [4149 4467])
+            ("WantedUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [4589 4610])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [4623 4658])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [4671 4691]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [4565 4692]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4528 4692])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [4696 4718])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [4723 4760])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [4765 4820]))                  
+                :type "class")
+                nil [4469 4821])
+            ("AvailableCreateFormView" type
+               (:superclasses ("CommonCreateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [4946 4970])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [4983 5018])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [5031 5051]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [4922 5052]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4885 5052])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [5056 5078])
+                    ("model" variable nil (reparse-symbol indented_block_body) [5083 5107])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [5112 5149]))                  
+                :type "class")
+                nil [4823 5150])
+            ("AvailableUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [5275 5299])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [5312 5347])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [5360 5380]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [5251 5381]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [5214 5381])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [5385 5407])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [5412 5449])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [5454 5512]))                  
+                :type "class")
+                nil [5152 5513])
+            ("StoryCreateFormView" type
+               (:superclasses ("CommonCreateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [5634 5654])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [5667 5702])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [5715 5735]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [5610 5736]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [5573 5736])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [5740 5762])
+                    ("model" variable nil (reparse-symbol indented_block_body) [5767 5787])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [5792 5829]))                  
+                :type "class")
+                nil [5515 5830])
+            ("StoryUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [5951 5971])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [5984 6019])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [6032 6052]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [5927 6053]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [5890 6053])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [6057 6079])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [6084 6121])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [6126 6180]))                  
+                :type "class")
+                nil [5832 6181])
+            ("QuestionCreateFormView" type
+               (:superclasses ("CommonCreateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [6305 6328])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [6341 6376])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [6389 6409]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [6281 6410]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [6244 6410])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [6414 6436])
+                    ("model" variable nil (reparse-symbol indented_block_body) [6441 6464])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [6469 6506]))                  
+                :type "class")
+                nil [6183 6507])
+            ("QuestionUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("permissions" variable nil (reparse-symbol indented_block_body) [6569 6603])
+                    ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [6670 6693])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [6706 6741])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [6754 6774]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [6646 6775]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [6609 6775])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [6779 6801])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [6806 6843])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [6848 6905]))                  
+                :type "class")
+                nil [6509 6906])
+            ("ProjectCreateFormView" type
+               (:superclasses ("CommonCreateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [7029 7051])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [7064 7108])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [7121 7141]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [7005 7142]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [6968 7142])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [7146 7168])
+                    ("model" variable nil (reparse-symbol indented_block_body) [7173 7195])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [7200 7237]))                  
+                :type "class")
+                nil [6908 7238])
+            ("ProjectUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [7361 7383])
+                                    ("fields" variable nil (reparse-symbol indented_block_body) [7396 7440])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [7453 7473]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [7337 7474]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [7300 7474])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [7478 7500])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [7505 7542])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [7547 7603]))                  
+                :type "class")
+                nil [7240 7604])
+            ("UserProfileUpdateFormView" type
+               (:superclasses ("UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [7655 7686])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7707 7711])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [7713 7721]))                          )
+                        (reparse-symbol indented_block_body) [7692 8393])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8413 8417])
+                            ("form" variable nil (reparse-symbol function_parameters) [8419 8423]))                          )
+                        (reparse-symbol indented_block_body) [8398 8720])
+                    ("FormClass" type
+                       (:superclasses ("ModelForm")
+                        :members 
+                          ( ("Meta" type
+                               (:members 
+                                  ( ("model" variable nil (reparse-symbol indented_block_body) [8786 8812])
+                                    ("exclude" variable nil (reparse-symbol indented_block_body) [8825 8869])
+                                    ("widgets" variable nil (reparse-symbol indented_block_body) [8882 8989]))                                  
+                                :type "class")
+                                (reparse-symbol indented_block_body) [8762 8990]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [8725 8990])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [8994 9016])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [9021 9058])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [9063 9106]))                  
+                :type "class")
+                nil [7606 9107])
+            ("AnswerCreateFormView" type
+               (:superclasses ("CreateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [9153 9184])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [9189 9208])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [9213 9250])
+                    ("for_item" variable nil (reparse-symbol indented_block_body) [9255 9270])
+                    ("model" variable nil (reparse-symbol indented_block_body) [9275 9296])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9310 9314])
+                            ("request" variable nil (reparse-symbol function_parameters) [9316 9323])
+                            ("args" variable nil (reparse-symbol function_parameters) [9325 9330])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9332 9340]))                          )
+                        (reparse-symbol indented_block_body) [9302 9738])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9764 9768])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9770 9778]))                          )
+                        (reparse-symbol indented_block_body) [9743 9974])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9988 9992])
+                            ("request" variable nil (reparse-symbol function_parameters) [9994 10001])
+                            ("args" variable nil (reparse-symbol function_parameters) [10003 10008])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10010 10018]))                          )
+                        (reparse-symbol indented_block_body) [9979 10401])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10421 10425])
+                            ("form" variable nil (reparse-symbol function_parameters) [10427 10431]))                          )
+                        (reparse-symbol indented_block_body) [10406 10743]))                  
+                :type "class")
+                nil [9109 10743])
+            ("AnswerUpdateFormView" type
+               (:superclasses ("CommonUpdateFormViewBase")
+                :members 
+                  ( ("fields" variable nil (reparse-symbol indented_block_body) [10803 10822])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [10827 10864])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [10869 10924]))                  
+                :type "class")
+                nil [10745 10925])
+            ("CommentCreateFormView" type
+               (:superclasses ("CreateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [10972 11003])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [11008 11027])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [11032 11069])
+                    ("for_item" variable nil (reparse-symbol indented_block_body) [11074 11089])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11103 11107])
+                            ("request" variable nil (reparse-symbol function_parameters) [11109 11116])
+                            ("args" variable nil (reparse-symbol function_parameters) [11118 11123])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11125 11133]))                          )
+                        (reparse-symbol indented_block_body) [11095 11644])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11670 11674])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11676 11684]))                          )
+                        (reparse-symbol indented_block_body) [11649 11858])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11872 11876])
+                            ("request" variable nil (reparse-symbol function_parameters) [11878 11885])
+                            ("args" variable nil (reparse-symbol function_parameters) [11887 11892])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11894 11902]))                          )
+                        (reparse-symbol indented_block_body) [11863 12259])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12281 12285]))                          )
+                        (reparse-symbol indented_block_body) [12264 12328])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12348 12352])
+                            ("form" variable nil (reparse-symbol function_parameters) [12354 12358]))                          )
+                        (reparse-symbol indented_block_body) [12333 12663]))                  
+                :type "class")
+                nil [10927 12663])
+            ("CommentUpdateFormView" type
+               (:superclasses ("UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [12710 12741])
+                    ("permissions" variable nil (reparse-symbol indented_block_body) [12746 12769])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [12774 12793])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [12798 12835])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12849 12853])
+                            ("request" variable nil (reparse-symbol function_parameters) [12855 12862])
+                            ("args" variable nil (reparse-symbol function_parameters) [12864 12869])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12871 12879]))                          )
+                        (reparse-symbol indented_block_body) [12841 13208])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13222 13226])
+                            ("request" variable nil (reparse-symbol function_parameters) [13228 13235])
+                            ("args" variable nil (reparse-symbol function_parameters) [13237 13242])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13244 13252]))                          )
+                        (reparse-symbol indented_block_body) [13213 13454])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13480 13484])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13486 13494]))                          )
+                        (reparse-symbol indented_block_body) [13459 13668])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13690 13694]))                          )
+                        (reparse-symbol indented_block_body) [13673 13813])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13833 13837])
+                            ("form" variable nil (reparse-symbol function_parameters) [13839 13843]))                          )
+                        (reparse-symbol indented_block_body) [13818 14228]))                  
+                :type "class")
+                nil [12665 14228])
+            ("CommentDeleteView" type
+               (:superclasses ("DeleteView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [14271 14302])
+                    ("permissions" variable nil (reparse-symbol indented_block_body) [14307 14341])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [14346 14383])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14397 14401])
+                            ("request" variable nil (reparse-symbol function_parameters) [14403 14410])
+                            ("args" variable nil (reparse-symbol function_parameters) [14412 14417])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14419 14427]))                          )
+                        (reparse-symbol indented_block_body) [14389 14752])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14766 14770])
+                            ("request" variable nil (reparse-symbol function_parameters) [14772 14779])
+                            ("args" variable nil (reparse-symbol function_parameters) [14781 14786])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14788 14796]))                          )
+                        (reparse-symbol indented_block_body) [14757 14994])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15020 15024])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15026 15034]))                          )
+                        (reparse-symbol indented_block_body) [14999 15204])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15226 15230]))                          )
+                        (reparse-symbol indented_block_body) [15209 15349])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15365 15369])
+                            ("request" variable nil (reparse-symbol function_parameters) [15371 15378])
+                            ("args" variable nil (reparse-symbol function_parameters) [15380 15385])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15387 15395]))                          )
+                        (reparse-symbol indented_block_body) [15354 15709]))                  
+                :type "class")
+                nil [14230 15709])
+            ("AnswerDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [15761 15816]))                  
+                :type "class")
+                nil [15711 15817])
+            ("QuestionDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [15871 15928]))                  
+                :type "class")
+                nil [15819 15929])
+            ("AvailableDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [15984 16042]))                  
+                :type "class")
+                nil [15931 16043])
+            ("WantedDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [16095 16150]))                  
+                :type "class")
+                nil [16045 16151])
+            ("StoryDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [16202 16256]))                  
+                :type "class")
+                nil [16153 16257])
+            ("ProjectDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [16310 16366]))                  
+                :type "class")
+                nil [16259 16367])
+            ("FeedbackDeleteView" type
+               (:superclasses ("CommonDeleteViewBase")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [16421 16461]))                  
+                :type "class")
+                nil [16369 16462]))          
+      :file "rest_form_views.py"
+      :pointmax 16462
+      :fsize 16461
+      :lastmodtime '(22652 34652 931831 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rest_retrieve_views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("" code nil nil [25 62])
+            ("" code nil nil [96 118])
+            ("django.core" include nil nil [119 154])
+            ("django.apps" include nil nil [155 183])
+            ("django.shortcuts" include nil nil [184 230])
+            ("hitcount.views" include nil nil [231 271])
+            ("django.contrib.auth.models" include nil nil [272 315])
+            ("hitcount.models" include nil nil [316 352])
+            ("django.db.models" include nil nil [353 383])
+            ("django.views.decorators.http" include nil nil [384 434])
+            ("haystack.query" include nil nil [435 476])
+            ("datetime" include nil nil [477 492])
+            ("models" include nil nil [501 514])
+            ("utils" include nil nil [522 534])
+            ("queryset_gen" function (:arguments 
+              ( ("search_qs" variable nil (reparse-symbol function_parameters) [554 563]))              ) nil [537 661])
+            ("processDataList" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [683 687]))              ) nil [663 2036])
+            ("BaseListView" type
+               (:superclasses ("ListView")
+                :members 
+                  ( ("paginate_by" variable nil (reparse-symbol indented_block_body) [2072 2088])
+                    ("render_to_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2117 2121])
+                            ("context" variable nil (reparse-symbol function_parameters) [2123 2130])
+                            ("response_kwargs" variable nil (reparse-symbol function_parameters) [2132 2149]))                          )
+                        (reparse-symbol indented_block_body) [2094 2442])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2455 2459])
+                            ("request" variable nil (reparse-symbol function_parameters) [2461 2468])
+                            ("args" variable nil (reparse-symbol function_parameters) [2470 2475])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2477 2485]))                          )
+                        (reparse-symbol indented_block_body) [2447 3282]))                  
+                :type "class")
+                nil [2038 3282])
+            ("BaseDetailView" type
+               (:superclasses ("DetailView")
+                :members 
+                  ( ("render_to_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3346 3350])
+                            ("context" variable nil (reparse-symbol function_parameters) [3352 3359])
+                            ("response_kwargs" variable nil (reparse-symbol function_parameters) [3361 3378]))                          )
+                        (reparse-symbol indented_block_body) [3323 4173]))                  
+                :type "class")
+                nil [3284 4173])
+            ("latest_comment" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4194 4201]))              ) nil [4175 4784])
+            ("" code nil nil [4796 4831])
+            ("CommentListView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4852 4859]))              ) nil [4832 5663])
+            ("AnswerListView" type
+               (:superclasses ("ListView")
+                :members 
+                  ( ("ordering" variable nil (reparse-symbol indented_block_body) [5701 5724])
+                    ("render_to_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5753 5757])
+                            ("context" variable nil (reparse-symbol function_parameters) [5759 5766])
+                            ("response_kwargs" variable nil (reparse-symbol function_parameters) [5768 5785]))                          )
+                        (reparse-symbol indented_block_body) [5730 5973])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5986 5990])
+                            ("request" variable nil (reparse-symbol function_parameters) [5992 5999])
+                            ("args" variable nil (reparse-symbol function_parameters) [6001 6006])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6008 6016]))                          )
+                        (reparse-symbol indented_block_body) [5978 6288]))                  
+                :type "class")
+                nil [5665 6288])
+            ("WantedListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [6330 6351]))                  
+                :type "class")
+                nil [6290 6352])
+            ("WantedDetailView" type
+               (:superclasses ("BaseDetailView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [6398 6453]))                  
+                :type "class")
+                nil [6354 6454])
+            ("AvailableListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [6499 6523]))                  
+                :type "class")
+                nil [6456 6524])
+            ("AvailableDetailView" type
+               (:superclasses ("BaseDetailView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [6573 6631]))                  
+                :type "class")
+                nil [6526 6632])
+            ("StoryListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [6673 6693]))                  
+                :type "class")
+                nil [6634 6694])
+            ("StoryDetailView" type
+               (:superclasses ("BaseDetailView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [6739 6793]))                  
+                :type "class")
+                nil [6696 6794])
+            ("QuestionListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [6838 6861]))                  
+                :type "class")
+                nil [6796 6862])
+            ("QuestionDetailView" type
+               (:superclasses ("BaseDetailView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [6910 6967]))                  
+                :type "class")
+                nil [6864 6968])
+            ("ProjectListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [7011 7033]))                  
+                :type "class")
+                nil [6970 7034])
+            ("ProjectDetailView" type
+               (:superclasses ("BaseDetailView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [7081 7137]))                  
+                :type "class")
+                nil [7036 7138])
+            ("UserProfileListView" type
+               (:superclasses ("BaseListView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [7185 7211]))                  
+                :type "class")
+                nil [7140 7212])
+            ("UserProfileDetailView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [7332 7339])
+                ("pk" variable nil (reparse-symbol function_parameters) [7341 7343]))              ) nil [7306 8259])
+            ("TagDetailView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8279 8286])
+                ("pk" variable nil (reparse-symbol function_parameters) [8288 8290]))              ) nil [8261 8446])
+            ("App_TextDetailView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8509 8516])
+                ("title" variable nil (reparse-symbol function_parameters) [8518 8523]))              ) nil [8486 8648])
+            ("CountView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8664 8671])
+                ("model" variable nil (reparse-symbol function_parameters) [8673 8678]))              ) nil [8650 9315])
+            ("MoreLikeThisView" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [9338 9345])
+                ("model" variable nil (reparse-symbol function_parameters) [9347 9352])
+                ("pk" variable nil (reparse-symbol function_parameters) [9354 9356]))              ) nil [9317 9956]))          
+      :file "rest_retrieve_views.py"
+      :pointmax 9956
+      :fsize 9955
+      :lastmodtime '(22502 45638 152118 908000)
+      :unmatched-syntax nil)
+    (semanticdb-table "handlers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db.models.signals" include nil nil [1 49])
+            ("django.db.models.signals" include nil nil [50 96])
+            ("django.db.models.signals" include nil nil [97 145])
+            ("django.db.models" include nil nil [146 176])
+            ("models" include nil nil [184 197])
+            ("update_num_votes" function (:arguments 
+              ( ("sender" variable nil (reparse-symbol function_parameters) [414 420])
+                ("instance" variable nil (reparse-symbol function_parameters) [422 430])
+                ("action" variable nil (reparse-symbol function_parameters) [432 438])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [440 448]))              ) nil [393 697])
+            ("answer_created" function (:arguments 
+              ( ("instance" variable nil (reparse-symbol function_parameters) [718 726])
+                ("created" variable nil (reparse-symbol function_parameters) [728 735])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [737 745]))              ) nil [699 1047])
+            ("answer_deleted" function (:arguments 
+              ( ("instance" variable nil (reparse-symbol function_parameters) [1068 1076])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1078 1086]))              ) nil [1049 1173])
+            ("comment_created" function (:arguments 
+              ( ("sender" variable nil (reparse-symbol function_parameters) [1195 1201])
+                ("instance" variable nil (reparse-symbol function_parameters) [1203 1211])
+                ("created" variable nil (reparse-symbol function_parameters) [1213 1220])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1222 1230]))              ) nil [1175 2015])
+            ("m2m_changed" code nil nil [2017 2017]))          
+      :file "handlers.py"
+      :pointmax 2663
+      :fsize 2662
+      :lastmodtime '(22466 40252 420254 788000)
+      :unmatched-syntax nil)
+    (semanticdb-table "api_urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 42])
+            ("rest_form_views" include nil nil [51 73])
+            ("rest_retrieve_views" include nil nil [81 107])
+            ("urlpatterns" variable nil nil [109 4276]))          
+      :file "api_urls.py"
+      :pointmax 4277
+      :fsize 4276
+      :lastmodtime '(22493 35003 556788 901000)
+      :unmatched-syntax '((FROM 74 . 78) (PERIOD 79 . 80) (FROM 44 . 48) (PERIOD 49 . 50)))
+    (semanticdb-table "widgets.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("django.forms.widgets" include nil nil [11 89])
+            ("django.utils.safestring" include nil nil [90 135])
+            ("'''
+credit to bradmontgomery
+https://www.djangosnippets.org/snippets/1202/
+and https://www.djangosnippets.org/snippets/1206/
+for SelectTimeWidget and SplitSelectDateTimeWidget
+'''" code nil nil [137 316])
+            ("__all__" variable nil nil [318 377])
+            ("time_pattern" variable nil nil [634 698])
+            ("RE_TIME" variable nil nil [700 734])
+            ("HOURS" variable nil nil [808 817])
+            ("MINUTES" variable nil nil [818 829])
+            ("SECONDS" variable nil nil [830 841])
+            ("MERIDIEM" variable nil nil [842 854])
+            ("SelectTimeWidget" type
+               (:documentation "
+    A Widget that splits time input into <select> elements.
+    Allows form to show as 24hr: <hour>:<minute>:<second>, (default)
+    or as 12hr: <hour>:<minute>:<second> <am|pm> 
+
+    Also allows user-defined increments for minutes/seconds
+    "
+                :superclasses ("Widget")
+                :members 
+                  ( ("hour_field" variable nil (reparse-symbol indented_block_body) [1149 1171])
+                    ("minute_field" variable nil (reparse-symbol indented_block_body) [1176 1202])
+                    ("second_field" variable nil (reparse-symbol indented_block_body) [1207 1233])
+                    ("meridiem_field" variable nil (reparse-symbol indented_block_body) [1238 1268])
+                    ("twelve_hr" variable nil (reparse-symbol indented_block_body) [1273 1290])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        hour_step, minute_step, second_step are optional step values for
+        for the range of values for the associated select element
+        twelve_hr: If True, forces the output to be in 12-hr format (rather than 24-hr)
+        \"\"\"" code nil (reparse-symbol indented_block_body) [1425 1667])
+                            ("self" code nil (reparse-symbol indented_block_body) [1676 1700])
+                            ("if" code nil (reparse-symbol indented_block_body) [1710 1856])
+                            ("if" code nil (reparse-symbol indented_block_body) [1865 2195])
+                            ("if" code nil (reparse-symbol indented_block_body) [2204 2327])
+                            ("if" code nil (reparse-symbol indented_block_body) [2336 2459]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1329 1333])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [1335 1340])
+                            ("hour_step" variable nil (reparse-symbol function_parameters) [1347 1356])
+                            ("minute_step" variable nil (reparse-symbol function_parameters) [1363 1374])
+                            ("second_step" variable nil (reparse-symbol function_parameters) [1381 1392])
+                            ("twelve_hr" variable nil (reparse-symbol function_parameters) [1399 1408]))                          
+                        :documentation "
+        hour_step, minute_step, second_step are optional step values for
+        for the range of values for the associated select element
+        twelve_hr: If True, forces the output to be in 12-hr format (rather than 24-hr)
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1316 2459])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2475 2479])
+                            ("name" variable nil (reparse-symbol function_parameters) [2481 2485])
+                            ("value" variable nil (reparse-symbol function_parameters) [2487 2492])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [2494 2499]))                          )
+                        (reparse-symbol indented_block_body) [2464 6381])
+                    ("id_for_label" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6403 6407])
+                            ("id_" variable nil (reparse-symbol function_parameters) [6409 6412]))                          )
+                        (reparse-symbol indented_block_body) [6386 6446])
+                    ("id_for_label" variable nil (reparse-symbol indented_block_body) [6450 6490])
+                    ("value_from_datadict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6520 6524])
+                            ("data" variable nil (reparse-symbol function_parameters) [6526 6530])
+                            ("files" variable nil (reparse-symbol function_parameters) [6532 6537])
+                            ("name" variable nil (reparse-symbol function_parameters) [6539 6543]))                          )
+                        (reparse-symbol indented_block_body) [6496 7237]))                  
+                :type "class")
+                nil [857 7237])
+            ("SplitSelectDateTimeWidget" type
+               (:documentation "
+    MultiWidget = A widget that is composed of multiple widgets.
+
+    This class combines SelectTimeWidget and SelectDateWidget so we have something 
+    like SplitDateTimeWidget (in django.forms.widgets), but with Select elements.
+    "
+                :superclasses ("MultiWidget")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\" pass all these parameters to their respective widget constructors...\"\"\"" code nil (reparse-symbol indented_block_body) [7658 7733])
+                            ("widgets" variable nil (reparse-symbol indented_block_body) [7742 7932])
+                            ("super" code nil (reparse-symbol indented_block_body) [7941 8004]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7551 7555])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [7557 7562])
+                            ("hour_step" variable nil (reparse-symbol function_parameters) [7569 7578])
+                            ("minute_step" variable nil (reparse-symbol function_parameters) [7585 7596])
+                            ("second_step" variable nil (reparse-symbol function_parameters) [7603 7614])
+                            ("twelve_hr" variable nil (reparse-symbol function_parameters) [7621 7630])
+                            ("years" variable nil (reparse-symbol function_parameters) [7637 7642]))                          
+                        :documentation " pass all these parameters to their respective widget constructors..."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7538 8005])
+                    ("decompress" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8025 8029])
+                            ("value" variable nil (reparse-symbol function_parameters) [8031 8036]))                          )
+                        (reparse-symbol indented_block_body) [8010 8156])
+                    ("format_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8179 8183])
+                            ("rendered_widgets" variable nil (reparse-symbol function_parameters) [8185 8201]))                          
+                        :documentation "
+        Given a list of rendered widgets (as strings), it inserts an HTML
+        linebreak between them.
+
+        Returns a Unicode string representing the HTML for the whole lot.
+        ")
+                        (reparse-symbol indented_block_body) [8161 8458]))                  
+                :type "class")
+                nil [7239 8458]))          
+      :file "widgets.py"
+      :pointmax 8458
+      :fsize 8457
+      :lastmodtime '(22465 28159 831333 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "search_indexes.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("haystack" include nil nil [17 45])
+            ("app" include nil nil [46 68])
+            ("WantedIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [134 192])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [197 302])
+                    ("created" variable nil (reparse-symbol indented_block_body) [307 360])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [365 408])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [413 469])
+                    ("prepare_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [492 496])
+                            ("object" variable nil (reparse-symbol function_parameters) [498 504]))                          )
+                        (reparse-symbol indented_block_body) [475 545])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [569 573])
+                            ("using" variable nil (reparse-symbol function_parameters) [575 580]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [550 765])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [784 788]))                          )
+                        (reparse-symbol indented_block_body) [770 820])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [847 851]))                          )
+                        (reparse-symbol indented_block_body) [825 885]))                  
+                :type "class")
+                nil [71 885])
+            ("AvailableIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [953 1011])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [1016 1121])
+                    ("created" variable nil (reparse-symbol indented_block_body) [1126 1179])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [1184 1227])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [1232 1288])
+                    ("prepare_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1311 1315])
+                            ("object" variable nil (reparse-symbol function_parameters) [1317 1323]))                          )
+                        (reparse-symbol indented_block_body) [1294 1364])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1388 1392])
+                            ("using" variable nil (reparse-symbol function_parameters) [1394 1399]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [1369 1584])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1603 1607]))                          )
+                        (reparse-symbol indented_block_body) [1589 1642])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1669 1673]))                          )
+                        (reparse-symbol indented_block_body) [1647 1707]))                  
+                :type "class")
+                nil [887 1707])
+            ("QuestionIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [1774 1832])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [1837 1942])
+                    ("created" variable nil (reparse-symbol indented_block_body) [1947 2000])
+                    ("last_active" variable nil (reparse-symbol indented_block_body) [2005 2066])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [2071 2114])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [2119 2175])
+                    ("num_votes" variable nil (reparse-symbol indented_block_body) [2180 2236])
+                    ("prepare_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2259 2263])
+                            ("object" variable nil (reparse-symbol function_parameters) [2265 2271]))                          )
+                        (reparse-symbol indented_block_body) [2242 2312])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2336 2340])
+                            ("using" variable nil (reparse-symbol function_parameters) [2342 2347]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [2317 2532])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2551 2555]))                          )
+                        (reparse-symbol indented_block_body) [2537 2589])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2616 2620]))                          )
+                        (reparse-symbol indented_block_body) [2594 2654]))                  
+                :type "class")
+                nil [1709 2654])
+            ("ProjectIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [2720 2778])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [2783 2888])
+                    ("created" variable nil (reparse-symbol indented_block_body) [2893 2946])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [2951 2994])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [2999 3055])
+                    ("prepare_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3078 3082])
+                            ("object" variable nil (reparse-symbol function_parameters) [3084 3090]))                          )
+                        (reparse-symbol indented_block_body) [3061 3131])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3155 3159])
+                            ("using" variable nil (reparse-symbol function_parameters) [3161 3166]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [3136 3351])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3370 3374]))                          )
+                        (reparse-symbol indented_block_body) [3356 3407])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3434 3438]))                          )
+                        (reparse-symbol indented_block_body) [3412 3472]))                  
+                :type "class")
+                nil [2656 3472])
+            ("StoryIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [3536 3594])
+                    ("created_by" variable nil (reparse-symbol indented_block_body) [3599 3704])
+                    ("created" variable nil (reparse-symbol indented_block_body) [3709 3762])
+                    ("tags" variable nil (reparse-symbol indented_block_body) [3767 3810])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [3815 3871])
+                    ("num_votes" variable nil (reparse-symbol indented_block_body) [3876 3932])
+                    ("prepare_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3955 3959])
+                            ("object" variable nil (reparse-symbol function_parameters) [3961 3967]))                          )
+                        (reparse-symbol indented_block_body) [3938 4008])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4032 4036])
+                            ("using" variable nil (reparse-symbol function_parameters) [4038 4043]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [4013 4228])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4247 4251]))                          )
+                        (reparse-symbol indented_block_body) [4233 4282])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4309 4313]))                          )
+                        (reparse-symbol indented_block_body) [4287 4347]))                  
+                :type "class")
+                nil [3474 4347])
+            ("UserProfileIndex" type
+               (:superclasses ("indexes.SearchIndex" "indexes.Indexable")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [4417 4475])
+                    ("interests" variable nil (reparse-symbol indented_block_body) [4480 4517])
+                    ("num_views" variable nil (reparse-symbol indented_block_body) [4522 4578])
+                    ("first_name" variable nil (reparse-symbol indented_block_body) [4583 4649])
+                    ("last_name" variable nil (reparse-symbol indented_block_body) [4654 4718])
+                    ("display_name" variable nil (reparse-symbol indented_block_body) [4723 4782])
+                    ("register_no" variable nil (reparse-symbol indented_block_body) [4787 4855])
+                    ("course" variable nil (reparse-symbol indented_block_body) [4860 4918])
+                    ("department" variable nil (reparse-symbol indented_block_body) [4923 4989])
+                    ("year" variable nil (reparse-symbol indented_block_body) [4994 5051])
+                    ("campus" variable nil (reparse-symbol indented_block_body) [5056 5114])
+                    ("prepare_interests" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5142 5146])
+                            ("object" variable nil (reparse-symbol function_parameters) [5148 5154]))                          )
+                        (reparse-symbol indented_block_body) [5120 5200])
+                    ("prepare_department" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5228 5232])
+                            ("object" variable nil (reparse-symbol function_parameters) [5234 5240]))                          )
+                        (reparse-symbol indented_block_body) [5205 5353])
+                    ("index_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5377 5381])
+                            ("using" variable nil (reparse-symbol function_parameters) [5383 5388]))                          
+                        :documentation "Used when the entire index for model is updated.")
+                        (reparse-symbol indented_block_body) [5358 5505])
+                    ("get_model" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5524 5528]))                          )
+                        (reparse-symbol indented_block_body) [5510 5565])
+                    ("get_updated_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5592 5596]))                          )
+                        (reparse-symbol indented_block_body) [5570 5634]))                  
+                :type "class")
+                nil [4349 5634]))          
+      :file "search_indexes.py"
+      :pointmax 5634
+      :fsize 5633
+      :lastmodtime '(22502 19276 585225 970000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+This file demonstrates writing tests using the unittest module. These will pass
+when you run \"manage.py test\".
+\"\"\"" code nil nil [1 119])
+            ("django" include nil nil [121 134])
+            ("django.test" include nil nil [135 167])
+            ("ViewTest" type
+               (:documentation "Tests for the application views."
+                :superclasses ("TestCase")
+                :members 
+                  ( ("if" code nil (reparse-symbol indented_block_body) [322 555])
+                    ("test_home" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [574 578]))                          
+                        :documentation "Tests the home page.")
+                        (reparse-symbol indented_block_body) [560 715])
+                    ("test_contact" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [737 741]))                          
+                        :documentation "Tests the contact page.")
+                        (reparse-symbol indented_block_body) [720 886])
+                    ("test_about" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [906 910]))                          
+                        :documentation "Tests the about page.")
+                        (reparse-symbol indented_block_body) [891 1049]))                  
+                :type "class")
+                nil [248 1049]))          
+      :file "tests.py"
+      :pointmax 1049
+      :fsize 1048
+      :lastmodtime '(22465 28159 827333 0)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!venv!srmxchange!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

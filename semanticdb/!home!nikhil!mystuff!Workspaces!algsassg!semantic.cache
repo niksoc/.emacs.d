@@ -1,0 +1,1184 @@
+;; Object algsassg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "algsassg/"
+  :tables
+  (list
+    (semanticdb-table "Percolation.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.StdRandom" include nil nil [1 41])
+            ("edu.princeton.cs.algs4.StdStats" include nil nil [42 81])
+            ("edu.princeton.cs.algs4.WeightedQuickUnionUF" include nil nil [82 133])
+            ("Percolation" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("qu" variable
+                       (:typemodifiers ("private")
+                        :type "WeightedQuickUnionUF")
+                        (reparse-symbol class_member_declaration) [164 196])
+                    ("qu2" variable
+                       (:typemodifiers ("private")
+                        :type "WeightedQuickUnionUF")
+                        (reparse-symbol class_member_declaration) [199 232])
+                    ("grid" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [235 258])
+                    ("k" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [261 281])
+                    ("n" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [284 298])
+                    ("Percolation" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [321 326]))                          )
+                        (reparse-symbol class_member_declaration) [302 563])
+                    ("open" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [584 591])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [593 600]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [567 1174])
+                    ("isOpen" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [1199 1206])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [1208 1215]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1177 1378])
+                    ("isFull" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [1403 1410])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [1412 1419]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1381 1599])
+                    ("percolates" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1602 1703])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1730 1743]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1706 1807]))                  
+                :type "class")
+                nil [135 1809]))          
+      :file "Percolation.java"
+      :pointmax 1810
+      :fsize 1809
+      :lastmodtime '(22581 39066 523835 541000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PercolationStats.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.StdRandom" include nil nil [1 41])
+            ("edu.princeton.cs.algs4.StdStats" include nil nil [42 81])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [82 119])
+            ("edu.princeton.cs.algs4.WeightedQuickUnionUF" include nil nil [120 171])
+            ("PercolationStats" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("count" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [207 230])
+                    ("T" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [233 247])
+                    ("PercolationStats" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [274 279])
+                            ("trials" variable (:type "int") (reparse-symbol formal_parameters) [281 291]))                          )
+                        (reparse-symbol class_member_declaration) [250 831])
+                    ("mean" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [834 977])
+                    ("stddev" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [980 1228])
+                    ("confidenceLo" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1231 1350])
+                    ("confidenceHi" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1353 1473])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1500 1513]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1476 2099]))                  
+                :type "class")
+                nil [173 2102]))          
+      :file "PercolationStats.java"
+      :pointmax 2104
+      :fsize 2103
+      :lastmodtime '(22581 39247 707830 388000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.StdRandom" include nil nil [1 41])
+            ("edu.princeton.cs.algs4.StdStats" include nil nil [42 81])
+            ("edu.princeton.cs.algs4.WeightedQuickUnionUF" include nil nil [82 133])
+            ("test" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("qu" variable
+                       (:typemodifiers ("private")
+                        :type "WeightedQuickUnionUF")
+                        (reparse-symbol class_member_declaration) [157 189])
+                    ("grid" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [192 215])
+                    ("n" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [218 232])
+                    ("test" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [248 253]))                          )
+                        (reparse-symbol class_member_declaration) [236 390])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [418 431]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [394 491]))                  
+                :type "class")
+                nil [135 493]))          
+      :file "test.java"
+      :pointmax 494
+      :fsize 493
+      :lastmodtime '(22581 15669 263502 346000)
+      :unmatched-syntax '((SEMICOLON 385 . 386) (NEW 367 . 370) (IDENTIFIER 360 . 364) (EQ 365 . 366) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 385 . 386) (NEW 367 . 370) (IDENTIFIER 360 . 364) (EQ 365 . 366) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 384 . 385) (NEW 366 . 369) (IDENTIFIER 359 . 363) (EQ 364 . 365) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 383 . 384) (NEW 365 . 368) (IDENTIFIER 358 . 362) (EQ 363 . 364) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 381 . 382) (NEW 363 . 366) (IDENTIFIER 356 . 360) (EQ 361 . 362) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 380 . 381) (NEW 362 . 365) (IDENTIFIER 355 . 359) (EQ 360 . 361) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314) (SEMICOLON 378 . 379) (NEW 360 . 363) (IDENTIFIER 353 . 357) (EQ 358 . 359) (SEMICOLON 318 . 319) (EQ 316 . 317) (DOT 314 . 315) (THIS 310 . 314)))
+    (semanticdb-table "Subset.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.StdRandom" include nil nil [1 41])
+            ("edu.princeton.cs.algs4.StdIn" include nil nil [42 78])
+            ("Subset" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [128 141]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [104 890]))                  
+                :type "class")
+                nil [80 892]))          
+      :file "Subset.java"
+      :pointmax 893
+      :fsize 892
+      :lastmodtime '(22586 35066 571408 385000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Deque.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.Iterator" include nil nil [1 27])
+            ("java.util.NoSuchElementException" include nil nil [29 69]))          
+      :file "Deque.java"
+      :pointmax 2343
+      :fsize 2342
+      :lastmodtime '(22586 28905 328743 485000)
+      :unmatched-syntax '((BRACE_BLOCK 122 . 2342) (GT 120 . 121) (IDENTIFIER 116 . 120) (LT 115 . 116) (IDENTIFIER 107 . 115) (IMPLEMENTS 96 . 106) (GT 94 . 95) (IDENTIFIER 90 . 94) (PUBLIC 71 . 77) (LT 89 . 90) (BRACE_BLOCK 122 . 2336) (GT 120 . 121) (IDENTIFIER 116 . 120) (LT 115 . 116) (IDENTIFIER 107 . 115) (IMPLEMENTS 96 . 106) (GT 94 . 95) (IDENTIFIER 90 . 94) (PUBLIC 71 . 77) (LT 89 . 90)))
+    (semanticdb-table "RandomizedQueue.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.StdRandom" include nil nil [1 41])
+            ("edu.princeton.cs.algs4.StdStats" include nil nil [42 81])
+            ("edu.princeton.cs.algs4.WeightedQuickUnionUF" include nil nil [82 133])
+            ("java.util.Iterator" include nil nil [134 160])
+            ("java.util.NoSuchElementException" include nil nil [162 202]))          
+      :file "RandomizedQueue.java"
+      :pointmax 2819
+      :fsize 2818
+      :lastmodtime '(22586 33902 515441 490000)
+      :unmatched-syntax '((BRACE_BLOCK 265 . 2818) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2864) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2863) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2862) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2885) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2882) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2881) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2876) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2876) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2847) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2846) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2846) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2842) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2832) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2831) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2830) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2829) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2827) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2839) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2815) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2818) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2815) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2810) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2816) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2843) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2842) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2844) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2840) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2839) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2834) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2833) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2832) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2831) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2830) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2829) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2816) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2818) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2781) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2788) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2817) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2854) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2825) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2824) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2823) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2821) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2820) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2816) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2823) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2852) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2852) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2823) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2823) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2813) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2812) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2810) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2810) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2807) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2806) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2805) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2804) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2802) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2788) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2788) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2786) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2786) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2783) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2781) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2782) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2783) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2786) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2787) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2786) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2783) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2788) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2788) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2784) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2781) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2785) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2767) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2766) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2766) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2750) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 265 . 2748) (GT 263 . 264) (IDENTIFIER 259 . 263) (LT 258 . 259) (IDENTIFIER 250 . 258) (IMPLEMENTS 239 . 249) (GT 237 . 238) (IDENTIFIER 233 . 237) (PUBLIC 204 . 210) (LT 232 . 233) (BRACE_BLOCK 196 . 2679) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2681) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2677) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2676) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2676) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2677) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2673) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2672) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2672) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2670) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2668) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2655) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2612) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2635) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2634) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2632) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2632) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2630) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2629) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2622) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2622) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2622) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2621) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2623) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2585) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2587) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2588) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2588) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2587) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2585) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2583) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2583) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2583) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2586) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2583) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2553) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2559) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2528) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2528) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2527) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2525) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2523) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2521) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2524) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2522) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2521) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2523) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2521) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2522) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2523) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2521) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2519) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2492) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2490) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2472) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2467) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2472) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2461) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2441) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2399) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2398) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2394) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2395) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2390) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2390) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2374) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2361) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2360) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2358) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2349) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2317) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2310) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2299) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2270) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2251) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2242) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2204) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2171) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2187) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2187) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2145) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2145) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2133) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2125) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2124) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2123) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2122) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2119) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2118) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2108) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2108) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2101) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2086) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2084) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2087) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2086) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2078) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2074) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2060) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2052) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2052) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2060) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2052) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2038) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2033) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2021) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2018) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 2006) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1996) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1992) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1983) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1978) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1977) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1962) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1871) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1868) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1870) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1837) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1822) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1808) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1805) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1801) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1800) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1796) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1794) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1789) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1786) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1629) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1636) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1632) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1631) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1623) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1616) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1615) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1613) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1611) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1604) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1603) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1602) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1600) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1595) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164) (BRACE_BLOCK 196 . 1588) (GT 194 . 195) (IDENTIFIER 190 . 194) (LT 189 . 190) (IDENTIFIER 181 . 189) (IMPLEMENTS 170 . 180) (GT 168 . 169) (IDENTIFIER 164 . 168) (PUBLIC 135 . 141) (LT 163 . 164)))
+    (semanticdb-table "Point.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.Comparator" include nil nil [1 29])
+            ("edu.princeton.cs.algs4.StdDraw" include nil nil [30 68]))          
+      :file "Point.java"
+      :pointmax 3623
+      :fsize 3622
+      :lastmodtime '(22591 64654 134446 189000)
+      :unmatched-syntax '((BRACE_BLOCK 118 . 3622) (GT 116 . 117) (IDENTIFIER 111 . 116) (PUBLIC 70 . 76) (LT 110 . 111)))
+    (semanticdb-table "BruteCollinearPoints.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [1 28])
+            ("java.util.Arrays" include nil nil [29 53])
+            ("java.util.HashSet" include nil nil [54 79])
+            ("edu.princeton.cs.algs4.In" include nil nil [80 113])
+            ("edu.princeton.cs.algs4.StdDraw" include nil nil [114 152])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [153 190])
+            ("BruteCollinearPoints" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("n" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [298 316])
+                    ("BruteCollinearPoints" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("points" variable
+                               (:dereference 1
+                                :type "Point")
+                                (reparse-symbol formal_parameters) [347 361]))                          )
+                        (reparse-symbol class_member_declaration) [319 1491])
+                    ("numberOfSegments" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1494 1577])
+                    ("segments" function
+                       (:typemodifiers ("public")
+                        :type "LineSegment[]")
+                        (reparse-symbol class_member_declaration) [1580 1693])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1718 1731]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1694 2451]))                  
+                :type "class")
+                nil [192 2453]))          
+      :file "BruteCollinearPoints.java"
+      :pointmax 2456
+      :fsize 2455
+      :lastmodtime '(22593 3385 388375 681000)
+      :unmatched-syntax '((SEMICOLON 294 . 295) (PAREN_BLOCK 292 . 294) (GT 291 . 292) (LT 279 . 280) (NEW 266 . 269) (EQ 264 . 265) (GT 259 . 260) (PRIVATE 230 . 237) (LT 247 . 248)))
+    (semanticdb-table "LineSegment.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("LineSegment" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("p" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [32 54])
+                    ("q" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Point")
+                        (reparse-symbol class_member_declaration) [98 120])
+                    ("LineSegment" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point") (reparse-symbol formal_parameters) [421 428])
+                            ("q" variable (:type "Point") (reparse-symbol formal_parameters) [430 437]))                          )
+                        (reparse-symbol class_member_declaration) [402 598])
+                    ("draw" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [674 721])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [995 1058])
+                    ("hashCode" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1419 1499]))                  
+                :type "class")
+                nil [1 1502]))          
+      :file "LineSegment.java"
+      :pointmax 1503
+      :fsize 1502
+      :lastmodtime '(22592 4418 204512 169000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FastCollinearPoints.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [1 28])
+            ("java.util.Arrays" include nil nil [29 53])
+            ("edu.princeton.cs.algs4.In" include nil nil [54 87])
+            ("edu.princeton.cs.algs4.StdDraw" include nil nil [88 126])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [127 164])
+            ("FastCollinearPoints" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("isCollinear" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("a" variable (:type "Point") (reparse-symbol formal_parameters) [300 307])
+                            ("b" variable (:type "Point") (reparse-symbol formal_parameters) [309 316])
+                            ("c" variable (:type "Point") (reparse-symbol formal_parameters) [318 325]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [272 373])
+                    ("addIfNotSubsegment" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("points" variable
+                               (:dereference 1
+                                :type "Point")
+                                (reparse-symbol formal_parameters) [410 424])
+                            ("m" variable (:type "int") (reparse-symbol formal_parameters) [425 430])
+                            ("a" variable (:type "Point") (reparse-symbol formal_parameters) [432 439])
+                            ("b" variable (:type "Point") (reparse-symbol formal_parameters) [441 448]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [378 589])
+                    ("equalSubsequence" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable
+                               (:dereference 1
+                                :type "Point")
+                                (reparse-symbol formal_parameters) [624 633])
+                            ("points" variable
+                               (:dereference 1
+                                :type "Point")
+                                (reparse-symbol formal_parameters) [635 649])
+                            ("m1" variable (:type "int") (reparse-symbol formal_parameters) [651 657])
+                            ("len" variable (:type "int") (reparse-symbol formal_parameters) [659 666]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [594 1195])
+                    ("FastCollinearPoints" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("points1" variable
+                               (:dereference 1
+                                :type "Point")
+                                (reparse-symbol formal_parameters) [1226 1241]))                          )
+                        (reparse-symbol class_member_declaration) [1199 2149])
+                    ("numberOfSegments" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2152 2208])
+                    ("segments" function
+                       (:typemodifiers ("public")
+                        :type "LineSegment[]")
+                        (reparse-symbol class_member_declaration) [2211 2298])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2323 2336]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2299 3054]))                  
+                :type "class")
+                nil [166 3056]))          
+      :file "FastCollinearPoints.java"
+      :pointmax 3057
+      :fsize 3056
+      :lastmodtime '(22593 19695 759911 831000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Board.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.Arrays" include nil nil [1 25])
+            ("java.util.ArrayList" include nil nil [26 53])
+            ("Board" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("b" variable
+                       (:dereference 2
+                        :typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [77 101])
+                    ("n" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [105 125])
+                    ("Board" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("blocks" variable
+                               (:dereference 2
+                                :type "int")
+                                (reparse-symbol formal_parameters) [141 155]))                          )
+                        (reparse-symbol class_member_declaration) [128 350])
+                    ("dimension" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [354 395])
+                    ("hamming" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [398 607])
+                    ("dist" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("c" variable (:type "int") (reparse-symbol formal_parameters) [627 632])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [634 639])
+                            ("j" variable (:type "int") (reparse-symbol formal_parameters) [641 646]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [610 745])
+                    ("manhattan" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [748 976])
+                    ("isGoal" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [980 1072])
+                    ("twin" function
+                       (:typemodifiers ("public")
+                        :type "Board")
+                        (reparse-symbol class_member_declaration) [1075 1406])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("y" variable (:type "Object") (reparse-symbol formal_parameters) [1431 1439]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1409 1825])
+                    ("swap" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [1847 1852])
+                            ("j" variable (:type "int") (reparse-symbol formal_parameters) [1854 1859])
+                            ("p" variable (:type "int") (reparse-symbol formal_parameters) [1861 1866])
+                            ("q" variable (:type "int") (reparse-symbol formal_parameters) [1868 1873]))                          
+                        :type "Board")
+                        (reparse-symbol class_member_declaration) [1828 2075])
+                    ("neighbors" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2101 2507])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2510 2869])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2897 2910]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2873 2947]))                  
+                :type "class")
+                nil [54 2949]))          
+      :file "Board.java"
+      :pointmax 2950
+      :fsize 2949
+      :lastmodtime '(22605 37829 665390 799000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Solver.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.In" include nil nil [1 34])
+            ("java.util.Collections" include nil nil [35 64])
+            ("java.util.Comparator" include nil nil [65 93])
+            ("java.util.Stack" include nil nil [94 117])
+            ("java.util.ArrayList" include nil nil [118 145])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [146 183])
+            ("edu.princeton.cs.algs4.MinPQ" include nil nil [184 220])
+            ("Solver" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("solvable" variable
+                       (:typemodifiers ("private" "final")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [247 278])
+                    ("sol" variable
+                       (:typemodifiers ("private")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [281 298])
+                    ("Node" type
+                       (:typemodifiers ("private")
+                        :members 
+                          ( ("prev" variable
+                               (:typemodifiers ("public")
+                                :type "Node")
+                                (reparse-symbol class_member_declaration) [325 342])
+                            ("count" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [347 364])
+                            ("cur" variable
+                               (:typemodifiers ("public")
+                                :type "Board")
+                                (reparse-symbol class_member_declaration) [369 386]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [301 390])
+                    ("step" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "pq") (reparse-symbol formal_parameters) [427 429]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [394 847])
+                    ("Solver" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("initial" variable (:type "Board") (reparse-symbol formal_parameters) [864 877]))                          )
+                        (reparse-symbol class_member_declaration) [850 1782])
+                    ("isSolvable" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1785 1876])
+                    ("moves" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1879 2026])
+                    ("solution" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2052 2348])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2375 2388]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2351 3019]))                  
+                :type "class")
+                nil [223 3021]))          
+      :file "Solver.java"
+      :pointmax 3022
+      :fsize 3021
+      :lastmodtime '(22605 38445 189373 294000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PointSET.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.TreeSet" include nil nil [1 26])
+            ("java.util.ArrayList" include nil nil [27 54])
+            ("edu.princeton.cs.algs4.Point2D" include nil nil [55 93])
+            ("edu.princeton.cs.algs4.RectHV" include nil nil [94 131])
+            ("edu.princeton.cs.algs4.StdDraw" include nil nil [132 170])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [171 208])
+            ("PointSET" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("PointSET" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [293 356])
+                    ("isEmpty" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [359 440])
+                    ("size" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [443 524])
+                    ("insert" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [546 555]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [527 644])
+                    ("contains" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [671 680]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [647 752])
+                    ("draw" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [755 935])
+                    ("range" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("rect" variable (:type "RectHV") (reparse-symbol formal_parameters) [969 980]))                          )
+                        (reparse-symbol class_member_declaration) [963 1233])
+                    ("nearest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [1259 1268]))                          
+                        :type "Point2D")
+                        (reparse-symbol class_member_declaration) [1236 1608])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1636 1649]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1612 1997]))                  
+                :type "class")
+                nil [210 1999]))          
+      :file "PointSET.java"
+      :pointmax 2000
+      :fsize 1999
+      :lastmodtime '(22612 12214 809734 255000)
+      :unmatched-syntax nil)
+    (semanticdb-table "KdTree.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.TreeSet" include nil nil [1 26])
+            ("java.util.ArrayList" include nil nil [27 54])
+            ("edu.princeton.cs.algs4.Point2D" include nil nil [55 93])
+            ("edu.princeton.cs.algs4.RectHV" include nil nil [94 131])
+            ("edu.princeton.cs.algs4.StdDraw" include nil nil [132 170])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [171 208])
+            ("KdTree" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("Node" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("p" variable
+                               (:typemodifiers ("public")
+                                :type "Point2D")
+                                (reparse-symbol class_member_declaration) [266 283])
+                            ("rect" variable
+                               (:typemodifiers ("public")
+                                :type "RectHV")
+                                (reparse-symbol class_member_declaration) [306 325])
+                            ("lb" variable
+                               (:typemodifiers ("public")
+                                :type "Node")
+                                (reparse-symbol class_member_declaration) [390 405])
+                            ("rt" variable
+                               (:typemodifiers ("public")
+                                :type "Node")
+                                (reparse-symbol class_member_declaration) [444 459]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [234 495])
+                    ("root" variable
+                       (:typemodifiers ("private")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [498 523])
+                    ("size" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [526 543])
+                    ("KdTree" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [546 607])
+                    ("isEmpty" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [611 688])
+                    ("size" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [691 767])
+                    ("add" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("parent" variable (:type "Node") (reparse-symbol formal_parameters) [788 799])
+                            ("n" variable (:type "Node") (reparse-symbol formal_parameters) [801 807])
+                            ("o" variable (:type "int") (reparse-symbol formal_parameters) [809 814])
+                            ("rect" variable (:type "RectHV") (reparse-symbol formal_parameters) [816 827]))                          
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [771 1582])
+                    ("find" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("parent" variable (:type "Node") (reparse-symbol formal_parameters) [1606 1617])
+                            ("n" variable (:type "Node") (reparse-symbol formal_parameters) [1619 1625])
+                            ("o" variable (:type "int") (reparse-symbol formal_parameters) [1627 1632]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1585 2036])
+                    ("insert" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [2058 2067]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2039 2285])
+                    ("contains" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [2312 2321]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2288 2512])
+                    ("draw" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("p" variable (:type "Node") (reparse-symbol formal_parameters) [2533 2539])
+                            ("o" variable (:type "int") (reparse-symbol formal_parameters) [2540 2545]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2515 3019])
+                    ("draw" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3022 3142])
+                    ("range" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "Node") (reparse-symbol formal_parameters) [3178 3184])
+                            ("rect" variable (:type "RectHV") (reparse-symbol formal_parameters) [3186 3197]))                          )
+                        (reparse-symbol class_member_declaration) [3172 3441])
+                    ("range" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("rect" variable (:type "RectHV") (reparse-symbol formal_parameters) [3475 3486]))                          )
+                        (reparse-symbol class_member_declaration) [3469 3624])
+                    ("nearest" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("n" variable (:type "Node") (reparse-symbol formal_parameters) [3651 3657])
+                            ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [3659 3668])
+                            ("nearest" variable (:type "Point2D") (reparse-symbol formal_parameters) [3670 3685])
+                            ("o" variable (:type "int") (reparse-symbol formal_parameters) [3686 3691])
+                            ("min" variable (:type "double") (reparse-symbol formal_parameters) [3693 3703]))                          
+                        :type "Point2D")
+                        (reparse-symbol class_member_declaration) [3627 4710])
+                    ("nearest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Point2D") (reparse-symbol formal_parameters) [4736 4745]))                          
+                        :type "Point2D")
+                        (reparse-symbol class_member_declaration) [4713 4938])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [4966 4979]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4942 5675]))                  
+                :type "class")
+                nil [210 5677]))          
+      :file "KdTree.java"
+      :pointmax 5678
+      :fsize 5677
+      :lastmodtime '(22612 12048 905738 973000)
+      :unmatched-syntax nil)
+    (semanticdb-table "WordNet.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [1 28])
+            ("java.util.HashMap" include nil nil [29 54])
+            ("edu.princeton.cs.algs4.In" include nil nil [55 88])
+            ("edu.princeton.cs.algs4.Bag" include nil nil [89 123])
+            ("edu.princeton.cs.algs4.DirectedCycle" include nil nil [124 168])
+            ("edu.princeton.cs.algs4.BreadthFirstDirectedPaths" include nil nil [169 225])
+            ("edu.princeton.cs.algs4.Digraph" include nil nil [226 264])
+            ("WordNet" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("net" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Digraph")
+                        (reparse-symbol class_member_declaration) [408 434])
+                    ("WordNet" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("synsets" variable (:type "String") (reparse-symbol formal_parameters) [508 522])
+                            ("hypernyms" variable (:type "String") (reparse-symbol formal_parameters) [524 540]))                          )
+                        (reparse-symbol class_member_declaration) [493 1588])
+                    ("nouns" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1648 1686])
+                    ("isNoun" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("word" variable (:type "String") (reparse-symbol formal_parameters) [1746 1757]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1724 1798])
+                    ("distance" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nounA" variable (:type "String") (reparse-symbol formal_parameters) [1877 1889])
+                            ("nounB" variable (:type "String") (reparse-symbol formal_parameters) [1891 1903]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1857 1991])
+                    ("sap" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nounA" variable (:type "String") (reparse-symbol formal_parameters) [2156 2168])
+                            ("nounB" variable (:type "String") (reparse-symbol formal_parameters) [2170 2182]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2138 2282])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2346 2359]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2322 2490]))                  
+                :type "class")
+                nil [266 2492]))          
+      :file "WordNet.java"
+      :pointmax 2493
+      :fsize 2492
+      :lastmodtime '(22648 45850 223286 720000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SAP.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [1 28])
+            ("java.util.Arrays" include nil nil [29 53])
+            ("edu.princeton.cs.algs4.In" include nil nil [54 87])
+            ("edu.princeton.cs.algs4.StdOut" include nil nil [88 125])
+            ("edu.princeton.cs.algs4.Digraph" include nil nil [126 164])
+            ("SAP" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("G" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Digraph")
+                        (reparse-symbol class_member_declaration) [187 211])
+                    ("SAP" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("G" variable (:type "Digraph") (reparse-symbol formal_parameters) [283 292]))                          )
+                        (reparse-symbol class_member_declaration) [272 327])
+                    ("length" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [425 430])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [432 437]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [407 516])
+                    ("ancestor" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [642 647])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [649 654]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [622 727])
+                    ("length" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "v") (reparse-symbol formal_parameters) [871 872])
+                            ("" variable (:type "w") (reparse-symbol formal_parameters) [892 893]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [835 972])
+                    ("ancestor" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "v") (reparse-symbol formal_parameters) [1103 1104])
+                            ("" variable (:type "w") (reparse-symbol formal_parameters) [1124 1125]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1065 1198])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1262 1275]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1238 1613]))                  
+                :type "class")
+                nil [166 1615]))          
+      :file "SAP.java"
+      :pointmax 1616
+      :fsize 1615
+      :lastmodtime '(22648 44322 683330 161000)
+      :unmatched-syntax '((GT 1122 . 1123) (IDENTIFIER 1106 . 1114) (LT 1114 . 1115) (GT 1101 . 1102) (IDENTIFIER 1085 . 1093) (LT 1093 . 1094) (GT 890 . 891) (IDENTIFIER 874 . 882) (LT 882 . 883) (GT 869 . 870) (IDENTIFIER 853 . 861) (LT 861 . 862) (GT 1122 . 1123) (IDENTIFIER 1106 . 1114) (LT 1114 . 1115) (GT 1101 . 1102) (IDENTIFIER 1085 . 1093) (LT 1093 . 1094) (GT 890 . 891) (IDENTIFIER 874 . 882) (LT 882 . 883) (GT 869 . 870) (IDENTIFIER 853 . 861) (LT 861 . 862) (SEMICOLON 1568 . 1569) (PAREN_BLOCK 1525 . 1568) (SEMICOLON 1501 . 1502) (IDENTIFIER 1438 . 1444) (PAREN_BLOCK 1456 . 1501) (SEMICOLON 1408 . 1409) (PAREN_BLOCK 1403 . 1408) (SEMICOLON 1388 . 1389) (PAREN_BLOCK 1383 . 1388) (SEMICOLON 1368 . 1369) (PAREN_BLOCK 1363 . 1368) (SEMICOLON 1348 . 1349) (PAREN_BLOCK 1343 . 1348) (SEMICOLON 1328 . 1329) (IDENTIFIER 1314 . 1315) (PAREN_BLOCK 1323 . 1328) (PAREN_BLOCK 1534 . 1567) ($EOI 1584 . 1584) (COMMA 1550 . 1551) (GT 1122 . 1123) (IDENTIFIER 1106 . 1114) (LT 1114 . 1115) (GT 1101 . 1102) (IDENTIFIER 1085 . 1093) (LT 1093 . 1094) (GT 890 . 891) (IDENTIFIER 874 . 882) (LT 882 . 883) (GT 869 . 870) (IDENTIFIER 853 . 861) (LT 861 . 862)))
+    (semanticdb-table "DeluxeBFS.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.Digraph" include nil nil [1 39])
+            ("edu.princeton.cs.algs4.In" include nil nil [40 73])
+            ("edu.princeton.cs.algs4.Stack" include nil nil [74 110])
+            ("edu.princeton.cs.algs4.Queue" include nil nil [111 147])
+            ("DeluxeBFS" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("INFINITY" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [175 229])
+                    ("markedA" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [232 258])
+                    ("markedB" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [300 326])
+                    ("edgeTo" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [368 389])
+                    ("distTo" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [444 465])
+                    ("anc" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [517 533])
+                    ("anclength" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [536 558])
+                    ("getanc" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [785 817])
+                    ("getanclength" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [820 864])
+                    ("DeluxeBFS" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("G" variable (:type "Digraph") (reparse-symbol formal_parameters) [1224 1233])
+                            ("sourceA" variable (:type "int") (reparse-symbol formal_parameters) [1235 1246])
+                            ("sourceB" variable (:type "int") (reparse-symbol formal_parameters) [1248 1259]))                          )
+                        (reparse-symbol class_member_declaration) [1207 1544])
+                    ("DeluxeBFS" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("G" variable (:type "Digraph") (reparse-symbol formal_parameters) [1564 1573])
+                            ("" variable (:type "sourceA") (reparse-symbol formal_parameters) [1593 1600])
+                            ("" variable (:type "sourceB") (reparse-symbol formal_parameters) [1620 1627]))                          )
+                        (reparse-symbol class_member_declaration) [1547 1915])
+                    ("bfs" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("G" variable (:type "Digraph") (reparse-symbol formal_parameters) [1936 1945])
+                            ("" variable (:type "sourceA") (reparse-symbol formal_parameters) [1965 1972])
+                            ("" variable (:type "sourceB") (reparse-symbol formal_parameters) [1992 1999]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1919 2796])
+                    ("bfs" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("G" variable (:type "Digraph") (reparse-symbol formal_parameters) [2848 2857])
+                            ("sourceA" variable (:type "int") (reparse-symbol formal_parameters) [2859 2870])
+                            ("sourceB" variable (:type "int") (reparse-symbol formal_parameters) [2872 2883]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2831 3723])
+                    ("hasPathTo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [4022 4027]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3997 4092])
+                    ("distTo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [4384 4389]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4366 4441])
+                    ("pathTo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [4760 4765]))                          )
+                        (reparse-symbol class_member_declaration) [4753 4993])
+                    ("validateVertex" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol formal_parameters) [5090 5095]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5062 5200])
+                    ("validateVertices" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "vertices") (reparse-symbol formal_parameters) [5317 5325]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5269 5553])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [5580 5593]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5556 5786]))                  
+                :type "class")
+                nil [148 5789]))          
+      :file "DeluxeBFS.java"
+      :pointmax 5790
+      :fsize 5789
+      :lastmodtime '(22648 51380 803129 436000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Outcast.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("Outcast" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("wordnet" variable
+                       (:typemodifiers ("private" "final")
+                        :type "WordNet")
+                        (reparse-symbol class_member_declaration) [26 56])
+                    ("Outcast" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("wordnet" variable (:type "WordNet") (reparse-symbol formal_parameters) [74 89]))                          )
+                        (reparse-symbol class_member_declaration) [59 123])
+                    ("outcast" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nouns" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [148 162]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [126 509])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [536 549]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [512 584]))                  
+                :type "class")
+                nil [1 586]))          
+      :file "Outcast.java"
+      :pointmax 587
+      :fsize 586
+      :lastmodtime '(22648 43317 63358 760000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SeamCarver.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("edu.princeton.cs.algs4.Digraph" include nil nil [1 39])
+            ("edu.princeton.cs.algs4.Picture" include nil nil [40 78])
+            ("java.awt.Color" include nil nil [79 101])
+            ("java.util.Stack" include nil nil [102 125])
+            ("SeamCarver" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("p" variable
+                       (:typemodifiers ("private")
+                        :type "Picture")
+                        (reparse-symbol class_member_declaration) [154 172])
+                    ("transposed" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [176 203])
+                    ("inHorizontal" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [206 235])
+                    ("changed" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [238 262])
+                    ("e" variable
+                       (:dereference 2
+                        :typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [265 286])
+                    ("SeamCarver" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("picture" variable (:type "Picture") (reparse-symbol formal_parameters) [307 322]))                          )
+                        (reparse-symbol class_member_declaration) [289 548])
+                    ("picture" function
+                       (:typemodifiers ("public")
+                        :type "Picture")
+                        (reparse-symbol class_member_declaration) [551 662])
+                    ("width" function (:constructor-flag t) (reparse-symbol class_member_declaration) [680 784])
+                    ("height" function (:constructor-flag t) (reparse-symbol class_member_declaration) [802 910])
+                    ("energy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [935 940])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [942 947]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [913 1611])
+                    ("findMinIndex" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("x" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [1640 1650]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1615 1793])
+                    ("transpose" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1796 2052])
+                    ("findHorizontalSeam" function
+                       (:typemodifiers ("public")
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [2059 2278])
+                    ("computeEnergyMatrix" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2281 2508])
+                    ("findVerticalSeam" function
+                       (:typemodifiers ("public")
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [2511 3486])
+                    ("removeHorizontalSeam" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("seam" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [3525 3535]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3489 3706])
+                    ("removeVerticalSeam" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("seam" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [3743 3753]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3709 4224])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [4251 4264]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4227 4428]))                  
+                :type "class")
+                nil [126 4430]))          
+      :file "SeamCarver.java"
+      :pointmax 4431
+      :fsize 4430
+      :lastmodtime '(22650 30276 32139 716000)
+      :unmatched-syntax nil))
+  :file "!home!nikhil!mystuff!Workspaces!algsassg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

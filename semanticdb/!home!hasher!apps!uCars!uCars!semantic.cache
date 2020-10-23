@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"uCars URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/1.9/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.conf.urls import url, include
+    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+\"\"\"" code nil nil [1 638])
+            ("__future__" include nil nil [639 695])
+            ("views" include nil nil [703 715])
+            ("django.conf.urls" include nil nil [717 758])
+            ("django.contrib" include nil nil [759 791])
+            ("rest_framework.routers" include nil nil [793 841])
+            ("rest_framework_swagger.views" include nil nil [842 899])
+            ("UserViewSet" include nil nil [928 946])
+            ("urls" include nil nil [968 1002])
+            ("router" variable nil nil [1004 1028])
+            ("router" code nil nil [1029 1067])
+            ("schema_view" variable nil nil [1069 1119]))          
+      :file "urls.py"
+      :pointmax 1550
+      :fsize 1549
+      :lastmodtime '(23169 44760 197502 253000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "views.py"
+      :pointmax 174
+      :fsize 173
+      :lastmodtime '(23169 12922 106674 0)
+      :unmatched-syntax nil))
+  :file "!home!hasher!apps!uCars!uCars!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

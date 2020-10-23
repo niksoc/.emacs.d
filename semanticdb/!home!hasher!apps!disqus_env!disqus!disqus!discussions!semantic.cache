@@ -1,0 +1,590 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [41 53])
+            ("urlpatterns" variable nil nil [55 1533]))          
+      :file "urls.py"
+      :pointmax 1534
+      :fsize 1533
+      :lastmodtime '(23163 62800 762971 1000)
+      :unmatched-syntax '((FROM 34 . 38) (PERIOD 39 . 40)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 82])
+            ("django.views" include nil nil [83 112])
+            ("django.views.decorators.http" include nil nil [114 175])
+            ("django" include nil nil [176 200])
+            ("django.shortcuts" include nil nil [201 255])
+            ("django.contrib.auth" include nil nil [256 293])
+            ("django.contrib.auth.mixins" include nil nil [294 351])
+            ("django.contrib.auth.decorators" include nil nil [352 409])
+            ("django.contrib.auth.forms" include nil nil [410 464])
+            ("django.contrib.contenttypes.models" include nil nil [465 523])
+            ("django.core.paginator" include nil nil [525 597])
+            ("django.db.models" include nil nil [598 628])
+            ("django.forms.models" include nil nil [629 674])
+            ("django.urls" include nil nil [675 706])
+            ("django.utils.decorators" include nil nil [707 759])
+            ("dal" include nil nil [760 788])
+            ("FLAG" include nil nil [803 832])
+            ("DOWNVOTE" include nil nil [803 832])
+            ("UPVOTE" include nil nil [803 832])
+            ("Category" include nil nil [846 888])
+            ("User" include nil nil [846 888])
+            ("Vote" include nil nil [846 888])
+            ("Comment" include nil nil [846 888])
+            ("Post" include nil nil [846 888])
+            ("HomePageView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [920 995])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1009 1013])
+                            ("request" variable nil (reparse-symbol function_parameters) [1015 1022])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [1024 1032]))                          )
+                        (reparse-symbol indented_block_body) [1001 1634])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1648 1652])
+                            ("request" variable nil (reparse-symbol function_parameters) [1654 1661]))                          )
+                        (reparse-symbol indented_block_body) [1639 2246]))                  
+                :type "class")
+                nil [890 2246])
+            ("PostSearchForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("author" variable nil (reparse-symbol indented_block_body) [2285 2457])
+                    ("category" variable nil (reparse-symbol indented_block_body) [2462 2644])
+                    ("sort_by_votes" variable nil (reparse-symbol indented_block_body) [2649 2732]))                  
+                :type "class")
+                nil [2247 2733])
+            ("UserAutocomplete" type
+               (:superclasses ("autocomplete.Select2QuerySetView")
+                :members 
+                  ( ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2813 2817]))                          )
+                        (reparse-symbol indented_block_body) [2796 2948]))                  
+                :type "class")
+                nil [2734 2948])
+            ("CategoryAutocomplete" type
+               (:superclasses ("autocomplete.Select2QuerySetView")
+                :members 
+                  ( ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3032 3036]))                          )
+                        (reparse-symbol indented_block_body) [3015 3167]))                  
+                :type "class")
+                nil [2949 3167])
+            ("CommentForm" type
+               (:superclasses ("forms.ModelForm")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [3228 3243])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [3252 3269])
+                            ("labels" variable nil (reparse-symbol indented_block_body) [3278 3334])
+                            ("help_texts" variable nil (reparse-symbol indented_block_body) [3343 3409]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [3208 3410]))                  
+                :type "class")
+                nil [3168 3410])
+            ("" code nil nil [3428 3457])
+            ("DiscussionView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3498 3502])
+                            ("request" variable nil (reparse-symbol function_parameters) [3504 3511])
+                            ("post_id" variable nil (reparse-symbol function_parameters) [3513 3520]))                          )
+                        (reparse-symbol indented_block_body) [3490 3916])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3930 3934])
+                            ("request" variable nil (reparse-symbol function_parameters) [3936 3943])
+                            ("post_id" variable nil (reparse-symbol function_parameters) [3945 3952]))                          )
+                        (reparse-symbol indented_block_body) [3921 4493]))                  
+                :type "class")
+                nil [3458 4493])
+            ("ReplyToComment" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4554 4558])
+                            ("request" variable nil (reparse-symbol function_parameters) [4560 4567])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4569 4577]))                          )
+                        (reparse-symbol indented_block_body) [4546 4867])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4881 4885])
+                            ("request" variable nil (reparse-symbol function_parameters) [4887 4894])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4896 4904]))                          )
+                        (reparse-symbol indented_block_body) [4872 5450]))                  
+                :type "class")
+                nil [4494 5450])
+            ("EditComment" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5508 5512])
+                            ("request" variable nil (reparse-symbol function_parameters) [5514 5521])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5523 5531]))                          )
+                        (reparse-symbol indented_block_body) [5500 5743])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5757 5761])
+                            ("request" variable nil (reparse-symbol function_parameters) [5763 5770])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5772 5780]))                          )
+                        (reparse-symbol indented_block_body) [5748 6196]))                  
+                :type "class")
+                nil [5451 6196])
+            ("StartDiscussionForm" type
+               (:superclasses ("forms.ModelForm")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [6265 6277])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [6286 6324])
+                            ("labels" variable nil (reparse-symbol indented_block_body) [6333 6449])
+                            ("help_text" variable nil (reparse-symbol indented_block_body) [6458 6612])
+                            ("widgets" variable nil (reparse-symbol indented_block_body) [6621 6740]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [6245 6741])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6756 6760]))                          )
+                        (reparse-symbol indented_block_body) [6746 7100]))                  
+                :type "class")
+                nil [6197 7100])
+            ("StartDiscussionView" type
+               (:superclasses ("LoginRequiredMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7166 7170])
+                            ("request" variable nil (reparse-symbol function_parameters) [7172 7179]))                          )
+                        (reparse-symbol indented_block_body) [7158 7321])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7335 7339])
+                            ("request" variable nil (reparse-symbol function_parameters) [7341 7348]))                          )
+                        (reparse-symbol indented_block_body) [7326 7742]))                  
+                :type "class")
+                nil [7101 7742])
+            ("" code nil nil [7780 7790])
+            ("upvote_post" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [7807 7814])
+                ("post_id" variable nil (reparse-symbol function_parameters) [7816 7823]))              ) nil [7791 7982])
+            ("" code nil nil [8020 8030])
+            ("downvote_post" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8049 8056])
+                ("post_id" variable nil (reparse-symbol function_parameters) [8058 8065]))              ) nil [8031 8220])
+            ("" code nil nil [8258 8268])
+            ("undo_vote_on_post" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8291 8298])
+                ("post_id" variable nil (reparse-symbol function_parameters) [8300 8307]))              ) nil [8269 8420])
+            ("" code nil nil [8458 8468])
+            ("upvote_comment" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8488 8495])
+                ("comment_id" variable nil (reparse-symbol function_parameters) [8497 8507]))              ) nil [8469 8629])
+            ("" code nil nil [8667 8677])
+            ("downvote_comment" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8699 8706])
+                ("comment_id" variable nil (reparse-symbol function_parameters) [8708 8718]))              ) nil [8678 8842])
+            ("" code nil nil [8880 8890])
+            ("undo_vote_on_comment" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [8916 8923])
+                ("comment_id" variable nil (reparse-symbol function_parameters) [8925 8935]))              ) nil [8891 9060])
+            ("myprofile" function
+               (:decorators 
+                  ( ("login_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [9091 9098]))                  )
+                nil [9061 9805])
+            ("MyUserCreationForm" type
+               (:superclasses ("UserCreationForm")
+                :members 
+                  ( ("Meta" type
+                       (:superclasses ("UserCreationForm.Meta")
+                        :members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [9897 9909])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [9918 9955]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [9854 9956]))                  
+                :type "class")
+                nil [9806 9956])
+            ("CreateProfileView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10001 10005])
+                            ("request" variable nil (reparse-symbol function_parameters) [10007 10014]))                          )
+                        (reparse-symbol indented_block_body) [9992 10356])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10369 10373])
+                            ("request" variable nil (reparse-symbol function_parameters) [10375 10382]))                          )
+                        (reparse-symbol indented_block_body) [10361 10504]))                  
+                :type "class")
+                nil [9957 10504])
+            ("profile" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [10517 10524])
+                ("userid" variable nil (reparse-symbol function_parameters) [10526 10532]))              ) nil [10505 10612]))          
+      :file "views.py"
+      :pointmax 10612
+      :fsize 10611
+      :lastmodtime '(23164 12785 130816 33000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29])
+            ("django.contrib.auth.models" include nil nil [30 81])
+            ("django.contrib.contenttypes.fields" include nil nil [82 144])
+            ("django.contrib.contenttypes.fields" include nil nil [145 209])
+            ("django.contrib.contenttypes.models" include nil nil [210 268])
+            ("django.core.validators" include nil nil [269 340])
+            ("django.db.models" include nil nil [341 371])
+            ("django.urls" include nil nil [372 403])
+            ("collections" include nil nil [405 440])
+            ("SERVER_URL" variable nil nil [474 516])
+            ("UPVOTE" variable nil nil [518 528])
+            ("DOWNVOTE" variable nil nil [529 541])
+            ("FLAG" variable nil nil [542 550])
+            ("User" type
+               (:documentation "Our custom user model with a score"
+                :superclasses ("AbstractUser")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [647 665]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [627 666])
+                    ("score" variable nil (reparse-symbol indented_block_body) [671 709]))                  
+                :type "class")
+                nil [552 710])
+            ("Vote" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [761 779])
+                            ("index_together" variable nil (reparse-symbol indented_block_body) [788 859]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [741 860])
+                    ("content_type" variable nil (reparse-symbol indented_block_body) [1014 1085])
+                    ("object_id" variable nil (reparse-symbol indented_block_body) [1090 1131])
+                    ("content_object" variable nil (reparse-symbol indented_block_body) [1136 1199])
+                    ("voter" variable nil (reparse-symbol indented_block_body) [1204 1261])
+                    ("type_of_vote" variable nil (reparse-symbol indented_block_body) [1266 1419])
+                    ("submission_time" variable nil (reparse-symbol indented_block_body) [1424 1481]))                  
+                :type "class")
+                nil [711 1482])
+            ("Votable" type
+               (:documentation " An object on which people would want to vote
+        Post and Comment are concrete classes
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [1643 1658]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1623 1659])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [1664 1693])
+                    ("author" variable nil (reparse-symbol indented_block_body) [1698 1756])
+                    ("upvotes" variable nil (reparse-symbol indented_block_body) [1853 1893])
+                    ("downvotes" variable nil (reparse-symbol indented_block_body) [1898 1940])
+                    ("flags" variable nil (reparse-symbol indented_block_body) [1945 1983])
+                    ("upvote" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2000 2004])
+                            ("user" variable nil (reparse-symbol function_parameters) [2006 2010]))                          )
+                        (reparse-symbol indented_block_body) [1989 2053])
+                    ("downvote" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2071 2075])
+                            ("user" variable nil (reparse-symbol function_parameters) [2077 2081]))                          )
+                        (reparse-symbol indented_block_body) [2058 2126])
+                    ("flag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2140 2144])
+                            ("user" variable nil (reparse-symbol function_parameters) [2146 2150]))                          )
+                        (reparse-symbol indented_block_body) [2131 2184])
+                    ("unflag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2200 2204])
+                            ("user" variable nil (reparse-symbol function_parameters) [2206 2210]))                          )
+                        (reparse-symbol indented_block_body) [2189 2260])
+                    ("undo_vote" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2279 2283])
+                            ("user" variable nil (reparse-symbol function_parameters) [2285 2289]))                          )
+                        (reparse-symbol indented_block_body) [2265 3200])
+                    ("_vote" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3215 3219])
+                            ("user" variable nil (reparse-symbol function_parameters) [3221 3225])
+                            ("type_of_vote" variable nil (reparse-symbol function_parameters) [3227 3239]))                          )
+                        (reparse-symbol indented_block_body) [3205 4304])
+                    ("_voting_for_myself" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4332 4336])
+                            ("user" variable nil (reparse-symbol function_parameters) [4338 4342]))                          )
+                        (reparse-symbol indented_block_body) [4309 4386])
+                    ("_already_voted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4410 4414])
+                            ("user" variable nil (reparse-symbol function_parameters) [4416 4420])
+                            ("content_type" variable nil (reparse-symbol function_parameters) [4422 4434])
+                            ("type_of_vote" variable nil (reparse-symbol function_parameters) [4436 4448]))                          )
+                        (reparse-symbol indented_block_body) [4391 4630]))                  
+                :type "class")
+                nil [1483 4630])
+            ("Category" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [4685 4708]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4665 4709])
+                    ("name" variable nil (reparse-symbol indented_block_body) [4714 4752])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4770 4774]))                          )
+                        (reparse-symbol indented_block_body) [4758 4803]))                  
+                :type "class")
+                nil [4631 4803])
+            ("PostsManager" type
+               (:superclasses ("models.Manager")
+                :members 
+                  ( ("get_post_with_my_votes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4871 4875])
+                            ("post_id" variable nil (reparse-symbol function_parameters) [4877 4884])
+                            ("user" variable nil (reparse-symbol function_parameters) [4886 4890]))                          )
+                        (reparse-symbol indented_block_body) [4844 5560])
+                    ("recent_posts_with_my_votes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5596 5600])
+                            ("user" variable nil (reparse-symbol function_parameters) [5602 5606]))                          )
+                        (reparse-symbol indented_block_body) [5565 5888])
+                    ("_append_votes_by_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5919 5923])
+                            ("posts" variable nil (reparse-symbol function_parameters) [5925 5930])
+                            ("user" variable nil (reparse-symbol function_parameters) [5932 5936]))                          )
+                        (reparse-symbol indented_block_body) [5893 6943])
+                    ("vote_type_to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6972 6976])
+                            ("vote_type" variable nil (reparse-symbol function_parameters) [6978 6987]))                          )
+                        (reparse-symbol indented_block_body) [6948 7143]))                  
+                :type "class")
+                nil [4804 7143])
+            ("Post" type
+               (:superclasses ("Votable")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [7189 7207])
+                            ("index_together" variable nil (reparse-symbol indented_block_body) [7216 7278]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [7169 7279])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [7283 7307])
+                    ("title" variable nil (reparse-symbol indented_block_body) [7312 7352])
+                    ("url" variable nil (reparse-symbol indented_block_body) [7357 7390])
+                    ("text" variable nil (reparse-symbol indented_block_body) [7395 7447])
+                    ("category" variable nil (reparse-symbol indented_block_body) [7452 7538])
+                    ("submission_time" variable nil (reparse-symbol indented_block_body) [7543 7600])
+                    ("num_comments" variable nil (reparse-symbol indented_block_body) [7605 7650])
+                    ("get_absolute_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7677 7681]))                          )
+                        (reparse-symbol indented_block_body) [7656 7724])
+                    ("add_comment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7745 7749])
+                            ("text" variable nil (reparse-symbol function_parameters) [7751 7755])
+                            ("author" variable nil (reparse-symbol function_parameters) [7757 7763]))                          )
+                        (reparse-symbol indented_block_body) [7729 8374])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8391 8395]))                          )
+                        (reparse-symbol indented_block_body) [8379 8424]))                  
+                :type "class")
+                nil [7144 8424])
+            ("CommentsManager" type
+               (:superclasses ("models.Manager")
+                :members 
+                  ( ("best_ones_first" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8488 8492])
+                            ("post_id" variable nil (reparse-symbol function_parameters) [8494 8501])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [8503 8510]))                          )
+                        (reparse-symbol indented_block_body) [8468 10631]))                  
+                :type "class")
+                nil [8425 10631])
+            ("Comment" type
+               (:superclasses ("Votable")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [10680 10701])
+                            ("unique_together" variable nil (reparse-symbol indented_block_body) [10710 10768]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [10660 10769])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [10773 10800])
+                    ("post" variable nil (reparse-symbol indented_block_body) [10806 10861])
+                    ("parent_comment" variable nil (reparse-symbol indented_block_body) [10866 10989])
+                    ("text" variable nil (reparse-symbol indented_block_body) [10994 11034])
+                    ("submission_time" variable nil (reparse-symbol indented_block_body) [11039 11096])
+                    ("wbs" variable nil (reparse-symbol indented_block_body) [11324 11361])
+                    ("reply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11377 11381])
+                            ("text" variable nil (reparse-symbol function_parameters) [11383 11387])
+                            ("author" variable nil (reparse-symbol function_parameters) [11389 11395]))                          )
+                        (reparse-symbol indented_block_body) [11367 12431])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12448 12452]))                          )
+                        (reparse-symbol indented_block_body) [12436 12480]))                  
+                :type "class")
+                nil [10632 12480])
+            ("_find_next_wbs" function (:arguments 
+              ( ("post" variable nil (reparse-symbol function_parameters) [12500 12504])
+                ("parent_wbs" variable nil (reparse-symbol function_parameters) [12506 12516]))              ) nil [12481 13294])
+            ("notify_users" function (:arguments 
+              ( ("users" variable nil (reparse-symbol function_parameters) [13312 13317])
+                ("title" variable nil (reparse-symbol function_parameters) [13319 13324])
+                ("body" variable nil (reparse-symbol function_parameters) [13326 13330])
+                ("relative_link" variable nil (reparse-symbol function_parameters) [13332 13345]))              ) nil [13295 13808])
+            ("Favourite" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [13901 13924]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [13844 13925])
+                    ("content_type" variable nil (reparse-symbol indented_block_body) [14075 14146])
+                    ("object_id" variable nil (reparse-symbol indented_block_body) [14151 14192])
+                    ("content_object" variable nil (reparse-symbol indented_block_body) [14197 14260])
+                    ("user" variable nil (reparse-symbol indented_block_body) [14265 14321])
+                    ("favourited_on" variable nil (reparse-symbol indented_block_body) [14326 14381])
+                    ("deleted_on" variable nil (reparse-symbol indented_block_body) [14386 14442]))                  
+                :type "class")
+                nil [13809 14443]))          
+      :file "models.py"
+      :pointmax 14449
+      :fsize 14448
+      :lastmodtime '(23163 3083 361621 912000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33])
+            ("django.contrib.contenttypes.admin" include nil nil [34 100])
+            ("Category" include nil nil [114 167])
+            ("User" include nil nil [114 167])
+            ("Favourite" include nil nil [114 167])
+            ("Vote" include nil nil [114 167])
+            ("Comment" include nil nil [114 167])
+            ("Post" include nil nil [114 167])
+            ("UserAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("fields" variable nil (reparse-symbol indented_block_body) [208 272])
+                    ("readonly_fields" variable nil (reparse-symbol indented_block_body) [277 309]))                  
+                :type "class")
+                nil [169 310])
+            ("PostAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("list_display" variable nil (reparse-symbol indented_block_body) [350 381])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [386 486])
+                    ("readonly_fields" variable nil (reparse-symbol indented_block_body) [491 535]))                  
+                :type "class")
+                nil [311 536])
+            ("CommentAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("list_display" variable nil (reparse-symbol indented_block_body) [583 650])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [655 757])
+                    ("readonly_fields" variable nil (reparse-symbol indented_block_body) [762 823]))                  
+                :type "class")
+                nil [541 824])
+            ("VoteAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("list_display" variable nil (reparse-symbol indented_block_body) [864 941]))                  
+                :type "class")
+                nil [825 942])
+            ("FavouriteAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [987 991]))                  
+                :type "class")
+                nil [943 992])
+            ("admin" code nil nil [993 1029])
+            ("admin" code nil nil [1030 1059])
+            ("admin" code nil nil [1060 1096])
+            ("admin" code nil nil [1097 1139])
+            ("admin" code nil nil [1140 1176])
+            ("admin" code nil nil [1177 1223]))          
+      :file "admin.py"
+      :pointmax 1224
+      :fsize 1223
+      :lastmodtime '(23163 3083 357622 34000)
+      :unmatched-syntax '((FROM 101 . 105) (PERIOD 106 . 107))))
+  :file "!home!hasher!apps!disqus_env!disqus!disqus!discussions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
